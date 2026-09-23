@@ -1,7 +1,15 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { loadLanguageCodes, writeEnglishBrief } from './publish-guard.mjs';
+import { pathToFileURL } from 'node:url';
+import {
+  classifyMasterAppend,
+  contentWriteAllowed,
+  loadLanguageCodes,
+  rollbackWrittenBriefs,
+  selectAlignedSourceLinks,
+  writeEnglishBrief,
+} from './publish-guard.mjs';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
@@ -186,8 +194,13 @@ function buildCoverageMap(index) {
 }
 
 function makeMasterMarkdown({ id, title, description, slug, tags, sourceLinks, summaryType, cluster, angle }) {
-  const links = sourceLinks.map((link) => `  - "${link}"`).join('\n');
   const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
+  const linksYaml = sourceLinks.length
+    ? `sourceLinks:\n${sourceLinks.map((link) => `  - "${link}"`).join('\n')}\n`
+    : '';
+  const readingPath = sourceLinks.length
+    ? '- Start with the primary release linked in sourceLinks.'
+    : '- No registry URL matched this topic, so this brief does not attach a source link.';
 
   return `---
 id: "${id}"
@@ -200,9 +213,7 @@ publishDate: "${publishDate}"
 updatedDate: "${publishDate}"
 tags:
 ${tagsYaml}
-sourceLinks:
-${links}
-summaryType: "${summaryType}"
+${linksYaml}summaryType: "${summaryType}"
 draft: false
 ---
 
@@ -226,7 +237,7 @@ This briefing summarizes current developments connected to **${titleCase(cluster
 
 ## Source-Backed Reading Path
 
-- Start with the primary release linked in sourceLinks.
+${readingPath}
 - Compare with prior-period publication patterns.
 - Track follow-up notifications in the same domain.
 
@@ -236,6 +247,24 @@ This article is an original synthesis prepared for Great Indian Company using pu
 `;
 }
 
+export async function refreshPublishedState() {
+  const index = await scanExistingContent();
+  if (index.length === 0) {
+    const onDisk = (await listFilesRecursive(MASTER_ROOT)).filter(
+      (filePath) => filePath.endsWith('.md') || filePath.endsWith('.mdx'),
+    );
+    if (onDisk.length > 0) {
+      throw new Error('Refusing to write an empty content index while master files exist.');
+    }
+  }
+
+  const coverageMap = buildCoverageMap(index);
+  await ensureDir(STATE_ROOT);
+  await fs.writeFile(path.join(STATE_ROOT, 'content-index.json'), `${JSON.stringify(index, null, 2)}\n`, 'utf8');
+  await fs.writeFile(path.join(STATE_ROOT, 'coverage-map.json'), `${JSON.stringify(coverageMap, null, 2)}\n`, 'utf8');
+  return index;
+}
+
 async function main() {
   await ensureDir(STATE_ROOT);
   const sourceRegistry = await readJson(path.join(CONFIG_ROOT, 'source_registry.json'));
@@ -243,18 +272,7 @@ async function main() {
 
   const existingIndex = await scanExistingContent();
   const existingSlugs = new Set(existingIndex.map((entry) => entry.slug));
-  const coverageMap = buildCoverageMap(existingIndex);
-
-  await fs.writeFile(
-    path.join(STATE_ROOT, 'content-index.json'),
-    JSON.stringify(existingIndex, null, 2) + '\n',
-    'utf8',
-  );
-  await fs.writeFile(
-    path.join(STATE_ROOT, 'coverage-map.json'),
-    JSON.stringify(coverageMap, null, 2) + '\n',
-    'utf8',
-  );
+  const existingCount = existingIndex.length;
 
   const publishRoot = MASTER_ROOT;
   await ensureDir(publishRoot);
@@ -279,8 +297,11 @@ async function main() {
 
   const masters = [];
   let comboIndex = 0;
+  let attempts = 0;
+  const maxAttempts = Math.max(combos.length * 20, MASTER_TARGET * 5);
 
-  while (masters.length < MASTER_TARGET) {
+  while (masters.length < MASTER_TARGET && attempts < maxAttempts) {
+    attempts += 1;
     const seq = String(masters.length + 1).padStart(3, '0');
     const combo = combos[comboIndex % combos.length];
     comboIndex += 1;
@@ -297,10 +318,7 @@ async function main() {
     const description = `Original summary on ${titleCase(combo.cluster)} focused on ${titleCase(combo.angle)} with primary-source links.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seq}`;
 
-    const sourceLinks = [
-      sourceRegistry[(masters.length * 2) % sourceRegistry.length],
-      sourceRegistry[(masters.length * 2 + 1) % sourceRegistry.length],
-    ];
+    const sourceLinks = selectAlignedSourceLinks(combo.cluster, sourceRegistry);
 
     sourceLinks.forEach((link) => sourceUrlsUsed.add(link));
 
@@ -321,7 +339,6 @@ async function main() {
 
     const masterFileName = `${publishDate}-${slug}.md`;
     const masterPath = path.join(publishRoot, masterFileName);
-    await writeEnglishBrief(fs, masterPath, masterMarkdown, LANGUAGE_CODES);
 
     generatedSlugs.push(slug);
 
@@ -333,7 +350,8 @@ async function main() {
       tags,
       sourceLinks,
       summaryType,
-      filePath: path.relative(ROOT, masterPath),
+      markdown: masterMarkdown,
+      filePath: masterPath,
     });
   }
 
@@ -341,7 +359,69 @@ async function main() {
 
   if (masterCount !== MASTER_TARGET) {
     failedItems.push(`master-count-mismatch:${masterCount}`);
+    await refreshPublishedState();
+    throw new Error(
+      `Refusing to commit masters: planned ${masterCount}, expected ${MASTER_TARGET}. No files were written under src/content.`,
+    );
   }
+
+  const allowWrite = contentWriteAllowed();
+  const appendDecision = classifyMasterAppend({
+    existingCount,
+    additional: masterCount,
+    allowWrite,
+  });
+
+  if (appendDecision.action !== 'commit') {
+    await refreshPublishedState();
+    const endedAt = new Date().toISOString();
+    const manifest = {
+      runId,
+      startedAt,
+      endedAt,
+      writeMode: 'dry-run',
+      allowContentWrite: false,
+      existingMastersBefore: existingCount,
+      masterCeiling: appendDecision.ceiling,
+      mastersRequested: MASTER_TARGET,
+      mastersPublished: 0,
+      translationsPublished: 0,
+      localizationStatus: 'not-generated',
+      localizationNote:
+        'This run writes English briefs only, through the publish guard. It does not write language-tagged files. The sitemap build rejects those URLs.',
+      totalNewMarkdownFiles: 0,
+      failedItems,
+      retryCounts,
+      sourceUrlsUsed: [],
+      generatedSlugs: [],
+      status: 'dry-run',
+    };
+    await fs.writeFile(path.join(STATE_ROOT, 'last-run-manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+    console.log(
+      `Refusing to write ${masterCount} English masters without ALLOW_CONTENT_WRITE=1. Existing count is ${existingCount}; ceiling is ${appendDecision.ceiling}. Content index refreshed from the current tree.`,
+    );
+    return;
+  }
+
+  const writtenPaths = [];
+  try {
+    for (const master of masters) {
+      await writeEnglishBrief(fs, master.filePath, master.markdown, LANGUAGE_CODES);
+      writtenPaths.push(master.filePath);
+    }
+    const after = (await listFilesRecursive(MASTER_ROOT)).filter((filePath) => filePath.endsWith('.md') || filePath.endsWith('.mdx')).length;
+    if (writtenPaths.length !== MASTER_TARGET || after !== existingCount + MASTER_TARGET) {
+      throw new Error(
+        `Master count check failed after commit (found ${after}, expected ${existingCount + MASTER_TARGET}). Rolled back new files.`,
+      );
+    }
+  } catch (error) {
+    await rollbackWrittenBriefs(fs, writtenPaths);
+    await refreshPublishedState();
+    throw error;
+  }
+
+  await refreshPublishedState();
 
   const endedAt = new Date().toISOString();
 
@@ -374,7 +454,10 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

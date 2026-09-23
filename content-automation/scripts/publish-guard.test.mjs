@@ -2,13 +2,22 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import os from 'node:os';
 import {
+  assertMasterAppendAllowed,
   assertSafeMarkdownWrite,
   assertSitemapOmitsGeneratedTranslations,
+  CANONICAL_DBIE_URL,
+  contentWriteAllowed,
   defaultLanguageConfigPath,
   isGeneratedTranslationPath,
   languageSuffixOfSlug,
   loadLanguageCodes,
+  MASTER_COUNT_CAP,
+  rollbackWrittenBriefs,
+  selectAlignedSourceLinks,
+  writeEnglishBrief,
 } from './publish-guard.mjs';
 
 const ROOT = process.cwd();
@@ -106,6 +115,12 @@ test('content scripts and the sitemap call the guard', () => {
     assert.doesNotMatch(source, /generated-translations/);
   }
 
+  assert.match(pipeline, /classifyMasterAppend/);
+  assert.match(pipeline, /selectAlignedSourceLinks/);
+  assert.doesNotMatch(pipeline, /masters\.length \* 2/);
+  assert.match(expansion, /selectAlignedSourceLinks/);
+  assert.doesNotMatch(expansion, /gov\[i % gov\.length\]/);
+
   assert.match(sitemap, /assertSitemapOmitsGeneratedTranslations/);
 
   const contentConfig = readFileSync(path.join(ROOT, 'src/content/config.ts'), 'utf8');
@@ -114,4 +129,70 @@ test('content scripts and the sitemap call the guard', () => {
   assert.match(contentConfig, /translationOf: z\.null\(\)/);
   assert.match(unusedConfig, /export \{ collections \} from '\.\/content\/config'/);
   assert.doesNotMatch(unusedConfig, /z\.string\(\)/);
+});
+
+test('appending English masters requires ALLOW_CONTENT_WRITE and stays within the ceiling', () => {
+  assert.equal(MASTER_COUNT_CAP, 800);
+  assert.equal(contentWriteAllowed({ ALLOW_CONTENT_WRITE: '1' }), true);
+  assert.equal(contentWriteAllowed({}), false);
+  assert.throws(
+    () => assertMasterAppendAllowed({ existingCount: 800, additional: 1, allowWrite: false }),
+    /ALLOW_CONTENT_WRITE=1/,
+  );
+  assert.throws(
+    () => assertMasterAppendAllowed({ existingCount: 900, additional: 1, allowWrite: false }),
+    /ceiling is 900/,
+  );
+  const allowed = assertMasterAppendAllowed({ existingCount: 800, additional: 1, allowWrite: true });
+  assert.equal(allowed.action, 'commit');
+});
+
+test('source links follow the topic and keep DBIE.aspx', async () => {
+  const registry = JSON.parse(
+    readFileSync(path.join(ROOT, 'content-automation/config/source_registry.json'), 'utf8'),
+  );
+  assert.equal(registry.includes(CANONICAL_DBIE_URL), true);
+  assert.equal(registry.some((url) => /DBIE\.spx/i.test(url)), false);
+
+  const rotated = [registry[0], registry[1]];
+  const selected = selectAlignedSourceLinks('credit-growth', [
+    'https://www.mohfw.gov.in/',
+    'https://www.rbi.org.in/Scripts/NotificationUser.aspx',
+    'https://www.rbi.org.in/Scripts/DBIE.spx',
+  ]);
+  assert.deepEqual(selected, [CANONICAL_DBIE_URL]);
+  assert.equal(selected.includes(rotated[0]), false);
+
+  const pharma = selectAlignedSourceLinks('pharma-and-biotech', [
+    'https://www.mnre.gov.in/',
+    'https://www.mohfw.gov.in/',
+  ]);
+  assert.deepEqual(pharma, ['https://www.mohfw.gov.in/']);
+});
+
+test('writeEnglishBrief refuses without opt-in and rolls back a committed file', async () => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'gic-brief-'));
+  const filePath = path.join(dir, 'src/content/blog/en/credit-growth-what-changed-guard.md');
+  const fs = {
+    async writeFile(target, body) {
+      const { mkdir, writeFile } = await import('node:fs/promises');
+      await mkdir(path.dirname(target), { recursive: true });
+      await writeFile(target, body, 'utf8');
+    },
+    async rm(target, options) {
+      await rm(target, options);
+    },
+  };
+
+  await assert.rejects(
+    () => writeEnglishBrief(fs, filePath, ENGLISH_BRIEF, LANGUAGE_CODES, { allowWrite: false }),
+    /ALLOW_CONTENT_WRITE=1/,
+  );
+
+  await writeEnglishBrief(fs, filePath, ENGLISH_BRIEF, LANGUAGE_CODES, { allowWrite: true });
+  const body = await readFile(filePath, 'utf8');
+  assert.match(body, /lang: "en"/);
+  await rollbackWrittenBriefs(fs, [filePath]);
+  await assert.rejects(() => readFile(filePath, 'utf8'));
+  await rm(dir, { recursive: true, force: true });
 });
