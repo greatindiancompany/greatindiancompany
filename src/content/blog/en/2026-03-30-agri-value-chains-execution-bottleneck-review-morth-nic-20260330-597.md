@@ -3,7 +3,7 @@ id: "gic-20260330-597"
 lang: "en"
 translationOf: null
 title: "Where execution stalls in India's agri value chains"
-description: "Find the stage where lots wait or cash stops. This page names common stalls and does not rank them with measurements."
+description: "Assaying, commission-agent credit, moisture, the cold chain, and unregistered warehouses are where Indian chains wait."
 slug: "agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,32 +12,27 @@ tags:
   - "execution-bottleneck-review"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-An execution bottleneck is the stage where lots wait, quality slips, or cash stops, while earlier stages still look busy. Adding people or machines upstream of that stage raises cost and does not raise shipments.
+An execution bottleneck is the stage where lots wait, quality slips, or cash stops, while the previous stage still looks busy. Adding a machine upstream of that stage raises cost and does not raise shipments. This page does not rank stalls with measurements.
 
-## Stalls you can point at
+## Stalls that show up on Indian paths
 
-On agri chains in India the wait is usually one of these. Which one binds depends on the crop and the catchment. This list is not a ranking.
+Which one binds depends on the commodity and the state.
 
-- **Aggregation.** Small lots do not become a buyer's lot. Weight disputes and uneven quality stop the day before a plant ever runs.
-- **The grade.** The buyer's sheet is applied late, or applied by someone who cannot reject a lot from a regular supplier. Bad lots travel forward and fail at the expensive step.
-- **Condition.** A cold room, dryer, or store is full, down, or too far from intake. Time spent outside the required condition is the stall, even if a vehicle is ready.
-- **The line.** Processing waits on raw material, on a changeover, or on a license condition. A new line does not remove a raw-material stall.
-- **Dispatch papers and vehicles.** The lot is ready and the document or the truck is not. Road movement fails as a queue or a mismatch, not as a slogan about logistics.
-- **The invoice.** Goods have left and cash has not. Further buying against that buyer widens the stall into the next week.
+- **Assaying at the mandi.** e-NAM can list a lot. A buyer in another mandi still needs a grade they trust. Where the yard does not assay, the trade stays local and the screen is not the constraint you think it is.
+- **Commission-agent credit.** The agent finances the farmer and controls the settlement. A farmer producer organisation that is registered and has no cash to pay members on delivery will not pull lots out of that relationship.
+- **Moisture and foreign matter.** Wet paddy at a procurement centre or a rice mill stops the day. Drying, not a larger mill, is the stall. The same pattern hits pulses before a dal mill.
+- **Cold chain timing.** Potato that misses the loading window, milk that misses the bulk cooler, or grapes that miss the packhouse spend their grade in the delay. A new truck does not repair a lot that warmed up yesterday.
+- **The export sheet.** A packhouse or a shrimp plant can be ready while the residue sample or the marine health document is not. The domestic mandi will not teach you that stall.
+- **A warehouse that cannot issue a receipt.** Stock you cannot finance because the godown is outside the Warehousing Development and Regulatory Authority registry ties up cash that an electronic negotiable warehouse receipt was meant to free.
+- **The procurement queue.** In paddy and wheat belts the stall can be acceptance and payment at the centre. A private offtake plan does not describe that week.
 
-## How to tell which stall is binding
+## How to see which stall binds
 
-For ten recent lots, write the longest wait and the reason in the words of the person who released the lot. The reason that repeats is the bottleneck. A reason that appears once is an incident. Confirm by asking what would happen to weekly shipments if that stage were twice as fast and nothing else changed. If shipments would not rise, you have not found the constraint.
+For ten recent lots, write the longest wait and the reason in the words of the person who released the lot: the agent, the tester, the mill QC, or the packhouse. The reason that repeats is the constraint. Ask what weekly shipments would do if that stage were twice as fast and nothing else changed.
 
-Skills sit inside the stall. A grader or a technician may be the scarce input. That hiring choice is on the [jobs page](/blog/agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397). Buildings that do not move the constraint are on the [capex page](/blog/agri-value-chains-capex-cycle-watch-morth-nic-20260330-357).
-
-## Scope
-
-No stage is measured here, and no crop is declared the slow one. Founders can drop this test into the weekly cadence on the [operator guide](/blog/agri-value-chains-for-founders-and-operators-morth-nic-20260330-717).
+The people inside the stall are mapped on the [jobs page](/blog/agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397). Buildings that miss the constraint are on the [capex page](/blog/agri-value-chains-capex-cycle-watch-morth-nic-20260330-357). Founders can put the ten-lot test on the weekly cadence in the [operator guide](/blog/agri-value-chains-for-founders-and-operators-morth-nic-20260330-717).

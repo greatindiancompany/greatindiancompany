@@ -3,7 +3,7 @@ id: "gic-20260330-397"
 lang: "en"
 translationOf: null
 title: "Jobs and skills that move India's agri value chains"
-description: "Name the stage, then the skill that limits it. This page describes roles and does not state employment totals."
+description: "Mandi labour, commission agents, dairy testers, mill QC, and packhouse samplers do different work. No employment total is stated."
 slug: "agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,33 +12,24 @@ tags:
   - "jobs-and-skills-impact"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A job in an agri value chain is attached to a stage. Someone collects, someone grades, someone holds the lot in condition, someone moves it, someone processes it, and someone collects the cash. Hiring "for agriculture" without naming the stage fills a seat and leaves the constraint in place.
+A job on an Indian agri value chain is attached to a stage and a licence. Hiring "for agriculture" without that stage leaves the constraint in place. This page states no employment total and no wage.
 
-## Work follows the lot
+## Work that already has a name
 
-On a typical path in India the paid work clusters like this:
+- **Mandi floor.** Weighment, loading labour, and the commission agent who finances farmers and sells inside a regulated yard. The skill is an accurate weighment and a settlement the farmer will accept next week. A mistake here enters the mill as a dispute or a wet lot.
+- **Farmer producer organisation staff.** Field aggregation and invoicing in the organisation's name. Registration under the companies or cooperatives law is not the skill. The skill is assembling a lot a buyer has specified, and paying members on time.
+- **Dairy collection.** The tester at the village society or chilling centre who records litres, fat, and solids-not-fat. Cooperative unions and private dairies both depend on that person. A wrong test is a payment dispute the same day.
+- **Mill quality.** Moisture and foreign matter at a rice or dal mill, and the decision to reject before the lot is milled. The buyer's sheet, not general farm experience, is the skill.
+- **Cold store operators.** Temperature logs and stock rotation in potato and other stored crops. Downtime is a quality event. The season is a few loading weeks and a long release.
+- **Food-business and export desks.** A food business under the Food Safety and Standards Act needs people who can keep the licence and the process record. Export packhouses add residue sampling and Agricultural and Processed Food Products Export Development Authority or marine-product documents. AGMARK grading, where a commodity uses it, is a different mark from an FSSAI licence.
 
-- **Aggregation.** Field staff and agents who assemble small lots, record weight, and pay farmers. The skill is trust plus an accurate weighment. A mistake here is a dispute or a bad lot entering the chain.
-- **Grading and quality.** People who apply a buyer's specification to moisture, size, damage, or residue samples. The skill is the specification, not general farm knowledge.
-- **Condition and storage.** Operators of cold rooms and dry stores. The skill is temperature, humidity, and stock rotation. Downtime is a quality event, not only a maintenance event.
-- **Processing and packing.** Line staff who run food-safety steps the buyer will audit. The skill is the documented process, including what to do when a lot fails.
-- **Dispatch and collection.** Coordinators who match vehicles, documents, and invoices. The skill is closing the loop between a truck that left and cash that arrived.
+## Where the skill gates throughput
 
-Seasonal peaks mean some of this work is hired for weeks. A permanent headcount planned on the harvest week will be idle later. A harvest week planned with the lean-season headcount will miss lots.
+Ask which stage returns lots or delays payment. In many yards the missing skill is assaying, which is also why an e-NAM listing may not produce a buyer in another mandi. In dairies the missing skill is a tester on the morning shift. In export grapes it is a sampler who can follow the destination sheet. Training aimed at a different stage will not move shipments.
 
-## Skills that limit throughput
-
-Ask which stage rejects lots or makes the buyer wait. That stage's skill is the constraint. Common limits are graders who cannot apply the buyer's sheet, technicians who cannot restore a cold room the same day, and clerks who cannot produce the document a checkpoint asks for. Training aimed at a different stage will not move volume.
-
-The [bottleneck review](/blog/agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597) is the operating test. The [founder guide](/blog/agri-value-chains-for-founders-and-operators-morth-nic-20260330-717) is where this hiring choice sits in the weekly cadence.
-
-## Scope
-
-This page states no employment total, no wage, and no claim that a skill programme has changed incomes. It maps roles to stages so a team can hire against a constraint.
+The operating test is the [bottleneck review](/blog/agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597). How this hiring choice sits in a week is on the [founder guide](/blog/agri-value-chains-for-founders-and-operators-morth-nic-20260330-717).

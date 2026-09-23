@@ -3,7 +3,7 @@ id: "gic-20260330-117"
 lang: "en"
 translationOf: null
 title: "What a quarterly change in India's agri value chains has to look like"
-description: "A quarterly change is a movement in volume, price gap, rejects, time, or cash on one crop path. This page reports no checked quarter."
+description: "A quarterly change shows up in mandi arrivals, procurement, a trade notice, or a fee. This page has not checked this quarter."
 slug: "agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,41 +12,27 @@ tags:
   - "what-changed-this-quarter"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A quarter changes an agri value chain in India only when a figure an operator already tracks moves enough to change a buying, selling, or stocking decision. A new sentence about agriculture is not that figure.
+A quarter changes an Indian agri value chain when a figure on one crop path moves enough to change buying, selling, or stocking. A speech about agriculture does not do that. This page has not read Agmarknet, a procurement release, or a Directorate General of Foreign Trade notification for the quarter, and it reports no shift.
 
-## What would count as a change
+## Where a real change shows up
 
-Hold the comparison to one crop, one origin district or market, and one buyer. On that path, a quarterly change shows up in at least one of these:
+Hold the comparison to one commodity, one mandi or plant, and one buyer. In India the buyer is often a commission agent, a state procurement centre, a dairy union, or an exporter, and those are different paths.
 
-- Volume arrived or shipped, set against the same weeks of the previous season.
-- The gap between the price paid at collection and the price received from the buyer.
-- The share of lots rejected or downgraded for moisture, damage, size, or residue.
-- The days a lot waits before it is cooled, processed, or dispatched.
-- The days between dispatch and collection of the invoice.
+- **Mandi trade.** Arrivals and the modal price at the same market yard, set against the same weeks last season. Agmarknet is the public series for many Agricultural Produce Market Committee yards. A national paragraph that mixes crops is not that series.
+- **Rice and wheat.** For paddy and wheat, a change can be whether the purchase centre is open, which lots are accepted against the Centre's minimum support price, and how fast the Food Corporation of India or the state agency pays. Horticulture does not have that offtake.
+- **Dairy.** Fat and solids-not-fat at the village collection point, litres accepted, and the days until the society or private dairy pays. Flush and lean seasons are the calendar. A quarter that matches last year's flush is continuity.
+- **Export crops.** A new residue limit, a packhouse rejection, or a foreign-trade notification that moves the commodity from free to restricted. The notification is the change. A rumour of a ban is not.
+- **The fee and the paper.** A state marketing amendment that changes the yard fee, the license, or whether the lot may be sold outside the yard.
 
-If none of those moved, the quarter did not change the chain you run. A speech, a committee, or a neighboring crop can still have moved.
+## What to leave out
 
-## What to leave out of the comparison
-
-A harvest week that resembles last year's harvest week is the calendar doing its job. A tender that is announced and not awarded is a document. A national series that mixes crops will not tell you whether your lots cleared. Weather commentary matters only after you can point to volume, quality, or delay on your path.
+Kharif and rabi peaks repeat. An e-NAM login at a mandi that still does not assay lots has not changed price discovery. A scheme announcement that has not reached this purchase centre or this mill is not an operating change. Road-ministry and consulting homepages are not records of this chain, so they are not used here.
 
 ## How to close the quarter
 
-Write the five figures for the latest 90 days and for the same 90 days a year earlier. Record the unit and the place. If a figure is missing, leave it blank. A blank cell is a better operating record than a borrowed average.
-
-## Scope
-
-This page does not report a checked change for any quarter. It does not read market bulletins or ministry releases. It states the test a founder can apply before using the words "what changed."
-
-## Related reading
-
-- [What counts as evidence](/blog/agri-value-chains-evidence-snapshot-morth-nic-20260330-677)
-- [Market signals worth logging](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197)
-- [A 90-day operating checklist](/blog/agri-value-chains-next-90-days-checklist-morth-nic-20260330-477)
+Write arrivals or intake, the price gap from farm gate to buyer, reject share, days before cooling or milling, and days to cash. Use the same weeks a year earlier. If the cell is empty, leave it empty. The [evidence page](/blog/agri-value-chains-evidence-snapshot-morth-nic-20260330-677) names the public records. The [signal brief](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197) is the weekly version of the same list.

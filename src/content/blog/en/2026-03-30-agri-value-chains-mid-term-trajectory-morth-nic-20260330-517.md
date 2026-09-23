@@ -3,7 +3,7 @@ id: "gic-20260330-517"
 lang: "en"
 translationOf: null
 title: "Mid-term questions for India's agri value chains"
-description: "Ask which handoffs get shorter or more specified over three to five years. This page does not state a trajectory."
+description: "Ask whether the crop stays in the mandi, the procurement centre, or an export specification. No three-year forecast is stated."
 slug: "agri-value-chains-mid-term-trajectory-morth-nic-20260330-517"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,34 +12,27 @@ tags:
   - "mid-term-trajectory"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A mid-term trajectory for an agri value chain is a hypothesis about three to five years: which handoff gets shorter, which gets more expensive, and which buyer specification gets tighter. It is a hypothesis you date and revisit. It is not a forecast this page is willing to sign.
+A mid-term view of an Indian agri value chain is a set of questions about three to five years, dated and open to being wrong. This page states no growth rate and no end state for Indian agriculture.
 
-## Questions that deserve a three-year view
+## Questions worth keeping
 
-Stay on one crop path.
+Stay on one commodity and one state.
 
-- Will more of the crop be graded before the first sale, or will grading stay at the plant?
-- Will holding shift from the open yard into a cold room or a dry store you can name?
-- Will a larger share be milled, packed, or otherwise processed before it reaches the buyer you have today?
-- Will that buyer add residue, traceability, or pack specs you do not meet now?
-- Will the catchment's harvest window move enough, under weather you have already seen, to change when the plant must run?
-- Will the people who grade and maintain equipment still be hireable in that catchment? The [jobs page](/blog/agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397) is the present-tense version of this question.
+- Will the first buyer remain the commission agent in the mandi, a farmer producer organisation with working capital, or a processor's direct purchase under that state's APMC Act? The 2020 attempt at a national trade area outside mandis was repealed in 2021, so the answer is a state-law answer.
+- For paddy or wheat, will the public purchase centre still be the outlet, or will more of the crop stay in trade and milling? Those are different plants.
+- Will horticulture in this district still be sold by sight, or will a packhouse grade it the way a dairy already pays on fat and solids-not-fat?
+- Will buyers in the destination market tighten residue or traceability rules on grapes, spices, basmati, or shrimp faster than domestic mandis do?
+- Will stored commodities in this belt move onto electronic negotiable warehouse receipts, and will banks finance that stock? That changes who can hold potato, pulses, or grain through the lean months.
+- Will e-NAM participation at this mandi include assaying, or only a listing? A listing without a grade does not create a buyer in another state.
+- Can you still hire testers, mill QC, and packhouse samplers in this catchment? The present-tense map is the [jobs page](/blog/agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397).
 
-Each answer should name the evidence that would change your mind: a contract clause, a utilization figure, a buyer's specification sheet, a hiring record. An answer that names only a hope is not a trajectory.
+Each line needs the record that would change your mind: a state amendment, a procurement calendar, a buyer specification, a warehouse registration, or your own intake. A line with no record is a hope.
 
-## What to do with the hypothesis
+## How to revisit it
 
-Write it in six lines, one per question, with the date. Review it once a year against your own lots, not against a sector essay. If the lots contradict the line, replace the line. A slide that cannot be retired is a slogan.
-
-Comparisons with other countries belong on the [benchmark page](/blog/agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277), and only for the same handoff. Spend that would have to follow a true hypothesis belongs on the [capex page](/blog/agri-value-chains-capex-cycle-watch-morth-nic-20260330-357). Places where a founder might act sooner are categories on the [opportunity page](/blog/agri-value-chains-opportunity-landscape-morth-nic-20260330-637), still without a market size.
-
-## Scope
-
-This page states no growth rate and no end-state for Indian agriculture. It gives the questions a mid-term note has to answer before anyone calls it a trajectory.
+Rewrite the six lines once a year from your lots and from the Act or notification you re-read. Retire a line the lots contradict. Comparisons with other countries, for the same handoff only, belong on the [benchmark page](/blog/agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277). Spend that would follow a true line belongs on the [capex page](/blog/agri-value-chains-capex-cycle-watch-morth-nic-20260330-357).

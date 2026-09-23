@@ -3,7 +3,7 @@ id: "gic-20260330-437"
 lang: "en"
 translationOf: null
 title: "The regulatory stack around India's agri value chains"
-description: "Market rules, food rules, warehouses, and buyer specs sit on the same lot. This page does not forecast new regulation."
+description: "State APMC Acts, FSSAI, WDRA, AGMARK, APEDA, and DGFT notices sit on one lot. No new regulation is forecast."
 slug: "agri-value-chains-regulatory-outlook-morth-nic-20260330-437"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,33 +12,25 @@ tags:
   - "regulatory-outlook"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-Regulation of an agri value chain in India is a stack. Market rules, food rules, warehouse practice, movement documents, and the buyer's own specification can all stop the same lot. An outlook that names only one layer will miss the layer that actually holds the truck.
+Regulation of an Indian agri value chain is a stack of state marketing law, food law, warehouse law, grade marks, and trade notifications. An outlook that names only one layer will miss the layer that stops the lot. This page does not forecast a new rule.
 
-## The layers on one lot
+## The stack, in the order a lot meets it
 
-Read them in the order the lot meets them.
+1. **State APMC Act.** Who may buy in the notified market area, what the market fee is, and whether a direct sale or a private yard is allowed. The Act is state law. e-NAM is a trading screen on mandis that participate. It is not a substitute Act.
+2. **Essential Commodities Act, 1955.** Stock limits, when a notification imposes them, cap what a trader or processor may hold. The 2020 amendment that had relaxed this was repealed with the farm laws in 2021. The principal Act remains the inventory rule.
+3. **AGMARK.** Grade standards under the Agricultural Produce (Grading and Marking) Act, 1937, administered by the Directorate of Marketing and Inspection. A grade mark is not a food-safety licence.
+4. **Food Safety and Standards Act, 2006.** Once the activity is a food business, manufacturing, storage, or distribution needs registration or a licence from the Food Safety and Standards Authority of India or the state authority. Primary agricultural production is not the same step as running a mill or a dairy plant.
+5. **Warehousing (Development and Regulation) Act, 2007.** Registered warehouses may issue negotiable warehouse receipts, including electronic receipts used by banks. An unregistered godown is only a shed.
+6. **Export authorities and trade policy.** Scheduled agricultural and processed foods go through the Agricultural and Processed Food Products Export Development Authority. Marine products go through the Marine Products Export Development Authority. The Directorate General of Foreign Trade notification decides whether the commodity may leave the country. A basmati shipment can also sit inside a geographical indication and a residue-monitoring practice.
+7. **Tax on the step.** Unprocessed produce and a milled, packed, or branded food are not treated the same way under GST. The rate is an HSN question for the step you perform. This page states no rate.
 
-1. **Who may buy and sell, and where.** State marketing practice, market-yard fees, and trader licensing decide the first sale for many crops. This layer changes at a state boundary. See [why chains differ by state](/blog/agri-value-chains-state-wise-patterns-morth-nic-20260330-317).
-2. **How the lot is held.** Warehouse registration, fumigation, and stock records matter once you store in your own name or finance stock.
-3. **What the food is allowed to be.** Processing, packing, additives, and labels apply when the lot stops being raw produce and becomes a food product. The plant's license is not the farmer's permit.
-4. **What the buyer adds.** Residue limits, traceability, and packaging specs in a purchase order can be stricter than the domestic rule. Export buyers often are. A legal lot can still be a rejected lot.
-5. **How it moves.** Weight, tax, and transport documents have to match the lot that was graded. Road movement is a leg of the chain. A missing paper at dispatch is an operating stop, whatever the ministry that designed the road.
+The 2020 farm laws, which had tried to create a trade area outside APMC yards and a national contract-farming frame, were repealed in 2021. Contract farming and out-of-mandi sale depend on the state law now in force.
 
-A founder should keep one sheet: layer, document name, issuer, and the stage at which someone asks for it. That sheet is the regulatory position of the business. A news item is not.
+## A review without a prediction
 
-## What an outlook can be, without a forecast
-
-An outlook here means a review date. Each quarter, check whether any document on the sheet has a new version, a new fee, or a new counterparty who asks for it. Record "no change observed" when that is the case. Do not fill the review with predictions about bills that are not notified.
-
-How to tell a real shift from an announcement is on the [policy-shift page](/blog/agri-value-chains-policy-shift-explainer-morth-nic-20260330-157). What a public agency can and cannot conclude is on the [policy-team page](/blog/agri-value-chains-for-policy-teams-morth-nic-20260330-757).
-
-## Scope
-
-This page does not forecast new regulation and does not summarize a bill. It lists the stack a chain already operates under, so a later change has a place to land.
+Each quarter, check whether any document you already use has a new fee, a new stock limit, or a new foreign-trade status. Record "no change observed" when that is true. The way to separate a speech from an operating change is on the [policy-shift page](/blog/agri-value-chains-policy-shift-explainer-morth-nic-20260330-157). What a department can conclude from a yard visit is on the [policy-team page](/blog/agri-value-chains-for-policy-teams-morth-nic-20260330-757).

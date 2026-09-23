@@ -3,7 +3,7 @@ id: "gic-20260330-677"
 lang: "en"
 translationOf: null
 title: "What counts as evidence in India's agri value chains"
-description: "A usable record has a date, a place, a crop, and a unit. This page explains that test and is not a data snapshot."
+description: "Agmarknet, CACP, FCI procurement, DGFT notices, and the state APMC Act are the records. This page reprints none of them."
 slug: "agri-value-chains-evidence-snapshot-morth-nic-20260330-677"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,37 +12,29 @@ tags:
   - "evidence-snapshot"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-Evidence about an agri value chain is a record with a date, a place, a crop, and a unit. A confident paragraph is not a record. This page is the test for a record. It is not a snapshot of Indian agriculture, and it does not carry figures from a release.
+Evidence about an Indian agri value chain is a record with a date, a mandi or a plant, a commodity, and a unit. This page names the records that can meet that test. It reprints none of them, and it does not carry a price, an arrival, or a procurement total.
 
-## A record that can change a decision
+## Records that can change a decision
 
-Keep a row only if you can fill all of these:
+Use a row only when you can open the underlying table or notification.
 
-- **Date** the observation was made, not the date a summary was written.
-- **Place** at the scale you operate: market, plant, warehouse, or district. "India" is not a place for an operating decision.
-- **Crop and grade**, in the words the buyer uses.
-- **Unit**: tons, lots, rupees per unit, hours, or days. A direction ("up") without a unit is not evidence.
-- **Who wrote it down**, and whether they were a party to the trade.
+- **Mandi trade.** Agmarknet arrivals and prices for a named market yard. The modal price without the market fee and the commission still needs a note, because the farmer's realization is after those charges.
+- **Support prices and procurement.** Commission for Agricultural Costs and Prices reports for the price, and Food Corporation of India or state-agency figures for what was actually bought. A support price with no procurement column is only a price.
+- **Trade status.** Directorate General of Foreign Trade notifications for whether a commodity is free, restricted, or prohibited. Quote the notification, not a news retelling.
+- **The state Act.** The Agricultural Produce Market Committee statute and the fee notification for that state. e-NAM pages do not amend it.
+- **Food, grade, and storage.** The Food Safety and Standards Act licence for the step, an AGMARK grade if the commodity uses one, and a Warehousing Development and Regulatory Authority registration if you claim a negotiable receipt.
+- **Export.** APEDA procedures for scheduled products, MPEDA procedures for marine products, and the buyer's residue sheet. A homepage is not a residue result.
+- **Dairy.** Union or dairy payment statements showing litres, fat, and solids-not-fat. A national milk sentence does not settle a society.
 
-A price without a place, a loss percentage without a crop, and a ranking without a year all fail the test. So does a homepage that was paired with this topic by a publishing template. Pairing is not a citation.
+A road-ministry page, a consulting homepage, and a bank research landing page are not these records. They were paired with earlier drafts of this topic by rotation. They are omitted here rather than replaced with a link this text does not use.
 
-## Records that earn a place in the file
+## What a usable row contains
 
-The rows that change buying and selling are the ones on the [signal brief](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197): intake, spread, rejects, dwell, and payment days. A quarterly comparison of those rows is the [what-changed test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117). An investor who asks for evidence should be shown those rows, not this essay. The question list is on the [investor page](/blog/agri-value-chains-for-investors-morth-nic-20260330-797).
+Date of the observation, place at mandi or plant scale, commodity in the buyer's words, unit, and who wrote it down. "India" is not a place for an operating decision. A direction without a unit is not a row. The series worth keeping week to week are on the [signal brief](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197). When those rows may be called a quarterly change is the [what-changed test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117).
 
-Secondary commentary can suggest where to look. It becomes evidence only when you can open the underlying table and match date, place, crop, and unit. Until then, keep it out of the decision file.
-
-## How to file a gap
-
-If the cell is empty, write the gap in one line: which figure, which place, which dates. A gap is part of the record. Replacing it with an industry average imports someone else's crop into your account.
-
-## Scope
-
-No table of arrivals, prices, or losses is published here. The page tells you when a future table would be usable.
+If the cell is empty, write the gap: which figure, which mandi, which dates. Do not fill it with another crop's average.

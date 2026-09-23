@@ -3,7 +3,7 @@ id: "gic-20260330-197"
 lang: "en"
 translationOf: null
 title: "Market signals worth logging in India's agri value chains"
-description: "Log arrivals, spreads, rejects, dwell time, and payment days. This brief does not publish this period's market readings."
+description: "Agmarknet prices, procurement, dairy fat tests, and export rejections are the signals. This page prints no current reading."
 slug: "agri-value-chains-market-signal-brief-morth-nic-20260330-197"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,35 +12,24 @@ tags:
   - "market-signal-brief"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A market signal in an agri value chain is a figure produced by trade. Commentary about the sector is not a signal. Founders in India can log a short set of figures on one crop path and ignore the rest until those figures move.
+A market signal is a figure produced by an Indian trade, not a paragraph about Indian agriculture. Log one commodity and one place. This brief prints no current price, arrival, or reject rate.
 
-## Signals that sit on the chain
+## Signals that match the path
 
-Keep the log to one origin and one buyer so the series is comparable.
+- **Mandi yards.** Daily arrivals and the modal price at a named Agricultural Produce Market Committee market. Agmarknet carries many of those series. The spread that matters to a farmer is the price after the commission agent's charge and the market fee, not the modal price alone.
+- **Procurement crops.** For paddy and wheat, the gap between the mandi price and the minimum support price, and whether lots are actually accepted at the centre. A support price with no open centre is a headline.
+- **Dairy.** Litres, fat, and solids-not-fat at the society or chilling centre, plus days to payment. Cooperative unions and private dairies both run this test. A city retail price for pouch milk is a different market.
+- **Storable commodities.** Potato releases from cold stores, or cotton offered to the Cotton Corporation of India when prices sit at support, tell you about stocks. A fresh-vegetable mandi does not.
+- **Export lots.** Packhouse acceptance and residue failure on grapes, chilli, spices, basmati, or shrimp. The buyer is a foreign specification and, for marine products, the Marine Products Export Development Authority's regime rather than a domestic yard.
+- **Futures.** Some crops have had contracts on Indian commodity exchanges. Use a contract only if it is open for your crop this week. A suspended contract is not a hedge.
 
-- **Arrivals or intake.** Lots received at the yard, the collection centre, or the plant, in a unit you actually use.
-- **Spread.** Price paid at collection minus price paid by the buyer, or the reverse if you sell forward. The spread is handling, loss, freight, and margin together. Split it only when you can measure a piece.
-- **Rejects and downgrades.** Share of lots the buyer refuses or reprices, with the reason written in the buyer's words.
-- **Dwell.** Hours or days from intake to cooling, milling, packing, or dispatch. Perishable crops spend money in this interval.
-- **Payment days.** Days from invoice or delivery to cash in the account, not the days printed on the contract.
+## Signals that point at the wrong chain
 
-A signal is useful when you can name who recorded it and on which date. A figure without a place is a rumour with a decimal.
+A retail tomato price in a city you do not supply does not set your realization in the producing mandi. An e-NAM screen without assaying does not tell you the lot will clear in another state. Edible-oil import parity can dominate domestic soybean or mustard crush, so a mustard mandi and a palm-oil cargo are related and still not the same series.
 
-## Signals that send you to the wrong decision
-
-A retail price in a city you do not supply does not tell you your realization. An export enquiry that is not a purchase order does not tell you demand. A futures quote for a crop you do not hedge is context, and it is not your margin. Social-media volume about a crop shortage is not arrivals.
-
-## A log a small team can keep
-
-One row per week is enough: date, crop, place, volume, collection price, buyer price, reject share, dwell, payment days. Leave a cell empty when you did not observe it. Review the row against the same week last season before you change a purchase plan. The [quarterly test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117) uses the same figures. The [evidence page](/blog/agri-value-chains-evidence-snapshot-morth-nic-20260330-677) says what makes a row usable.
-
-## Scope
-
-This brief does not publish readings for the current period. It names the series worth keeping. It does not treat a registry homepage as a market report.
+Keep one weekly row: date, commodity, mandi or plant, arrivals or litres, farmer price, buyer price, reject share, and payment days. The [quarterly test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117) compares that row with last season. The [evidence page](/blog/agri-value-chains-evidence-snapshot-morth-nic-20260330-677) says which public table is allowed to fill a cell.

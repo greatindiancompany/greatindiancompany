@@ -3,7 +3,7 @@ id: "gic-20260330-357"
 lang: "en"
 translationOf: null
 title: "How to watch capex in India's agri value chains"
-description: "Watch packhouses, cold rooms, and processing lines, and whether they are used. This page does not call a capex cycle."
+description: "Rice mills, potato cold stores, dairies, and packhouses are the assets. This page does not call a capex cycle or quote a scheme outlay."
 slug: "agri-value-chains-capex-cycle-watch-morth-nic-20260330-357"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,40 +12,25 @@ tags:
   - "capex-cycle-watch"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-Capex in an agri value chain is a building or a machine that sits between the farm and the buyer. A cycle is that spend rising, then being used, across more than one season. Announced projects are not yet a cycle.
+Capex in an Indian agri value chain is a mill, a cold store, a chilling centre, a packhouse, or a warehouse that sits on a named crop. A cycle is that spend being commissioned and then filled for more than one season. This page does not say a cycle is underway, and it quotes no scheme outlay.
 
-## The assets the chain actually buys
+## Assets tied to a crop
 
-Group spend by the job it does, not by the word "infrastructure."
+- **Rice and dal mills.** Paddy from kharif procurement states and pulses from mandi trade. The machine earns money on months of intake, not on a national production sentence.
+- **Potato cold stores.** In belts such as western Uttar Pradesh and Hooghly in West Bengal, the store loads after harvest and releases through the year. The asset is the release calendar. An empty store in the loading weeks is the failure mode.
+- **Dairy chilling and processing.** Village collection needs a bulk milk cooler close enough that evening and morning milk still meet the fat and solids-not-fat test. A processing plant without that catchment is a building.
+- **Export packhouses.** Grapes in Maharashtra and similar perishable exports need a packhouse on the residue and traceability sheet of the destination. A domestic shed is not that asset.
+- **Marine processing.** Farmed shrimp on the Andhra coast moves through plants under marine-export health controls. The licence is not an APMC licence.
+- **Warehouses that can issue receipts.** A store registered with the Warehousing Development and Regulatory Authority can support a negotiable warehouse receipt. An ordinary godown cannot. NABARD refinance and bank credit follow the receipt, not the shed's paint.
+- **Primary processing at the farm gate.** Cleaning, grading, and drying units financed under food-processing schemes or the Agriculture Infrastructure Fund. The sanction is not utilization.
 
-- **Collection and grading.** Sheds, weighing, and sorting so small lots become a lot a buyer will price.
-- **Holding conditions.** Cold rooms, dry warehouses, and silos. The asset earns money only while it keeps quality inside the buyer's range.
-- **Transformation.** Mills, packhouses, and processing lines. Throughput has to match the catchment, not a national crop total.
-- **Movement.** Vehicles and loading gear owned by the chain, as distinct from freight you hire. Most chains hire the truck and own the room.
+## What would show a cycle
 
-A subsidy or a loan can change who funds the asset. It does not change whether the asset has crop. Ask who supplies volume in the weeks the room or the line is supposed to run.
+Three observations together, over more than one season: orders or ground-breaking you can place on a map, commissioning, and tons or litres actually handled against the design. A foundation stone without the third observation is an announcement. Ministry of Food Processing Industries support and the Agriculture Infrastructure Fund change who might fund the asset. They do not create crop.
 
-## What would show that spend is a cycle
-
-Look for three observations together, over more than one season:
-
-1. Orders or ground-breaking for the same asset type in catchments you can name.
-2. Commissioning, not only foundation stones.
-3. Utilization: days full, tons handled, or hours run, against the design figure.
-
-One of the three is a headline. All three, repeated, is a cycle you can discuss with a lender. Idle capacity after inauguration is the ordinary failure mode. The [bottleneck page](/blog/agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597) is where to look when the building exists and the lots still wait.
-
-## A watch note you can keep
-
-For each asset, write owner, location, crop, design capacity, season it is meant to serve, and the latest utilization figure you have seen with a date. If utilization is unknown, write unknown. Do not convert a press note into a capacity number.
-
-## Scope
-
-This page does not say a capex cycle is underway, and it quotes no project cost. Implications for a model that depends on these assets are on the [investment page](/blog/agri-value-chains-investment-implications-morth-nic-20260330-237).
+For each asset write owner, district, commodity, season, design capacity, and the latest handled volume you have seen with a date. Unknown stays unknown. The [bottleneck review](/blog/agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597) is what to inspect when the building exists and lots still wait. Balance-sheet consequences are on the [investment page](/blog/agri-value-chains-investment-implications-morth-nic-20260330-237).

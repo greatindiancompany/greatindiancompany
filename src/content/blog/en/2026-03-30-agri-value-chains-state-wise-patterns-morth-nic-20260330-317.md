@@ -3,7 +3,7 @@ id: "gic-20260330-317"
 lang: "en"
 translationOf: null
 title: "Why India's agri value chains differ by state"
-description: "Crop, market rules, power, and procurement change the chain by state. This page does not rank states or quote a survey."
+description: "Punjab procurement, Maharashtra grapes and onion, Gujarat dairy, and Andhra shrimp are different chains. No state ranking."
 slug: "agri-value-chains-state-wise-patterns-morth-nic-20260330-317"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,31 +12,26 @@ tags:
   - "state-wise-patterns"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-The same crop can be a different business two states away. A national sentence about agri value chains in India hides the yard, the power connection, and the buyer who actually take the lot.
+The same crop can be a different business across a state border because the Act, the buyer, and the harvest week change. This page does not rank states and does not quote a survey. It names patterns a founder can check before treating India as one chain.
 
-## What changes when the state changes
+## Patterns tied to a place
 
-You do not need a league table to see the split. Walk one crop and write what differs:
+These are institutional patterns, not league tables.
 
-- **What is grown and when.** A harvest calendar fixes the week cash goes out and the week a plant has raw material. Neighboring states often do not share that week.
-- **Where the lot may be sold.** Agricultural marketing practice is state-administered. Fees, licensed traders, and the role of the market yard are local facts. A model copied from another state can be non-compliant on arrival.
-- **Who procures.** Public procurement, a processor, a trader, or an exporter can be the marginal buyer. The identity of that buyer sets quality rules and payment days.
-- **Power, water, and roads at the site.** Cold storage and processing stop when electricity or a motorable approach is unreliable. That constraint is a place, not a national average.
-- **Distance to the demand you named.** A coastal exporter and an inland mill do not share freight, time, or the documents due at dispatch.
+- **Punjab and Haryana.** Paddy and wheat move through a dense public procurement system into the central pool. The purchase centre, not a processor, is the marginal buyer in the season. A model built for that offtake fails in a state that does not run it.
+- **Uttar Pradesh.** Potato cold stores hold the crop and release it over the year. Sugarcane is paid at the central fair and remunerative price, and the state also uses a state advised price. The mill and the cold store are the chain, not the wheat mandi.
+- **Madhya Pradesh.** Wheat procurement into the public system is a real outlet beside mandi trade. Assume nothing about paddy from that fact.
+- **Maharashtra.** Onion moves through large producing mandis in the Nashik belt. Export grapes move through packhouses and residue tests. Sugar cooperatives are a third chain, with cane payment rather than a daily mandi.
+- **Gujarat.** Dairy cooperatives on the Anand pattern, village society to district union to federation, are the worked example of a smallholder chain that tests and pays. Groundnut and cotton are different books.
+- **Andhra Pradesh and Telangana.** Paddy procurement and rice milling sit beside chilli mandis such as the Guntur belt and, on the coast, farmed shrimp under marine-export controls. Those three do not share a licence.
+- **Kerala and the hills.** Spices, coconut, rubber, and plantation crops move through commodity boards and auctions more than through cereal procurement. A paddy-centre checklist is the wrong tool.
+- **Karnataka.** Coffee and horticulture, including grapes and vegetables into city wholesale, sit beside ragi and maize that do not enter the rice-wheat pool in the same way.
 
-## How to compare two states without ranking them
+## What the Act changes
 
-Choose two catchments you might actually operate. For each, fill crop, harvest weeks, first point of sale, principal buyer, typical payment days, and the permit or fee you must pay to trade. Add one line on power backup if you cool or process. The state with the fuller sheet is the one you understand. It is not automatically the one you should enter.
-
-National schemes and national platforms still land in a state office and a local yard. Read the [policy-shift page](/blog/agri-value-chains-policy-shift-explainer-morth-nic-20260330-157) before you treat a central announcement as a local operating change.
-
-## Scope
-
-This page does not rank states, name a leading state, or cite a survey. It lists the differences a founder should write down before treating India as one chain. The [regulatory stack](/blog/agri-value-chains-regulatory-outlook-morth-nic-20260330-437) covers the kinds of rules that vary.
+Each state has its own Agricultural Produce Market Committee law: who may trade, what fee is due, and whether a direct purchase or a private yard is lawful. e-NAM is an electronic layer on mandis that choose to join. It does not replace the state Act. The [policy-shift page](/blog/agri-value-chains-policy-shift-explainer-morth-nic-20260330-157) is how to tell an amendment from a speech. The [regulatory stack](/blog/agri-value-chains-regulatory-outlook-morth-nic-20260330-437) is the paper a lot meets after the yard.

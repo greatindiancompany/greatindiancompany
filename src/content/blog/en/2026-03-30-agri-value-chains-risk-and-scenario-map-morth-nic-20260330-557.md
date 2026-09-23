@@ -3,7 +3,7 @@ id: "gic-20260330-557"
 lang: "en"
 translationOf: null
 title: "A scenario map for risk in India's agri value chains"
-description: "Weather, price, logistics, buyer default, and compliance hit volume and cash differently. No probabilities are assigned."
+description: "Monsoon, stock limits, export notices, power, and residue failure hit different lines. No probabilities are assigned."
 slug: "agri-value-chains-risk-and-scenario-map-morth-nic-20260330-557"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,33 +12,29 @@ tags:
   - "risk-and-scenario-map"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A scenario is a way the chain can break, written so you can see what happens to volume, quality, and cash. It is not a probability, and this page assigns none.
+A scenario is a way an Indian chain can break, written so volume, quality, and cash each have a place. This page assigns no probability and no loss percentage.
 
-## Five breaks that hit different lines
+## Breaks that hit different lines
 
-Use your own crop. Describe each break in one sentence that includes a place.
+Use your commodity and your district.
 
-1. **Weather on the standing crop or at harvest.** Volume arrives early, late, damaged, or short. The first pain is intake. The second pain is a plant or a contract sized for a normal week.
-2. **Price moving against an open position.** You have bought and not sold, or sold and not covered. The pain is margin, even when tons move on time.
-3. **A logistics stop.** A vehicle, a queue, a failed cold room, or a road closure adds days. Perishable quality falls while the invoice date slips. The pain is dwell and rejects together.
-4. **A buyer who does not take or does not pay.** The lot exists. The cash does not. The pain is receivables and resale into a weaker outlet.
-5. **A compliance miss.** A residue test, a label, a yard rule, or a document fails. The lot may be legally unsaleable in that channel. The pain is a write-off plus the next season's corrective cost.
+1. **Monsoon on the standing crop or at harvest.** Kharif arrival comes early, late, or wet. Paddy that arrives wet fails the mill and can fail a procurement acceptance. The first pain is intake. The second is a plant sized for a normal week.
+2. **Support price versus the mandi.** If the centre stops taking paddy or wheat, or never took your crop, the mandi price is the price. Cotton can swing the same way around Cotton Corporation operations. The pain is margin on stock you already own.
+3. **A stock limit or a trade notification.** An Essential Commodities Act limit forces sales. A Directorate General of Foreign Trade notice can close an onion, rice, or sugar outlet that your mandi had been feeding. The pain is a sudden domestic surplus of a crop you cannot ship.
+4. **Power and dwell.** A potato cold store or a bulk milk cooler that stops, or a truck that waits at a yard, spends the quality of a perishable. The pain is rejects plus a slipped invoice.
+5. **The intermediary does not pay.** The commission agent, the dairy union, or the importer delays. Farmers still expect settlement. The pain is your payable and your receivable at once.
+6. **Residue or health failure.** An export lot of grapes, spices, basmati, or shrimp fails the destination test. The domestic mandi may still take a lower grade. The pain is the gap between the export contract and that grade.
+7. **Cane payment stress.** Where a mill's payable to growers stretches, the next season's planting and your allied business both feel it. This page does not identify a mill.
 
-These five can arrive together. A late, wet harvest often brings price swings and slower movement. Map them separately first so you can see which line in the accounts each one touches.
+A late wet kharif often arrives with price swings and slower movement. Map the lines separately so the accounts show which one moved.
 
-## What to write beside each scenario
+## What to write beside each break
 
-Three fields are enough: the trigger you can observe, the account line it hits, and the action you can take in a week. "Monitor the situation" is not an action. A pre-agreed second buyer, a stock limit, or a stop on further purchase is an action.
+The trigger you can observe, the account line it hits, and the action available in a week. A second buyer, a stock ceiling you set yourself, or a stop on further purchase is an action. "Watch the monsoon" is not.
 
-The weekly figures that tell you a scenario has started are the [market signals](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197). The 90-day pass over the same lines is the [checklist](/blog/agri-value-chains-next-90-days-checklist-morth-nic-20260330-477). An investor reading the map should use the [diligence questions](/blog/agri-value-chains-for-investors-morth-nic-20260330-797) rather than treat this page as a risk score.
-
-## Scope
-
-No likelihood is stated. No loss percentage is stated. The map is a blank structure for a chain you know. Fill it from contracts and lots, or leave it blank.
+Weekly figures that show a break has started are the [market signals](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197). The 90-day pass is the [checklist](/blog/agri-value-chains-next-90-days-checklist-morth-nic-20260330-477). An investor should use the [diligence questions](/blog/agri-value-chains-for-investors-morth-nic-20260330-797) rather than turn this map into a score.

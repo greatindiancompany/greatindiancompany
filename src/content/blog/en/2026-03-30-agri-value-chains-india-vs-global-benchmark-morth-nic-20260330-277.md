@@ -3,7 +3,7 @@ id: "gic-20260330-277"
 lang: "en"
 translationOf: null
 title: "How to compare India's agri value chains with other countries"
-description: "Compare the same handoff: lot size, loss, processing, and buyer specs. This page does not rank India against other countries."
+description: "Compare mandi intermediation, rice and wheat procurement, and dairy quality payment. This page ranks no country."
 slug: "agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-23"
@@ -12,37 +12,23 @@ tags:
   - "india-vs-global-benchmark"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-A comparison of agri value chains is useful when it compares the same handoff in India and in the other country. "India versus the world" as a single score does not tell a founder what to change on a lot.
+A comparison is useful when the same handoff is lined up in India and in the other country. A single "India versus the world" score does not tell a miller or a dairy what to change. This page publishes no ranking and no productivity table.
 
-## Compare the handoff
+## Handoffs that are easy to misread
 
-Pick one crop and one stage. Then line up the same questions:
+- **First sale.** In much of India the first buyer is a commission agent in a regulated mandi, or a state procurement centre for paddy and wheat. A benchmark against a country where the first buyer is a cooperative elevator or a supermarket contract is a benchmark against a different institution. Say so in the table.
+- **Lot size and farmer producer organisations.** Many sellers bring small lots. A farmer producer organisation can be the aggregator on the contract. Compare it with a cooperative or an estate in the other country only if both actually assemble and invoice. A registered FPO with no working capital is not an estate.
+- **Quality payment.** Dairy is the Indian chain that already pays on a measured attribute, fat and solids-not-fat, at collection. Horticulture is often still sold by sight in the yard. Averaging those two into one "Indian quality system" hides the only chain that already grades at the village.
+- **Public stocks.** Rice and wheat move into a public distribution stock. Most countries you might copy do not procure those cereals that way. A processing share copied from them will not describe Punjab paddy.
+- **Export specifications.** Grapes, basmati, spices, and shrimp leave under destination residue or health rules and under APEDA or MPEDA procedures. The domestic mandi of the same district does not apply that sheet. Compare export-to-export, or mandi-to-wholesale, not export-to-mandi.
 
-- How large is a typical lot at the first point of sale, and how many sellers sit behind it?
-- Who grades, and is the grade binding on the buyer?
-- What share of the crop is processed, packed, or exported rather than sold raw, using a definition you write down?
-- How long does the lot take to reach a temperature or a moisture level the buyer accepts?
-- Which residue, traceability, or label rule does the foreign buyer impose that the domestic buyer does not?
+## How to write the row
 
-If the other country answers a different question, you do not have a benchmark. You have two brochures.
+One crop, one stage, two columns. Note the year and the table you used. Leave the cell blank if you did not open it. Dimensions that do not travel include state APMC fees, minimum support price procurement, and stock limits under the Essential Commodities Act. Those belong in a footnote on the India column, not in a pretended common indicator.
 
-## What usually makes the Indian path its own
-
-Many sellers and small lots create an aggregation step before a plant can run. State market practice shapes where that aggregation is allowed to happen. Domestic and export buyers often ask for different documents on the same crop. Those are structural features of the path. They are not a rank, and they are not a reason to copy a plant layout from a country with larger farms or different retail.
-
-A cold chain or a processing share copied from elsewhere fails when the catchment cannot fill it. The [state page](/blog/agri-value-chains-state-wise-patterns-morth-nic-20260330-317) is the reminder that India is not one operating environment. The [mid-term page](/blog/agri-value-chains-mid-term-trajectory-morth-nic-20260330-517) is where a slower change in processing or buyer specs belongs.
-
-## How to write the comparison down
-
-Use one row per question, two columns, and a note on the year and the source of each cell. Empty cells stay empty. A comparison that fills gaps with adjectives is not a benchmark an investor or a plant manager can use.
-
-## Scope
-
-This page publishes no country ranking and no productivity table. It is the frame for a comparison you still have to measure.
+State differences inside India are large enough to break a national average. See [why chains differ by state](/blog/agri-value-chains-state-wise-patterns-morth-nic-20260330-317). A slower question about whether processing or export specs tighten is on the [mid-term page](/blog/agri-value-chains-mid-term-trajectory-morth-nic-20260330-517).
