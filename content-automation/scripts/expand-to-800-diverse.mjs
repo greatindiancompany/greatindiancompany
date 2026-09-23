@@ -1,17 +1,18 @@
 import { randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
-
-const ROOT = process.cwd();
-const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
-const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
-const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
+import {
+  MASTER_COUNT_CAP,
+  commitMastersIfAllowed,
+  contentWriteAllowed,
+  isDirectExecution,
+  refreshContentState,
+  selectAlignedSourceLinks,
+  writeStagedFiles,
+} from './content-write-guards.mjs';
 
 const TARGET_MASTERS_TOTAL = 800;
-
-const startedAt = new Date().toISOString();
-const runId = `diverse-${new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
-const publishDate = new Date().toISOString().slice(0, 10);
 
 function toSlug(value) {
   return value
@@ -39,18 +40,14 @@ function shortDomain(url) {
   }
 }
 
-async function ensureDir(dir) {
-  await fs.mkdir(dir, { recursive: true });
-}
-
 async function readJson(filePath) {
   return JSON.parse(await fs.readFile(filePath, 'utf8'));
 }
 
-async function listMarkdownFiles(dir) {
+async function listMarkdownNames(dir) {
   try {
     const files = await fs.readdir(dir);
-    return files.filter((name) => name.endsWith('.md')).map((name) => path.join(dir, name));
+    return files.filter((name) => name.endsWith('.md'));
   } catch {
     return [];
   }
@@ -75,17 +72,18 @@ function pickField(frontmatter, key) {
   return match[1].replace(/^"|"$/g, '').trim();
 }
 
-async function getExistingMasters() {
-  const files = await listMarkdownFiles(MASTER_ROOT);
+async function getExistingMasters(masterRoot, root) {
+  const names = await listMarkdownNames(masterRoot);
   const masters = [];
 
-  for (const filePath of files) {
+  for (const name of names) {
+    const filePath = path.join(masterRoot, name);
     const raw = await fs.readFile(filePath, 'utf8');
     const { frontmatter } = parseFrontmatter(raw);
     const id = pickField(frontmatter, 'id');
     const slug = pickField(frontmatter, 'slug');
     if (id && slug) {
-      masters.push({ id, slug, filePath: path.relative(ROOT, filePath) });
+      masters.push({ id, slug, filePath: path.relative(root, filePath) });
     }
   }
 
@@ -102,11 +100,19 @@ function makeMasterMarkdown({
   summaryType,
   cluster,
   angle,
-  govLabel,
-  privateLabel,
+  publishDate,
 }) {
   const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
-  const linksYaml = sourceLinks.map((url) => `  - "${url}"`).join('\n');
+  const linksYaml = sourceLinks.length
+    ? `sourceLinks:\n${sourceLinks.map((url) => `  - "${url}"`).join('\n')}\n`
+    : '';
+  const sourceNames = sourceLinks.map((url) => shortDomain(url));
+  const attribution = sourceNames.length
+    ? `public information from **${sourceNames.join('** and **')}**`
+    : 'public information';
+  const sourceSection = sourceLinks.length
+    ? sourceLinks.map((url) => `- ${url}`).join('\n')
+    : '- No registry host aligned with this topic, so no source link is attached.';
 
   return `---
 id: "${id}"
@@ -119,9 +125,7 @@ publishDate: "${publishDate}"
 updatedDate: "${publishDate}"
 tags:
 ${tagsYaml}
-sourceLinks:
-${linksYaml}
-summaryType: "${summaryType}"
+${linksYaml}summaryType: "${summaryType}"
 draft: false
 ---
 
@@ -129,7 +133,7 @@ draft: false
 
 ## Executive Brief
 
-This brief synthesizes public information from **${govLabel}** and **${privateLabel}** to map India-specific developments on **${titleCase(cluster)}**.
+This brief synthesizes ${attribution} to map India-specific developments on **${titleCase(cluster)}**.
 
 ## What Changed
 
@@ -168,8 +172,7 @@ This brief synthesizes public information from **${govLabel}** and **${privateLa
 
 ## Source Links
 
-- ${sourceLinks[0]}
-- ${sourceLinks[1]}
+${sourceSection}
 
 ## Editorial Method
 
@@ -177,140 +180,202 @@ This is an original synthesis for Great Indian Company, based on public-source r
 `;
 }
 
-async function main() {
-  await ensureDir(STATE_ROOT);
+export async function runDiverseExpansion({
+  root = process.cwd(),
+  allowWrite,
+  targetTotal = TARGET_MASTERS_TOTAL,
+  masterCap = MASTER_COUNT_CAP,
+  env = process.env,
+  now = new Date(),
+} = {}) {
+  const writeAllowed = allowWrite ?? contentWriteAllowed(env);
+  const masterRoot = path.join(root, 'src', 'content', 'blog', 'en');
+  const configRoot = path.join(root, 'content-automation', 'config');
+  const stateRoot = path.join(root, 'content-automation', 'state');
+  const publishDate = now.toISOString().slice(0, 10);
+  const startedAt = now.toISOString();
+  const runId = `diverse-${now.toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
 
-  const diverseSources = await readJson(path.join(CONFIG_ROOT, 'source_registry_diverse.json'));
-  const diverseTopics = await readJson(path.join(CONFIG_ROOT, 'thesis_topics_diverse.json'));
+  await fs.mkdir(stateRoot, { recursive: true });
 
-  const existingMasters = await getExistingMasters();
+  const diverseSources = await readJson(path.join(configRoot, 'source_registry_diverse.json'));
+  const diverseTopics = await readJson(path.join(configRoot, 'thesis_topics_diverse.json'));
+  const existingMasters = await getExistingMasters(masterRoot, root);
   const existingMasterCount = existingMasters.length;
 
-  if (existingMasterCount > TARGET_MASTERS_TOTAL) {
+  if (existingMasterCount > targetTotal) {
     throw new Error(
-      `Existing masters (${existingMasterCount}) already exceed target (${TARGET_MASTERS_TOTAL}). Aborting.`,
+      `Existing masters (${existingMasterCount}) already exceed target (${targetTotal}). Aborting.`,
     );
   }
 
-  const additionalMastersNeeded = TARGET_MASTERS_TOTAL - existingMasterCount;
+  const additionalMastersNeeded = targetTotal - existingMasterCount;
 
   if (additionalMastersNeeded === 0) {
+    await refreshContentState({ root, masterRoot, stateRoot });
     console.log(
-      `No-op: already at ${TARGET_MASTERS_TOTAL} English masters. Localization files are not generated.`,
+      `No-op: already at ${targetTotal} English masters. Localization files are not generated. Content index refreshed from the current tree.`,
     );
-    return;
+    return {
+      manifest: {
+        runId,
+        status: 'noop',
+        existingMastersBefore: existingMasterCount,
+        additionalMastersGenerated: 0,
+      },
+    };
   }
 
-  const existingSlugs = new Set(existingMasters.map((item) => item.slug));
-  const existingSeqMax = existingMasters.reduce((max, item) => {
-    const m = item.id.match(/-(\d+)$/);
-    if (!m) {
-      return max;
-    }
-    return Math.max(max, Number(m[1]));
-  }, 0);
-
   const gov = diverseSources.government;
-  const privatePool = [...diverseSources.consulting, ...diverseSources.investmentBanks, ...diverseSources.multilaterals];
+  const privatePool = [
+    ...diverseSources.consulting,
+    ...diverseSources.investmentBanks,
+    ...diverseSources.multilaterals,
+  ];
+  const registryUrls = [...gov, ...privatePool];
 
   if (gov.length === 0 || privatePool.length === 0) {
     throw new Error('Diverse source registries are empty.');
   }
 
-  const generatedMasterPaths = [];
+  const existingSlugs = new Set(existingMasters.map((item) => item.slug));
+  const existingSeqMax = existingMasters.reduce((max, item) => {
+    const match = item.id.match(/-(\d+)$/);
+    if (!match) {
+      return max;
+    }
+    return Math.max(max, Number(match[1]));
+  }, 0);
+
+  const files = [];
   const generatedSlugs = [];
   const sourceUrlsUsed = new Set();
-
-  await ensureDir(MASTER_ROOT);
-
   let createdMasters = 0;
+  let cursor = 0;
+  let attempts = 0;
+  const maxAttempts = additionalMastersNeeded * 20;
 
-  let i = 0;
-  while (createdMasters < additionalMastersNeeded) {
+  while (createdMasters < additionalMastersNeeded && attempts < maxAttempts) {
+    attempts += 1;
     const seq = existingSeqMax + createdMasters + 1;
     const seqLabel = String(seq).padStart(3, '0');
-
-    const cluster = diverseTopics.clusters[i % diverseTopics.clusters.length];
-    const angle = diverseTopics.angles[Math.floor(i / diverseTopics.clusters.length) % diverseTopics.angles.length];
-
-    const govUrl = gov[i % gov.length];
-    const privateUrl = privatePool[(i * 3) % privatePool.length];
-
-    const govLabel = shortDomain(govUrl);
-    const privateLabel = shortDomain(privateUrl);
-
-    const slug = toSlug(`${cluster}-${angle}-${govLabel}-${publishDate.replace(/-/g, '')}-${seqLabel}`);
-    i += 1;
+    const cluster = diverseTopics.clusters[cursor % diverseTopics.clusters.length];
+    const angle =
+      diverseTopics.angles[Math.floor(cursor / diverseTopics.clusters.length) % diverseTopics.angles.length];
+    const sourceLinks = selectAlignedSourceLinks(cluster, registryUrls);
+    const sourceLabel = sourceLinks.length > 0 ? shortDomain(sourceLinks[0]) : 'unlinked';
+    const slug = toSlug(`${cluster}-${angle}-${sourceLabel}-${publishDate.replace(/-/g, '')}-${seqLabel}`);
+    cursor += 1;
 
     if (existingSlugs.has(slug) || generatedSlugs.includes(slug)) {
       continue;
     }
 
     const title = `${titleCase(cluster)} In India: ${titleCase(angle)} (${seq})`;
-    const description = `A high-level India brief using inputs from ${govLabel} and ${privateLabel}.`;
+    const description = sourceLinks.length
+      ? `A high-level India brief using inputs from ${sourceLinks.map((url) => shortDomain(url)).join(' and ')}.`
+      : `A high-level India brief on ${titleCase(cluster)}. No aligned registry host was attached.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seqLabel}`;
     const tags = [cluster, angle, 'india-briefs', 'diverse-sources'];
-    const sourceLinks = [govUrl, privateUrl];
-    const summaryType = 'india-brief';
-
     sourceLinks.forEach((url) => sourceUrlsUsed.add(url));
 
-    const masterMarkdown = makeMasterMarkdown({
-      id,
-      title,
-      description,
-      slug,
-      tags,
-      sourceLinks,
-      summaryType,
-      cluster,
-      angle,
-      govLabel,
-      privateLabel,
+    files.push({
+      name: `${publishDate}-${slug}.md`,
+      body: makeMasterMarkdown({
+        id,
+        title,
+        description,
+        slug,
+        tags,
+        sourceLinks,
+        summaryType: 'india-brief',
+        cluster,
+        angle,
+        publishDate,
+      }),
     });
-
-    const masterFile = path.join(MASTER_ROOT, `${publishDate}-${slug}.md`);
-    await fs.writeFile(masterFile, masterMarkdown, 'utf8');
-    generatedMasterPaths.push(path.relative(ROOT, masterFile));
     generatedSlugs.push(slug);
     createdMasters += 1;
   }
 
-  const totalMastersAfter = (await listMarkdownFiles(MASTER_ROOT)).length;
-
   const failedItems = [];
   if (createdMasters !== additionalMastersNeeded) {
     failedItems.push(`created-master-mismatch:${createdMasters}`);
-  }
-  if (totalMastersAfter !== TARGET_MASTERS_TOTAL) {
-    failedItems.push(`final-master-count-mismatch:${totalMastersAfter}`);
+    await refreshContentState({ root, masterRoot, stateRoot });
+    const manifest = {
+      runId,
+      startedAt,
+      endedAt: new Date().toISOString(),
+      targetMastersTotal: targetTotal,
+      existingMastersBefore: existingMasterCount,
+      additionalMastersRequested: additionalMastersNeeded,
+      additionalMastersGenerated: 0,
+      mastersAfterRun: (await listMarkdownNames(masterRoot)).length,
+      failedItems,
+      status: 'failed',
+    };
+    await fs.writeFile(
+      path.join(stateRoot, 'diverse-expansion-manifest.json'),
+      `${JSON.stringify(manifest, null, 2)}\n`,
+      'utf8',
+    );
+    throw new Error(`Expansion failed before commit: ${failedItems.join(', ')}`);
   }
 
-  const endedAt = new Date().toISOString();
+  const stagingDir = await fs.mkdtemp(path.join(os.tmpdir(), 'gic-diverse-masters-'));
+  await writeStagedFiles(stagingDir, files);
 
+  let outcome;
+  try {
+    outcome = await commitMastersIfAllowed({
+      stagingDir,
+      masterRoot,
+      expectedCount: files.length,
+      existingCount: existingMasterCount,
+      allowWrite: writeAllowed,
+      cap: masterCap,
+    });
+  } catch (error) {
+    await refreshContentState({ root, masterRoot, stateRoot });
+    throw error;
+  }
+
+  const mastersAfterRun = (await listMarkdownNames(masterRoot)).length;
+  if (outcome.published > 0 && mastersAfterRun !== targetTotal) {
+    failedItems.push(`final-master-count-mismatch:${mastersAfterRun}`);
+  }
+
+  await refreshContentState({ root, masterRoot, stateRoot });
+
+  const status = failedItems.length > 0 ? 'failed' : outcome.decision.action === 'commit' ? 'success' : 'dry-run';
   const manifest = {
     runId,
     startedAt,
-    endedAt,
-    targetMastersTotal: TARGET_MASTERS_TOTAL,
+    endedAt: new Date().toISOString(),
+    writeMode: status === 'success' ? 'committed' : status,
+    allowContentWrite: writeAllowed,
+    masterCap,
+    targetMastersTotal: targetTotal,
     existingMastersBefore: existingMasterCount,
     additionalMastersRequested: additionalMastersNeeded,
-    additionalMastersGenerated: createdMasters,
+    additionalMastersGenerated: outcome.published,
     additionalTranslationsGenerated: 0,
     localizationStatus: 'not-generated',
     localizationNote:
       'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
-    mastersAfterRun: totalMastersAfter,
-    sourcePolicy: 'No RBI sources in this expansion batch. Government + consulting/investment/multilateral sources only.',
+    mastersAfterRun,
+    sourcePolicy:
+      'Source links are attached only when the host matches the topic. Unrelated registry rotation is omitted. No localization files are written.',
     sourceUrlsUsed: Array.from(sourceUrlsUsed),
-    generatedMasterPaths,
+    generatedMasterPaths:
+      status === 'success' ? files.map((file) => path.join('src', 'content', 'blog', 'en', file.name)) : [],
     failedItems,
-    status: failedItems.length === 0 ? 'success' : 'failed',
+    status,
   };
 
   await fs.writeFile(
-    path.join(STATE_ROOT, 'diverse-expansion-manifest.json'),
-    JSON.stringify(manifest, null, 2) + '\n',
+    path.join(stateRoot, 'diverse-expansion-manifest.json'),
+    `${JSON.stringify(manifest, null, 2)}\n`,
     'utf8',
   );
 
@@ -318,12 +383,22 @@ async function main() {
     throw new Error(`Expansion failed: ${failedItems.join(', ')}`);
   }
 
-  console.log(
-    `Expansion complete: +${createdMasters} English masters. No localization files written.`,
-  );
+  if (status === 'dry-run') {
+    console.log(
+      `Refusing to write ${additionalMastersNeeded} English masters under src/content without ALLOW_CONTENT_WRITE=1. Existing count is ${existingMasterCount}; ceiling is ${outcome.decision.ceiling}. Content index refreshed from the current tree.`,
+    );
+  } else {
+    console.log(
+      `Expansion complete: +${outcome.published} English masters. Content index refreshed after writes. No localization files written.`,
+    );
+  }
+
+  return { manifest };
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (isDirectExecution(import.meta.url)) {
+  runDiverseExpansion().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

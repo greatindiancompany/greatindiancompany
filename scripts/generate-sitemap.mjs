@@ -239,6 +239,7 @@ async function main() {
 
   const noindexed = await noindexLeftoverTranslationPages(translationSlugs);
   const distFileCount = await countFiles(DIST_ROOT);
+  // Hard fail at 10,000 files, below the Workers Free cap of 20,000. `npm run deploy` depends on this build, so an over-budget dist never reaches wrangler.
   assertWithinWorkersFreeAssetBudget(distFileCount);
 
   console.log(
