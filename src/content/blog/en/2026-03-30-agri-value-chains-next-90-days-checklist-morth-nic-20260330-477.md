@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# A 90-day operating checklist for India's agri value chains
-
 The next 90 days in an agri value chain are a review of price, quality, movement, buyers, and cash. This checklist is that review. It is not a list of findings, and it is not a claim that the coming quarter will differ from the last one.
 
 Use one crop and one buyer. Answer in numbers or write "not observed."

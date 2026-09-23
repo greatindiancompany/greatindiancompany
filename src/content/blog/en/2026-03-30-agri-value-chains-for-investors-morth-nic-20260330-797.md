@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Diligence questions for investors in India's agri value chains
-
 Diligence on an agri value chain walks the crop from field to invoice. The walk replaces a sector paragraph. This page is a question list for that walk. It is not a recommendation to buy or sell any security, and it is not a view on returns.
 
 ## Questions that should have a document behind them

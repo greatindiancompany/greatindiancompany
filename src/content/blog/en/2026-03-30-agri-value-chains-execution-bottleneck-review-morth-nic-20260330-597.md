@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Where execution stalls in India's agri value chains
-
 An execution bottleneck is the stage where lots wait, quality slips, or cash stops, while earlier stages still look busy. Adding people or machines upstream of that stage raises cost and does not raise shipments.
 
 ## Stalls you can point at

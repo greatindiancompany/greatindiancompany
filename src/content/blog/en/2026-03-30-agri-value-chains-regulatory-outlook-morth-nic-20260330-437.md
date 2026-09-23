@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# The regulatory stack around India's agri value chains
-
 Regulation of an agri value chain in India is a stack. Market rules, food rules, warehouse practice, movement documents, and the buyer's own specification can all stop the same lot. An outlook that names only one layer will miss the layer that actually holds the truck.
 
 ## The layers on one lot

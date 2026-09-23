@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# What policy teams can read from India's agri value chains
-
 Policy teams meet agri value chains through rules, public infrastructure, and procurement. The chain answers a narrower question than a scheme document does: did the rule or the asset show up at the lot?
 
 ## Checks that stay close to the lot

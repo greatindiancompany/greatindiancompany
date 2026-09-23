@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# How to watch capex in India's agri value chains
-
 Capex in an agri value chain is a building or a machine that sits between the farm and the buyer. A cycle is that spend rising, then being used, across more than one season. Announced projects are not yet a cycle.
 
 ## The assets the chain actually buys

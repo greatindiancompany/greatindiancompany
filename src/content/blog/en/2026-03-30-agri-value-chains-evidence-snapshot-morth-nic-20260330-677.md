@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# What counts as evidence in India's agri value chains
-
 Evidence about an agri value chain is a record with a date, a place, a crop, and a unit. A confident paragraph is not a record. This page is the test for a record. It is not a snapshot of Indian agriculture, and it does not carry figures from a release.
 
 ## A record that can change a decision

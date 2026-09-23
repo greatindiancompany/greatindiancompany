@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Jobs and skills that move India's agri value chains
-
 A job in an agri value chain is attached to a stage. Someone collects, someone grades, someone holds the lot in condition, someone moves it, someone processes it, and someone collects the cash. Hiring "for agriculture" without naming the stage fills a seat and leaves the constraint in place.
 
 ## Work follows the lot

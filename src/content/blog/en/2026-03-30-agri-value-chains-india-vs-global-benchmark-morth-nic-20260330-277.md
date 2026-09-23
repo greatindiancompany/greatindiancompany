@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# How to compare India's agri value chains with other countries
-
 A comparison of agri value chains is useful when it compares the same handoff in India and in the other country. "India versus the world" as a single score does not tell a founder what to change on a lot.
 
 ## Compare the handoff

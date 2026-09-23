@@ -19,9 +19,7 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# How founders should operate an agri value chain in India
-
-Founders get paid for a handoff on a crop, not for the sector. The operating job is to know which lots you take, what the buyer will still accept, where quality is lost, and when cash returns.
+Founders get paid for a handoff on a crop. The operating job is to know which lots you take, what the buyer will still accept, where quality is lost, and when cash returns.
 
 ## Map the chain you are actually in
 

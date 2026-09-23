@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# What India's agri value chains change in an investment
-
 An investment that touches an agri value chain in India is underwriting a handoff. Someone aggregates small lots, someone holds them, someone transforms or moves them, and someone pays. The implication is in that handoff, not in a sector adjective.
 
 ## What the chain does to a model

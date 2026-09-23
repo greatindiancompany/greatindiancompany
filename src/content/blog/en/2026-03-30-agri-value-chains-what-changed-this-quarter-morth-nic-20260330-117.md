@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# What a quarterly change in India's agri value chains has to look like
-
 A quarter changes an agri value chain in India only when a figure an operator already tracks moves enough to change a buying, selling, or stocking decision. A new sentence about agriculture is not that figure.
 
 ## What would count as a change

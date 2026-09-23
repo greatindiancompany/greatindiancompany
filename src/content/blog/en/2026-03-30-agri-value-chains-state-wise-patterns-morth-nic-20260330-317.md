@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Why India's agri value chains differ by state
-
 The same crop can be a different business two states away. A national sentence about agri value chains in India hides the yard, the power connection, and the buyer who actually take the lot.
 
 ## What changes when the state changes

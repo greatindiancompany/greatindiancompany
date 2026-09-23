@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Mid-term questions for India's agri value chains
-
 A mid-term trajectory for an agri value chain is a hypothesis about three to five years: which handoff gets shorter, which gets more expensive, and which buyer specification gets tighter. It is a hypothesis you date and revisit. It is not a forecast this page is willing to sign.
 
 ## Questions that deserve a three-year view

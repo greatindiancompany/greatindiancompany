@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Opportunity types in India's agri value chains
-
 An opportunity in an agri value chain is a handoff that a buyer already pays to have done better. A gap with no buyer is a research topic. This page lists types of handoff. It does not estimate a market.
 
 ## Categories a founder can inspect

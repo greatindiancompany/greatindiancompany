@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Market signals worth logging in India's agri value chains
-
 A market signal in an agri value chain is a figure produced by trade. Commentary about the sector is not a signal. Founders in India can log a short set of figures on one crop path and ignore the rest until those figures move.
 
 ## Signals that sit on the chain

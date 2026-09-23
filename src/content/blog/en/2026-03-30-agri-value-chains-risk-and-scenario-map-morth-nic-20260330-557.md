@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# A scenario map for risk in India's agri value chains
-
 A scenario is a way the chain can break, written so you can see what happens to volume, quality, and cash. It is not a probability, and this page assigns none.
 
 ## Five breaks that hit different lines

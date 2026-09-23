@@ -19,8 +19,6 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# How to tell a policy shift in India's agri value chains
-
 A policy shift in an agri value chain is a change in a rule that changes a license, a market practice, or a buyer contract. Until one of those three moves, the chain is on the old rule.
 
 ## Three layers that get collapsed
