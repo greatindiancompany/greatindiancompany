@@ -14,7 +14,6 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 const canonical = `https://greatindiancompany.com/blog/${post.data.slug}`;
-const isTranslation = post.data.lang !== 'en';
 const words = post.body ? post.body.trim().split(/\s+/).filter(Boolean).length : 0;
 const readTime = Math.max(2, Math.round(words / 220));
 ---
@@ -28,8 +27,7 @@ const readTime = Math.max(2, Math.round(words / 220));
     <div class="meta-pills">
       <span class="pill">Published: {post.data.publishDate}</span>
       <span class="pill">Read Time: {readTime} min</span>
-      <span class="pill">Language: {post.data.lang}</span>
-      {isTranslation ? <span class="pill">Master: {post.data.translationOf}</span> : null}
+      <span class="pill">Language: English</span>
     </div>
 
     <div class="tags">

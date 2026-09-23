@@ -1,5 +1,13 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import {
+  assertWithinWorkersFreeAssetBudget,
+  isPublishableLocalization,
+  PUBLISHABLE_LOCALIZATION_SLUGS,
+  STATIC_ASSET_FILE_BUDGET,
+  textDirection,
+  WORKERS_FREE_STATIC_ASSET_LIMIT,
+} from './localization-policy.mjs';
 
 const SITE_URL = 'https://greatindiancompany.com';
 const ROOT = process.cwd();
@@ -233,6 +241,7 @@ function renderTranslationPage({
   sourceLinks,
   bodyHtml,
 }) {
+  const dir = textDirection(lang);
   const tagsHtml = tags
     .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
     .join('');
@@ -244,7 +253,7 @@ function renderTranslationPage({
     .join('');
 
   return `<!doctype html>
-<html lang="${escapeHtml(lang)}" dir="ltr">
+<html lang="${escapeHtml(lang)}" dir="${dir}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -458,7 +467,7 @@ function renderTranslationPage({
         </nav>
       </header>
       <article class="card">
-        <p class="eyebrow">Localized Brief</p>
+        <p class="eyebrow">Brief</p>
         <h1>${escapeHtml(title)}</h1>
         <p class="meta lead">${escapeHtml(description)}</p>
         <div class="meta-pills">
@@ -504,18 +513,7 @@ async function main() {
       continue;
     }
 
-    const updatedDate = normalizeDate(field(frontmatter, 'updatedDate') || field(frontmatter, 'publishDate'));
-    pages.push({
-      loc: `${SITE_URL}/blog/${slug}`,
-      lastmod: updatedDate,
-    });
-  }
-
-  for (const filePath of translationFiles) {
-    const raw = await fs.readFile(filePath, 'utf8');
-    const { frontmatter, body } = splitFrontmatter(raw);
-    const slug = field(frontmatter, 'slug');
-    if (!slug) {
+    if (field(frontmatter, 'draft') === 'true') {
       continue;
     }
 
@@ -524,33 +522,66 @@ async function main() {
       loc: `${SITE_URL}/blog/${slug}`,
       lastmod: updatedDate,
     });
+  }
 
-    const title = field(frontmatter, 'title') || slug;
-    const description = field(frontmatter, 'description') || '';
-    const publishDate = normalizeDate(field(frontmatter, 'publishDate') || updatedDate);
-    const lang = field(frontmatter, 'lang') || 'unknown';
-    const translationOf = field(frontmatter, 'translationOf') || '';
-    const tags = pickArray(frontmatter, 'tags');
-    const sourceLinks = pickArray(frontmatter, 'sourceLinks');
+  const allowlistedSlugs = new Set(PUBLISHABLE_LOCALIZATION_SLUGS);
+  let skippedTemplates = 0;
 
-    const pagePath = path.join(DIST_ROOT, 'blog', slug, 'index.html');
-    await fs.mkdir(path.dirname(pagePath), { recursive: true });
-    await fs.writeFile(
-      pagePath,
-      renderTranslationPage({
-        title,
-        description,
-        canonical: `${SITE_URL}/blog/${slug}`,
-        publishDate,
-        lang,
-        translationOf,
-        tags,
-        sourceLinks,
-        bodyHtml: renderSimpleMarkdown(body),
-      }),
-      'utf8',
-    );
-    translationPagesWritten += 1;
+  if (allowlistedSlugs.size === 0) {
+    skippedTemplates = translationFiles.length;
+  } else {
+    for (const filePath of translationFiles) {
+      const raw = await fs.readFile(filePath, 'utf8');
+      const { frontmatter, body } = splitFrontmatter(raw);
+      const slug = field(frontmatter, 'slug');
+      const lang = field(frontmatter, 'lang') || '';
+      const publishable =
+        slug &&
+        allowlistedSlugs.has(slug) &&
+        isPublishableLocalization({
+          lang,
+          localized: field(frontmatter, 'localized'),
+          draft: field(frontmatter, 'draft'),
+          body,
+        });
+
+      if (!publishable) {
+        skippedTemplates += 1;
+        continue;
+      }
+
+      const updatedDate = normalizeDate(field(frontmatter, 'updatedDate') || field(frontmatter, 'publishDate'));
+      pages.push({
+        loc: `${SITE_URL}/blog/${slug}`,
+        lastmod: updatedDate,
+      });
+
+      const title = field(frontmatter, 'title') || slug;
+      const description = field(frontmatter, 'description') || '';
+      const publishDate = normalizeDate(field(frontmatter, 'publishDate') || updatedDate);
+      const translationOf = field(frontmatter, 'translationOf') || '';
+      const tags = pickArray(frontmatter, 'tags');
+      const sourceLinks = pickArray(frontmatter, 'sourceLinks');
+
+      const pagePath = path.join(DIST_ROOT, 'blog', slug, 'index.html');
+      await fs.mkdir(path.dirname(pagePath), { recursive: true });
+      await fs.writeFile(
+        pagePath,
+        renderTranslationPage({
+          title,
+          description,
+          canonical: `${SITE_URL}/blog/${slug}`,
+          publishDate,
+          lang,
+          translationOf,
+          tags,
+          sourceLinks,
+          bodyHtml: renderSimpleMarkdown(body),
+        }),
+        'utf8',
+      );
+      translationPagesWritten += 1;
+    }
   }
 
   await fs.mkdir(DIST_ROOT, { recursive: true });
@@ -561,7 +592,37 @@ async function main() {
   await fs.writeFile(sitemapPath, buildUrlset(pages), 'utf8');
   await fs.writeFile(indexPath, buildSitemapIndex(`${SITE_URL}/sitemap-0.xml`), 'utf8');
 
-  console.log(`Sitemap generated: ${pages.length} URLs | translation pages written: ${translationPagesWritten}`);
+  const distFileCount = await countFiles(DIST_ROOT);
+  assertWithinWorkersFreeAssetBudget(distFileCount);
+
+  console.log(
+    `Sitemap generated: ${pages.length} URLs | localized pages written: ${translationPagesWritten} | language-tagged templates skipped: ${skippedTemplates} | dist files: ${distFileCount} (budget ${STATIC_ASSET_FILE_BUDGET}, Workers Free limit ${WORKERS_FREE_STATIC_ASSET_LIMIT})`,
+  );
+}
+
+async function countFiles(dir) {
+  let count = 0;
+
+  async function walk(current) {
+    let entries = [];
+    try {
+      entries = await fs.readdir(current, { withFileTypes: true });
+    } catch {
+      return;
+    }
+
+    for (const entry of entries) {
+      const fullPath = path.join(current, entry.name);
+      if (entry.isDirectory()) {
+        await walk(fullPath);
+      } else if (entry.isFile()) {
+        count += 1;
+      }
+    }
+  }
+
+  await walk(dir);
+  return count;
 }
 
 main().catch((error) => {

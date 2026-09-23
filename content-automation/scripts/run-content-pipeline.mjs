@@ -4,13 +4,10 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
-const TRANSLATION_ROOT = path.join(ROOT, 'content-automation', 'generated-translations');
 const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
 const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
 
 const MASTER_TARGET = 100;
-const TRANSLATIONS_PER_MASTER = 22;
-const TOTAL_TARGET = MASTER_TARGET * (TRANSLATIONS_PER_MASTER + 1);
 
 const now = new Date();
 const publishDate = now.toISOString().slice(0, 10);
@@ -237,68 +234,10 @@ This article is an original synthesis prepared for Great Indian Company using pu
 `;
 }
 
-function makeTranslationMarkdown({
-  id,
-  langCode,
-  langName,
-  nativeName,
-  masterId,
-  title,
-  description,
-  slug,
-  tags,
-  sourceLinks,
-  summaryType,
-}) {
-  const links = sourceLinks.map((link) => `  - "${link}"`).join('\n');
-  const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
-
-  return `---
-id: "${id}"
-lang: "${langCode}"
-translationOf: "${masterId}"
-title: "[${langName}] ${title}"
-description: "${description}"
-slug: "${slug}-${langCode}"
-publishDate: "${publishDate}"
-updatedDate: "${publishDate}"
-tags:
-${tagsYaml}
-sourceLinks:
-${links}
-summaryType: "${summaryType}"
-draft: false
----
-
-# [${nativeName}] ${title}
-
-## Localized Summary (${langName})
-
-This ${langName} edition preserves the meaning of the English master article and keeps the same source-backed claims.
-
-## Core Points
-
-1. The central thesis remains aligned with the master article.
-2. Source links are preserved for verification.
-3. This localized page supports regional discovery and search access.
-
-## Source Notes
-
-Refer to the listed official links for original data and policy text.
-`;
-}
-
 async function main() {
   await ensureDir(STATE_ROOT);
-  const languages = await readJson(path.join(CONFIG_ROOT, 'languages.json'));
   const sourceRegistry = await readJson(path.join(CONFIG_ROOT, 'source_registry.json'));
   const thesisTopics = await readJson(path.join(CONFIG_ROOT, 'thesis_topics.json'));
-
-  if (languages.length !== TRANSLATIONS_PER_MASTER) {
-    throw new Error(
-      `languages.json must contain exactly ${TRANSLATIONS_PER_MASTER} language entries. Found ${languages.length}.`,
-    );
-  }
 
   const existingIndex = await scanExistingContent();
   const existingSlugs = new Set(existingIndex.map((entry) => entry.slug));
@@ -317,16 +256,12 @@ async function main() {
 
   const publishRoot = MASTER_ROOT;
   await ensureDir(publishRoot);
-  for (const lang of languages) {
-    await ensureDir(path.join(TRANSLATION_ROOT, lang.code));
-  }
 
   const sourceUrlsUsed = new Set();
   const generatedSlugs = [];
   const failedItems = [];
   const retryCounts = {
     masterRetries: 0,
-    translationRetries: 0,
   };
 
   const combos = [];
@@ -400,56 +335,10 @@ async function main() {
     });
   }
 
-  let translationCount = 0;
-  const translationPaths = [];
-
-  for (const master of masters) {
-    for (const lang of languages) {
-      const translationId = `${master.id}-${lang.code}`;
-
-      const translationMarkdown = makeTranslationMarkdown({
-        id: translationId,
-        langCode: lang.code,
-        langName: lang.name,
-        nativeName: lang.nativeName,
-        masterId: master.id,
-        title: master.title,
-        description: `${lang.name} version of ${master.title}.`,
-        slug: master.slug,
-        tags: master.tags,
-        sourceLinks: master.sourceLinks,
-        summaryType: master.summaryType,
-      });
-
-      const fileName = `${publishDate}-${master.slug}-${lang.code}.md`;
-      const filePath = path.join(TRANSLATION_ROOT, lang.code, fileName);
-      await fs.writeFile(filePath, translationMarkdown, 'utf8');
-
-      translationCount += 1;
-      translationPaths.push(path.relative(ROOT, filePath));
-    }
-  }
-
   const masterCount = masters.length;
-  const totalCount = masterCount + translationCount;
 
   if (masterCount !== MASTER_TARGET) {
     failedItems.push(`master-count-mismatch:${masterCount}`);
-  }
-
-  if (translationCount !== MASTER_TARGET * TRANSLATIONS_PER_MASTER) {
-    failedItems.push(`translation-count-mismatch:${translationCount}`);
-  }
-
-  for (const master of masters) {
-    const countForMaster = translationPaths.filter((p) => p.includes(`${master.slug}-`)).length;
-    if (countForMaster !== TRANSLATIONS_PER_MASTER) {
-      failedItems.push(`translation-set-incomplete:${master.id}:${countForMaster}`);
-    }
-  }
-
-  if (totalCount !== TOTAL_TARGET) {
-    failedItems.push(`total-count-mismatch:${totalCount}`);
   }
 
   const endedAt = new Date().toISOString();
@@ -460,9 +349,11 @@ async function main() {
     endedAt,
     mastersRequested: MASTER_TARGET,
     mastersPublished: masterCount,
-    translationsPerMaster: TRANSLATIONS_PER_MASTER,
-    translationsPublished: translationCount,
-    totalNewMarkdownFiles: totalCount,
+    translationsPublished: 0,
+    localizationStatus: 'not-generated',
+    localizationNote:
+      'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
+    totalNewMarkdownFiles: masterCount,
     failedItems,
     retryCounts,
     sourceUrlsUsed: Array.from(sourceUrlsUsed),
@@ -476,7 +367,9 @@ async function main() {
     throw new Error(`Run failed: ${failedItems.join(', ')}`);
   }
 
-  console.log(`Run complete: masters=${masterCount}, translations=${translationCount}, total=${totalCount}`);
+  console.log(
+    `Run complete: masters=${masterCount}. No localization files written. Language-tagged English templates are not translations.`,
+  );
 }
 
 main().catch((err) => {

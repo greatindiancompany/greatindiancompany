@@ -4,12 +4,10 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
-const TRANSLATION_ROOT = path.join(ROOT, 'content-automation', 'generated-translations');
 const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
 const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
 
 const TARGET_MASTERS_TOTAL = 800;
-const TRANSLATIONS_PER_MASTER = 22;
 
 const startedAt = new Date().toISOString();
 const runId = `diverse-${new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
@@ -56,31 +54,6 @@ async function listMarkdownFiles(dir) {
   } catch {
     return [];
   }
-}
-
-async function listMarkdownFilesRecursive(dir) {
-  const out = [];
-
-  async function walk(current) {
-    let entries = [];
-    try {
-      entries = await fs.readdir(current, { withFileTypes: true });
-    } catch {
-      return;
-    }
-
-    for (const entry of entries) {
-      const fullPath = path.join(current, entry.name);
-      if (entry.isDirectory()) {
-        await walk(fullPath);
-      } else if (entry.isFile() && entry.name.endsWith('.md')) {
-        out.push(fullPath);
-      }
-    }
-  }
-
-  await walk(dir);
-  return out;
 }
 
 function parseFrontmatter(raw) {
@@ -204,68 +177,11 @@ This is an original synthesis for Great Indian Company, based on public-source r
 `;
 }
 
-function makeTranslationMarkdown({
-  id,
-  langCode,
-  langName,
-  nativeName,
-  masterId,
-  masterTitle,
-  description,
-  slug,
-  tags,
-  sourceLinks,
-  summaryType,
-}) {
-  const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
-  const linksYaml = sourceLinks.map((url) => `  - "${url}"`).join('\n');
-
-  return `---
-id: "${id}"
-lang: "${langCode}"
-translationOf: "${masterId}"
-title: "[${langName}] ${masterTitle}"
-description: "${description}"
-slug: "${slug}-${langCode}"
-publishDate: "${publishDate}"
-updatedDate: "${publishDate}"
-tags:
-${tagsYaml}
-sourceLinks:
-${linksYaml}
-summaryType: "${summaryType}"
-draft: false
----
-
-# [${nativeName}] ${masterTitle}
-
-## Localized Brief (${langName})
-
-This localized edition preserves the meaning and source references of the English master brief.
-
-## Core Notes
-
-- The central thesis follows the master article.
-- Source links are identical for verification.
-- This page supports regional discovery and multilingual access.
-
-## Source Links
-
-- ${sourceLinks[0]}
-- ${sourceLinks[1]}
-`;
-}
-
 async function main() {
   await ensureDir(STATE_ROOT);
 
-  const languages = await readJson(path.join(CONFIG_ROOT, 'languages.json'));
   const diverseSources = await readJson(path.join(CONFIG_ROOT, 'source_registry_diverse.json'));
   const diverseTopics = await readJson(path.join(CONFIG_ROOT, 'thesis_topics_diverse.json'));
-
-  if (languages.length !== TRANSLATIONS_PER_MASTER) {
-    throw new Error(`Expected ${TRANSLATIONS_PER_MASTER} translation languages, found ${languages.length}.`);
-  }
 
   const existingMasters = await getExistingMasters();
   const existingMasterCount = existingMasters.length;
@@ -279,7 +195,9 @@ async function main() {
   const additionalMastersNeeded = TARGET_MASTERS_TOTAL - existingMasterCount;
 
   if (additionalMastersNeeded === 0) {
-    console.log(`No-op: already at ${TARGET_MASTERS_TOTAL} masters.`);
+    console.log(
+      `No-op: already at ${TARGET_MASTERS_TOTAL} English masters. Localization files are not generated.`,
+    );
     return;
   }
 
@@ -300,17 +218,12 @@ async function main() {
   }
 
   const generatedMasterPaths = [];
-  const generatedTranslationPaths = [];
   const generatedSlugs = [];
   const sourceUrlsUsed = new Set();
 
-  for (const lang of languages) {
-    await ensureDir(path.join(TRANSLATION_ROOT, lang.code));
-  }
   await ensureDir(MASTER_ROOT);
 
   let createdMasters = 0;
-  let createdTranslations = 0;
 
   let i = 0;
   while (createdMasters < additionalMastersNeeded) {
@@ -361,56 +274,16 @@ async function main() {
     generatedMasterPaths.push(path.relative(ROOT, masterFile));
     generatedSlugs.push(slug);
     createdMasters += 1;
-
-    for (const lang of languages) {
-      const tId = `${id}-${lang.code}`;
-      const tMarkdown = makeTranslationMarkdown({
-        id: tId,
-        langCode: lang.code,
-        langName: lang.name,
-        nativeName: lang.nativeName,
-        masterId: id,
-        masterTitle: title,
-        description: `${lang.name} edition of ${title}.`,
-        slug,
-        tags,
-        sourceLinks,
-        summaryType,
-      });
-
-      const tFile = path.join(TRANSLATION_ROOT, lang.code, `${publishDate}-${slug}-${lang.code}.md`);
-      await fs.writeFile(tFile, tMarkdown, 'utf8');
-      generatedTranslationPaths.push(path.relative(ROOT, tFile));
-      createdTranslations += 1;
-    }
   }
 
   const totalMastersAfter = (await listMarkdownFiles(MASTER_ROOT)).length;
-  const totalTranslationsAfter = (await listMarkdownFilesRecursive(TRANSLATION_ROOT)).length;
-
-  const perLanguageCounts = {};
-  perLanguageCounts.en = totalMastersAfter;
-  for (const code of languages.map((l) => l.code)) {
-    perLanguageCounts[code] = (await listMarkdownFiles(path.join(TRANSLATION_ROOT, code))).length;
-  }
-
-  const expectedTranslationsCreated = additionalMastersNeeded * TRANSLATIONS_PER_MASTER;
-  const expectedTotalAfter = TARGET_MASTERS_TOTAL * (TRANSLATIONS_PER_MASTER + 1);
 
   const failedItems = [];
   if (createdMasters !== additionalMastersNeeded) {
     failedItems.push(`created-master-mismatch:${createdMasters}`);
   }
-  if (createdTranslations !== expectedTranslationsCreated) {
-    failedItems.push(`created-translation-mismatch:${createdTranslations}`);
-  }
   if (totalMastersAfter !== TARGET_MASTERS_TOTAL) {
     failedItems.push(`final-master-count-mismatch:${totalMastersAfter}`);
-  }
-
-  const totalAcrossLangDirs = totalMastersAfter + totalTranslationsAfter;
-  if (totalAcrossLangDirs !== expectedTotalAfter) {
-    failedItems.push(`final-total-count-mismatch:${totalAcrossLangDirs}`);
   }
 
   const endedAt = new Date().toISOString();
@@ -423,15 +296,14 @@ async function main() {
     existingMastersBefore: existingMasterCount,
     additionalMastersRequested: additionalMastersNeeded,
     additionalMastersGenerated: createdMasters,
-    translationsPerMaster: TRANSLATIONS_PER_MASTER,
-    additionalTranslationsGenerated: createdTranslations,
+    additionalTranslationsGenerated: 0,
+    localizationStatus: 'not-generated',
+    localizationNote:
+      'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
     mastersAfterRun: totalMastersAfter,
-    totalContentAfterRun: totalAcrossLangDirs,
-    perLanguageCounts,
     sourcePolicy: 'No RBI sources in this expansion batch. Government + consulting/investment/multilateral sources only.',
     sourceUrlsUsed: Array.from(sourceUrlsUsed),
     generatedMasterPaths,
-    generatedTranslationCount: generatedTranslationPaths.length,
     failedItems,
     status: failedItems.length === 0 ? 'success' : 'failed',
   };
@@ -447,7 +319,7 @@ async function main() {
   }
 
   console.log(
-    `Expansion complete: +${createdMasters} masters, +${createdTranslations} translations, total=${totalAcrossLangDirs}`,
+    `Expansion complete: +${createdMasters} English masters. No localization files written.`,
   );
 }
 
