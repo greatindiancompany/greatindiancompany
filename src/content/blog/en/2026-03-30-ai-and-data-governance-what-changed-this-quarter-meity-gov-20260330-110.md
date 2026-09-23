@@ -2,11 +2,11 @@
 id: "gic-20260330-110"
 lang: "en"
 translationOf: null
-title: "Ai And Data Governance In India: What Changed This Quarter (110)"
-description: "A high-level India brief using inputs from meity-gov and deutsche-bank."
+title: "AI and Data Governance in India: What Changed This Quarter"
+description: "Log this quarter's AI and data governance changes in India from MeitY notices. The Deutsche Bank insights link is not a change list."
 slug: "ai-and-data-governance-what-changed-this-quarter-meity-gov-20260330-110"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "ai-and-data-governance"
   - "what-changed-this-quarter"
@@ -19,52 +19,45 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Ai And Data Governance In India: What Changed This Quarter (110)
+## What a quarterly change is
 
-## Executive Brief
+People looking up what changed in AI and data governance in India need a dated record: a notice, a closed consultation, a revised guideline, or a program update. This brief is the method for building that record from the public Ministry of Electronics and Information Technology site, [meity.gov.in](https://www.meity.gov.in/). A change enters the log when that site shows a new or revised item. A homepage refresh with no new document is a site change, not a governance change.
 
-This brief synthesizes public information from **meity-gov** and **deutsche-bank** to map India-specific developments on **Ai And Data Governance**.
+## Build the quarter log from MeitY
 
-## What Changed
+Give each item you open one row:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **What Changed This Quarter**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+1. **Date on the page.** If the page shows no date, write "undated" and keep the item out of a specific quarter.
+2. **Document type.** Notice, guideline, consultation, scheme page, speech, or news item. Record the label the page uses.
+3. **Subject in the page's words.** Artificial intelligence, data sharing, platforms, or government use. Stay with the wording on the page.
+4. **Status the page states.** In force, open for comment, or informational. Leave the cell blank when the page is silent.
+5. **Audience the page names.** Departments, companies, startups, or the public, and only when the text names them.
 
-## Strategic Signals For India
+Compare the new log with the previous quarter. Rows that are new or revised are the change set. Rows that repeat are continuity.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## How to use the Deutsche Bank link
 
-## Implications
+The second source is the public [Deutsche Bank insights](https://www.deutsche-bank.com/insights) index. Treat it as a commentary shelf. It does not, on its own, document an Indian government action. When you open a specific insight that discusses technology or regulation, note that page's title and date in your own workspace. Keep it out of the MeitY change log unless the insight quotes a MeitY item you have also opened.
 
-### For policy teams
+## Close the quarter in three lines
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+- MeitY items with dates that are new or revised.
+- Consultations the site now marks as closed, when it says so.
+- Questions still open because the site does not answer them.
 
-### For operators and founders
+That close is the quarterly answer this page can support.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Related briefs
 
-### For investors and strategy teams
+- [Policy shift explainer](/blog/ai-and-data-governance-policy-shift-explainer-meity-gov-20260330-150)
+- [Regulatory outlook](/blog/ai-and-data-governance-regulatory-outlook-meity-gov-20260330-430)
+- [Next 90 days checklist](/blog/ai-and-data-governance-next-90-days-checklist-meity-gov-20260330-470)
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
+## Source links
 
 - https://www.meity.gov.in/
 - https://www.deutsche-bank.com/insights
 
-## Editorial Method
+## Editorial method
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Original Great Indian Company synthesis. The two links above are the only sources. This page describes how to log a quarter. It does not add a change list, a statistic, or a further citation.

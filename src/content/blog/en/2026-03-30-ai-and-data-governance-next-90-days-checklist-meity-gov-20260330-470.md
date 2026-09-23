@@ -2,11 +2,11 @@
 id: "gic-20260330-470"
 lang: "en"
 translationOf: null
-title: "Ai And Data Governance In India: Next 90 Days Checklist (470)"
-description: "A high-level India brief using inputs from meity-gov and deutsche-bank."
+title: "AI and Data Governance in India: Next 90 Days Checklist"
+description: "A 90-day checklist for tracking AI and data governance in India on MeitY, with Deutsche Bank insights kept as optional external reading."
 slug: "ai-and-data-governance-next-90-days-checklist-meity-gov-20260330-470"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "ai-and-data-governance"
   - "next-90-days-checklist"
@@ -19,52 +19,48 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Ai And Data Governance In India: Next 90 Days Checklist (470)
+## What the next 90 days means here
 
-## Executive Brief
+This checklist is a review habit for AI and data governance in India. It lists what to open and what to write down over a 90-day window. It does not calendar events that the sources have not dated. The government site for the habit is the Ministry of Electronics and Information Technology, [meity.gov.in](https://www.meity.gov.in/).
 
-This brief synthesizes public information from **meity-gov** and **deutsche-bank** to map India-specific developments on **Ai And Data Governance**.
+## Days 1 to 30: build the baseline
 
-## What Changed
+- List MeitY pages you rely on for AI, data, and digital governance.
+- For each page, record title, document type, date, and status as printed.
+- Mark any closing date for comments that falls inside the next 90 days.
+- Note the office the page names as responsible.
+- File the list so you can diff it later. The baseline is the point of the first month.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Days 31 to 60: check for revisions
 
-## Strategic Signals For India
+- Reopen the same MeitY pages.
+- Highlight titles that are new since the baseline.
+- Highlight dates or status lines that changed.
+- For any consultation date that has passed, record whether the page says the consultation closed.
+- Leave a blank, rather than a guess, when the page is unchanged and silent.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Days 61 to 90: write the handoff
 
-## Implications
+- Three bullets on what the MeitY pages now show.
+- Three bullets on what they still do not show.
+- Owners on your team for each open question.
+- The date you will run the checklist again.
 
-### For policy teams
+## Optional external reading
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The second link is the [Deutsche Bank insights](https://www.deutsche-bank.com/insights) index. In this 90-day cycle it is optional. If you open a specific insight, log its title under external reading. It does not replace a MeitY row and it does not create a due date for Indian compliance.
 
-### For operators and founders
+## Related briefs
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+- [What changed this quarter](/blog/ai-and-data-governance-what-changed-this-quarter-meity-gov-20260330-110)
+- [Execution bottlenecks](/blog/ai-and-data-governance-execution-bottleneck-review-meity-gov-20260330-590)
+- [For founders and operators](/blog/ai-and-data-governance-for-founders-and-operators-meity-gov-20260330-710)
 
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
+## Source links
 
 - https://www.meity.gov.in/
 - https://www.deutsche-bank.com/insights
 
-## Editorial Method
+## Editorial method
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Original Great Indian Company synthesis. The two links above are the only sources. This page is a checklist. It does not announce events scheduled for the next 90 days.

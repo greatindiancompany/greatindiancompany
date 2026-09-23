@@ -2,11 +2,11 @@
 id: "gic-20260330-310"
 lang: "en"
 translationOf: null
-title: "Ai And Data Governance In India: State Wise Patterns (310)"
-description: "A high-level India brief using inputs from meity-gov and iea."
+title: "AI and Data Governance in India: State-wise Patterns"
+description: "State-wise patterns in India's AI and data governance need state documents. These MeitY and IEA links do not rank the states."
 slug: "ai-and-data-governance-state-wise-patterns-meity-gov-20260330-310"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "ai-and-data-governance"
   - "state-wise-patterns"
@@ -19,52 +19,44 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Ai And Data Governance In India: State Wise Patterns (310)
+## What a state pattern is
 
-## Executive Brief
+A state-wise pattern in AI and data governance in India is a difference you can show from state documents: a state policy, a state tender, a state skill program, or a state office named on a page. A national ministry site can mention states. It becomes a state pattern only when the page names the state and the action. The national page in this file is the Ministry of Electronics and Information Technology site, [meity.gov.in](https://www.meity.gov.in/).
 
-This brief synthesizes public information from **meity-gov** and **iea** to map India-specific developments on **Ai And Data Governance**.
+## What to extract when MeitY names a state
 
-## What Changed
+If a MeitY page names a state, copy four fields:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **State Wise Patterns**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+1. The state name as printed.
+2. The action the sentence describes.
+3. Whether the page links to a state document.
+4. The date, if printed.
 
-## Strategic Signals For India
+Repeat mentions of the same state and the same action are one pattern, not many. Mentions that list many states in a single generic sentence are a national statement, not a ranking.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What this file cannot show
 
-## Implications
+These two links do not include state gazette pages, state IT department sites, or a table of state capacity. Do not infer which state is faster, larger, or more ready. A state pattern that is not printed is not a finding. When you need the pattern, open the state document and cite that document in your own note.
 
-### For policy teams
+## The IEA India page
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The paired source is the International Energy Agency [India country page](https://www.iea.org/countries/india). It is a national energy profile. Use it only when you are asking an energy question, such as power context for compute, and only with figures you read on that page. It is not a state map of AI governance.
 
-### For operators and founders
+## A clean state note
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+A usable note has a state name, a MeitY sentence that names that state, and a link to any state page MeitY itself provides. If the third item is missing, say the state follow-through document is not in this source set. That sentence is more accurate than a heat map.
 
-### For investors and strategy teams
+## Related briefs
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+- [Execution bottlenecks](/blog/ai-and-data-governance-execution-bottleneck-review-meity-gov-20260330-590)
+- [Next 90 days checklist](/blog/ai-and-data-governance-next-90-days-checklist-meity-gov-20260330-470)
+- [Evidence snapshot](/blog/ai-and-data-governance-evidence-snapshot-meity-gov-20260330-670)
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
+## Source links
 
 - https://www.meity.gov.in/
 - https://www.iea.org/countries/india
 
-## Editorial Method
+## Editorial method
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Original Great Indian Company synthesis. The two links above are the only sources. This page explains how to record a state mention. It does not rank states or invent state policies.
