@@ -2,7 +2,7 @@
 
 The Astro website and content automation system for Great Indian Company.
 
-Live: [https://www.greatindiancompany.com](https://www.greatindiancompany.com)
+Live: [https://greatindiancompany.com](https://greatindiancompany.com)
 
 ## Mission
 
@@ -21,7 +21,7 @@ Astro static site for Great Indian Company with English briefs, source registrie
 
 ## Tech Stack
 
-- Astro with Cloudflare adapter
+- Astro static site served by a Cloudflare Worker
 - Plain JavaScript content automation scripts
 - English Markdown briefs
 - Wrangler deployment
@@ -43,8 +43,8 @@ npm run build
 
 ## Repository Notes
 
-- `npm run build` writes the sitemap and then counts files in `dist`. The build fails above 10,000 files so a deploy stays under the Workers Free limit of 20,000 static assets per version. Do not raise that budget until a paid Workers plan is confirmed.
-- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` do not write those files.
+- `npm run build` writes the sitemap and then counts files in `dist`. The build exits non-zero above 10,000 files (`STATIC_ASSET_FILE_BUDGET`) so a deploy stays under the Workers Free limit of 20,000 static assets per version. `npm run deploy` runs that build before Wrangler, so an over-budget `dist` never uploads. Do not raise that budget until a paid Workers plan is confirmed.
+- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` do not write those files. They also do not add English masters under `src/content/` unless `ALLOW_CONTENT_WRITE=1` is set. Without that opt-in they refuse to grow the master set past 800, or past the current count when the tree is already larger. Source links are attached only when the host matches the topic. The RBI database citation stays `https://www.rbi.org.in/Scripts/DBIE.aspx`. After a run, `content-automation/state/content-index.json` is rebuilt from the files on disk.
 - Keep source registries and thesis topics factual and current.
 
 ## Contributing

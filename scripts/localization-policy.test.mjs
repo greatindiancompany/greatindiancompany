@@ -36,6 +36,7 @@ test('leftover translation HTML is marked noindex once', () => {
 });
 
 test('asset budget stays under the Workers Free cap and rejects a translation-sized dist', () => {
+  assert.equal(STATIC_ASSET_FILE_BUDGET, 10000);
   assert.ok(STATIC_ASSET_FILE_BUDGET < WORKERS_FREE_STATIC_ASSET_LIMIT);
   assert.doesNotThrow(() => assertWithinWorkersFreeAssetBudget(1200));
   assert.doesNotThrow(() => assertWithinWorkersFreeAssetBudget(STATIC_ASSET_FILE_BUDGET));

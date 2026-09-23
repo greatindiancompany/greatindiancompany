@@ -1,22 +1,21 @@
-import { createHash, randomUUID } from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
-
-const ROOT = process.cwd();
-const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
-const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
-const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
+import {
+  CANONICAL_DBIE_URL,
+  MASTER_COUNT_CAP,
+  classifyMasterWrite,
+  commitMastersIfAllowed,
+  contentWriteAllowed,
+  isDirectExecution,
+  refreshContentState,
+  scanMasterIndex,
+  selectAlignedSourceLinks,
+  writeStagedFiles,
+} from './content-write-guards.mjs';
 
 const MASTER_TARGET = 100;
-
-const now = new Date();
-const publishDate = now.toISOString().slice(0, 10);
-const runId = `${now.toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
-const startedAt = now.toISOString();
-
-function hash(value) {
-  return createHash('sha256').update(value).digest('hex').slice(0, 16);
-}
 
 function titleCase(value) {
   return value
@@ -34,158 +33,34 @@ function toSlug(value) {
     .replace(/^-|-$/g, '');
 }
 
-async function ensureDir(dirPath) {
-  await fs.mkdir(dirPath, { recursive: true });
-}
-
 async function readJson(filePath) {
   const raw = await fs.readFile(filePath, 'utf8');
   return JSON.parse(raw);
 }
 
-async function listFilesRecursive(dir) {
-  const out = [];
-
-  async function walk(current) {
-    let entries = [];
-    try {
-      entries = await fs.readdir(current, { withFileTypes: true });
-    } catch {
-      return;
-    }
-
-    for (const entry of entries) {
-      const fullPath = path.join(current, entry.name);
-      if (entry.isDirectory()) {
-        await walk(fullPath);
-      } else if (entry.isFile()) {
-        out.push(fullPath);
-      }
-    }
-  }
-
-  await walk(dir);
-  return out;
-}
-
-function parseFrontmatter(raw) {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n?/);
-  if (!match) {
-    return { frontmatter: '', body: raw };
-  }
-
-  return {
-    frontmatter: match[1],
-    body: raw.slice(match[0].length),
-  };
-}
-
-function pickField(frontmatter, key) {
-  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = frontmatter.match(new RegExp(`^${escaped}:\\s*(.*)$`, 'm'));
-  if (!match) {
-    return null;
-  }
-
-  return match[1].replace(/^"|"$/g, '').trim();
-}
-
-function pickArray(frontmatter, key) {
-  const lines = frontmatter.split('\n');
-  const out = [];
-  let inBlock = false;
-
-  for (const line of lines) {
-    if (!inBlock) {
-      if (line.startsWith(`${key}:`)) {
-        inBlock = true;
-      }
-      continue;
-    }
-
-    if (line.startsWith('- ')) {
-      out.push(line.slice(2).trim().replace(/^"|"$/g, ''));
-      continue;
-    }
-
-    if (line.startsWith('  - ')) {
-      out.push(line.slice(4).trim().replace(/^"|"$/g, ''));
-      continue;
-    }
-
-    if (line.trim() === '') {
-      continue;
-    }
-
-    if (!line.startsWith(' ')) {
-      break;
-    }
-  }
-
-  return out;
-}
-
-async function scanExistingContent() {
-  const files = await listFilesRecursive(MASTER_ROOT);
-  const markdownFiles = files.filter((filePath) => filePath.endsWith('.md') || filePath.endsWith('.mdx'));
-  const index = [];
-
-  for (const filePath of markdownFiles) {
-    const raw = await fs.readFile(filePath, 'utf8');
-    const { frontmatter, body } = parseFrontmatter(raw);
-
-    const slug = pickField(frontmatter, 'slug') || path.basename(filePath).replace(/\.mdx?$/, '');
-    const lang = pickField(frontmatter, 'lang') || 'unknown';
-    const id = pickField(frontmatter, 'id') || slug;
-    const translationOf = pickField(frontmatter, 'translationOf');
-    const canonicalId = translationOf && translationOf !== 'null' ? translationOf : id;
-    const title = pickField(frontmatter, 'title') || slug;
-    const tags = pickArray(frontmatter, 'tags');
-    const sourceLinks = pickArray(frontmatter, 'sourceLinks');
-
-    index.push({
-      path: path.relative(ROOT, filePath),
-      lang,
-      canonicalId,
-      slug,
-      title,
-      titleHash: hash(title.toLowerCase()),
-      semanticHash: hash(body.toLowerCase().replace(/\s+/g, ' ').slice(0, 5000)),
-      sourceHash: hash(sourceLinks.sort().join('|')),
-      topicCluster: tags[0] || 'uncategorized',
-      status: 'active',
-    });
-  }
-
-  return index;
-}
-
-function buildCoverageMap(index) {
-  const byTopic = {};
-  const byLanguage = {};
-
-  for (const row of index) {
-    byTopic[row.topicCluster] = (byTopic[row.topicCluster] || 0) + 1;
-    byLanguage[row.lang] = (byLanguage[row.lang] || 0) + 1;
-  }
-
-  return {
-    scannedAt: new Date().toISOString(),
-    existingArticleCount: index.length,
-    byTopic,
-    byLanguage,
-    saturatedTopics: Object.entries(byTopic)
-      .filter(([, count]) => count >= 10)
-      .map(([topic]) => topic),
-    underCoveredTopics: Object.entries(byTopic)
-      .filter(([, count]) => count < 3)
-      .map(([topic]) => topic),
-  };
-}
-
-function makeMasterMarkdown({ id, title, description, slug, tags, sourceLinks, summaryType, cluster, angle }) {
-  const links = sourceLinks.map((link) => `  - "${link}"`).join('\n');
+export function makeMasterMarkdown({
+  id,
+  title,
+  description,
+  slug,
+  tags,
+  sourceLinks,
+  summaryType,
+  cluster,
+  angle,
+  publishDate,
+}) {
   const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
+  const linksYaml = sourceLinks.length
+    ? `sourceLinks:\n${sourceLinks.map((link) => `  - "${link}"`).join('\n')}\n`
+    : '';
+  const readingPath = sourceLinks.length
+    ? `- Start with the primary release linked in sourceLinks.
+- Compare with prior-period publication patterns.
+- Track follow-up notifications in the same domain.`
+    : `- No registry URL matched this topic, so this brief does not attach a source link.
+- Compare with prior-period publication patterns from the same subject-matter host.
+- Track follow-up notifications in that domain.`;
 
   return `---
 id: "${id}"
@@ -198,9 +73,7 @@ publishDate: "${publishDate}"
 updatedDate: "${publishDate}"
 tags:
 ${tagsYaml}
-sourceLinks:
-${links}
-summaryType: "${summaryType}"
+${linksYaml}summaryType: "${summaryType}"
 draft: false
 ---
 
@@ -224,9 +97,7 @@ This briefing summarizes current developments connected to **${titleCase(cluster
 
 ## Source-Backed Reading Path
 
-- Start with the primary release linked in sourceLinks.
-- Compare with prior-period publication patterns.
-- Track follow-up notifications in the same domain.
+${readingPath}
 
 ## Editorial Note
 
@@ -234,36 +105,7 @@ This article is an original synthesis prepared for Great Indian Company using pu
 `;
 }
 
-async function main() {
-  await ensureDir(STATE_ROOT);
-  const sourceRegistry = await readJson(path.join(CONFIG_ROOT, 'source_registry.json'));
-  const thesisTopics = await readJson(path.join(CONFIG_ROOT, 'thesis_topics.json'));
-
-  const existingIndex = await scanExistingContent();
-  const existingSlugs = new Set(existingIndex.map((entry) => entry.slug));
-  const coverageMap = buildCoverageMap(existingIndex);
-
-  await fs.writeFile(
-    path.join(STATE_ROOT, 'content-index.json'),
-    JSON.stringify(existingIndex, null, 2) + '\n',
-    'utf8',
-  );
-  await fs.writeFile(
-    path.join(STATE_ROOT, 'coverage-map.json'),
-    JSON.stringify(coverageMap, null, 2) + '\n',
-    'utf8',
-  );
-
-  const publishRoot = MASTER_ROOT;
-  await ensureDir(publishRoot);
-
-  const sourceUrlsUsed = new Set();
-  const generatedSlugs = [];
-  const failedItems = [];
-  const retryCounts = {
-    masterRetries: 0,
-  };
-
+function planMasters({ thesisTopics, sourceRegistry, existingSlugs, masterTarget, publishDate }) {
   const combos = [];
   for (const angle of thesisTopics.angles) {
     for (const cluster of thesisTopics.clusters) {
@@ -271,41 +113,41 @@ async function main() {
     }
   }
 
-  if (combos.length < MASTER_TARGET) {
-    throw new Error(`Not enough cluster/angle combinations to create ${MASTER_TARGET} masters.`);
+  if (combos.length < 1) {
+    throw new Error('Not enough cluster/angle combinations to plan masters.');
   }
 
   const masters = [];
+  const files = [];
+  const generatedSlugs = [];
+  const sourceUrlsUsed = new Set();
   let comboIndex = 0;
+  let attempts = 0;
+  const maxAttempts = Math.max(combos.length * 20, masterTarget * 5);
+  let masterRetries = 0;
 
-  while (masters.length < MASTER_TARGET) {
+  while (masters.length < masterTarget && attempts < maxAttempts) {
+    attempts += 1;
     const seq = String(masters.length + 1).padStart(3, '0');
     const combo = combos[comboIndex % combos.length];
     comboIndex += 1;
-
     const slugBase = `${combo.cluster}-${combo.angle}-${publishDate.replace(/-/g, '')}-${seq}`;
     const slug = toSlug(slugBase);
 
     if (existingSlugs.has(slug) || generatedSlugs.includes(slug)) {
-      retryCounts.masterRetries += 1;
+      masterRetries += 1;
       continue;
     }
 
     const title = `${titleCase(combo.cluster)}: ${titleCase(combo.angle)} Guide (${masters.length + 1})`;
     const description = `Original summary on ${titleCase(combo.cluster)} focused on ${titleCase(combo.angle)} with primary-source links.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seq}`;
-
-    const sourceLinks = [
-      sourceRegistry[(masters.length * 2) % sourceRegistry.length],
-      sourceRegistry[(masters.length * 2 + 1) % sourceRegistry.length],
-    ];
-
+    const sourceLinks = selectAlignedSourceLinks(combo.cluster, sourceRegistry);
     sourceLinks.forEach((link) => sourceUrlsUsed.add(link));
 
     const tags = [combo.cluster, combo.angle, 'india', 'policy'];
     const summaryType = combo.cluster.includes('rbi') ? 'report-summary' : 'policy-explainer';
-
-    const masterMarkdown = makeMasterMarkdown({
+    const body = makeMasterMarkdown({
       id,
       title,
       description,
@@ -315,14 +157,12 @@ async function main() {
       summaryType,
       cluster: combo.cluster,
       angle: combo.angle,
+      publishDate,
     });
-
-    const masterFileName = `${publishDate}-${slug}.md`;
-    const masterPath = path.join(publishRoot, masterFileName);
-    await fs.writeFile(masterPath, masterMarkdown, 'utf8');
+    const fileName = `${publishDate}-${slug}.md`;
 
     generatedSlugs.push(slug);
-
+    files.push({ name: fileName, body });
     masters.push({
       id,
       slug,
@@ -331,48 +171,187 @@ async function main() {
       tags,
       sourceLinks,
       summaryType,
-      filePath: path.relative(ROOT, masterPath),
+      filePath: path.join('src', 'content', 'blog', 'en', fileName),
     });
   }
 
-  const masterCount = masters.length;
+  return { masters, files, generatedSlugs, sourceUrlsUsed, masterRetries };
+}
 
-  if (masterCount !== MASTER_TARGET) {
-    failedItems.push(`master-count-mismatch:${masterCount}`);
+async function writeManifest(stateRoot, manifest) {
+  await fs.mkdir(stateRoot, { recursive: true });
+  await fs.writeFile(path.join(stateRoot, 'last-run-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+}
+
+export async function runContentPipeline({
+  root = process.cwd(),
+  allowWrite,
+  masterTarget = MASTER_TARGET,
+  masterCap = MASTER_COUNT_CAP,
+  env = process.env,
+  now = new Date(),
+} = {}) {
+  const writeAllowed = allowWrite ?? contentWriteAllowed(env);
+  const masterRoot = path.join(root, 'src', 'content', 'blog', 'en');
+  const configRoot = path.join(root, 'content-automation', 'config');
+  const stateRoot = path.join(root, 'content-automation', 'state');
+  const publishDate = now.toISOString().slice(0, 10);
+  const startedAt = now.toISOString();
+  const runId = `${now.toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
+
+  const sourceRegistry = await readJson(path.join(configRoot, 'source_registry.json'));
+  const thesisTopics = await readJson(path.join(configRoot, 'thesis_topics.json'));
+  const existingIndex = await scanMasterIndex({ root, masterRoot });
+  const existingSlugs = new Set(existingIndex.map((entry) => entry.slug));
+  const existingCount = existingIndex.length;
+
+  let planned = { masters: [], files: [], generatedSlugs: [], sourceUrlsUsed: new Set(), masterRetries: 0 };
+  let outcome = {
+    published: 0,
+    committed: [],
+    decision: classifyMasterWrite({ existingCount, additional: 0, cap: masterCap, allowWrite: writeAllowed }),
+  };
+  let status = 'dry-run';
+  const failedItems = [];
+
+  try {
+    if (!Array.isArray(sourceRegistry) || sourceRegistry.length === 0) {
+      throw new Error('Source registry is empty.');
+    }
+    if (sourceRegistry.some((url) => /DBIE\.spx/i.test(url))) {
+      throw new Error(`Source registry must keep ${CANONICAL_DBIE_URL}. Found DBIE.spx.`);
+    }
+
+    planned = planMasters({
+      thesisTopics,
+      sourceRegistry,
+      existingSlugs,
+      masterTarget,
+      publishDate,
+    });
+
+    if (planned.masters.length !== masterTarget) {
+      failedItems.push(`master-count-mismatch:${planned.masters.length}`);
+      throw new Error(
+        `Refusing to commit masters: planned ${planned.masters.length}, expected ${masterTarget}. No files were written under src/content.`,
+      );
+    }
+
+    const decision = classifyMasterWrite({
+      existingCount,
+      additional: planned.masters.length,
+      cap: masterCap,
+      allowWrite: writeAllowed,
+    });
+
+    const stagingDir = await fs.mkdtemp(path.join(os.tmpdir(), 'gic-masters-'));
+    await writeStagedFiles(stagingDir, planned.files);
+    outcome = await commitMastersIfAllowed({
+      stagingDir,
+      masterRoot,
+      expectedCount: planned.masters.length,
+      existingCount,
+      allowWrite: decision.action === 'commit',
+      cap: masterCap,
+    });
+    status = outcome.decision.action === 'commit' ? 'success' : 'dry-run';
+  } catch (error) {
+    failedItems.push(error instanceof Error ? error.message : String(error));
+    status = 'failed';
+    try {
+      await refreshContentState({ root, masterRoot, stateRoot });
+    } catch (refreshError) {
+      failedItems.push(refreshError instanceof Error ? refreshError.message : String(refreshError));
+    }
+
+    const manifest = buildManifest({
+      runId,
+      startedAt,
+      masterTarget,
+      masterCap,
+      existingCount,
+      planned,
+      outcome,
+      writeAllowed,
+      failedItems,
+      status,
+    });
+    await writeManifest(stateRoot, manifest);
+    throw error;
   }
 
-  const endedAt = new Date().toISOString();
+  await refreshContentState({ root, masterRoot, stateRoot });
 
-  const manifest = {
+  const manifest = buildManifest({
     runId,
     startedAt,
-    endedAt,
-    mastersRequested: MASTER_TARGET,
-    mastersPublished: masterCount,
+    masterTarget,
+    masterCap,
+    existingCount,
+    planned,
+    outcome,
+    writeAllowed,
+    failedItems,
+    status,
+  });
+  await writeManifest(stateRoot, manifest);
+
+  if (status === 'dry-run') {
+    console.log(
+      `Refusing to write ${planned.masters.length} English masters under src/content without ALLOW_CONTENT_WRITE=1. Existing count is ${existingCount}; ceiling is ${outcome.decision.ceiling}. Content index refreshed from the current tree. No localization files written.`,
+    );
+  } else {
+    console.log(
+      `Run complete: masters=${outcome.published}. Content index refreshed after writes. No localization files written. Language-tagged English templates are not translations.`,
+    );
+  }
+
+  return { manifest };
+}
+
+function buildManifest({
+  runId,
+  startedAt,
+  masterTarget,
+  masterCap,
+  existingCount,
+  planned,
+  outcome,
+  writeAllowed,
+  failedItems,
+  status,
+}) {
+  return {
+    runId,
+    startedAt,
+    endedAt: new Date().toISOString(),
+    writeMode: status === 'success' ? 'committed' : status,
+    allowContentWrite: writeAllowed,
+    masterCap,
+    existingMastersBefore: existingCount,
+    mastersRequested: masterTarget,
+    mastersPlanned: planned.masters.length,
+    mastersPublished: outcome.published,
     translationsPublished: 0,
     localizationStatus: 'not-generated',
     localizationNote:
       'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
-    totalNewMarkdownFiles: masterCount,
+    totalNewMarkdownFiles: outcome.published,
     failedItems,
-    retryCounts,
-    sourceUrlsUsed: Array.from(sourceUrlsUsed),
-    generatedSlugs,
-    status: failedItems.length === 0 ? 'success' : 'failed',
+    retryCounts: {
+      masterRetries: planned.masterRetries,
+    },
+    sourceUrlsUsed: Array.from(planned.sourceUrlsUsed),
+    generatedSlugs: status === 'success' ? planned.generatedSlugs : [],
+    citationPolicy:
+      'sourceLinks are attached only when the host and path match the topic. Unrelated registry entries are omitted. DBIE citations use https://www.rbi.org.in/Scripts/DBIE.aspx.',
+    status,
   };
-
-  await fs.writeFile(path.join(STATE_ROOT, 'last-run-manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');
-
-  if (failedItems.length > 0) {
-    throw new Error(`Run failed: ${failedItems.join(', ')}`);
-  }
-
-  console.log(
-    `Run complete: masters=${masterCount}. No localization files written. Language-tagged English templates are not translations.`,
-  );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (isDirectExecution(import.meta.url)) {
+  runContentPipeline().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
