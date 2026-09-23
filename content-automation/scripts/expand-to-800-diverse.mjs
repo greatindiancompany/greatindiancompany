@@ -94,19 +94,7 @@ async function getExistingMasters() {
   return masters;
 }
 
-function makeMasterMarkdown({
-  id,
-  title,
-  description,
-  slug,
-  tags,
-  sourceLinks,
-  summaryType,
-  cluster,
-  angle,
-  govLabel,
-  privateLabel,
-}) {
+function makeMasterMarkdown({ id, title, description, slug, tags, sourceLinks, summaryType, cluster }) {
   const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
   const linksYaml = sourceLinks.map((url) => `  - "${url}"`).join('\n');
 
@@ -131,13 +119,13 @@ draft: false
 
 ## Executive Brief
 
-This brief synthesizes public information from **${govLabel}** and **${privateLabel}** to map India-specific developments on **${titleCase(cluster)}**.
+This English template is about **${titleCase(cluster)}**. Registry domains are not treated as citations.
 
 ## What Changed
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **${titleCase(angle)}**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- No checked change in policy or operating conditions is reported here.
+- Institutions may discuss this topic. This page does not establish that they do.
+- Program design and implementation speed are discussion points, not findings.
 
 ## Strategic Signals For India
 
@@ -168,14 +156,9 @@ This brief synthesizes public information from **${govLabel}** and **${privateLa
 - Track state-level adoption variance and bottleneck resolution patterns.
 - Revisit scenario assumptions as new disclosures arrive.
 
-## Source Links
-
-- ${sourceLinks[0]}
-- ${sourceLinks[1]}
-
 ## Editorial Method
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+This is an English template for Great Indian Company. It is not a checked reading of listed sources.
 `;
 }
 
@@ -249,7 +232,7 @@ async function main() {
     }
 
     const title = `${titleCase(cluster)} In India: ${titleCase(angle)} (${seq})`;
-    const description = `A high-level India brief using inputs from ${govLabel} and ${privateLabel}.`;
+    const description = `English template brief on ${titleCase(cluster)}. Registry links are not topic-checked citations.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seqLabel}`;
     const tags = [cluster, angle, 'india-briefs', 'diverse-sources'];
     const sourceLinks = [govUrl, privateUrl];

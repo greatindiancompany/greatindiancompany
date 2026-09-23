@@ -210,29 +210,23 @@ draft: false
 
 ## Why This Matters
 
-This briefing summarizes current developments connected to **${titleCase(cluster)}** and gives a practical view for readers tracking India policy and market signals.
+This English template notes the topic **${titleCase(cluster)}** for readers following India policy and market signals. It is not a verified briefing.
 
 ## What Changed
 
-- New updates are assessed against official releases and report series.
-- The narrative focuses on verifiable shifts rather than speculation.
-- Terms are kept plain-language so non-specialist readers can follow quickly.
+- These notes were not checked against official releases.
+- This outline does not report a checked change.
+- Terms stay in plain language.
 
 ## Key Takeaways
 
-1. The signal in this cycle is linked to **${titleCase(angle)}**.
-2. Readers should track policy continuity alongside short-term data movement.
-3. Source-first reading improves confidence and interpretation quality.
-
-## Source-Backed Reading Path
-
-- Start with the primary release linked in sourceLinks.
-- Compare with prior-period publication patterns.
-- Track follow-up notifications in the same domain.
+1. The angle named here is **${titleCase(angle)}**.
+2. Policy continuity and short-term data are separate questions this template does not settle.
+3. A link is shown on the site only when its domain matches the topic. Other registry URLs are omitted.
 
 ## Editorial Note
 
-This article is an original synthesis prepared for Great Indian Company using publicly available primary sources.
+This article is an English template for Great Indian Company. The pipeline does not verify sources.
 `;
 }
 
@@ -294,7 +288,7 @@ async function main() {
     }
 
     const title = `${titleCase(combo.cluster)}: ${titleCase(combo.angle)} Guide (${masters.length + 1})`;
-    const description = `Original summary on ${titleCase(combo.cluster)} focused on ${titleCase(combo.angle)} with primary-source links.`;
+    const description = `English template on ${titleCase(combo.cluster)} focused on ${titleCase(combo.angle)}. Sources are not verified.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seq}`;
 
     const sourceLinks = [

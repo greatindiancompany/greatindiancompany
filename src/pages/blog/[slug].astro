@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import { filterTopicalSources, honestDescription } from '../../lib/citation-honesty.mjs';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en');
@@ -13,16 +14,21 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const description = honestDescription(post.data.description);
+const topicalLinks = filterTopicalSources(post.data.sourceLinks, {
+  title: post.data.title,
+  tags: post.data.tags,
+});
 const canonical = `https://greatindiancompany.com/blog/${post.slug}`;
 const words = post.body ? post.body.trim().split(/\s+/).filter(Boolean).length : 0;
 const readTime = Math.max(2, Math.round(words / 220));
 ---
 
-<BlogLayout title={post.data.title} description={post.data.description} canonical={canonical}>
+<BlogLayout title={post.data.title} description={description} canonical={canonical}>
   <article class="card article-shell">
-    <p class="eyebrow">Editorial Brief</p>
+    <p class="eyebrow">English template</p>
     <h1>{post.data.title}</h1>
-    <p class="meta lead">{post.data.description}</p>
+    <p class="meta lead">{description}</p>
 
     <div class="meta-pills">
       <span class="pill">Published: {post.data.publishDate}</span>
@@ -41,18 +47,32 @@ const readTime = Math.max(2, Math.round(words / 220));
     </div>
 
     <section class="sources">
-      <h2>Primary Sources</h2>
-      <ul class="source-list">
-        {
-          post.data.sourceLinks.map((url) => (
-            <li>
-              <a href={url} target="_blank" rel="noopener noreferrer">
-                {url}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      {
+        topicalLinks.length > 0 ? (
+          <>
+            <h2>Topic-matched links</h2>
+            <p class="meta">
+              Shown because the site matches this brief's topic. The pipeline does not verify that the page supports the text.
+            </p>
+            <ul class="source-list">
+              {topicalLinks.map((url) => (
+                <li>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {url}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <>
+            <h2>Citations</h2>
+            <p class="meta">
+              Registry links for this brief are not shown. They were not matched to this topic, and this page does not add replacement sources.
+            </p>
+          </>
+        )
+      }
     </section>
 
     <div class="article-foot">
