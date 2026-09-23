@@ -2,11 +2,11 @@
 id: "gic-20260330-477"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Next 90 Days Checklist (477)"
-description: "A high-level India brief using inputs from morth-nic and www2-deloitte."
+title: "A 90-day operating checklist for India's agri value chains"
+description: "Review price, quality, movement, buyers, and cash over 90 days. The list is the review. It is not a set of findings."
 slug: "agri-value-chains-next-90-days-checklist-morth-nic-20260330-477"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "agri-value-chains"
   - "next-90-days-checklist"
@@ -19,52 +19,37 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: Next 90 Days Checklist (477)
+# A 90-day operating checklist for India's agri value chains
 
-## Executive Brief
+The next 90 days in an agri value chain are a review of price, quality, movement, buyers, and cash. This checklist is that review. It is not a list of findings, and it is not a claim that the coming quarter will differ from the last one.
 
-This brief synthesizes public information from **morth-nic** and **www2-deloitte** to map India-specific developments on **Agri Value Chains**.
+Use one crop and one buyer. Answer in numbers or write "not observed."
 
-## What Changed
+## Commercial
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- What volume did we contract, and what volume did we actually ship?
+- What was the collection price and the buyer price on the last ten lots?
+- Which lots were repriced after dispatch, and for which stated reason?
+- Does the buyer still want the same grade for the next 90 days, in a written note?
 
-## Strategic Signals For India
+## Physical chain
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+- Where did lots wait longest: field, yard, cold room, plant, or vehicle?
+- How many lots missed the moisture, damage, or residue line?
+- Did the cold room or the line stop, and for how many hours?
+- Which road leg or checkpoint added a day, and was the cause a vehicle, a document, or a queue?
 
-## Implications
+## Cash and papers
 
-### For policy teams
+- What is the current gap between delivery and cash, in days, from the bank account rather than the contract?
+- Which payables to farmers or aggregators are outside the agreed window?
+- Which license, yard fee, or buyer certificate expires before the 90 days end?
+- Is any stock financed, and does the warehouse record match the stock you can see?
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## How to use the answers
 
-### For operators and founders
+Sort answers into three piles: unchanged, worse for margin or time, better for margin or time. Act on one worse item. A checklist that produces twelve initiatives produces none. The [quarterly test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117) tells you when a change is real. The [bottleneck review](/blog/agri-value-chains-execution-bottleneck-review-morth-nic-20260330-597) tells you which wait is binding. The [founder guide](/blog/agri-value-chains-for-founders-and-operators-morth-nic-20260330-717) is the weekly version of this review.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Scope
 
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.morth.nic.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Nothing on this page was observed in the field for the reader. Complete it from your own lots. Leave a line blank rather than importing a figure from a national release.

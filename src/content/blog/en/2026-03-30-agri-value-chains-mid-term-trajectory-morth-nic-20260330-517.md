@@ -2,11 +2,11 @@
 id: "gic-20260330-517"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Mid Term Trajectory (517)"
-description: "A high-level India brief using inputs from morth-nic and societegenerale."
+title: "Mid-term questions for India's agri value chains"
+description: "Ask which handoffs get shorter or more specified over three to five years. This page does not state a trajectory."
 slug: "agri-value-chains-mid-term-trajectory-morth-nic-20260330-517"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "agri-value-chains"
   - "mid-term-trajectory"
@@ -19,52 +19,29 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: Mid Term Trajectory (517)
+# Mid-term questions for India's agri value chains
 
-## Executive Brief
+A mid-term trajectory for an agri value chain is a hypothesis about three to five years: which handoff gets shorter, which gets more expensive, and which buyer specification gets tighter. It is a hypothesis you date and revisit. It is not a forecast this page is willing to sign.
 
-This brief synthesizes public information from **morth-nic** and **societegenerale** to map India-specific developments on **Agri Value Chains**.
+## Questions that deserve a three-year view
 
-## What Changed
+Stay on one crop path.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Mid Term Trajectory**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- Will more of the crop be graded before the first sale, or will grading stay at the plant?
+- Will holding shift from the open yard into a cold room or a dry store you can name?
+- Will a larger share be milled, packed, or otherwise processed before it reaches the buyer you have today?
+- Will that buyer add residue, traceability, or pack specs you do not meet now?
+- Will the catchment's harvest window move enough, under weather you have already seen, to change when the plant must run?
+- Will the people who grade and maintain equipment still be hireable in that catchment? The [jobs page](/blog/agri-value-chains-jobs-and-skills-impact-morth-nic-20260330-397) is the present-tense version of this question.
 
-## Strategic Signals For India
+Each answer should name the evidence that would change your mind: a contract clause, a utilization figure, a buyer's specification sheet, a hiring record. An answer that names only a hope is not a trajectory.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What to do with the hypothesis
 
-## Implications
+Write it in six lines, one per question, with the date. Review it once a year against your own lots, not against a sector essay. If the lots contradict the line, replace the line. A slide that cannot be retired is a slogan.
 
-### For policy teams
+Comparisons with other countries belong on the [benchmark page](/blog/agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277), and only for the same handoff. Spend that would have to follow a true hypothesis belongs on the [capex page](/blog/agri-value-chains-capex-cycle-watch-morth-nic-20260330-357). Places where a founder might act sooner are categories on the [opportunity page](/blog/agri-value-chains-opportunity-landscape-morth-nic-20260330-637), still without a market size.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Scope
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.morth.nic.in/
-- https://www.societegenerale.com/en/news
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+This page states no growth rate and no end-state for Indian agriculture. It gives the questions a mid-term note has to answer before anyone calls it a trajectory.

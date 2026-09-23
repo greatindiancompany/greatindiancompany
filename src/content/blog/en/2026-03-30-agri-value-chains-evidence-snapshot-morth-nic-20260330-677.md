@@ -2,11 +2,11 @@
 id: "gic-20260330-677"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Evidence Snapshot (677)"
-description: "Evidence-based analysis of agri-value-chains, evidence-snapshot, india-briefs in India with practical implications for policy teams, operators, and investo"
+title: "What counts as evidence in India's agri value chains"
+description: "A usable record has a date, a place, a crop, and a unit. This page explains that test and is not a data snapshot."
 slug: "agri-value-chains-evidence-snapshot-morth-nic-20260330-677"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "agri-value-chains"
   - "evidence-snapshot"
@@ -19,37 +19,32 @@ summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: Evidence Snapshot (677)
+# What counts as evidence in India's agri value chains
 
-## Executive Summary
+Evidence about an agri value chain is a record with a date, a place, a crop, and a unit. A confident paragraph is not a record. This page is the test for a record. It is not a snapshot of Indian agriculture, and it does not carry figures from a release.
 
-This article delivers a neutral, source-driven analysis of recent developments connected to **agri-value-chains, evidence-snapshot, india-briefs** in India. It is written for readers who need evidence, context, and clear implications.
+## A record that can change a decision
 
-## What Changed
+Keep a row only if you can fill all of these:
 
-Recent public disclosures indicate movement in policy direction and on-ground execution. The key shift is not just in announcements, but in implementation pathways, regulatory expectations, and delivery timelines.
+- **Date** the observation was made, not the date a summary was written.
+- **Place** at the scale you operate: market, plant, warehouse, or district. "India" is not a place for an operating decision.
+- **Crop and grade**, in the words the buyer uses.
+- **Unit**: tons, lots, rupees per unit, hours, or days. A direction ("up") without a unit is not evidence.
+- **Who wrote it down**, and whether they were a party to the trade.
 
-## Why It Matters
+A price without a place, a loss percentage without a crop, and a ranking without a year all fail the test. So does a homepage that was paired with this topic by a publishing template. Pairing is not a citation.
 
-- **Policy teams:** Stronger coordination between policy design and implementation can improve measurable outcomes.
-- **Operators and founders:** Faster adaptation to compliance and process changes can reduce execution risk.
-- **Investors and strategy teams:** Business models with milestone-based delivery are better positioned for durable value creation.
+## Records that earn a place in the file
 
-## Evidence and Interpretation
+The rows that change buying and selling are the ones on the [signal brief](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197): intake, spread, rejects, dwell, and payment days. A quarterly comparison of those rows is the [what-changed test](/blog/agri-value-chains-what-changed-this-quarter-morth-nic-20260330-117). An investor who asks for evidence should be shown those rows, not this essay. The question list is on the [investor page](/blog/agri-value-chains-for-investors-morth-nic-20260330-797).
 
-This brief follows neutral editorial principles: distinguish facts from inference, attribute claims to primary sources, and avoid promotional framing.
+Secondary commentary can suggest where to look. It becomes evidence only when you can open the underlying table and match date, place, crop, and unit. Until then, keep it out of the decision file.
 
-## Risks and Open Questions
+## How to file a gap
 
-1. How quickly can announced measures become measurable outcomes?
-2. Which constraints are structural versus cyclical?
-3. What indicators should be monitored over the next 90 days?
+If the cell is empty, write the gap in one line: which figure, which place, which dates. A gap is part of the record. Replacing it with an industry average imports someone else's crop into your account.
 
-## Primary Sources
+## Scope
 
-- https://www.morth.nic.in/
-- https://www.gartner.com/en/insights
-
-## SEO Keyphrases
-
-agri-value-chains, evidence-snapshot, india-briefs, India policy analysis, sector outlook India, implementation risk, evidence-based brief
+No table of arrivals, prices, or losses is published here. The page tells you when a future table would be usable.
