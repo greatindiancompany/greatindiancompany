@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import { honestDescription } from '../../lib/citation-honesty.mjs';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en')).sort((a, b) =>
   b.data.publishDate.localeCompare(a.data.publishDate),
@@ -23,15 +24,15 @@ const topTags = [...tagFrequency.entries()]
 
 <BlogLayout
   title="Great Indian Company Blog"
-  description="Research summaries and explainers based on Indian policy and economic sources."
+  description="English template briefs. These pages do not verify sources, translations, or checked shifts."
   canonical="https://greatindiancompany.com/blog"
 >
   <section class="card hero">
-    <p class="eyebrow">India Briefing Engine</p>
-    <h1>Policy, Markets, Infrastructure, and Execution Signals in One Place</h1>
+    <p class="eyebrow">English briefs</p>
+    <h1>Policy, Markets, Infrastructure, and Execution Notes in One Place</h1>
     <p class="hero-copy">
-      This desk tracks structural shifts across India and turns them into operator- and investor-ready briefs.
-      Published briefs are written in English. Every page links back to source documents so readers can verify fast.
+      Published briefs are English templates. They are not translations, and they do not report a checked shift.
+      A link is shown only when its site matches the brief topic. Other registry URLs are left off the page.
     </p>
 
     <div class="stats">
@@ -77,7 +78,7 @@ const topTags = [...tagFrequency.entries()]
           <a href={`/blog/${post.slug}`} class="post-title">
             {post.data.title}
           </a>
-          <p class="post-desc">{post.data.description}</p>
+          <p class="post-desc">{honestDescription(post.data.description)}</p>
           <a href={`/blog/${post.slug}`} class="post-cta">Read Brief</a>
         </li>
       ))

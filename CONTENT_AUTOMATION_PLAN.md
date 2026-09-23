@@ -45,8 +45,8 @@ If these counts are not met, the run is considered failed and must not partially
 
 ### Content Principle
 
-- Content is original synthesis with citations to primary sources.
-- Every article must include source links.
+- English templates are not source-backed and do not report a verifiable shift. The pipeline does not check registry URLs.
+- Frontmatter may store source links. The site shows a link only when its site matches the brief topic.
 
 ---
 

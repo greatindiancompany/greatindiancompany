@@ -39,6 +39,10 @@ Do not add `hreflang`, alternate language links, or a language switcher for thes
 
 `npm run build` counts files in `dist` and fails above 10,000. Workers Free allows 20,000 static assets per Worker version. Keeping the templates out of `dist` is what holds the build under that budget. Do not raise the budget until a paid Workers plan is confirmed.
 
-## What this document does not claim
+## Citations and lastmod
 
-Canonical host choice (`greatindiancompany.com` and `www.greatindiancompany.com`) is unchanged here. Source citations on older briefs are unchanged here. `npm run content:run` can still append English masters; it is not part of the site build.
+The indexable set above is unchanged. A registry URL is rendered only when its site matches the brief topic. Unmatched links are omitted, and the page does not add a replacement source.
+
+Sitemap `lastmod` is the brief `updatedDate` or `publishDate` when that calendar date is real and not in the future. The homepage omits `lastmod`. Drafts are not listed. Canonical links use the apex host `https://greatindiancompany.com`.
+
+`npm run content:run` can still append English masters; it is not part of the site build.

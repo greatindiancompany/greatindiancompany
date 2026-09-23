@@ -13,6 +13,7 @@ import {
   withNoindex,
   WORKERS_FREE_STATIC_ASSET_LIMIT,
 } from './localization-policy.mjs';
+import { lastmodForBrief, maxLastmod, normalizeLastmod } from './sitemap-honesty.mjs';
 
 const SITE_URL = 'https://greatindiancompany.com';
 const ROOT = process.cwd();
@@ -43,13 +44,6 @@ function field(frontmatter, key) {
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\n([\s\S]*?)\n---\n?/);
   return match ? match[1] : '';
-}
-
-function normalizeDate(value) {
-  if (!value) {
-    return new Date().toISOString().slice(0, 10);
-  }
-  return value.slice(0, 10);
 }
 
 async function listMasterFiles(dir) {
@@ -95,12 +89,10 @@ async function listTranslationFiles(root) {
 
 function buildUrlset(urlEntries) {
   const nodes = urlEntries
-    .map(
-      (entry) => `  <url>
-    <loc>${xmlEscape(entry.loc)}</loc>
-    <lastmod>${xmlEscape(entry.lastmod)}</lastmod>
-  </url>`,
-    )
+    .map((entry) => {
+      const lastmod = entry.lastmod ? `\n    <lastmod>${xmlEscape(entry.lastmod)}</lastmod>` : '';
+      return `  <url>\n    <loc>${xmlEscape(entry.loc)}</loc>${lastmod}\n  </url>`;
+    })
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -110,16 +102,25 @@ ${nodes}
 `;
 }
 
-function buildSitemapIndex(sitemapLoc) {
-  const now = new Date().toISOString();
+function buildSitemapIndex(sitemapLoc, lastmod) {
+  const lastmodNode = lastmod ? `\n    <lastmod>${xmlEscape(lastmod)}</lastmod>` : '';
   return `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>${xmlEscape(sitemapLoc)}</loc>
-    <lastmod>${xmlEscape(now)}</lastmod>
+    <loc>${xmlEscape(sitemapLoc)}</loc>${lastmodNode}
   </sitemap>
 </sitemapindex>
 `;
+}
+
+async function pageExists(urlPath) {
+  const relative = urlPath === '/' ? 'index.html' : `${urlPath.replace(/^\//, '')}/index.html`;
+  try {
+    await fs.access(path.join(DIST_ROOT, relative));
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function blogSlugFromLoc(loc) {
@@ -207,10 +208,12 @@ async function main() {
   const translationSlugs = new Set(
     translationFiles.map((filePath) => slugFromTranslationFilename(path.basename(filePath))),
   );
-  const pages = [
-    { loc: `${SITE_URL}/`, lastmod: new Date().toISOString().slice(0, 10) },
-    { loc: `${SITE_URL}/blog`, lastmod: new Date().toISOString().slice(0, 10) },
-  ];
+  const today = new Date().toISOString().slice(0, 10);
+  const pages = [];
+  if (await pageExists('/')) {
+    pages.push({ loc: `${SITE_URL}/` });
+  }
+  const posts = [];
 
   for (const filePath of masterFiles) {
     const raw = await fs.readFile(filePath, 'utf8');
@@ -233,12 +236,37 @@ async function main() {
       );
     }
 
-    const updatedDate = normalizeDate(field(frontmatter, 'updatedDate') || field(frontmatter, 'publishDate'));
-    pages.push({
-      loc: `${SITE_URL}/blog/${slug}`,
-      lastmod: updatedDate,
-    });
+    const publishDate = field(frontmatter, 'publishDate');
+    const publishedOn = normalizeLastmod(publishDate);
+    if (publishedOn && publishedOn > today) {
+      continue;
+    }
+
+    if (!(await pageExists(`/blog/${slug}`))) {
+      continue;
+    }
+
+    const entry = { loc: `${SITE_URL}/blog/${slug}` };
+    const lastmod = lastmodForBrief(
+      { publishDate, updatedDate: field(frontmatter, 'updatedDate') },
+      today,
+    );
+    if (lastmod) {
+      entry.lastmod = lastmod;
+    }
+    posts.push(entry);
   }
+
+  if (await pageExists('/blog')) {
+    const blog = { loc: `${SITE_URL}/blog` };
+    const blogLastmod = maxLastmod(posts.map((entry) => entry.lastmod));
+    if (blogLastmod) {
+      blog.lastmod = blogLastmod;
+    }
+    pages.push(blog);
+  }
+
+  pages.push(...posts);
 
   const indexablePages = pages.filter((entry) => {
     const slug = blogSlugFromLoc(entry.loc);
@@ -255,7 +283,10 @@ async function main() {
   await fs.writeFile(path.join(DIST_ROOT, 'sitemap-0.xml'), buildUrlset(indexablePages), 'utf8');
   await fs.writeFile(
     path.join(DIST_ROOT, 'sitemap-index.xml'),
-    buildSitemapIndex(`${SITE_URL}/sitemap-0.xml`),
+    buildSitemapIndex(
+      `${SITE_URL}/sitemap-0.xml`,
+      maxLastmod(indexablePages.map((entry) => entry.lastmod)),
+    ),
     'utf8',
   );
 
