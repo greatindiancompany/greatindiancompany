@@ -1,6 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { loadLanguageCodes, writeEnglishBrief } from './publish-guard.mjs';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
@@ -8,6 +9,7 @@ const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
 const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
 
 const TARGET_MASTERS_TOTAL = 800;
+const LANGUAGE_CODES = loadLanguageCodes(path.join(CONFIG_ROOT, 'languages.json'));
 
 const startedAt = new Date().toISOString();
 const runId = `diverse-${new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}-${randomUUID().slice(0, 8)}`;
@@ -270,7 +272,7 @@ async function main() {
     });
 
     const masterFile = path.join(MASTER_ROOT, `${publishDate}-${slug}.md`);
-    await fs.writeFile(masterFile, masterMarkdown, 'utf8');
+    await writeEnglishBrief(fs, masterFile, masterMarkdown, LANGUAGE_CODES);
     generatedMasterPaths.push(path.relative(ROOT, masterFile));
     generatedSlugs.push(slug);
     createdMasters += 1;
@@ -299,7 +301,7 @@ async function main() {
     additionalTranslationsGenerated: 0,
     localizationStatus: 'not-generated',
     localizationNote:
-      'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
+      'This run writes English briefs only, through the publish guard. It does not write language-tagged files. The sitemap build rejects those URLs.',
     mastersAfterRun: totalMastersAfter,
     sourcePolicy: 'No RBI sources in this expansion batch. Government + consulting/investment/multilateral sources only.',
     sourceUrlsUsed: Array.from(sourceUrlsUsed),

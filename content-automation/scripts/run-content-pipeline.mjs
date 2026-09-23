@@ -1,6 +1,7 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { loadLanguageCodes, writeEnglishBrief } from './publish-guard.mjs';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
@@ -8,6 +9,7 @@ const CONFIG_ROOT = path.join(ROOT, 'content-automation', 'config');
 const STATE_ROOT = path.join(ROOT, 'content-automation', 'state');
 
 const MASTER_TARGET = 100;
+const LANGUAGE_CODES = loadLanguageCodes(path.join(CONFIG_ROOT, 'languages.json'));
 
 const now = new Date();
 const publishDate = now.toISOString().slice(0, 10);
@@ -319,7 +321,7 @@ async function main() {
 
     const masterFileName = `${publishDate}-${slug}.md`;
     const masterPath = path.join(publishRoot, masterFileName);
-    await fs.writeFile(masterPath, masterMarkdown, 'utf8');
+    await writeEnglishBrief(fs, masterPath, masterMarkdown, LANGUAGE_CODES);
 
     generatedSlugs.push(slug);
 
@@ -352,7 +354,7 @@ async function main() {
     translationsPublished: 0,
     localizationStatus: 'not-generated',
     localizationNote:
-      'This run does not write language-tagged files. Existing files under generated-translations are English templates, not translations, and the site build does not publish them.',
+      'This run writes English briefs only, through the publish guard. It does not write language-tagged files. The sitemap build rejects those URLs.',
     totalNewMarkdownFiles: masterCount,
     failedItems,
     retryCounts,

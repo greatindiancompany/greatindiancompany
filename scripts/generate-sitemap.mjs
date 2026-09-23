@@ -1,6 +1,12 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import {
+  assertSitemapOmitsGeneratedTranslations,
+  defaultLanguageConfigPath,
+  languageSuffixOfSlug,
+  loadLanguageCodes,
+} from '../content-automation/scripts/publish-guard.mjs';
+import {
   assertWithinWorkersFreeAssetBudget,
   slugFromTranslationFilename,
   STATIC_ASSET_FILE_BUDGET,
@@ -13,6 +19,7 @@ const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
 const TRANSLATION_ROOT = path.join(ROOT, 'content-automation', 'generated-translations');
 const DIST_ROOT = path.join(ROOT, 'dist');
+const LANGUAGE_CODES = loadLanguageCodes(defaultLanguageConfigPath(ROOT));
 
 function xmlEscape(value) {
   return value
@@ -209,12 +216,21 @@ async function main() {
     const raw = await fs.readFile(filePath, 'utf8');
     const frontmatter = parseFrontmatter(raw);
     const slug = field(frontmatter, 'slug');
-    if (!slug || translationSlugs.has(slug)) {
+    if (!slug) {
       continue;
     }
 
     if (field(frontmatter, 'draft') === 'true') {
       continue;
+    }
+
+    const lang = field(frontmatter, 'lang');
+    const translationOf = field(frontmatter, 'translationOf');
+    const suffix = languageSuffixOfSlug(slug, LANGUAGE_CODES);
+    if (lang !== 'en' || (translationOf && translationOf !== 'null') || translationSlugs.has(slug) || suffix) {
+      throw new Error(
+        `Refusing to add /blog/${slug} to the sitemap. Generated language templates and non-English briefs are not indexable (${path.relative(ROOT, filePath)}).`,
+      );
     }
 
     const updatedDate = normalizeDate(field(frontmatter, 'updatedDate') || field(frontmatter, 'publishDate'));
@@ -228,6 +244,12 @@ async function main() {
     const slug = blogSlugFromLoc(entry.loc);
     return !slug || !translationSlugs.has(slug);
   });
+
+  assertSitemapOmitsGeneratedTranslations(
+    indexablePages.map((entry) => entry.loc),
+    translationSlugs,
+    LANGUAGE_CODES,
+  );
 
   await fs.mkdir(DIST_ROOT, { recursive: true });
   await fs.writeFile(path.join(DIST_ROOT, 'sitemap-0.xml'), buildUrlset(indexablePages), 'utf8');

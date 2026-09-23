@@ -44,7 +44,7 @@ npm run build
 ## Repository Notes
 
 - `npm run build` writes the sitemap and then counts files in `dist`. The build fails above 10,000 files so a deploy stays under the Workers Free limit of 20,000 static assets per version. Do not raise that budget until a paid Workers plan is confirmed.
-- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` do not write those files.
+- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` can write English briefs only, and the sitemap build fails if a language-tagged template URL is included. See [docs/SEO.md](docs/SEO.md).
 - Keep source registries and thesis topics factual and current.
 
 ## Contributing
