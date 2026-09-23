@@ -2,69 +2,39 @@
 id: "gic-20260330-557"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Risk And Scenario Map (557)"
-description: "A high-level India brief using inputs from morth-nic and gartner."
+title: "A scenario map for risk in India's agri value chains"
+description: "Monsoon, stock limits, export notices, power, and residue failure hit different lines. No probabilities are assigned."
 slug: "agri-value-chains-risk-and-scenario-map-morth-nic-20260330-557"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "agri-value-chains"
   - "risk-and-scenario-map"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: Risk And Scenario Map (557)
+A scenario is a way an Indian chain can break, written so volume, quality, and cash each have a place. This page assigns no probability and no loss percentage.
 
-## Executive Brief
+## Breaks that hit different lines
 
-This brief synthesizes public information from **morth-nic** and **gartner** to map India-specific developments on **Agri Value Chains**.
+Use your commodity and your district.
 
-## What Changed
+1. **Monsoon on the standing crop or at harvest.** Kharif arrival comes early, late, or wet. Paddy that arrives wet fails the mill and can fail a procurement acceptance. The first pain is intake. The second is a plant sized for a normal week.
+2. **Support price versus the mandi.** If the centre stops taking paddy or wheat, or never took your crop, the mandi price is the price. Cotton can swing the same way around Cotton Corporation operations. The pain is margin on stock you already own.
+3. **A stock limit or a trade notification.** An Essential Commodities Act limit forces sales. A Directorate General of Foreign Trade notice can close an onion, rice, or sugar outlet that your mandi had been feeding. The pain is a sudden domestic surplus of a crop you cannot ship.
+4. **Power and dwell.** A potato cold store or a bulk milk cooler that stops, or a truck that waits at a yard, spends the quality of a perishable. The pain is rejects plus a slipped invoice.
+5. **The intermediary does not pay.** The commission agent, the dairy union, or the importer delays. Farmers still expect settlement. The pain is your payable and your receivable at once.
+6. **Residue or health failure.** An export lot of grapes, spices, basmati, or shrimp fails the destination test. The domestic mandi may still take a lower grade. The pain is the gap between the export contract and that grade.
+7. **Cane payment stress.** Where a mill's payable to growers stretches, the next season's planting and your allied business both feel it. This page does not identify a mill.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Risk And Scenario Map**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+A late wet kharif often arrives with price swings and slower movement. Map the lines separately so the accounts show which one moved.
 
-## Strategic Signals For India
+## What to write beside each break
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The trigger you can observe, the account line it hits, and the action available in a week. A second buyer, a stock ceiling you set yourself, or a stop on further purchase is an action. "Watch the monsoon" is not.
 
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.morth.nic.in/
-- https://www.gartner.com/en/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Weekly figures that show a break has started are the [market signals](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197). The 90-day pass is the [checklist](/blog/agri-value-chains-next-90-days-checklist-morth-nic-20260330-477). An investor should use the [diligence questions](/blog/agri-value-chains-for-investors-morth-nic-20260330-797) rather than turn this map into a score.
