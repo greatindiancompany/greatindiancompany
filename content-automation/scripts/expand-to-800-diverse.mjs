@@ -1,7 +1,14 @@
 import { randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { loadLanguageCodes, writeEnglishBrief } from './publish-guard.mjs';
+import {
+  classifyMasterAppend,
+  contentWriteAllowed,
+  loadLanguageCodes,
+  rollbackWrittenBriefs,
+  selectAlignedSourceLinks,
+  writeEnglishBrief,
+} from './publish-guard.mjs';
 
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
@@ -108,7 +115,12 @@ function makeMasterMarkdown({
   privateLabel,
 }) {
   const tagsYaml = tags.map((tag) => `  - "${tag}"`).join('\n');
-  const linksYaml = sourceLinks.map((url) => `  - "${url}"`).join('\n');
+  const linksYaml = sourceLinks.length
+    ? `sourceLinks:\n${sourceLinks.map((url) => `  - "${url}"`).join('\n')}\n`
+    : '';
+  const sourceSection = sourceLinks.length
+    ? sourceLinks.map((url) => `- ${url}`).join('\n')
+    : '- No registry host aligned with this topic, so no source link is attached.';
 
   return `---
 id: "${id}"
@@ -121,9 +133,7 @@ publishDate: "${publishDate}"
 updatedDate: "${publishDate}"
 tags:
 ${tagsYaml}
-sourceLinks:
-${linksYaml}
-summaryType: "${summaryType}"
+${linksYaml}summaryType: "${summaryType}"
 draft: false
 ---
 
@@ -170,8 +180,7 @@ This brief synthesizes public information from **${govLabel}** and **${privateLa
 
 ## Source Links
 
-- ${sourceLinks[0]}
-- ${sourceLinks[1]}
+${sourceSection}
 
 ## Editorial Method
 
@@ -225,7 +234,21 @@ async function main() {
 
   await ensureDir(MASTER_ROOT);
 
+  const appendDecision = classifyMasterAppend({
+    existingCount: existingMasterCount,
+    additional: additionalMastersNeeded,
+    allowWrite: contentWriteAllowed(),
+  });
+
+  if (appendDecision.action === 'dry-run') {
+    console.log(
+      `Refusing to write ${additionalMastersNeeded} English masters without ALLOW_CONTENT_WRITE=1. Existing count is ${existingMasterCount}; ceiling is ${appendDecision.ceiling}.`,
+    );
+    return;
+  }
+
   let createdMasters = 0;
+  const writtenPaths = [];
 
   let i = 0;
   while (createdMasters < additionalMastersNeeded) {
@@ -235,11 +258,9 @@ async function main() {
     const cluster = diverseTopics.clusters[i % diverseTopics.clusters.length];
     const angle = diverseTopics.angles[Math.floor(i / diverseTopics.clusters.length) % diverseTopics.angles.length];
 
-    const govUrl = gov[i % gov.length];
-    const privateUrl = privatePool[(i * 3) % privatePool.length];
-
-    const govLabel = shortDomain(govUrl);
-    const privateLabel = shortDomain(privateUrl);
+    const sourceLinks = selectAlignedSourceLinks(cluster, [...gov, ...privatePool]);
+    const govLabel = sourceLinks[0] ? shortDomain(sourceLinks[0]) : 'unlinked';
+    const privateLabel = sourceLinks[1] ? shortDomain(sourceLinks[1]) : govLabel;
 
     const slug = toSlug(`${cluster}-${angle}-${govLabel}-${publishDate.replace(/-/g, '')}-${seqLabel}`);
     i += 1;
@@ -252,7 +273,6 @@ async function main() {
     const description = `A high-level India brief using inputs from ${govLabel} and ${privateLabel}.`;
     const id = `gic-${publishDate.replace(/-/g, '')}-${seqLabel}`;
     const tags = [cluster, angle, 'india-briefs', 'diverse-sources'];
-    const sourceLinks = [govUrl, privateUrl];
     const summaryType = 'india-brief';
 
     sourceLinks.forEach((url) => sourceUrlsUsed.add(url));
@@ -272,10 +292,23 @@ async function main() {
     });
 
     const masterFile = path.join(MASTER_ROOT, `${publishDate}-${slug}.md`);
-    await writeEnglishBrief(fs, masterFile, masterMarkdown, LANGUAGE_CODES);
+    try {
+      await writeEnglishBrief(fs, masterFile, masterMarkdown, LANGUAGE_CODES);
+    } catch (error) {
+      await rollbackWrittenBriefs(fs, writtenPaths);
+      throw error;
+    }
+    writtenPaths.push(masterFile);
     generatedMasterPaths.push(path.relative(ROOT, masterFile));
     generatedSlugs.push(slug);
     createdMasters += 1;
+  }
+
+  if (createdMasters !== additionalMastersNeeded) {
+    await rollbackWrittenBriefs(fs, writtenPaths);
+    throw new Error(
+      `Refusing to keep ${createdMasters} new masters; expected ${additionalMastersNeeded}. Rolled back new files.`,
+    );
   }
 
   const totalMastersAfter = (await listMarkdownFiles(MASTER_ROOT)).length;
@@ -317,7 +350,8 @@ async function main() {
   );
 
   if (failedItems.length > 0) {
-    throw new Error(`Expansion failed: ${failedItems.join(', ')}`);
+    await rollbackWrittenBriefs(fs, writtenPaths);
+    throw new Error(`Expansion failed: ${failedItems.join(', ')}. Rolled back new files.`);
   }
 
   console.log(

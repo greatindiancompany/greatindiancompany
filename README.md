@@ -2,7 +2,7 @@
 
 The Astro website and content automation system for Great Indian Company.
 
-Live: [https://www.greatindiancompany.com](https://www.greatindiancompany.com)
+Live: [https://greatindiancompany.com](https://greatindiancompany.com)
 
 ## Mission
 
@@ -21,7 +21,7 @@ Astro static site for Great Indian Company with English briefs, source registrie
 
 ## Tech Stack
 
-- Astro with Cloudflare adapter
+- Astro static site served by a Cloudflare Worker
 - Plain JavaScript content automation scripts
 - English Markdown briefs
 - Wrangler deployment
@@ -44,7 +44,7 @@ npm run build
 ## Repository Notes
 
 - `npm run build` writes the sitemap and then counts files in `dist`. The build fails above 10,000 files so a deploy stays under the Workers Free limit of 20,000 static assets per version. Do not raise that budget until a paid Workers plan is confirmed.
-- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` can write English briefs only, and the sitemap build fails if a language-tagged template URL is included. See [docs/SEO.md](docs/SEO.md).
+- Do not treat `content-automation/generated-translations/` as localized copy. `npm run content:run` and `npm run content:expand:800` can write English briefs only when `ALLOW_CONTENT_WRITE=1` is set. Without that opt-in they refuse to grow the master set past 800, or past the current count when the tree is already larger. The sitemap build fails if a language-tagged template URL is included. See [docs/SEO.md](docs/SEO.md).
 - Keep source registries and thesis topics factual and current.
 
 ## Contributing

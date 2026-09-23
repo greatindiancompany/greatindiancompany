@@ -12,7 +12,6 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "11",
     "astro": "^4.0.0"
   },
   "devDependencies": {
@@ -24,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/greatindiancompany/greatindiancompany.git"
   },
-  "homepage": "https://www.greatindiancompany.com",
+  "homepage": "https://greatindiancompany.com",
   "bugs": {
     "url": "https://github.com/greatindiancompany/greatindiancompany/issues"
   }

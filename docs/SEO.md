@@ -41,4 +41,4 @@ Do not add `hreflang`, alternate language links, or a language switcher for thes
 
 ## What this document does not claim
 
-Canonical host choice (`greatindiancompany.com` and `www.greatindiancompany.com`) is unchanged here. Source citations on older briefs are unchanged here. `npm run content:run` can still append English masters; it is not part of the site build.
+Canonical host choice (`greatindiancompany.com` and `www.greatindiancompany.com`) is unchanged here. Source citations on older briefs are unchanged here. `npm run content:run` does not append English masters unless `ALLOW_CONTENT_WRITE=1` is set. It is not part of the site build.
