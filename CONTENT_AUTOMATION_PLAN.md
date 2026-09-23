@@ -1,23 +1,31 @@
 # CONTENT_AUTOMATION_PLAN.md
 
+## Current publish rule
+
+Published briefs are English. `content-automation/generated-translations/` is a corpus of English templates with language tags. Those files are not translations, are not part of the site build, and must not be added to the sitemap.
+
+`content:run` and `content:expand:800` may write new files only through `writeEnglishBrief` in `content-automation/scripts/publish-guard.mjs`. That helper rejects `generated-translations/`, any folder other than `src/content/blog/en/`, a non-English `lang`, and a slug that ends with a code from `languages.json`. `scripts/generate-sitemap.mjs` fails the build if a sitemap URL matches one of those templates. See [docs/SEO.md](docs/SEO.md).
+
+Do not generate 22 language versions. Do not add `hreflang` for these templates. The older sections below that still describe a 2,200-file translation contract are not the current rule; where they conflict with this section, this section wins.
+
 ## 1) Objective
 
-Build a deterministic, automated content engine that:
+Build a deterministic content engine that:
 
-1. Scans existing blog content in GitHub to understand what already exists.
-2. Creates exactly **100 new master (English) articles** per run.
-3. Creates exactly **22 language versions** for each new master article.
-4. Publishes content as `.md` files in this repository.
+1. Scans existing English blog content in this repository to understand what already exists.
+2. Creates exactly **100 new English articles** per `content:run`.
+3. Does **not** create language versions. Language-tagged templates already on disk stay unpublished.
+4. Publishes new English `.md` files under `src/content/blog/en/` only.
 
 ### Run Output Contract (Hard Requirement)
 
-Each successful run must output:
+Each successful `content:run` must output:
 
-- `100` new English master articles
-- `2,200` translated articles (`100 x 22`)
-- `2,300` total new `.md` files. SPAWM 2300 AGENTS for this  
+- `100` new English articles
+- `0` new language-tagged files
+- `100` total new `.md` files
 
-If these counts are not met, the run is considered failed and must not partially publish.
+If these counts are not met, the run is considered failed and must not partially publish. A run that writes under `content-automation/generated-translations/` is a failure even if the file count looks right.
 
 ---
 
@@ -25,11 +33,10 @@ If these counts are not met, the run is considered failed and must not partially
 
 ### In Scope
 
-- Programmatic content generation from thesis-aligned sources (RBI + Government of India first).
-- Markdown-based publishing pipeline.
-- GitHub scan + dedupe + coverage mapping.
-- Multilingual generation for 22 official Indian languages.
-- Daily scheduled run by cron (default).
+- Programmatic English content generation from thesis-aligned sources (RBI + Government of India first).
+- Markdown-based publishing pipeline for `src/content/blog/en/` only.
+- GitHub scan + dedupe + coverage mapping of English briefs.
+- Daily scheduled run by cron (default), still without language-tagged output.
 
 ### in Scope
 
@@ -43,60 +50,39 @@ If these counts are not met, the run is considered failed and must not partially
 
 ---
 
-## 3) Repository Layout (Planned)
+## 3) Repository Layout
 
 ```text
 /
 ├── CONTENT_AUTOMATION_PLAN.md
+├── docs/
+│   └── SEO.md
 ├── content-automation/
 │   ├── config/
-│   │   ├── languages.json
+│   │   ├── languages.json          # rejection codes, not a publish list
 │   │   ├── source_registry.json
 │   │   └── thesis_topics.json
+│   ├── generated-translations/     # unpublished English templates; not in the sitemap
 │   ├── state/
 │   │   ├── content-index.json
 │   │   ├── coverage-map.json
 │   │   └── last-run-manifest.json
-│   ├── logs/
 │   └── scripts/
+│       ├── publish-guard.mjs
 │       ├── run-content-pipeline.mjs
-│       ├── scan-existing-content.mjs
-│       ├── generate-masters.mjs
-│       ├── generate-translations.mjs
-│       └── validate-run.mjs
+│       └── expand-to-800-diverse.mjs
 └── src/
     └── content/
         └── blog/
-            ├── en/
-            ├── as/
-            ├── bn/
-            ├── brx/
-            ├── doi/
-            ├── gu/
-            ├── hi/
-            ├── kn/
-            ├── kok/
-            ├── ks/
-            ├── mai/
-            ├── ml/
-            ├── mni/
-            ├── mr/
-            ├── ne/
-            ├── or/
-            ├── pa/
-            ├── sa/
-            ├── sat/
-            ├── sd/
-            ├── ta/
-            ├── te/
-            └── ur/
+            └── en/                  # only published brief folder
 ```
 
 Notes:
 
-- `src/content/blog/en/` holds master articles.
-- Each language folder contains translated variants of those masters.
-- Path naming is deterministic for traceability.
+- `src/content/blog/en/` holds the published English briefs. Do not add `src/content/blog/<lang>/` folders.
+- `content-automation/generated-translations/<code>/` is an unpublished template corpus. Do not move those files into `src/content/`.
+- `languages.json` lists template codes so the sitemap guard can reject `-<code>` slugs. It is not a publish target.
+- Do not add `generate-translations.mjs`. `publish-guard.mjs` is the write and sitemap gate.
 
 ---
 
@@ -110,12 +96,12 @@ Notes:
 ## 4.2 Single-Run Lifecycle
 
 1. Load config and previous state.
-2. Phase 1: Scan GitHub content and build current blog index.
-3. Phase 2: Generate and accept exactly 100 new master articles.
-4. Phase 3: Generate 22 language versions per accepted master.
-5. Validate all files + counts + schema.
-6. Publish atomically (all-or-nothing).
-7. Emit run manifest.
+2. Phase 1: Scan English content and build the current blog index.
+3. Phase 2: Generate and accept exactly 100 new English articles.
+4. Do not generate language versions.
+5. Validate English files, counts, and schema.
+6. Publish atomically (all-or-nothing) under `src/content/blog/en/`.
+7. Emit run manifest with `translationsPublished: 0`.
 
 ---
 
@@ -227,13 +213,19 @@ If fail: reject + regenerate candidate.
 
 ---
 
-## 7) Phase 3: Generate 22 Language Versions per Master
+## 7) Phase 3: Do not generate language versions
 
-Goal: For each accepted master, create 22 localized versions.
+Goal: leave language-tagged templates unpublished.
 
-## 7.1 Required Language Set
+`content-automation/config/languages.json` records 22 language codes. Files under `content-automation/generated-translations/<code>/` use those codes in `lang` and in the slug, and the body is English. They are not localized versions.
 
-Use the 22 official Indian languages:
+Do not write new files there. Do not copy them into `src/content/blog/`. Do not add them to the sitemap, `hreflang`, or alternate links. The codes exist so `publish-guard.mjs` can reject a slug that ends in `-<code>`.
+
+The list below is the rejection set, not a generation target:
+
+## 7.1 Language codes that must stay out of the sitemap
+
+These codes are not published languages:
 
 1. Assamese (`as`)
 2. Bengali (`bn`)
@@ -258,29 +250,21 @@ Use the 22 official Indian languages:
 21. Telugu (`te`)
 22. Urdu (`ur`)
 
-English remains the master generation language.
+English remains the only published language.
 
-## 7.2 Translation Rules
+## 7.2 What a real translation would require
 
-For each language version:
+A future localized brief is in scope only when the body is written in that language and a person has reviewed it. Until then:
 
-1. Preserve factual meaning of master article.
-2. Localize phrasing naturally (not literal robotic translation).
-3. Keep source links intact.
-4. Include `translationOf` pointing to English `id`.
-5. Use language-specific slug.
+1. Do not prefix an English title with a language name and call it a translation.
+2. Do not set `lang` to anything other than `en` on a published file.
+3. Do not set `translationOf` on a published file.
+4. Do not invent a language-specific slug by appending `-<code>`.
+5. Do not emit `hreflang` for a template.
 
-## 7.3 Translation Validation
+## 7.3 Validation
 
-Each translated article must pass:
-
-- Frontmatter schema validity.
-- Correct `lang` and `translationOf`.
-- No missing sections.
-- No invalid script encoding.
-- Language-quality threshold (fluency/consistency checks).
-
-If any variant fails, regenerate only failed variants until all 22 pass.
+`writeEnglishBrief` rejects a write that violates the rules above. `assertSitemapOmitsGeneratedTranslations` rejects a sitemap that contains a template URL. The content collection schema accepts `lang: "en"` and `translationOf: null` only.
 
 ---
 
@@ -288,23 +272,21 @@ If any variant fails, regenerate only failed variants until all 22 pass.
 
 ## 8.1 File Naming
 
-Master article path:
+Published article path:
 
 `src/content/blog/en/<publishDate>-<slug>.md`
 
-Translation path:
+Do not publish to `src/content/blog/<lang>/`.
 
-`src/content/blog/<lang>/<publishDate>-<slug>-<id>.md`
+## 8.2 Canonical linkage
 
-## 8.2 Canonical and Cross-Language Linkage
-
-Every markdown file includes frontmatter references:
+Every published markdown file includes:
 
 - `id`
-- `lang`
-- `translationOf`
+- `lang: "en"`
+- `translationOf: null`
 
-This enables Astro rendering of alternate language links and hreflang sets.
+There is no alternate-language link set and no `hreflang` set. See [docs/SEO.md](docs/SEO.md).
 
 ## 8.3 Example Master Frontmatter
 
@@ -326,16 +308,18 @@ draft: false
 ---
 ```
 
-## 8.4 Example Translation Frontmatter
+## 8.4 Language-tagged frontmatter is not a publish format
+
+A file like the one below is a template, not a Hindi article. Do not publish it and do not list its URL in the sitemap.
 
 ```yaml
 ---
 id: "gic-2026-03-30-rbi-liquidity-001-hi"
 lang: "hi"
 translationOf: "gic-2026-03-30-rbi-liquidity-001"
-title: "आरबीआई तरलता अपडेट: क्या बदला और इसका मतलब क्या है"
-description: "आरबीआई की हालिया तरलता कार्रवाइयों का सरल सारांश।"
-slug: "rbi-liquidity-update-kya-badla"
+title: "[Hindi] RBI Liquidity Update: What Changed and Why It Matters"
+description: "Hindi version of an English brief."
+slug: "rbi-liquidity-update-what-changed-hi"
 publishDate: "2026-03-30"
 updatedDate: "2026-03-30"
 tags: ["rbi", "liquidity", "india-economy"]
@@ -345,6 +329,8 @@ summaryType: "report-summary"
 draft: false
 ---
 ```
+
+The title and body of the files on disk are English. A Devanagari title in an old example does not mean a translation exists.
 
 ---
 
@@ -361,8 +347,8 @@ Required fields:
 - `endedAt`
 - `mastersRequested` (always 100)
 - `mastersPublished`
-- `translationsPerMaster` (always 22)
-- `translationsPublished`
+- `translationsPublished` (always 0)
+- `localizationStatus` (`not-generated`)
 - `failedItems[]`
 - `retryCounts`
 - `sourceUrlsUsed[]`
@@ -371,8 +357,9 @@ Required fields:
 A run is successful only if:
 
 - `mastersPublished === 100`
-- `translationsPublished === 2200`
+- `translationsPublished === 0`
 - `schemaInvalidCount === 0`
+- no new file was written under `content-automation/generated-translations/`
 
 ---
 
@@ -380,16 +367,16 @@ A run is successful only if:
 
 ## 10.1 Retry Policy
 
-- Master generation retries per failed candidate: configurable (default `3`).
-- Translation retries per language per article: configurable (default `3`).
-- Dedup/quality failures trigger regeneration.
+- English article retries per failed candidate: configurable (default `3`).
+- There is no translation retry loop.
+- Dedup/quality failures trigger regeneration of the English article.
 
 ## 10.2 Hard Failure Conditions
 
 Fail whole run if:
 
-1. Cannot reach 100 accepted masters after max retries.
-2. Any master lacks full 22 validated translations.
+1. Cannot reach 100 accepted English articles after max retries.
+2. Any language-tagged file was written, or any sitemap URL would match a template slug.
 3. Any schema-invalid file remains.
 4. Manifest counts mismatch.
 
@@ -438,14 +425,14 @@ Fail whole run if:
 
 ## 12.3 Count Contract Tests
 
-- Confirm exactly 100 accepted masters.
-- Confirm exactly 22 translations per master.
-- Confirm total exactly 2,300 generated markdown files per successful run.
+- Confirm exactly 100 accepted English articles.
+- Confirm zero new language-tagged files.
+- Confirm total exactly 100 generated markdown files per successful `content:run`.
 
 ## 12.4 Integrity Tests
 
-- Every translated article has valid `translationOf` master id.
-- Every master has complete translation set.
+- Every published article has `lang: "en"` and `translationOf: null`.
+- No published slug ends with a code from `languages.json`.
 
 ## 12.5 Citation Tests
 
@@ -462,10 +449,12 @@ Fail whole run if:
 Run is accepted only when all below are true:
 
 1. `mastersPublished = 100`
-2. `translationsPublished = 2200`
-3. `totalNewMarkdownFiles = 2300`
+2. `translationsPublished = 0`
+3. `totalNewMarkdownFiles = 100`
 4. `schemaInvalidCount = 0`
-5. All tests pass
+5. Sitemap URLs do not include a `generated-translations` slug
+6. `dist` stays under 10,000 files
+7. All tests pass
 
 ---
 
@@ -475,7 +464,6 @@ Track per run:
 
 - generation pass rate
 - dedupe rejection rate
-- translation regeneration rate
 - source utilization distribution
 - build pass/fail
 - runtime duration
@@ -491,8 +479,8 @@ Track weekly:
 
 ## 14) Assumptions and Defaults
 
-1. 22-language output refers to the 22 official Indian languages listed above.
-2. English is the master language for generation.
+1. The 22 codes in `languages.json` are a sitemap rejection set. They are not an output language list.
+2. English is the only generation language.
 3. Content strategy uses original synthesis + source citation only.
 4. Source priority starts with RBI and Government of India publications.
 5. Default run cadence is daily via cron.
@@ -505,8 +493,8 @@ Track weekly:
 1. Create folder structure under `content-automation/` and `src/content/blog/`.
 2. Implement GitHub scan script and content index writer.
 3. Implement topic scoring and master generation engine.
-4. Implement translation engine for the 22-language set.
-5. Implement validators (schema, dedupe, integrity, citation, count contract).
+4. Do not implement a translation engine. Keep `writeEnglishBrief` on every markdown write.
+5. Implement validators (schema, dedupe, integrity, citation, count contract, sitemap exclusion).
 6. Implement staging + atomic publish flow.
 7. Implement run manifest output.
 8. Add GitHub Actions daily cron workflow.

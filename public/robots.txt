@@ -1,3 +1,5 @@
+# English pages only. Language-tagged templates are not listed in the sitemap.
+# Policy: docs/SEO.md
 User-agent: *
 Allow: /
 

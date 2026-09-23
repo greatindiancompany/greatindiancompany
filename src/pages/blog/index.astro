@@ -74,11 +74,11 @@ const topTags = [...tagFrequency.entries()]
               {post.data.tags.slice(0, 3).map((tag) => <span class="tag">{tag}</span>)}
             </div>
           </div>
-          <a href={`/blog/${post.data.slug}`} class="post-title">
+          <a href={`/blog/${post.slug}`} class="post-title">
             {post.data.title}
           </a>
           <p class="post-desc">{post.data.description}</p>
-          <a href={`/blog/${post.data.slug}`} class="post-cta">Read Brief</a>
+          <a href={`/blog/${post.slug}`} class="post-cta">Read Brief</a>
         </li>
       ))
     }

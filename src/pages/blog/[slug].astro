@@ -6,14 +6,14 @@ export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en');
 
   return posts.map((post) => ({
-    params: { slug: post.data.slug },
+    params: { slug: post.slug },
     props: { post },
   }));
 }
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const canonical = `https://greatindiancompany.com/blog/${post.data.slug}`;
+const canonical = `https://greatindiancompany.com/blog/${post.slug}`;
 const words = post.body ? post.body.trim().split(/\s+/).filter(Boolean).length : 0;
 const readTime = Math.max(2, Math.round(words / 220));
 ---
