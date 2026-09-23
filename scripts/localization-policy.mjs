@@ -1,62 +1,41 @@
 /**
- * Publishing rules for language-tagged markdown.
- *
- * Files under content-automation/generated-translations/ prefix an English
- * template with a language name. The body stays English. Emitting an HTML
- * page per file would claim a language the text is not in, and would put
- * dist near the Workers Free static-asset cap (20,000 files per version).
- *
- * A page is publishable only when both are true:
- * 1. Its slug is listed in PUBLISHABLE_LOCALIZATION_SLUGS.
- * 2. Frontmatter opts in with localized: true, lang is not English, the
- *    article is not a draft, and the body is not an English stub.
+ * Language-tagged files under content-automation/generated-translations/ are
+ * English templates. They are not translations. The site build must not emit
+ * HTML for them or list them in the sitemap. If a leftover HTML file for one
+ * of those slugs is already in dist, it is marked noindex.
  */
 
 export const WORKERS_FREE_STATIC_ASSET_LIMIT = 20000;
 
 /**
- * Fail the build well below the Free cap so one content run cannot deploy
- * thousands of extra HTML files. Paid Workers allow 100,000 files; do not
- * raise this budget until that plan is confirmed.
+ * Fail the build well below the Free cap. Paid Workers allow 100,000 files.
+ * Do not raise this budget until that plan is confirmed.
  */
 export const STATIC_ASSET_FILE_BUDGET = 10000;
 
-/** Slugs of articles whose body is actually written in `lang`. Empty on purpose. */
-export const PUBLISHABLE_LOCALIZATION_SLUGS = Object.freeze([]);
+export const NOINDEX_ROBOTS_META = '<meta name="robots" content="noindex, nofollow" />';
 
-const RTL_LANGS = new Set(['ur', 'ks', 'sd', 'ar', 'fa', 'he']);
+const NOINDEX_META_PATTERN = /<meta\s+name=["']robots["'][^>]*content=["'][^"']*noindex[^"']*["'][^>]*>/i;
 
-const ENGLISH_STUB_MARKERS = [
-  'preserves the meaning',
-  'Localized Summary',
-  'Localized Brief',
-  'regional discovery',
-  'English master',
-];
-
-export function textDirection(lang) {
-  return RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
+export function slugFromTranslationFilename(filename) {
+  const base = filename.replace(/\.mdx?$/i, '');
+  return base.replace(/^\d{4}-\d{2}-\d{2}-/, '');
 }
 
-export function isPublishableLocalization({ lang, localized, draft, body }) {
-  if (String(localized) !== 'true') {
-    return false;
+export function withNoindex(html) {
+  if (typeof html !== 'string' || html.length === 0) {
+    return html;
   }
 
-  if (typeof lang !== 'string' || lang.length === 0 || lang === 'en' || lang === 'unknown') {
-    return false;
+  if (NOINDEX_META_PATTERN.test(html)) {
+    return html;
   }
 
-  if (String(draft) === 'true') {
-    return false;
+  if (/<head[^>]*>/i.test(html)) {
+    return html.replace(/<head[^>]*>/i, (open) => `${open}\n    ${NOINDEX_ROBOTS_META}`);
   }
 
-  const text = typeof body === 'string' ? body : '';
-  if (ENGLISH_STUB_MARKERS.some((marker) => text.includes(marker))) {
-    return false;
-  }
-
-  return true;
+  return `${NOINDEX_ROBOTS_META}\n${html}`;
 }
 
 export function assertWithinWorkersFreeAssetBudget(fileCount) {

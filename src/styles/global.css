@@ -289,7 +289,9 @@ body.is-loading::after {
   color: #ffffff;
 }
 
-#text01 a em {
+#text01 a em,
+#text01 em {
+  color: rgba(255, 255, 255, 0.529);
   font-style: italic;
 }
 

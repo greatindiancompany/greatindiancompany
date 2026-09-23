@@ -10,7 +10,7 @@ Great Indian Company is an applied AI product lab from India for the world. The 
 
 ## What This Repository Contains
 
-Astro static site for Great Indian Company with English briefs, source registries, thesis topics, sitemap generation, and a Cloudflare Worker that serves the built files. Language-tagged files under `content-automation/generated-translations/` are English templates. They are not translations, they are not pages on the site, and they are not listed in the sitemap.
+Astro static site for Great Indian Company with English briefs, source registries, thesis topics, sitemap generation, and a Cloudflare Worker that serves the built files. Language-tagged files under `content-automation/generated-translations/` are English templates. They are not translations. The build does not write HTML for them, does not list them in the sitemap, and marks any leftover copy of those pages `noindex`.
 
 ## Highlights
 

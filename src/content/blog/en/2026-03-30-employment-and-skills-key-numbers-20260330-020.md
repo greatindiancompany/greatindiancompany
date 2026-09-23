@@ -14,7 +14,7 @@ tags:
   - "policy"
 sourceLinks:
   - "https://www.rbi.org.in/Scripts/StateFinances.aspx"
-  - "https://www.rbi.org.in/Scripts/DBIE.spx"
+  - "https://www.rbi.org.in/Scripts/DBIE.aspx"
 summaryType: "policy-explainer"
 draft: false
 ---
