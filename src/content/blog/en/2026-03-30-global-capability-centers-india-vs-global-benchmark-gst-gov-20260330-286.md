@@ -2,69 +2,60 @@
 id: "gic-20260330-286"
 lang: "en"
 translationOf: null
-title: "Global Capability Centers In India: India Vs Global Benchmark (286)"
-description: "A high-level India brief using inputs from gst-gov and lek."
+title: "What Can Be Benchmarked in India's Software Exports"
+description: "Official series show where India's software exports go and how they are delivered. They do not publish India's share of the world's captive centres."
 slug: "global-capability-centers-india-vs-global-benchmark-gst-gov-20260330-286"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "global-capability-centers"
   - "india-vs-global-benchmark"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "trade"
 sourceLinks:
-  - "https://www.gst.gov.in/"
-  - "https://www.lek.com/insights"
+  - "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625"
+  - "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61562"
+  - "https://stpi.in/sites/default/files/annual-reports-documents/stpi_annual_report_2024_2025_eng.pdf"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2106222"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Global Capability Centers In India: India Vs Global Benchmark (286)
+# What Can Be Benchmarked in India's Software Exports
 
-## Executive Brief
+A comparison is only as good as the denominator. India publishes a detailed account of its own software exports. It does not, in the Reserve Bank survey, the DPIIT factsheets, the MoSPI national accounts, or the PIB notes used here, publish India's share of global capability centres worldwide.
 
-This brief synthesizes public information from **gst-gov** and **lek** to map India-specific developments on **Global Capability Centers**.
+## The comparison the RBI survey supports
 
-## What Changed
+The 18 September 2026 survey gives India's 2025-26 software services exports by destination and by mode of supply. Modes follow the usual services-trade split: cross-border supply, consumption abroad, commercial presence, and presence of natural persons.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **India Vs Global Benchmark**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+On the wider total of **US$ 239.3 billion** (exports plus sales through overseas commercial presence):
 
-## Strategic Signals For India
+- Cross-border supply was **US$ 202.7 billion**, **84.7 percent**.
+- Commercial presence was **US$ 17.9 billion**, **7.5 percent**, up from **US$ 13.9 billion** and **6.4 percent** in 2024-25.
+- Presence of natural persons was **US$ 18.4 billion**, **7.7 percent**, down from **US$ 19.0 billion** and **8.7 percent**.
+- Consumption abroad was **US$ 0.3 billion**.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Excluding commercial presence, off-site delivery was **91.7 percent** and on-site delivery **8.3 percent**. The United States took **54.1 percent** of that export total, Europe **31.8 percent**, the United Kingdom alone **15.4 percent**, and Asia **6.3 percent**. The US dollar invoiced **72.6 percent**.
 
-## Implications
+The fair benchmark is internal and over time. India's software exports are delivered from India, concentrated on the United States and Europe, and only partly matched by an overseas commercial presence of Indian firms. A captive hub is one way cross-border supply gets produced. Third-party exporters are another. The mode table cannot split them.
 
-### For policy teams
+Foreign affiliates of Indian companies are the commercial-presence line. Their local software business in 2025-26 was **US$ 17.9 billion**, up from **US$ 13.9 billion**. The United States held **42.2 percent** of that affiliate business. That table describes Indian firms abroad. It is the mirror image of a foreign firm's captive in India, and it should not be cited as the inbound GCC stock.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Two publishers, two maps of the same year
 
-### For operators and founders
+STPI's annual report for 2024-25 reproduces industry figures and marks them **Source: NASSCOM**. On that reproduction, IT-BPM exports were **$224.4 billion** in 2024-25, against **$214.4 billion** a year earlier, and the United States held a **62 percent** share, the United Kingdom **17 percent**, continental Europe **11 percent**, and Asia-Pacific **8 percent**.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The Reserve Bank's estimate for 2024-25, excluding commercial presence, is **US$ 204.7 billion**, with the United States at **52.9 percent** and Europe, including the United Kingdom, at **32.8 percent**. The wider RBI total including commercial presence was **US$ 218.6 billion**.
 
-### For investors and strategy teams
+These are different coverages and different geographies. Averaging 62 percent and 52.9 percent does not produce a better US share. A board pack should pick one publisher, name it, and keep the other as a labeled alternative. NASSCOM is an industry body. The figure enters a government document only because STPI quoted it.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## The benchmark that is not in the official tables
 
-## Next 90 Days Checklist
+On 25 February 2025 PIB Delhi reported a ministerial highlight of over **1,700** centres, **1.9 million** professionals, and **$64.6 billion** of revenue as of 2024, with a stated projection of about **$105 billion**, around **2,400** centres, and over **2.8 million** people by 2030. The note does not give a world total beside those India figures, so it does not yield a global share. It also does not describe a sampling frame. Using it as "India's share of global GCCs" adds a denominator the note does not contain.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+MoSPI's provisional estimates for 2025-26 place information technology inside a broad GVA group with financial services, real estate, professional services, and ownership of dwellings. That group is not a global IT export share.
 
-## Source Links
+Readers who need the destination table in full should use the [market-signal brief](/blog/global-capability-centers-market-signal-brief-gst-gov-20260330-206). Readers who need the labeled figure list should use the [evidence snapshot](/blog/global-capability-centers-evidence-snapshot-gst-gov-20260330-686).
 
-- https://www.gst.gov.in/
-- https://www.lek.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company is an applied AI product lab. A comparison that has to survive a diligence call can be scoped with the lab at [greatindiancompany.com](https://greatindiancompany.com).
