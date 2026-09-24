@@ -2,69 +2,59 @@
 id: "gic-20260330-486"
 lang: "en"
 translationOf: null
-title: "Global Capability Centers In India: Next 90 Days Checklist (486)"
-description: "A high-level India brief using inputs from gst-gov and nomuraholdings."
+title: "A Ninety-Day Reading List for India's Captive Hubs"
+description: "From 24 September 2026 the useful official dates are the new RBI survey, Consent Manager registration on 13 November 2026, and the next DPIIT factsheet."
 slug: "global-capability-centers-next-90-days-checklist-gst-gov-20260330-486"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "global-capability-centers"
   - "next-90-days-checklist"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "digital"
 sourceLinks:
-  - "https://www.gst.gov.in/"
-  - "https://www.nomuraholdings.com/company/research/"
+  - "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625"
+  - "https://www.meity.gov.in/static/uploads/2024/02/Digital-Personal-Data-Protection-Act-2023.pdf"
+  - "https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa"
+  - "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU10_JxCEDg.pdf"
+  - "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1780655857536_5ac01869-ca4a-422d-b7a7-57b81da60932_Press_Note_on_GDP_Estimates_for_Q4_2025-26_and_PE_FY_2025-26_F.pdf"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Global Capability Centers In India: Next 90 Days Checklist (486)
+# A Ninety-Day Reading List for India's Captive Hubs
 
-## Executive Brief
+The window is 24 September 2026 to 23 December 2026. The list below uses dates that are already in official documents. It does not invent a publication calendar for series that are merely "quarterly".
 
-This brief synthesizes public information from **gst-gov** and **nomuraholdings** to map India-specific developments on **Global Capability Centers**.
+## Already on the table
 
-## What Changed
+Read the Reserve Bank's software and ITES export survey released on **18 September 2026**. Record four numbers you will actually use, and write the label next to each:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- **US$ 221.4 billion**: software services exports in 2025-26, excluding overseas commercial presence, up 8.2 percent.
+- **US$ 12.0 billion**: engineering services, the activity line closest to in-house product design. Product design engineering inside IT-enabled services was **US$ 3.0 billion**.
+- **91.7 percent**: off-site delivery.
+- **54.1 percent**: share going to the United States.
 
-## Strategic Signals For India
+Write, in the same note, that the survey does not identify captive centres. If a slide still says the total is "GCC revenue", correct the slide this week. The full activity table is in the [market-signal brief](/blog/global-capability-centers-market-signal-brief-gst-gov-20260330-206).
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## The date inside the window
 
-## Implications
+**13 November 2026** is one year after notification of the Digital Personal Data Protection Rules, 2025. Rule 4, on registration and obligations of Consent Managers, commences then. A captive that determines the purpose of processing personal data should decide, before that date, whether a Consent Manager is part of its design. The rules do not require every company to become one. They open registration for persons who meet the First Schedule conditions, including incorporation in India and net worth of not less than **two crore rupees**.
 
-### For policy teams
+Do not treat 13 November 2026 as the day notice, security, breach reporting, and cross-border conditions switch on. Rules 3 and 5 to 16 commence on **13 May 2027**, eighteen months after 13 November 2025. That date is outside this ninety-day window. Put it on the following quarter's list, and use the [regulatory brief](/blog/global-capability-centers-regulatory-outlook-gst-gov-20260330-446) for the transfer clause.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Between now and 23 December, the practical data task is a dataset inventory: what personal data and what traffic data leave India for the parent. Rule 13(4), which can restrict specified data of a notified Significant Data Fiduciary, is also in the May 2027 set. The inventory is useful now because the category list does not exist yet.
 
-### For operators and founders
+## Check, without assuming a release day
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+DPIIT publishes an FDI factsheet on a quarterly basis. The March 2026 sheet was cited in the Lok Sabha on 20 July 2026: computer software and hardware equity of **USD 13,946 million** in 2025-26, and gross FDI of **USD 94.84 billion** against net FDI of **USD 6.95 billion**. During this window, look on dpiit.gov.in for any factsheet newer than March 2026. If it is not posted, record that absence. Do not fill it with a broker estimate.
 
-### For investors and strategy teams
+MoSPI's provisional-estimates note scheduled the next quarterly GDP release, for April–June 2026, on **31 August 2026**. That date has passed. Read the note that was posted, and remember that IT remains inside the financial, real estate, professional services, and dwellings group. Do not expect that release to contain a GCC line.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## Leave these alone for ninety days
 
-## Next 90 Days Checklist
+The centre count of "over 1,700" and the revenue of **$64.6 billion** come from ministerial remarks PIB reported on 25 February 2025. Nothing dated inside this window replaces them with a statistical register. Refreshing a target with those figures, as if they were a September census, makes the pack look current and leaves it undocumented.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+A document that uses GCC to mean Government Community Cloud is a MeitY cloud programme. File it away from the captive-hub folder.
 
-## Source Links
-
-- https://www.gst.gov.in/
-- https://www.nomuraholdings.com/company/research/
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company is an applied AI product lab. If this list needs to become a standing watch for one company, write to [hello@greatindiancompany.com](mailto:hello@greatindiancompany.com).

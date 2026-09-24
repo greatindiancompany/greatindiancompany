@@ -2,69 +2,61 @@
 id: "gic-20260330-206"
 lang: "en"
 translationOf: null
-title: "Global Capability Centers In India: Market Signal Brief (206)"
-description: "A high-level India brief using inputs from gst-gov and mckinsey."
+title: "The Market Signal in India's Software Export Survey"
+description: "RBI's 2025-26 software survey is the market series India actually publishes. It records exports by activity and destination, not a price for captive centres."
 slug: "global-capability-centers-market-signal-brief-gst-gov-20260330-206"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "global-capability-centers"
   - "market-signal-brief"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "trade"
 sourceLinks:
-  - "https://www.gst.gov.in/"
-  - "https://www.mckinsey.com/in/our-insights"
+  - "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625"
+  - "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61562"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Global Capability Centers In India: Market Signal Brief (206)
+# The Market Signal in India's Software Export Survey
 
-## Executive Brief
+People tracking captive hubs often want a market price: how big the centres are, who is hiring, what a campus is worth. The series the Reserve Bank actually released on 18 September 2026 answers a narrower question. It estimates India's exports of computer services and information-technology-enabled services.
 
-This brief synthesizes public information from **gst-gov** and **mckinsey** to map India-specific developments on **Global Capability Centers**.
+That narrower question is still the best official market signal, because captive delivery of software and operations is inside the export total when the Indian entity reports it as a software export. The Bank does not flag which respondents are captives.
 
-## What Changed
+## Coverage
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Market Signal Brief**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+For 2025-26 the Bank contacted **7,569** software export companies. **2,363** responded, including most of the large companies, and those respondents accounted for about **89 percent** of estimated exports. Small non-respondents are estimated with a method the Bank has published since the 2016-17 round. The figures below are the Bank's final estimates, not the reported subset.
 
-## Strategic Signals For India
+Exports excluding overseas commercial presence: **US$ 221.4 billion** (**₹19,55,947 crore**), up **8.2 percent** from **US$ 204.7 billion** in 2024-25.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Where the growth sat
 
-## Implications
+| Activity | 2024-25 (US$ billion) | 2025-26 (US$ billion) | Share in 2025-26 |
+| --- | ---: | ---: | ---: |
+| IT services | 131.3 | 147.0 | 66.4% |
+| Software product development | 6.8 | 6.4 | 2.9% |
+| BPO services | 55.8 | 56.0 | 25.3% |
+| Engineering services | 10.8 | 12.0 | 5.4% |
+| Total software services exports | 204.7 | 221.4 | 100% |
 
-### For policy teams
+Computer services as a group, IT services plus software products, rose from a **67.4 percent** share to **69.3 percent**. BPO's share of the total fell from **27.3 percent** to **25.3 percent** even though the dollar level was slightly higher. Engineering services rose from **US$ 10.8 billion** to **US$ 12.0 billion**.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Within engineering, product design engineering (mechanical and electronics, excluding software) moved from **US$ 1.8 billion** to **US$ 3.0 billion**. Embedded solutions moved from **US$ 1.8 billion** to **US$ 2.0 billion**. Within BPO, finance, accounting, auditing, bookkeeping, and tax consulting were **US$ 8.0 billion**, and business consulting including public relations was **US$ 4.0 billion**. A residual line, "other BPO services", was **US$ 42.2 billion**. Most BPO exports are not broken into a category a captive can claim as its own.
 
-### For operators and founders
+Private limited companies accounted for **60.8 percent** of 2025-26 exports (**US$ 134.6 billion**) and, on the Bank's highlight, grew **9.3 percent**. Public limited companies were **36.9 percent** (**US$ 81.7 billion**). A captive Indian subsidiary is often a private limited company. So are many Indian product and services firms. The organisational split does not identify the parent.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Geography, currency, and mode
 
-### For investors and strategy teams
+The United States was **54.1 percent** of exports (**US$ 119.7 billion**), up from **52.9 percent** (**US$ 108.3 billion**). Europe was **31.8 percent** (**US$ 70.3 billion**), of which the United Kingdom was **15.4 percent** (**US$ 34.0 billion**). Asia was **6.3 percent**. The US dollar invoiced **72.6 percent** of exports, the euro **9.6 percent**, the rupee **6.3 percent**, and sterling **6.0 percent**.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+Off-site delivery was **91.7 percent**. On the wider total that includes commercial presence (**US$ 239.3 billion**), cross-border supply was **84.7 percent** (**US$ 202.7 billion**), commercial presence **7.5 percent** (**US$ 17.9 billion**), and presence of natural persons **7.7 percent** (**US$ 18.4 billion**).
 
-## Next 90 Days Checklist
+For a captive, the usable signal is this shape: work is delivered from India, invoiced largely in dollars, sold mostly to the United States and Europe, with IT services still the bulk and engineering services the line that looks most like in-house product design. The level of any one captive is not in the table.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+## What the signal will not price
 
-## Source Links
+The survey has no wage, attrition, lease-rate, or centre-count field. It will not tell a buyer what to pay for a campus or a team. FDI equity in computer software, covered in the [investment brief](/blog/global-capability-centers-investment-implications-gst-gov-20260330-246), is a capital-account signal with a different coverage again. Using either series as "the GCC market" adds a label the publisher did not print.
 
-- https://www.gst.gov.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company is an applied AI product lab. Teams that want this survey read against a real book of work can reach [hello@greatindiancompany.com](mailto:hello@greatindiancompany.com).
