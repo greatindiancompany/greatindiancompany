@@ -2,69 +2,58 @@
 id: "gic-20260330-476"
 lang: "en"
 translationOf: null
-title: "Future Of Work In India: Next 90 Days Checklist (476)"
-description: "A high-level India brief using inputs from moef-gov and mckinsey."
+title: "Future of Work in India: Next 90 Days Labour Checklist"
+description: "From 23 September 2026, a 90-day list of labour-code documents to open: appropriate government, appointment letters, wage dates, and aggregator duties."
 slug: "future-of-work-next-90-days-checklist-moef-gov-20260330-476"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "future-of-work"
   - "next-90-days-checklist"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://www.moef.gov.in/"
-  - "https://www.mckinsey.com/in/our-insights"
+  - "https://www.labour.gov.in/"
+  - "https://www.mospi.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Future Of Work In India: Next 90 Days Checklist (476)
+# Future of Work in India: Next 90 Days Labour Checklist
 
-## Executive Brief
+## The window
 
-This brief synthesizes public information from **moef-gov** and **mckinsey** to map India-specific developments on **Future Of Work**.
+From 23 September 2026 this list runs about ninety days, to 22 December 2026. It predicts no survey print and no state gazette. Each line is a check against text already issued, or a watch for the rule that binds the establishment.
 
-## What Changed
+## Name the legal position
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+1. For each establishment, record whether the Centre or a state is the appropriate government. The ministry's employer handbook covers the central sphere. Other establishments follow state rules.
+2. Where the Centre is the appropriate government, read the Central Rules notified on 8 May 2026, which the Lok Sabha reply of 20 July 2026 records.
+3. Read that state's rule, or confirm whether the July reply's "still finalising" group still includes it. Another state's draft does not fill the gap.
 
-## Strategic Signals For India
+## Employment papers
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+4. Issue appointment letters. The 21 November 2025 ministry note makes them a general requirement. The media-sector note shows a useful contents list: designation, wages, and social-security entitlement.
+5. For fixed-term contracts, apply the parity the ministry describes: benefits equal to permanent workers, and gratuity eligibility after one year rather than five.
+6. Where a vendor supplies people, identify the principal employer's health and social-security duties in the ministry's contract-worker note. A vendor total on a slide is not the compliance file.
 
-## Implications
+## Pay
 
-### For policy teams
+7. For monthly wages in the central sphere, the handbook requires payment before the seventh day of the next month. For IT and ITES, the ministry's sector note says salary is released by the 7th.
+8. Where the minimum-wage overtime rule applies, check that overtime is at least twice the ordinary rate.
+9. Confirm wages for the same or similar work are set without gender discrimination, as the Code on Wages handbook requires.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Platforms
 
-### For operators and founders
+10. If the business is an aggregator, map the contribution in the ministry's note: 1 to 2 percent of annual turnover, capped at 5 percent of the amount paid or payable to gig and platform workers.
+11. Keep "scheme notified" separate from "category defined." The 20 July 2026 reply ties gig definitions to schemes for specified benefits.
+12. Use e-Shram, launched on 26 August 2021 for unorganised workers including gig and platform workers, for the registration purpose the portal states. A registration stock is an administrative series. PLFS is the employment survey.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Hiring plans
 
-### For investors and strategy teams
+Set hiring from orders, capacity, and the company's own rolls. If a PLFS bulletin appears on mospi.gov.in in this window, read it as a survey. The annual report for January to December 2025 was issued on 27 March 2026.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## Official pages
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.moef.gov.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- Ministry of Labour and Employment: https://www.labour.gov.in/
+- Ministry of Statistics and Programme Implementation, publisher of PLFS: https://www.mospi.gov.in/
