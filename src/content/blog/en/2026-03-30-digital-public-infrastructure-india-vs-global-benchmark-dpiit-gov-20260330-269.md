@@ -2,69 +2,50 @@
 id: "gic-20260330-269"
 lang: "en"
 translationOf: null
-title: "Digital Public Infrastructure In India: India Vs Global Benchmark (269)"
-description: "A high-level India brief using inputs from dpiit-gov and kearney."
+title: "India DPI and the Global Record in the March 2026 Note"
+description: "The cross-border UPI list, 24 cooperation agreements, and other global comparisons stated in the March 2026 public note."
 slug: "digital-public-infrastructure-india-vs-global-benchmark-dpiit-gov-20260330-269"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "digital-public-infrastructure"
   - "india-vs-global-benchmark"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.dpiit.gov.in/"
-  - "https://www.kearney.com/insights"
+  - "https://www.digitalindia.gov.in/initiative/india-stack-global/"
+  - "https://www.meity.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Digital Public Infrastructure In India: India Vs Global Benchmark (269)
+# India DPI and the Global Record in the March 2026 Note
 
-## Executive Brief
+## Only the comparisons the note states
 
-This brief synthesizes public information from **dpiit-gov** and **kearney** to map India-specific developments on **Digital Public Infrastructure**.
+The Press Information Bureau research note of 6 March 2026 makes a limited set of global comparisons about India's digital public infrastructure. This brief stays inside that set. It does not score India against an index the note does not print.
 
-## What Changed
+## Payments volume
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **India Vs Global Benchmark**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The note says a June 2025 IMF report recognised UPI as the world's largest retail fast payment system by transaction volume. It also cites the 2024 ACI Worldwide report, Prime Time for Real Time, for UPI at around 49 percent of global real-time payment transaction volume.
 
-## Strategic Signals For India
+The India-side readings in the same note are 81 percent by volume of domestic retail payments on UPI rails, and 21.70 billion transactions worth over ₹28.33 lakh crore in January 2026. The global share and the domestic share answer different questions. One is India's weight in world real-time payments. The other is UPI's weight inside India's own retail payments.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Where UPI is live abroad
 
-## Implications
+The note says UPI is live in eight countries: the United Arab Emirates, Singapore, Bhutan, Nepal, Sri Lanka, France, Mauritius, and Qatar. It describes the use as cross-border payments, including remittances. It does not publish corridor-wise volume, so a country on the list is not a sized market in this brief.
 
-### For policy teams
+## Cooperation agreements
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+As of February 2026, the note says the Government of India had signed memoranda or agreements with 24 countries on India Stack and digital public infrastructure. The countries named are Armenia, Sierra Leone, Suriname, Antigua and Barbuda, Papua New Guinea, Trinidad and Tobago, Tanzania, Kenya, Cuba, Colombia, Lao PDR, Saint Kitts and Nevis, Ethiopia, Jamaica, Gambia, Fiji, Guyana, Venezuela, Sri Lanka, Brazil, Lesotho, Maldives, Mongolia, and Malaysia.
 
-### For operators and founders
+The stated purpose is technical cooperation on identity, payments, data exchange, and service delivery. The note's wording is collaboration on architecture, not export of a single product.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Repository, CoWIN, and MOSIP
 
-### For investors and strategy teams
+The note says that during India's 2023 G20 presidency the Global DPI Repository was launched, and that India contributed the highest number of solutions to it. It does not print that count. It says CoWIN, which managed over 220 crore COVID-19 vaccine doses, was offered as open-source software at no cost. It says MOSIP, a configurable open-source identity framework developed in India, is being adopted or explored by more than 25 nations. "Exploring" is the note's word. It is not a count of live national rollouts.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+India Stack Global, on the Digital India site, is the showcase portal for that outward work. The page says it presents 15 platforms and that the material is available in all UN languages.
 
-## Next 90 Days Checklist
+## What is not in the benchmark
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.dpiit.gov.in/
-- https://www.kearney.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+The note does not publish a country ranking for digital-identity coverage, a cost-per-citizen comparison, or a quoted UNDP score. The UNDP address appears as a reference link, without a rank attached.
