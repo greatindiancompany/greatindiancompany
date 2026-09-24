@@ -2,69 +2,51 @@
 id: "gic-20260330-198"
 lang: "en"
 translationOf: null
-title: "Food Processing In India: Market Signal Brief (198)"
-description: "A high-level India brief using inputs from civilaviation-gov and jpmorgan."
+title: "Food Processing In India: Signals In Cold Chain, FPOs, And Pack Houses"
+description: "What counts as a food-processing market signal in cold chain, FPO facilities, and export pack houses, without a price quote."
 slug: "food-processing-market-signal-brief-civilaviation-gov-20260330-198"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "food-processing"
   - "market-signal-brief"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://civilaviation.gov.in/"
-  - "https://www.jpmorgan.com/insights"
+  - "https://www.mofpi.gov.in/Schemes/about-pmksy-scheme"
+  - "https://www.mofpi.gov.in/pmfme/common-infrastructure"
+  - "https://apeda.gov.in/recognized-packhouses"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Food Processing In India: Market Signal Brief (198)
+# Food Processing In India: Signals In Cold Chain, FPOs, And Pack Houses
 
-## Executive Brief
+## A signal is a facility or a rule, not a quote
 
-This brief synthesizes public information from **civilaviation-gov** and **jpmorgan** to map India-specific developments on **Food Processing**.
+This brief does not quote prices, throughput, or a market share. Those figures are not here because this page will not invent them. A signal an operator can check is whether a cold chain, an FPO common facility, or an export pack house exists in the form the relevant institution describes.
 
-## What Changed
+## Cold chain as a chain, not a room
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Market Signal Brief**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+MoFPI lists Integrated Cold Chain and Value Addition Infrastructure as a PMKSY component. The scheme's published design, including earlier cold-chain guidelines, treats the project as a link from farm-level infrastructure toward distribution and refrigerated movement, so that produce is not left to break between the field and the buyer. A single cold room, offered on its own, is not the signal the integrated scheme was written to create. The signal is a path: pre-cooling or a pack house near the crop, storage that matches the product, and a way to move it without a temperature break.
 
-## Strategic Signals For India
+Operation Greens is the PMKSY vertical the ministry ties to perishables. It started with tomato, onion, and potato, and the PMKSY page says the scope was widened to 22 perishables, with examples that include mango, banana, apple, pineapple, carrot, cauliflower, and beans. The crop list on that page is the signal for which perishables the vertical names. It is not a price series.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## FPO linkages
 
-## Implications
+PMFME's common-infrastructure page says support can go to FPOs, self-help groups, cooperatives, a government agency, or a private enterprise. The facility is supposed to be available to other units and the public on hire for a substantial part of its capacity. The types named are farm-gate premises for assaying, sorting, grading, warehousing, and cold storage, and a common processing facility for the district ODOP produce.
 
-### For policy teams
+The market signal is therefore local and specific. Does this district have an ODOP product on the PMFME portal? Is there a common line or a farm-gate cold store that other users can hire? A slogan about "FPO linkage" without that facility is not the signal.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Export plants
 
-### For operators and founders
+APEDA recognizes horticulture pack houses so export produce can be sorted, graded, treated, packed, pre-cooled, and held under conditions that include quarantine checks and traceability. The recognized-packhouse list is the signal: a named plant, a state, a product scope, and a validity period. A factory that processes for the domestic market is not on that list until APEDA has recognized it for export handling.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+APEDA's scheduled products are a closed list on its about page, from fruits and vegetables through cereals, dairy, meat, and cashew. A product outside that list is a different export regime. Do not read a pack-house approval as cover for a product the schedule does not include.
 
-### For investors and strategy teams
+## Official pages
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://civilaviation.gov.in/
-- https://www.jpmorgan.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- https://www.mofpi.gov.in/Schemes/about-pmksy-scheme
+- https://www.mofpi.gov.in/pmfme/common-infrastructure
+- https://pmfme.mofpi.gov.in/
+- https://apeda.gov.in/recognized-packhouses
