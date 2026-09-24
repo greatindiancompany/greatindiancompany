@@ -2,69 +2,44 @@
 id: "gic-20260330-611"
 lang: "en"
 translationOf: null
-title: "Export Competitiveness In India: Execution Bottleneck Review (611)"
-description: "A high-level India brief using inputs from sidbi and mckinsey."
+title: "Execution bottlenecks in India’s export trade"
+description: "The measured logistics cost, the RoDTEP value cap, and the gap between draft district plans and notified ones."
 slug: "export-competitiveness-execution-bottleneck-review-sidbi-20260330-611"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "export-competitiveness"
-  - "execution-bottleneck-review"
-  - "india-briefs"
-  - "diverse-sources"
+  - "logistics-cost"
+  - "rodtep"
+  - "districts"
 sourceLinks:
-  - "https://www.sidbi.in/"
-  - "https://www.mckinsey.com/in/our-insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2168995"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244147"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244401"
+  - "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1912572"
+  - "https://www.commerce.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Export Competitiveness In India: Execution Bottleneck Review (611)
+# Execution bottlenecks in India’s export trade
 
-## Executive Brief
+Competitiveness fails in the gap between a rule that exists and a shipment that clears. Three gaps are documented. None of them is a mystery percentage.
 
-This brief synthesizes public information from **sidbi** and **mckinsey** to map India-specific developments on **Export Competitiveness**.
+## The cost benchmark, and the figure to retire
 
-## What Changed
+Until the DPIIT–NCAER assessment, logistics cost in India was often quoted at 13–14 percent of GDP from external studies or partial data. On 20 September 2025 the Commerce and Industry Minister launched that assessment and said the misquoted range had confused policy and outside readers. The [release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2168995) puts the NCAER estimate at about 7.97 percent of GDP. The report breaks cost out by transport mode, product, and firm size, and it includes freight per tonne-kilometre. A national average is the wrong number for a small exporter if the firm-size table shows a different cost. This brief does not invent that firm-size gap. It tells you the table exists and the 13–14 percent line does not.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The same release credits a slower rise in logistics cost, relative to non-services output, to corridors and platforms already underway: PM GatiShakti, dedicated freight corridors, Bharatmala, Sagarmala, integrated check posts, ULIP, and LEAP. The bottleneck that remains is not the absence of a programme name. It is whether a given lane — port dwell, last mile, or a West Asia diversion — has actually cheapened. The March 2026 RoDTEP note said West Asia routing had raised logistics costs and disturbed schedules. A 7.97 percent national estimate does not cancel a 2026 freight invoice on one corridor.
 
-## Strategic Signals For India
+## The rebate can be in force and still not cover the shock
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+RoDTEP remits embedded duties and taxes. It does not pay the ocean freight. On top of the percentage, schedules carry value caps. In February 2026 the government cut rates to 50 percent, then on 23 March restored the 22 February rates and caps because freight and war risk had hit exporters. The execution lesson is procedural. A firm that kept filing the February restricted schedule after 23 March left money in the system. A firm that celebrates the restoration but ships a line above the value cap still does not receive the uncapped percentage. The DGFT schedule, not a press summary, is the bottleneck document.
 
-## Implications
+FTP 2023 said Advance Authorisation and EPCG processes would move to regional offices on a rule-based system, with manual scrutiny only for risk-flagged cases. That is an execution design. It is not evidence that every file now clears automatically. If a consignment is stuck, the question is whether it was risk-flagged, whether the norms were fixed, and whether the scrip was generated, not whether the policy PDF exists.
 
-### For policy teams
+## Plans that are drafted and plans that are notified
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+District export machinery is in place in all 36 states and Union territories. On 24 March 2026 the government said draft action plans covered 590 districts and 249 had been notified. The 341-district gap between those counts is an execution bottleneck by arithmetic. A product identified in a draft is not a buyer, a test lab, or a logistics slot. Outreach events were part of the reply. They are not a substitute for the notified plan or for a DGCIS value.
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.sidbi.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company treats these three checks — the cost table you are allowed to cite, the schedule you file, and the plan that is actually notified — as the execution review: [India briefs](https://greatindiancompany.com/blog).
