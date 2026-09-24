@@ -2,69 +2,49 @@
 id: "gic-20260330-135"
 lang: "en"
 translationOf: null
-title: "Climate Adaptation In India: What Changed This Quarter (135)"
-description: "A high-level India brief using inputs from makeinindia and alvarezandmarsal."
+title: "What India's Climate Adaptation Record Shows Now"
+description: "Which official statements still define India's adaptation framework, and which figures are not a July–September 2026 update."
 slug: "climate-adaptation-what-changed-this-quarter-makeinindia-20260330-135"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "climate-adaptation"
   - "what-changed-this-quarter"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "napcc"
 sourceLinks:
-  - "https://www.makeinindia.com/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://moef.gov.in/national-action-plan-on-climate-change"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2146355"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2219915"
+  - "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2041460"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Climate Adaptation In India: What Changed This Quarter (135)
+# What India's Climate Adaptation Record Shows Now
 
-## Executive Brief
+This page answers one question. What can a reader say, on 24 September 2026, has actually been published about India's climate adaptation framework, and what would be a guess about "this quarter"?
 
-This brief synthesizes public information from **makeinindia** and **alvarezandmarsal** to map India-specific developments on **Climate Adaptation**.
+## The standing record
 
-## What Changed
+The National Action Plan on Climate Change was released by the Prime Minister on 30 June 2008. A Ministry of Environment, Forest and Climate Change FAQ dated 1 December 2021 still describes eight national missions: solar energy, enhanced energy efficiency, sustainable habitat, water, the Himalayan ecosystem, Green India, sustainable agriculture, and strategic knowledge.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **What Changed This Quarter**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+A later parliamentary reply changes that count. On 21 July 2025, Minister of State Kirti Vardhan Singh told the Lok Sabha, in a Press Information Bureau release, that the plan is the overarching framework and that it comprises nine missions. The ninth area named there is human health. The reply says the missions have been revised to align with India's Nationally Determined Contribution, and that they are at various stages of implementation. It also says 34 States and Union Territories have prepared State Action Plans on Climate Change for state-specific actions, and that resilience work covers agriculture, water resources, coastal regions, health, and disaster management.
 
-## Strategic Signals For India
+On 29 January 2026, PIB reported the Economic Survey 2025-26. As stated in that release, the Survey treats adaptation as central to India's climate strategy and describes development itself as a form of adaptation. It reports adaptation and resilience-related domestic spending of 3.7 percent of GDP in FY16 and 5.6 percent in FY22. It again describes nine missions, and it says state plans turn the national objectives into actions. It adds that growing cities have to take climate risk into land use, infrastructure, and services.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What is not a new quarter
 
-## Implications
+No MoEFCC or PIB page used here is a July, August, or September 2026 release that adds a mission, revises the count of 34 state plans, or replaces the adaptation-fund stock below. The latest architecture sentence in this set is 21 July 2025. The latest spending sentence is 29 January 2026. Treat both as the standing record, then check PIB before you brief a newer change.
 
-### For policy teams
+The National Adaptation Fund for Climate Change is older still. On 5 August 2024, the same ministry told the Lok Sabha that 30 projects had been sanctioned in 27 States and Union Territories, at a total project cost of ₹847.48 crore, with the National Bank for Agriculture and Rural Development as the National Implementing Entity. The reply says the fund was made a non-scheme in November 2022. That is a status, not a 2026 announcement.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Do not borrow the mitigation lines
 
-### For operators and founders
+The 21 July 2025 reply also says installed solar capacity rose from 2.82 GW in 2014 to 116.25 GW in June 2025, that emission intensity of GDP fell 36 percent between 2005 and 2020, and that India met the goal of 50 percent installed electric power capacity from non-fossil sources in June 2025. Those are mitigation results in a reply about national contributions. They do not measure heat, flood, drought, or coastal readiness.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## What to open before acting
 
-### For investors and strategy teams
+Read the ministry's [National Action Plan page](https://moef.gov.in/national-action-plan-on-climate-change), the [21 July 2025 reply](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2146355), and the [29 January 2026 Survey note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2219915). For the fund, read the [5 August 2024 reply](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2041460). For the week you are in, read the India Meteorological Department, not a policy anniversary.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.makeinindia.com/
-- https://www.alvarezandmarsal.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+How to tell a dated fact from a slogan is the subject of the [evidence snapshot](/blog/climate-adaptation-evidence-snapshot-makeinindia-20260330-695). Great Indian Company publishes these English briefs so an operator or a policy reader can follow one India topic to the document that carries it. The library is at [greatindiancompany.com](https://greatindiancompany.com).

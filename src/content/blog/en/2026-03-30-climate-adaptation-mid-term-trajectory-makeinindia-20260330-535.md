@@ -2,69 +2,45 @@
 id: "gic-20260330-535"
 lang: "en"
 translationOf: null
-title: "Climate Adaptation In India: Mid Term Trajectory (535)"
-description: "A high-level India brief using inputs from makeinindia and iea."
+title: "The Mid-Term Path of Climate Adaptation in India"
+description: "The multi-year adaptation path on India's official record: nine missions, state plans, and a fund that is no longer a scheme."
 slug: "climate-adaptation-mid-term-trajectory-makeinindia-20260330-535"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "climate-adaptation"
   - "mid-term-trajectory"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "napcc"
 sourceLinks:
-  - "https://www.makeinindia.com/"
-  - "https://www.iea.org/countries/india"
+  - "https://moef.gov.in/national-action-plan-on-climate-change"
+  - "https://moef.gov.in/state-action-plan-on-climate-change"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2146355"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2219915"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Climate Adaptation In India: Mid Term Trajectory (535)
+# The Mid-Term Path of Climate Adaptation in India
 
-## Executive Brief
+The mid-term path on the official record is institutional. It is not a forecast of temperature, rainfall, or GDP.
 
-This brief synthesizes public information from **makeinindia** and **iea** to map India-specific developments on **Climate Adaptation**.
+## From eight missions to nine
 
-## What Changed
+The environment ministry's FAQ of 1 December 2021 lists eight missions under the National Action Plan on Climate Change, released on 30 June 2008. On 21 July 2025, the Press Information Bureau reported nine, including human health, and said the missions have been revised to align with India's Nationally Determined Contribution. The reply says the missions are at various stages of implementation. "Various stages" is the ministry's phrase. It is not a completion percentage, and this page will not invent one.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Mid Term Trajectory**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## States and cities carry the next decade of work
 
-## Strategic Signals For India
+The same July 2025 reply says 34 States and Union Territories have prepared State Action Plans on Climate Change for state-specific actions. On 29 January 2026, PIB reported the Economic Survey's view that national programmes set the frame and states operationalise it, and that growing cities have to take climate risk into land use, infrastructure, and services. That urban task sits next to deliverables the December 2021 FAQ already gave the National Mission on Sustainable Habitat: habitat standards, city development plans that address adaptation and mitigation, and mobility plans. The mid-term work is inside those plans, not in a new slogan.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Money over a multi-year horizon
 
-## Implications
+The wide path is development spending. The January 2026 release reports adaptation and resilience-related domestic spending of 3.7 percent of GDP in FY16 and 5.6 percent in FY22. The narrow path is the National Adaptation Fund for Climate Change: set up in 2015-16, made a non-scheme in November 2022, with 30 sanctioned projects and ₹847.48 crore of project cost still the figure in the 5 August 2024 reply. Over several years, the Survey's logic — adaptation inside ordinary development — matters more than a closed project list, unless a later PIB release reopens the fund.
 
-### For policy teams
+## Hazards do not follow the budget cycle
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+IMD's heat definition, and the disaster authority's guidelines for flood, urban flood, drought, cyclone, heat, and glacial-lake outburst floods, remain the set of conditions a five-year plan has to operate under. They do not expire when a scheme status changes.
 
-### For operators and founders
+## What would actually bend the path
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.makeinindia.com/
-- https://www.iea.org/countries/india
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+A new mission count, a new state-plan total, a new adaptation-fund stock, or a revised coastal notification or disaster guideline. Each of those appears as a dated PIB or NDMA page. Until it does, the path above is the one to plan against. How the eight-to-nine change fits the rest of the stack is the [policy explainer](/blog/climate-adaptation-policy-shift-explainer-makeinindia-20260330-175). Great Indian Company states the path that is published, and stops there. See [greatindiancompany.com](https://greatindiancompany.com).

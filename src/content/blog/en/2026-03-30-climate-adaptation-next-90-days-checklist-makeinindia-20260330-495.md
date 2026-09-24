@@ -2,69 +2,49 @@
 id: "gic-20260330-495"
 lang: "en"
 translationOf: null
-title: "Climate Adaptation In India: Next 90 Days Checklist (495)"
-description: "A high-level India brief using inputs from makeinindia and alvarezandmarsal."
+title: "A 90-Day Climate Adaptation Checklist for India"
+description: "What to check in India from 24 September 2026 to 23 December 2026, using IMD, NDMA, and MoEFCC pages only."
 slug: "climate-adaptation-next-90-days-checklist-makeinindia-20260330-495"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "climate-adaptation"
   - "next-90-days-checklist"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "imd"
 sourceLinks:
-  - "https://www.makeinindia.com/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://moef.gov.in/state-action-plan-on-climate-change"
+  - "https://ndma.gov.in/Natural-Hazards/Floods"
+  - "https://ndma.gov.in/Natural-Hazards/Heat-Wave"
+  - "https://mausam.imd.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Climate Adaptation In India: Next 90 Days Checklist (495)
+# A 90-Day Climate Adaptation Checklist for India
 
-## Executive Brief
+The window is 24 September 2026 through 23 December 2026. It is not peak heat. The India Meteorological Department's heat-wave FAQ says heat waves occur mainly from March to June, sometimes into July, and that May is the peak month. These 90 days are for checking whether next year's heat plan exists, and for reading the warnings that are actually current.
 
-This brief synthesizes public information from **makeinindia** and **alvarezandmarsal** to map India-specific developments on **Climate Adaptation**.
+Each line below is a document to open. None of them is a weather prediction.
 
-## What Changed
+## Read the warning that is in force
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Open [mausam.imd.gov.in](https://mausam.imd.gov.in/). IMD's heat test — at least 40°C in the plains, 37°C at coastal stations, 30°C in the hills, plus the departure or absolute test, at two stations for two days — matters on days when it is met. In this window it often will not be. Do not brief a heat emergency from the calendar alone.
 
-## Strategic Signals For India
+## Close the monsoon book without ignoring cities
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The National Disaster Management Authority's flood page says 80 percent of precipitation falls in the monsoon months from June to September. Late September is the close of that window. Urban flooding remains a separate guideline, issued in September 2010, because a city's drainage can fail when a river forecast is quiet. If you operate in a dense city, read that guideline as well as the riverine one.
 
-## Implications
+## Coast and Himalaya are different folders
 
-### For policy teams
+On the coast, use the cyclone guideline of April 2008 and the Press Information Bureau note of 3 February 2022 on the mainland hazard line and the Coastal Regulation Zone Notification, 2019. Follow IMD's current cyclone and rainfall warnings. Do not invent a landfall. In a Himalayan district, the relevant disaster text is the October 2020 glacial-lake outburst flood guideline, read next to the National Mission for Sustaining the Himalayan Ecosystem.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Do not expect a new national project call
 
-### For operators and founders
+Check two environment-ministry shelves: the [state plan page](https://moef.gov.in/state-action-plan-on-climate-change) and the adaptation-fund approval list. As of 21 July 2025, 34 States and Union Territories had prepared state plans. The fund was made a non-scheme in November 2022. Do not plan on a fresh national call inside these 90 days unless PIB publishes one.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Write down the gap you actually find
 
-### For investors and strategy teams
+A missing heat action plan, a state plan with no project file, or a coastal site with no hazard-line check is the work for this quarter. A new mission count is not, unless a PIB release after 21 July 2025 says so.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.makeinindia.com/
-- https://www.alvarezandmarsal.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Which of those documents is binding, and which is only a plan, is the [regulatory outlook](/blog/climate-adaptation-regulatory-outlook-makeinindia-20260330-455). Great Indian Company dates the checklist so it expires honestly. More briefs are at [greatindiancompany.com](https://greatindiancompany.com).

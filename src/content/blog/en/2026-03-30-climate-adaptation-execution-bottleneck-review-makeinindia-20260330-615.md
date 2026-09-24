@@ -2,69 +2,43 @@
 id: "gic-20260330-615"
 lang: "en"
 translationOf: null
-title: "Climate Adaptation In India: Execution Bottleneck Review (615)"
-description: "A high-level India brief using inputs from makeinindia and alvarezandmarsal."
+title: "Where Climate Adaptation Execution Slows in India"
+description: "The documented gates in India's adaptation fund: committee approval, installment release, and one project's delays."
 slug: "climate-adaptation-execution-bottleneck-review-makeinindia-20260330-615"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "climate-adaptation"
   - "execution-bottleneck-review"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "nafcc"
 sourceLinks:
-  - "https://www.makeinindia.com/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://moef.gov.in/index.php/list-of-approvals-projects-under-nafcc-concept-note-and-project-documents-details-dpr"
+  - "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2041460"
+  - "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=176178"
+  - "https://moef.gov.in/state-action-plan-on-climate-change"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Climate Adaptation In India: Execution Bottleneck Review (615)
+# Where Climate Adaptation Execution Slows in India
 
-## Executive Brief
+"Implementation is slow" is not a finding. The finding is which gate a public document actually names.
 
-This brief synthesizes public information from **makeinindia** and **alvarezandmarsal** to map India-specific developments on **Climate Adaptation**.
+## Two approvals before a sanction
 
-## What Changed
+On 5 February 2018, the Press Information Bureau described the National Adaptation Fund for Climate Change. The state prepares the proposal with NABARD, the National Implementing Entity. The State Steering Committee on Climate Change must approve it before the environment ministry will consider it. The reply also says the state decides which organisation, if any, helps write the proposal. Two public bodies stand between a concept and a sanction. That is a designed gate, not an accident discovered later.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Cash follows performance
 
-## Strategic Signals For India
+On 5 August 2024, a Lok Sabha reply said project funds are released to NABARD in installments based on performance and the fund's guidelines. A sanctioned amount is not money on the first day. The same reply says the fund was made a non-scheme in November 2022. A team still writing as if an annual scheme budget will absorb the next state-plan idea is describing 2015-16.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## One file, with the frictions named
 
-## Implications
+The reply itemises the Andhra Pradesh dairy project. It was sanctioned on 16 August 2016 for ₹12,71,36,316, in Anantapuramu, Nellore, and Vizianagaram. NABARD received ₹6,35,68,108 on 26 October 2016. It released ₹5,12,78,000 to the executing entity on 11 August 2017. Utilisation at that entity is printed as 228,49,000. The minister listed the frictions for this project: delay in identifying and alienating land, delay in identifying the civil-engineering agency and the technical agency, and delay in finalising the design of a climate-resilient animal hostel. Copy that list onto another state only if that state's file says the same thing.
 
-### For policy teams
+## A plan is not a project
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+As of 21 July 2025, 34 States and Union Territories had State Action Plans on Climate Change. The August 2024 reply places fund sanctions in 27. The difference is not, by itself, proof of failure. It is proof that a state plan and a sanctioned project are different objects. The ministry posts both, on the [state plan page](https://moef.gov.in/state-action-plan-on-climate-change) and the [project-document list](https://moef.gov.in/index.php/list-of-approvals-projects-under-nafcc-concept-note-and-project-documents-details-dpr). A bottleneck review starts by naming which object is missing.
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.makeinindia.com/
-- https://www.alvarezandmarsal.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Why those objects differ by geography is the [state-pattern brief](/blog/climate-adaptation-state-wise-patterns-makeinindia-20260330-335). Great Indian Company would rather name a gate than repeat a slogan about execution. The site is [greatindiancompany.com](https://greatindiancompany.com).
