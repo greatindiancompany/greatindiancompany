@@ -2,69 +2,60 @@
 id: "gic-20260330-437"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Regulatory Outlook (437)"
-description: "A high-level India brief using inputs from morth-nic and gartner."
+title: "The rules between the farm gate and the buyer"
+description: "How APMC law, e-NAM's unified licence, warehouse receipts, MSP, AIF eligibility, and food-processing grant caps divide the agri chain."
 slug: "agri-value-chains-regulatory-outlook-morth-nic-20260330-437"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "agri-value-chains"
   - "regulatory-outlook"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "policy"
 sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
-summaryType: "india-brief"
+  - "https://www.nabard.org/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2251543"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2241414"
+  - "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=154999&ModuleId=3"
+summaryType: "policy-explainer"
 draft: false
 ---
 
-# Agri Value Chains In India: Regulatory Outlook (437)
+# The rules between the farm gate and the buyer
 
-## Executive Brief
+The agri value chain in India is regulated in layers, and the layers belong to different governments. The mandi is a state institution. The electronic auction on top of it is a central platform. The support price is a Cabinet decision. The loan for a warehouse is a central scheme with a bank in the middle. The grant for a cold chain is another ministry's guideline. An operator who learns one rule and assumes the others follow will mis-file the project.
 
-This brief synthesizes public information from **morth-nic** and **gartner** to map India-specific developments on **Agri Value Chains**.
+## The mandi remains a state market
 
-## What Changed
+The PIB account of e-NAM published on 13 April 2026 is plain about the history. Agricultural marketing grew through regulated mandis under the Agricultural Produce Market Committee framework. Before 2016, trade sat inside those mandis, and each market had its own regulatory structure. e-NAM, launched in April 2016, digitises the mandi. It does not abolish it.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Regulatory Outlook**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The operating facts from the Lok Sabha reply of 17 March 2026 are the current reach: 1,656 mandis in 23 states and 4 Union territories, 1.80 crore farmers and 2.72 lakh traders as on 28 February 2026, and trade since inception of 13.22 crore metric tonnes worth Rs 4,82,350 crore. The Centre's legal-adjacent tool is money and standards, not a takeover of the market committee. Grant assistance is up to Rs 75 lakh per mandi for assaying laboratories, electronic weighing, grading, packaging, computers, and related infrastructure.
 
-## Strategic Signals For India
+Inter-state bidding depends on the state's licence rules. The April 2026 note says a State Unified Licence lets traders bid across state boundaries. That is a state instrument used on a national screen. Where a state has not opened the licence, the national platform still stops at the state line. The March reply's annexure is the list of who has come on. It is not a list of identical state Acts.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## A warehouse receipt is a different statute
 
-## Implications
+The same April note describes the electronic negotiable warehouse receipt, under the Warehousing (Development and Regulation) Act, 2007, issued for stock in a warehouse accredited by the Warehousing Development and Regulatory Authority. Linked to e-NAM, the receipt lets a farmer, trader, or FPO store, pledge, and sell without moving the goods to the mandi yard for every bid. The note says the receipt can be collateral for institutional credit. That is a finance rule attached to a storage rule, and it is available only where the warehouse is accredited. A private godown outside WDRA does not become an e-NWR because it is also "storage."
 
-### For policy teams
+## The support price is a price rule, and procurement is a buying rule
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+MSP for kharif marketing season 2026-27 was approved on 13 May 2026. Common paddy is Rs 2,441 a quintal. The legal-economic content of the decision is the formula restated from the 2018-19 Budget: at least one and a half times the all-India weighted average cost. The release then reports how much was actually bought in past years, which is a different rule: the Centre and states procure. Past paddy procurement of 8,418 lakh metric tonnes over 2014-15 to 2025-26 shows the buying rule operating at scale for paddy. It does not write a purchase obligation for every crop on the May list.
 
-### For operators and founders
+## Eligibility is the regulation that decides a project
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+AIF's regulation is mostly eligibility and price. The interest cap is 9 per cent. The subvention is 3 per cent for up to seven years, on a maximum of Rs 2 crore. Guarantee cover for that band runs through CGTMSE and, for FPOs, NABSanrakshan. From 28 August 2024, integrated primary and secondary processing is eligible, and standalone secondary processing is not. Community farming assets are eligible. A processor who builds only the second stage of the chain is outside this loan, however sound the project.
 
-### For investors and strategy teams
+The food-processing grant has its own rate card, restated in the Lok Sabha on 6 August 2026. Cold chain, agro-processing clusters, and standalone Operation Greens projects: 35 per cent in general areas and 50 per cent in difficult areas and for Scheduled Caste and Scheduled Tribe promoters, FPOs, and self-help groups, capped at Rs 10 crore. Integrated Operation Greens projects are capped at Rs 15 crore. The August 2025 note adds that the integrated cold-chain scheme does not fund a standalone cold store. A building that fits AIF may fail the food-processing guideline, and the reverse.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+On the export side, APEDA's tender of 1 September 2026 for Bharat Krishi Niryat Yojana describes assistance under three heads for 2026-27 to 2030-31: export infrastructure (packhouses, pre-cooling, refrigerated transport, processing gaps), quality systems and testing, and market development. Those are scheme conditions for a scheduled-product exporter. They are not a customs tariff.
 
-## Next 90 Days Checklist
+## Documents to open
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+- [e-NAM, unified licence, and e-NWR, 13 April 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2251543)
+- [e-NAM mandi grant and onboarded markets, 17 March 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2241414)
+- [Kharif MSP decision, 13 May 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2260617)
+- [AIF eligibility after the August 2024 expansion](https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=154999&ModuleId=3)
+- [Food-processing grant caps, 6 August 2026](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU3174_nUgYdG.pdf)
+- [APEDA Bharat Krishi Niryat Yojana, 1 September 2026](https://apeda.gov.in/sites/default/files/announcements/Notice_for__inviting_Agency_for_Project_Monitoring__Unit_01_09_2026.pdf)
 
-## Source Links
-
-- https://www.morth.nic.in/
-- https://www.gartner.com/en/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company publishes this so a founder can match a project to the rule that actually governs it. The site is [greatindiancompany.com](https://greatindiancompany.com/).
