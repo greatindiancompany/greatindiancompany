@@ -17,6 +17,7 @@ sourceLinks:
   - "https://shipmin.gov.in/division/sagarmala"
   - "https://ipa.org.in/"
   - "https://shipmin.gov.in/division/shipping"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2288924&lang=1&reg=3"
 summaryType: "india-brief"
 draft: false
 ---
@@ -55,3 +56,4 @@ Great Indian Company treats the bottleneck as a place in the chain, not as a moo
 - Why evacuation binds the programme: [shipmin.gov.in/division/sagarmala](https://shipmin.gov.in/division/sagarmala)
 - Traffic notes beside the time indicators: [ipa.org.in](https://ipa.org.in/)
 - Coastal shipping as a mode, with a cost sentence to skip: [shipmin.gov.in/division/shipping](https://shipmin.gov.in/division/shipping)
+- Cluster status in the 24 July 2026 reply: [pib.gov.in, PRID 2288924](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2288924&lang=1&reg=3)
