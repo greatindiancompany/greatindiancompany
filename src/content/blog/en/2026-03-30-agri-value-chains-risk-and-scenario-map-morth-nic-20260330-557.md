@@ -2,69 +2,44 @@
 id: "gic-20260330-557"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: Risk And Scenario Map (557)"
-description: "A high-level India brief using inputs from morth-nic and gartner."
+title: "Three concentrations that can break an agri plan"
+description: "One wheat season was 266 lakh tonnes; tur bought by 25 March 2025 was 2.46 lakh tonnes. Marginal holdings are 68 percent of farms and 24 percent of area. Export buyers are screening residues."
 slug: "agri-value-chains-risk-and-scenario-map-morth-nic-20260330-557"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "agri-value-chains"
-  - "risk-and-scenario-map"
-  - "india-briefs"
-  - "diverse-sources"
+  - "risk"
+  - "procurement"
+  - "india"
 sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.gartner.com/en/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2177219"
+  - "https://agcensus.da.gov.in/acindia.html"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2271100"
+  - "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63478"
+  - "https://www.nabard.org/content.aspx?id=466"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: Risk And Scenario Map (557)
+# Three concentrations that can break an agri plan
 
-## Executive Brief
+The risks that show up in official series are concentrations, not a probability table. Three of them are large enough to change a plan: cereal procurement, fragmented holdings, and the buyer’s residue test.
 
-This brief synthesizes public information from **morth-nic** and **gartner** to map India-specific developments on **Agri Value Chains**.
+Public buying is a rice-and-wheat machine. RMS 2024-25 wheat procurement was 266 lakh tonnes, after 262 lakh tonnes the season before and 188 lakh tonnes in RMS 2022-23. Foodgrains from July 2024 to June 2025 were 1,175 lakh tonnes. Tur, the pulse the government has told states it will buy in full through 2028-29, stood at 2.46 lakh tonnes procured by 25 March 2025, across five states and 1,71,569 farmers. The PM-AASHA guarantee for pulses was raised from ₹45,000 crore to ₹60,000 crore. A guarantee ceiling is not a tonne count. A business that models “MSP crops” as one offtake is using the wheat book to describe a pulse.
 
-## What Changed
+The second concentration is on the farm. Agriculture Census 2015-16 put 68.45 percent of operational holdings in the marginal class, under one hectare, with an average of 0.38 hectare. That class held 24.03 percent of operated area. Small holdings, one to two hectares, were another 17.62 percent of holdings and 22.91 percent of area. Together those two classes are about 86 percent of holdings and about 47 percent of area. Large holdings, 0.57 percent of the count, held 9.07 percent of the area at an average of 17.07 hectares. Aggregation, assaying, and payment all have to work for a 0.38 hectare lot or they work only for the large tail. The census year is 2015-16. Nothing in the later MSP notifications replaces it.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Risk And Scenario Map**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The third concentration is at the border. The Department of Commerce, on 10 June 2026, put agricultural exports at USD 52.55 billion and then listed the tests that decide whether a container clears: antibiotic residues in marine products, pesticide residues and aflatoxin in rice, food safety in spices and tea, and phytosanitary rules for fruit and vegetables. Export Inspection Council laboratories had reached 89, and approved establishments 1,499, by FY 2025-26. Scale of certification and a named residue risk sit in the same briefing. A national export total can rise while a single plant loses a market.
 
-## Strategic Signals For India
+## How those concentrations fail
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+If the mandi price of a pulse or oilseed stays above MSP, PM-AASHA does not open, because the scheme buys when the market is below the floor and the state has asked. Cereal agencies can still buy to their season plan. A founder who booked mill capacity against “the MSP” has a buyer in wheat and paddy surplus states, and a conditional buyer in tur.
 
-## Implications
+If wheat arrivals repeat the RMS 2022-23 pattern, the public book is 188 lakh tonnes rather than 266, and the payment flow that was about ₹0.61 lakh crore in RMS 2024-25 is not the right cash assumption. The later recovery is real. So is the thin year that came before it.
 
-### For policy teams
+If bank credit to agriculture slows, the July 2026 print is the reminder that it already did so once. Growth was 7.3 percent in the year-ago fortnight and 17.0 percent as on 31 July 2026, on a 41-bank sample. NABARD’s published short-term refinance split is still the 2023-24 disbursement of ₹1,83,152.53 crore. A 17 percent year is not a covenant.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+None of these is a forecast with a percentage attached. They are the ways the published structure breaks a plan that ignored it.
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.morth.nic.in/
-- https://www.gartner.com/en/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company keeps the risk reading separate from the price table. The tonne comparison is in [what procurement is signalling](/blog/agri-value-chains-market-signal-brief-morth-nic-20260330-197). The export test is in [how exports meet the buyer’s standard](/blog/agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277).
