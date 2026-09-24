@@ -2,69 +2,41 @@
 id: "gic-20260330-302"
 lang: "en"
 translationOf: null
-title: "Energy Transition In India: State Wise Patterns (302)"
-description: "A high-level India brief using inputs from dea-gov and gartner."
+title: "State Patterns In India's Renewable And Coal Mix"
+description: "How renewable resources, coal, and distribution utilities create different state patterns in India's energy transition."
 slug: "energy-transition-state-wise-patterns-dea-gov-20260330-302"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "energy-transition"
   - "state-wise-patterns"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "renewables"
 sourceLinks:
-  - "https://dea.gov.in/"
-  - "https://www.gartner.com/en/insights"
+  - "https://mnre.gov.in/"
+  - "https://powermin.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Energy Transition In India: State Wise Patterns (302)
+# State Patterns In India's Renewable And Coal Mix
 
-## Executive Brief
+India does not have one energy transition. States differ by renewable resource, coal geology, industrial load, and the finances of the distribution utility. A national capacity line averages those differences away. State patterns are the level at which projects are sited and bills are paid.
 
-This brief synthesizes public information from **dea-gov** and **gartner** to map India-specific developments on **Energy Transition**.
+## Resource geography, not a league table
 
-## What Changed
+Utility-scale solar has concentrated where irradiation, land, and a route to the grid coincide. Rajasthan and Gujarat have been central to that pattern, with other high-irradiation states in the peninsula and the central plateau also hosting large parks. That is a resource fact. It is not a permanent ranking. Installed totals move, and the current table is the Central Electricity Authority capacity report, not this page.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **State Wise Patterns**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Wind has a narrower geography. The long-standing wind states are coastal and gap regions, notably Tamil Nadu, Gujarat, Karnataka, and Maharashtra, with activity also in Andhra Pradesh and Rajasthan. New wind is as much about repowering and the remaining ridges as about discovering a new coast. Hydro follows the Himalaya and selected storage sites in the peninsula. A state "renewable story" that treats solar, wind, and hydro as interchangeable will send turbines to a desert park and panels to a ridge.
 
-## Strategic Signals For India
+## Coal and industry cut across the map
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Coal mining is concentrated in the east and centre, including Jharkhand, Odisha, Chhattisgarh, and neighbouring belts. Pithead plants and industrial states still draw electrical energy from that coal even when their own renewable capacity is growing. Maharashtra, Gujarat, and Tamil Nadu are examples of states that combine large demand with significant renewable build. Their midday and evening can look completely different. An eastern coal state and a western solar state can both be "in transition" and share almost no operating problem.
 
-## Implications
+## The utility is the state pattern investors feel
 
-### For policy teams
+Two states with similar solar resources can be different investments because their regulators and distribution companies differ. Purchase obligations, open-access charges, connection practices for rooftop and feeders, and payment behaviour are state instruments. Ministry of New and Renewable Energy schemes arrive through those utilities. Ministry of Power distribution reform arrives through them too. A state that connects and pays makes a moderate resource bankable. A state that delays connections can stall a good resource.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## How to compare states
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://dea.gov.in/
-- https://www.gartner.com/en/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Compare a state on four lines: dominant renewable resource, role of coal in its energy, tightness of evacuation, and utility payment. Do not compare them on a single megawatt crown. Do not copy last year's league table into a new memo. The pattern to remember is geographic and institutional. The number to use is the one in the latest state and national release, read for that state alone.

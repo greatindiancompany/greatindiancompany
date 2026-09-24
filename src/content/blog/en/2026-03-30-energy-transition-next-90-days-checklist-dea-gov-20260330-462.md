@@ -2,69 +2,53 @@
 id: "gic-20260330-462"
 lang: "en"
 translationOf: null
-title: "Energy Transition In India: Next 90 Days Checklist (462)"
-description: "A high-level India brief using inputs from dea-gov and www2-deloitte."
+title: "A 90-Day Checklist For India's Energy Transition"
+description: "A 90-day checklist for tracking India's energy transition through programme notices, grid rules, and state orders."
 slug: "energy-transition-next-90-days-checklist-dea-gov-20260330-462"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "energy-transition"
   - "next-90-days-checklist"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "renewables"
 sourceLinks:
-  - "https://dea.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://mnre.gov.in/"
+  - "https://powermin.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Energy Transition In India: Next 90 Days Checklist (462)
+# A 90-Day Checklist For India's Energy Transition
 
-## Executive Brief
+Ninety days is long enough for a tender, a commission order, or a transmission notice to change a project. It is too short to judge whether India has shifted its coal and renewable energy mix. Use the quarter to check documents and operating signals. Do not use it to declare a new era. This checklist does not predict a specific notice, and it does not report a measured change for any named quarter.
 
-This brief synthesizes public information from **dea-gov** and **www2-deloitte** to map India-specific developments on **Energy Transition**.
+## Programme notices
 
-## What Changed
+On the Ministry of New and Renewable Energy side, check whether any live scheme changed its eligibility:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- Utility and hybrid tender calendars, and whether storage is required or optional.
+- Rooftop and household solar rules, including which consumers and which installers qualify.
+- Agricultural solar and feeder programmes, which move at the pace of state utilities.
+- Module-list scope, which can make an ordered shipment compliant or stranded.
+- Hydrogen-mission milestones only if you actually have an industrial project in that queue.
 
-## Strategic Signals For India
+If nothing material was notified, write "no change" and move on. Silence is a result.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Grid and access rules
 
-## Implications
+On the Ministry of Power side, check:
 
-### For policy teams
+- Connection and interstate-access applications that affect your bay, not the national philosophy of access.
+- Deviation and scheduling expectations for wind and solar, which hit revenue if forecasts are casual.
+- Open-access surcharge and banking rules in the states where you sell.
+- Distribution reform and payment steps for the utility that owes you money.
+- Coal logistics only if your risk is evening supply or a thermal contract. A renewable developer who ignores a tight coal month will misunderstand the peak price they are hoping to beat.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## State orders
 
-### For operators and founders
+State regulators are where purchase obligations, retail tariffs, and green open access become numbers a contract can use. In ninety days, read the orders in the states you operate in. Skip the states you do not. A thick national summary is less useful than two relevant orders.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## Physical checks
 
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://dea.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Ask operations, not the strategy deck: what was curtailed, what was paid, which bay slipped, and whether evening demand was met by coal and hydro as usual. Keep the answers in prose if you do not have a figure you trust. The point of the quarter is to leave with a shorter risk list than you started with, tied to documents a colleague can open.
