@@ -2,69 +2,60 @@
 id: "gic-20260330-118"
 lang: "en"
 translationOf: null
-title: "Food Processing In India: What Changed This Quarter (118)"
-description: "A high-level India brief using inputs from civilaviation-gov and pwc."
+title: "What changed in India's food processing programmes"
+description: "The latest published shifts in PMKSY, PMFME, and PLI, from the July 2025 Cabinet decision through the 2026-27 Budget."
 slug: "food-processing-what-changed-this-quarter-civilaviation-gov-20260330-118"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "food-processing"
-  - "what-changed-this-quarter"
-  - "india-briefs"
-  - "diverse-sources"
+  - "what-changed"
+  - "india"
 sourceLinks:
-  - "https://civilaviation.gov.in/"
-  - "https://www.pwc.in/research-and-insights-hub.html"
-summaryType: "india-brief"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2212769"
+  - "https://www.indiabudget.gov.in/doc/eb/sbe45.pdf"
+  - "https://www.mofpi.gov.in/sites/default/files/mofpi_annual_report_2024-25_english_21.08.2025.pdf"
+summaryType: "change-brief"
 draft: false
 ---
 
-# Food Processing In India: What Changed This Quarter (118)
+# What changed in India's food processing programmes
 
-## Executive Brief
+A reader looking for "this quarter" in Indian food processing will not find a single weekly dashboard. The Ministry of Food Processing Industries publishes scheme decisions, a year-end review, and the Union Budget. As of 24 September 2026, those are the documents that actually moved the public record. This brief walks through them in order, and says what each one does and does not settle.
 
-This brief synthesizes public information from **civilaviation-gov** and **pwc** to map India-specific developments on **Food Processing**.
+## The Cabinet widened PMKSY inside the 15th Finance Commission window
 
-## What Changed
+The ministry's Annual Report for 2024-25 still describes the restructured Pradhan Mantri Kisan SAMPADA Yojana (PMKSY) for the 15th Finance Commission cycle as an outlay of Rs 5,520 crore, written as Rs 4,600 crore plus Rs 920 crore. In that telling, new projects continue under cold chain, creation and expansion of processing capacity, agro-processing clusters, food testing laboratories, research and development, and Operation Greens. Mega food parks, backward and forward linkages, and the skill and HACCP pieces stay on the books only for liabilities already committed.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **What Changed This Quarter**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The Press Information Bureau's Year End Review, posted on 9 January 2026, records a later decision. On 31 July 2025 the Union Cabinet approved a total PMKSY outlay of Rs 6,520 crore for 2021-22 to 2025-26, including an additional Rs 1,920 crore. The review says that approval includes Rs 1,000 crore to support 50 multi-product food irradiation units under the cold-chain component and 100 NABL-accredited food testing labs. It also says 14 irradiation proposals were approved in 2025-26, out of 21 received against expressions of interest issued on 7 August 2024 and 25 July 2025.
 
-## Strategic Signals For India
+Treat the Rs 6,520 crore figure as the later Cabinet number, and the annual report's Rs 5,520 crore as the earlier published account. They are not two names for one unchanged sum.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What the ministry says happened in calendar 2025
 
-## Implications
+The same 9 January 2026 review is the fullest official tally of the year just closed:
 
-### For policy teams
+- Since January 2025, 36 PMKSY projects were approved and 94 were completed or operationalised, adding a stated processing and preservation capacity of 28.48 lakh metric tonnes. The ministry says those projects, once operational, are expected to draw investment of Rs 365.21 crore, benefit about 1.4 lakh farmers, and support more than 9,000 direct and indirect jobs.
+- Counting from each component's own launch, 1,618 PMKSY projects have been approved and 1,185 are operational, with processing and preservation capacity of 270.51 lakh metric tonnes. The ministry's language on the larger investment, farmer, and employment figures is "expected" once projects are operational: Rs 21,917 crore, about 51 lakh farmers, and more than 7.22 lakh direct and indirect jobs.
+- Under the Pradhan Mantri Formalisation of Micro Food Processing Enterprises (PMFME) scheme, 1,72,707 credit-linked loans have been sanctioned since inception. Since January 2025 the review counts 56,543 such loans. Seed capital of Rs 240.92 crore was sanctioned in that same stretch for 63,108 self-help group members. The cumulative seed-capital release is a different number: Rs 1,282.98 crore to 3.76 lakh members.
+- At World Food India 2025, held from 25 to 28 September 2025 at Bharat Mandapam, the Prime Minister released credit-linked subsidy of Rs 778 crore to 26,000 PMFME beneficiaries. The ministry also reported memorandums of understanding worth more than Rs 1,02,000 crore. A signed MoU is a stated intent. It is not a commissioned plant.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## The 2026-27 Budget is the live appropriation
 
-### For operators and founders
+Demand No. 45 of the Union Budget puts the ministry's 2026-27 budget estimate at Rs 4,064.16 crore. The Year End Review describes that as an increase of about 13.79 percent from the 2025-26 revised estimate of Rs 3,571.57 crore.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+Inside that demand, the scheme lines for 2026-27 are Rs 915 crore for PMKSY, Rs 1,200 crore for the Production Linked Incentive Scheme for Food Processing Industry (PLISFPI), and Rs 1,700 crore for PMFME. PLI is unchanged from its 2025-26 budget and revised estimates of Rs 1,200 crore. PMFME's 2026-27 estimate sits between the 2025-26 budget estimate of Rs 2,000 crore and the revised estimate of Rs 1,500 crore.
 
-### For investors and strategy teams
+That budget line matters because the published scheme windows and the appropriation do not use the same end date. PMKSY's extra Cabinet outlay and PMFME's extension, as described in the Year End Review, run through 2025-26. PLISFPI runs from 2021-22 to 2026-27. Demand No. 45 nonetheless carries PMKSY and PMFME provisions for 2026-27. Anyone filing an application this quarter should read the live guidelines on the ministry site before assuming a window is either open or shut.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## What did not change
 
-## Next 90 Days Checklist
+The three instruments are still different kinds of money. PMKSY is a central-sector grant for infrastructure. PMFME is a centrally sponsored, credit-linked subsidy for micro enterprises, with a coverage target of 2,00,000 units and an outlay of Rs 10,000 crore. PLISFPI, approved by the Cabinet on 31 March 2021 with an outlay of Rs 10,900 crore, pays incentives tied to manufacturing and to Indian brands abroad. The Year End Review's latest PLI tally is 170 approved proposals, reported investment of Rs 9,702 crore, reported employment of 3.4 lakh, and incentives of Rs 2,162.553 crore disbursed in 161 cases.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+Food Safety and Standards Authority of India rules on licensing, hygiene, and labels were not rewritten by these budget lines. A new grant does not replace a licence.
 
-## Source Links
+## Documents behind this brief
 
-- https://civilaviation.gov.in/
-- https://www.pwc.in/research-and-insights-hub.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- [Year End Review 2025, Ministry of Food Processing Industries (PIB, 9 January 2026)](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2212769)
+- [Demand No. 45, Union Budget](https://www.indiabudget.gov.in/doc/eb/sbe45.pdf)
+- [MoFPI Annual Report 2024-25](https://www.mofpi.gov.in/sites/default/files/mofpi_annual_report_2024-25_english_21.08.2025.pdf)
