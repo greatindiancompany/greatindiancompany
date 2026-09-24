@@ -2,69 +2,40 @@
 id: "gic-20260330-250"
 lang: "en"
 translationOf: null
-title: "Consumer Demand And Retail In India: Investment Implications (250)"
-description: "A high-level India brief using inputs from nabard and iea."
+title: "Where foreign capital can enter Indian retail"
+description: "Marketplace e-commerce allows 100% automatic FDI. Inventory-based e-commerce does not. Single-brand, multi-brand, and food retail use different routes."
 slug: "consumer-demand-and-retail-investment-implications-nabard-20260330-250"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "consumer-demand-and-retail"
   - "investment-implications"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.nabard.org/"
-  - "https://www.iea.org/countries/india"
+  - "https://dpiit.gov.in/foreign-direct-investment/foreign-direct-investment-policy"
+  - "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Consumer Demand And Retail In India: Investment Implications (250)
+# Where foreign capital can enter Indian retail
 
-## Executive Brief
+An investment memo on Indian retail starts with the activity, because the Department for Promotion of Industry and Internal Trade does not run one retail cap. The text to use is the Consolidated FDI Policy Circular of 2020, then any later press note on the [DPIIT policy page](https://dpiit.gov.in/foreign-direct-investment/foreign-direct-investment-policy). The paragraphs below are the circular’s own rules.
 
-This brief synthesizes public information from **nabard** and **iea** to map India-specific developments on **Consumer Demand And Retail**.
+## Four routes, four businesses
 
-## What Changed
+**Marketplace e-commerce.** Paragraph 5.2.15.2 permits 100% FDI on the automatic route in the marketplace model: an IT platform that facilitates a sale between buyer and seller. FDI is not permitted in the inventory model, where the e-commerce entity owns the goods and sells them to consumers. A vendor’s inventory is deemed controlled by the marketplace if more than 25% of that vendor’s purchases come from the marketplace or its group companies. A seller with equity participation by the marketplace, or with inventory controlled by it, cannot sell on that platform. The marketplace may not mandate exclusivity, and it may not directly or indirectly influence the sale price. An entity with FDI must obtain a statutory auditor’s report by 30 September each year confirming compliance for the preceding financial year.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Investment Implications**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+**Single-brand retail.** Paragraph 5.2.15.3 permits 100% FDI on the automatic route. Above 51%, sourcing of 30% of the value of goods purchased is to be done from India, met first as a five-year average and then annually. Online retail may start before stores, if brick-and-mortar stores open within two years of the start of online retail.
 
-## Strategic Signals For India
+**Multi-brand retail.** Paragraph 5.2.15.4 permits 51% on the government route. The foreign investor must bring in at least US$100 million. At least half of the first US$100 million goes into back-end infrastructure within three years. Outlets are limited to cities above 10 lakh population as per the 2011 Census, or other cities a state allows, and only in states and Union territories that have agreed to the policy. Companies with FDI in multi-brand retail may not do retail trading by e-commerce.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+**Food produced in India.** Paragraph 5.2.5.2 allows 100% FDI on the government route for retail trading, including e-commerce, of food products manufactured or produced in India. That permission sits in the manufacturing chapter, outside the multi-brand cap.
 
-## Implications
+A manufacturer, under paragraph 5.2.5.1, may sell what it manufactures in India by wholesale or retail, including e-commerce, without government approval. That is a manufacturing permission, not a marketplace permission.
 
-### For policy teams
+The investment implication is the route, not a blended “FDI in retail” headline. Capital that wants to own inventory and sell it online to consumers does not have an FDI door. Capital that wants to run a platform, a single brand, or India-made food retail is reading three different paragraphs.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The circular PDF circulated by DPIIT is [here](https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf).
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.nabard.org/
-- https://www.iea.org/countries/india
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company publishes these readings at [greatindiancompany.com/blog](https://greatindiancompany.com/blog).

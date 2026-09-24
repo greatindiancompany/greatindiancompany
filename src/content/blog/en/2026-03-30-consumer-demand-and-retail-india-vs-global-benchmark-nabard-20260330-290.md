@@ -2,69 +2,36 @@
 id: "gic-20260330-290"
 lang: "en"
 translationOf: null
-title: "Consumer Demand And Retail In India: India Vs Global Benchmark (290)"
-description: "A high-level India brief using inputs from nabard and deutsche-bank."
+title: "How to compare India’s consumption with another country"
+description: "India’s comparable consumption figure is private final consumption expenditure. In April–June 2026-27 it was 55.6% of nominal GDP."
 slug: "consumer-demand-and-retail-india-vs-global-benchmark-nabard-20260330-290"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "consumer-demand-and-retail"
   - "india-vs-global-benchmark"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.nabard.org/"
-  - "https://www.deutsche-bank.com/insights"
+  - "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1788172583113_d65a77cf-240e-4491-82ee-59f78618fa41_Press_Note_on_GDP_Estimates_for_Q1_2026-27.pdf"
+  - "https://www.mospi.gov.in/uploads/announcements/announcements_1789988970816_cf2e691e-2796-4e69-ba44-6152e1896969_Sources_and_Methods_for_compilation_of_National_Accounts_Statistics_(1).pdf"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Consumer Demand And Retail In India: India Vs Global Benchmark (290)
+# How to compare India’s consumption with another country
 
-## Executive Brief
+A cross-country retail ranking is only as good as the object being ranked. India’s official object is private final consumption expenditure in the national accounts, compiled by the Ministry of Statistics and Programme Implementation.
 
-This brief synthesizes public information from **nabard** and **deutsche-bank** to map India-specific developments on **Consumer Demand And Retail**.
+In the 31 August 2026 release, nominal PFCE in April–June 2026-27 was ₹49,08,179 crore, or 55.6% of nominal GDP. Real PFCE, at 2022-23 prices, grew 7.1%. Those two facts are the Indian benchmark: a share of GDP, and a real growth rate, on a named base year.
 
-## What Changed
+## What the method already aligns, and what it does not borrow
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **India Vs Global Benchmark**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+MoSPI says the quarterly estimates on the 2022-23 base follow the standards in the IMF Quarterly National Accounts Manual, 2017. The ministry’s Sources and Methods for the new series gives private final consumption its own chapter (Chapter 21) and a dedicated annex of the items that enter PFCE. That is the alignment that makes a later comparison with another country’s national-accounts consumption intelligible: both sides are trying to measure household final consumption, with published methods.
 
-## Strategic Signals For India
+A foreign “retail sales” index is a different object. It usually counts sales of a surveyed set of stores. It misses household consumption that never passes through those stores, and it includes some business purchases if the survey does not split them out. Putting India’s PFCE growth beside that index produces a gap that is mostly definition.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+MoSPI also does not, in the Q1 press note, publish a league table of India’s consumption share against other countries. This brief will not invent one. A reader who wants a comparison should take India’s PFCE from the [Q1 2026-27 press note](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1788172583113_d65a77cf-240e-4491-82ee-59f78618fa41_Press_Note_on_GDP_Estimates_for_Q1_2026-27.pdf), read the item coverage in [Sources and Methods](https://www.mospi.gov.in/uploads/announcements/announcements_1789988970816_cf2e691e-2796-4e69-ba44-6152e1896969_Sources_and_Methods_for_compilation_of_National_Accounts_Statistics_(1).pdf), and set it only against the other country’s official consumption aggregate for a comparable quarter and price basis.
 
-## Implications
+Two Indian traps sit inside that discipline. First, the base changed to 2022-23 on 27 February 2026, so a growth rate from the old 2011-12 series is not a continuation of the new one. Second, the quarterly print is an indicator-based estimate and is open to revision. A benchmark used in a board note should carry the release date.
 
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.nabard.org/
-- https://www.deutsche-bank.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company keeps a single English shelf for these readings at [greatindiancompany.com](https://greatindiancompany.com/).
