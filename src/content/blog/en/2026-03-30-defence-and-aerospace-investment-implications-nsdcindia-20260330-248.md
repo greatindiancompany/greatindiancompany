@@ -2,69 +2,62 @@
 id: "gic-20260330-248"
 lang: "en"
 translationOf: null
-title: "Defence And Aerospace In India: Investment Implications (248)"
-description: "A high-level India brief using inputs from nsdcindia and imf."
+title: "Defence FDI is automatic to 74 percent only for a new industrial licence"
+description: "Press Note 4 of 2020 allows 74 percent FDI on the automatic route for companies seeking a new defence industrial licence. Existing companies face a tighter 49 percent gate."
 slug: "defence-and-aerospace-investment-implications-nsdcindia-20260330-248"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "defence-and-aerospace"
   - "investment-implications"
   - "india-briefs"
-  - "diverse-sources"
+  - "fdi-defence"
 sourceLinks:
-  - "https://www.nsdcindia.org/"
-  - "https://www.imf.org/en/Countries/IND"
+  - "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1656082"
+  - "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156103"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Defence And Aerospace In India: Investment Implications (248)
+# Defence FDI is automatic to 74 percent only for a new industrial licence
 
-## Executive Brief
+## The cap, as rewritten in 2020
 
-This brief synthesizes public information from **nsdcindia** and **imf** to map India-specific developments on **Defence And Aerospace**.
+On 18 September 2020 the Department for Promotion of Industry and Internal Trade issued Press Note 4 (2020 Series). It reviews foreign direct investment in defence. The note takes effect from the FEMA notification, not from the press date.
 
-## What Changed
+The sector covered is defence industry that needs an industrial licence under the Industries (Development and Regulation) Act, 1951, and the manufacture of small arms and ammunition under the Arms Act, 1959. The equity cap is 100 percent. The entry route is automatic up to 74 percent. Above 74 percent, the government route applies where the investment is likely to result in access to modern technology, or for other reasons that must be recorded.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Investment Implications**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Before this note, the automatic slice stopped at 49 percent. The change is real. It is also narrower than the phrase "74 percent automatic" usually travels.
 
-## Strategic Signals For India
+## Who gets the 74 percent route
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Condition (i) limits the automatic 74 percent to companies seeking new industrial licences. Condition (ii) covers a different firm: one that is not seeking an industrial licence, or one that already has government approval for defence FDI. In that firm, fresh foreign investment up to 49 percent requires a declaration to the Ministry of Defence within 30 days when equity or the shareholding pattern changes, or when an existing investor transfers stake to a new foreign investor. Raising FDI beyond 49 percent in such a company needs government approval.
 
-## Implications
+An investor who buys into an existing licensed company cannot assume the new-licence rule applies. The 49 percent declaration gate is still written into the note.
 
-### For policy teams
+## Conditions that sit beside the percentage
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The revised note keeps four further conditions.
 
-### For operators and founders
+Licence applications are considered by DPIIT in consultation with the Ministry of Defence and the Ministry of External Affairs. Foreign investment needs security clearance from the Ministry of Home Affairs and must follow Ministry of Defence guidelines. The investee has to be self-sufficient in product design and development. The joint venture, along with the factory, has to carry maintenance and life-cycle support for the product made in India. Foreign investment is also open to scrutiny on national-security grounds, and the government reserves the right to review any defence-sector foreign investment that affects or may affect national security.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+A term sheet that prices only the 74 percent headline has not priced clearance, design capability, life-cycle support, or the review right.
 
-### For investors and strategy teams
+## What the note does not tell an investor
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+Press Note 4 does not publish the stock of foreign capital in defence, the number of joint ventures, or a return. Later Ministry notes repeat the 74 percent rule. The PIB note of 20 November 2025 does so in one line, next to positive lists and acquisition procedure. Repetition is not a new cap.
 
-## Next 90 Days Checklist
+The note is also silent on space launch and satellite authorisation. Those sit under the Indian Space Policy 2023 and IN-SPACe. A defence-FDI clearance is not a space authorisation, and a space authorisation is not an industrial licence under the Arms Act.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+## A practical reading for capital
 
-## Source Links
+Sort the company before sorting the percentage. New industrial licence: automatic route up to 74 percent, government route beyond that on the modern-technology test. Existing approval or no new licence: declaration to the Ministry up to 49 percent, government approval above 49 percent. In every case: Home Ministry clearance, Defence Ministry guidelines, design and life-cycle support, and the security-review reservation.
 
-- https://www.nsdcindia.org/
-- https://www.imf.org/en/Countries/IND
+Great Indian Company states the rule this way so an investor does not underwrite a slogan. The document to circulate internally is Press Note 4, not a summary that stops at 74.
 
-## Editorial Method
+## Official notices
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- Press Note 4 (2020 Series): https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1656082
+- Later restatement beside acquisition rules: https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156103
+
+Read next: [Industrial licence, SCOMET, and export authorisation](https://greatindiancompany.com/blog/defence-and-aerospace-regulatory-outlook-nsdcindia-20260330-448).
