@@ -2,69 +2,54 @@
 id: "gic-20260330-609"
 lang: "en"
 translationOf: null
-title: "Automotive And Ev In India: Execution Bottleneck Review (609)"
-description: "A high-level India brief using inputs from skillindiadigital-gov and unctad."
+title: "Approved Chargers, Buses, and Cells Versus What the Record Says Is Built"
+description: "PM E-DRIVE has approved 6,562 chargers and quantity letters for 13,800 buses. The cell review reports 1 GWh installed against 40 GWh awarded."
 slug: "automotive-and-ev-execution-bottleneck-review-skillindiadigital-gov-20260330-609"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "automotive-and-ev"
   - "execution-bottleneck-review"
-  - "india-briefs"
-  - "diverse-sources"
+  - "charging"
+  - "e-bus"
 sourceLinks:
-  - "https://www.skillindiadigital.gov.in/"
-  - "https://unctad.org/topic/trade-analysis"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039"
+  - "https://pmedrive.heavyindustries.gov.in/docs/policy_document/EV%20PCS%20operational%20guidelines_F.pdf"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Automotive And Ev In India: Execution Bottleneck Review (609)
+# Approved Chargers, Buses, and Cells Versus What the Record Says Is Built
 
-## Executive Brief
+Execution, in the documents the ministries publish, is the distance between an approval and a thing that exists. Three distances are long enough to brief on their own: public chargers, electric buses, and advanced chemistry cells. Two-wheeler sales are the contrast. They are the part of the book that has already been reimbursed at scale.
 
-This brief synthesizes public information from **skillindiadigital-gov** and **unctad** to map India-specific developments on **Automotive And Ev**.
+## Chargers: a line of ₹2,000 crore, a sanction of ₹689 crore
 
-## What Changed
+The [28 July 2026 reply](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696) says ₹2,000 crore is allocated for electric-vehicle public charging stations. As on 1 July 2026, ₹689 crore had been approved for 6,562 chargers, to three oil-marketing companies and nine states. The reply does not say those 6,562 are commissioned. It says the amount has been approved for deployment. It also does not name the states, so a city-level bottleneck cannot be located from this text.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The operational rules explain why deployment is slower than a vehicle subsidy. PM E-DRIVE's [charging guidelines](https://pmedrive.heavyindustries.gov.in/docs/policy_document/EV%20PCS%20operational%20guidelines_F.pdf) require compliance with the Ministry of Power's 17 September 2024 guidelines. For buses and trucks, each charging gun is to be at least 120 kW. Battery swapping and battery charging stations get support only for upstream infrastructure, and only if they meet the 10 January 2025 swapping guidelines. Subsidy is a percentage of benchmark costs published by the Bureau of Energy Efficiency, or of the actual cost, as the guidelines set out. Upstream power, a benchmark price, and a standards test sit between sanction and a live charger.
 
-## Strategic Signals For India
+FAME II's earlier charging allocation was ₹839 crore, recorded in the 11 March 2025 reply. The national stock is a different series again. A Ministry of Power note uploaded in July 2025 spoke of 34,000 chargers then, and an aim of about 1 lakh by 2030. Scheme approvals and the national stock answer different questions. Mixing them makes the bottleneck look either solved or untouched.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Buses: letters are ahead of signed concessions
 
-## Implications
+The same July reply allocates 14,000 electric buses. Letters of confirmation of demand have gone to cities and state transport undertakings. Letters of confirmation of quantity have gone to successful bidders for 13,800. Surat has signed for 600 and Hyderabad for 915. The reply's next sentence is the bottleneck: selected bidders must get the e-bus prototype approved and deploy the buses.
 
-### For policy teams
+The January 2026 review had an earlier cut of the same process. CESL had concluded a tender of 10,900 buses for Delhi, Ahmedabad, Surat, Hyderabad, and Bengaluru, and rates had been conveyed for letters of award and concession agreements. Between that review and the July reply, the public proof of a signed concession is two cities. The other cities in the January list are not described as signed in the July text.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Payment security is built for this lag and for the default that can follow deployment. The PM e-Bus Sewa mechanism, ₹3,435.33 crore, notified 28 October 2024, can pay if a transport authority defaults, and the authority must repay within 90 days. By 22 December 2025, 15 states and Union territories had filed the debit mandate. A city that has a tender and no mandate is earlier in the chain than a city that has both.
 
-### For operators and founders
+## Cells and certificates: awarded is not installed
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The [January 2026 review](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039) awards 40 GWh of the 50 GWh cell target to named firms and keeps 10 GWh for grid-scale stationary storage. The installed capacity it reports is 1 GWh at Ola Cell Technologies, pilot production since March 2024, with the firm working toward commercial stability. Investment of ₹2,878 crore and 1,118 jobs till 30 October 2025 are the executed totals. The bottleneck is the gap between awarded gigawatt-hours and the one gigawatt-hour the review describes as standing.
 
-### For investors and strategy teams
+PLI Auto shows a similar filter on components. Cumulative investment of ₹35,657 crore till 30 September 2025 sits next to DVA certificates, as of 31 December 2025, for 94 variants at eight OEMs and 37 variants at ten component makers, out of 82 approved applicants. The plant can be up while the variant is still uncertified. Certified units that had received an incentive by that December date were 13,61,488, and 10,42,172 of them were two-wheelers. Volume execution has been in the vehicle category with the most mature product. The component-certificate count is the slower line.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## Documents to open next
 
-## Next 90 Days Checklist
+- [PIB, 28 July 2026, charger sanctions and bus letters](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [PIB, 13 January 2026, cell installation and DVA certificates](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
+- [PM E-DRIVE public-charging operational guidelines](https://pmedrive.heavyindustries.gov.in/docs/policy_document/EV%20PCS%20operational%20guidelines_F.pdf)
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.skillindiadigital.gov.in/
-- https://unctad.org/topic/trade-analysis
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company separates an approval from a commissioned asset because the ministry's sentences already do. More of that reading is at [greatindiancompany.com](https://greatindiancompany.com).
