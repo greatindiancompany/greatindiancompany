@@ -2,69 +2,33 @@
 id: "gic-20260330-267"
 lang: "en"
 translationOf: null
-title: "Aviation And Tourism In India: India Vs Global Benchmark (267)"
-description: "A high-level India brief using inputs from niti-gov and www2-deloitte."
+title: "How to compare India's aviation and tourism with other countries"
+description: "Compare traffic rights, airport charges, regional-route support, and visas. This page ranks no country."
 slug: "aviation-and-tourism-india-vs-global-benchmark-niti-gov-20260330-267"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "aviation-and-tourism"
   - "india-vs-global-benchmark"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.niti.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-# Aviation And Tourism In India: India Vs Global Benchmark (267)
+A comparison is useful when the same handoff is lined up in India and in the other country. A single score of India against the world does not tell an airline or a hotel what to change. This page publishes no ranking and no passenger table.
 
-## Executive Brief
+## Handoffs that are easy to misread
 
-This brief synthesizes public information from **niti-gov** and **www2-deloitte** to map India-specific developments on **Aviation And Tourism**.
+- **Who may fly in.** International seats follow Indian air services arrangements and designated carriers. A country that grants a broad open-skies arrangement is a different institution. Compare entitlements and designations, not a slogan about openness. The International Civil Aviation Organization writes standards. It does not allocate your bilateral.
+- **Airport charges.** Major Indian airports have aero tariffs set by the Airports Economic Regulatory Authority. A city where the airport sets charges under another statute, or where the field is still run as a department, is not the same row. Name the regulator that wrote the order.
+- **Thin routes.** UDAN pays for selected regional routes and caps the fare on part of the seats. A public-service route in another country can be the comparison when both are written contracts for a named city pair. Comparing that support with a dense unsubsidized low-cost network mixes two products.
+- **The guest's paperwork.** India's e-Tourist visa is a category with conditions. It is not a visa-free regime. A benchmark against a visa-free destination measures a different friction. The Ministry of Tourism does not issue the visa.
+- **Hotels and monuments.** Star classification in India is a voluntary Ministry of Tourism process. A fire licence, a municipal licence, and an Archaeological Survey of India ticket are separate permissions. Do not treat a star as the other country's building code.
 
-## What Changed
+## How to write the row
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **India Vs Global Benchmark**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+One city pair or one circuit, one stage, two columns. Note the year and the document you opened. Leave the cell blank if you did not open it. Bilateral limits, Airports Economic Regulatory Authority orders, and inner-line or protected-area permits do not travel. They belong in a footnote on the India column, not in a pretended common indicator.
 
-## Strategic Signals For India
-
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
-
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.niti.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Differences inside India are large enough to break a national average. See [why the pattern changes by place](/blog/aviation-and-tourism-state-wise-patterns-niti-gov-20260330-307). A slower question about seats, rights, and keys is on the [mid-term page](/blog/aviation-and-tourism-mid-term-trajectory-niti-gov-20260330-507).

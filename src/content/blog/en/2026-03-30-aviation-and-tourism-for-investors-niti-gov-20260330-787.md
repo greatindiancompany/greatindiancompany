@@ -2,69 +2,32 @@
 id: "gic-20260330-787"
 lang: "en"
 translationOf: null
-title: "Aviation And Tourism In India: For Investors (787)"
-description: "A high-level India brief using inputs from niti-gov and societegenerale."
+title: "What investors should ask about Indian aviation and tourism"
+description: "Ask for the certificate, the slot, the lease, the tariff order, and the season's sold rooms. No score is offered."
 slug: "aviation-and-tourism-for-investors-niti-gov-20260330-787"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "aviation-and-tourism"
   - "for-investors"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.niti.gov.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-# Aviation And Tourism In India: For Investors (787)
+An investor in Indian aviation or tourism is buying a permission and a season. The questions below are how to see which one. This page does not score a company and does not name one.
 
-## Executive Brief
+## Documents before the story
 
-This brief synthesizes public information from **niti-gov** and **societegenerale** to map India-specific developments on **Aviation And Tourism**.
+- **An airline or an aircraft.** The air operator certificate and its conditions, the leases and their dates, the slots or the UDAN award, and the maintenance arrangement that can release the fleet. A delivery schedule is not a certificate. Ask what happens to the airframe if rent is unpaid. "Not known" is an acceptable answer. This page will not fill it in.
+- **An airport.** The concession, the Airports Economic Regulatory Authority order if the airport is a major airport, and traffic split by carrier. A retail concept is not aero revenue. Ask which carrier could leave the city without breaching the contract you are shown.
+- **A hotel or a tour.** Local licences, rooms or departures sold by season for two years, the share that were foreign guests, and the flights those guests used. A star classification and a state award are not the cash flow. Ask what happens to deposits if the season road closes.
+- **Anything that cites a scheme.** The sanction, the amount that reached the account, and the date it stops. Ministry of Tourism circuit support and regional-flying support are contracts with ends. They are not a valuation multiple.
 
-## What Changed
+## Questions that keep the file honest
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Investors**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Which single permission, if withdrawn, stops revenue inside a month? Which large cost is fuel, a lease, or a tariff the company does not set? What did the lean month look like, in occupied rooms or flown seats, rather than in a deck average?
 
-## Strategic Signals For India
-
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
-
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.niti.gov.in/
-- https://www.societegenerale.com/en/news
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+The clocks are on the [investment page](/blog/aviation-and-tourism-investment-implications-niti-gov-20260330-227). The breaks are on the [risk map](/blog/aviation-and-tourism-risk-and-scenario-map-niti-gov-20260330-547). If the answer cites a national arrival total, ask for the airport and the month. The [evidence page](/blog/aviation-and-tourism-evidence-snapshot-niti-gov-20260330-667) says which record is allowed to answer.

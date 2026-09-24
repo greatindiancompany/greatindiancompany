@@ -2,69 +2,35 @@
 id: "gic-20260330-547"
 lang: "en"
 translationOf: null
-title: "Aviation And Tourism In India: Risk And Scenario Map (547)"
-description: "A high-level India brief using inputs from niti-gov and societegenerale."
+title: "A risk map for India's aviation and tourism"
+description: "The certificate, the slot, the lessor, the season, and the permit are the breaks. No probability is assigned."
 slug: "aviation-and-tourism-risk-and-scenario-map-niti-gov-20260330-547"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "aviation-and-tourism"
   - "risk-and-scenario-map"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.niti.gov.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-# Aviation And Tourism In India: Risk And Scenario Map (547)
+A risk in Indian aviation or tourism is a break you can name before it happens: the flight does not leave, the guest does not arrive, or the cash does not. This page assigns no probability and does not describe a crisis as underway.
 
-## Executive Brief
+## Breaks that hit different businesses
 
-This brief synthesizes public information from **niti-gov** and **societegenerale** to map India-specific developments on **Aviation And Tourism**.
+- **The certificate.** A Directorate General of Civil Aviation grounding, a failed audit, or an aircraft that a licensed engineer cannot release stops the schedule. A campaign does not restart it.
+- **The lessor.** Unpaid rent, or a dispute over deregistration and repossession, can remove seats while demand is unchanged. That is a contract and a civil-aviation procedure. This page does not describe any carrier's dispute.
+- **The slot, the right, or the support.** Loss of a seasonal slot, a tighter bilateral, or the end of a UDAN award removes the city pair. The hotel built for that last bank of flights keeps its costs.
+- **Fuel, currency, and charges.** Fuel and the rupee move an airline's costs. An Airports Economic Regulatory Authority true-up moves what a major airport charges. This page states no price. The exposed model is the one that reused last year's invoice without opening it.
+- **Season and access.** A closed hill road, a runway that weather shuts, or a charter series that does not return. Island and high-altitude calendars are short. Missing the window can cost the year.
+- **The guest's permission.** A visa change, an advisory, or a new limit at a park or a border district. Domestic guests can still come when foreign arrivals stop, and the reverse also happens. One blended "tourism" line hides which pipe broke.
+- **Too many keys.** Rooms that opened against seats that did not. The rate can fall. The loan does not.
 
-## What Changed
+## What to write beside each break
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Risk And Scenario Map**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The trigger you can observe, the account line it hits, and the action available inside a week. A second field you can actually use, a deposit rule for the season, or a stop on further rooms is an action. "Watch demand" is not.
 
-## Strategic Signals For India
-
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
-
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.niti.gov.in/
-- https://www.societegenerale.com/en/news
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Weekly figures that show a break has started are the [market signals](/blog/aviation-and-tourism-market-signal-brief-niti-gov-20260330-187). The ninety-day pass is the [checklist](/blog/aviation-and-tourism-next-90-days-checklist-niti-gov-20260330-467). An investor should use the [diligence questions](/blog/aviation-and-tourism-for-investors-niti-gov-20260330-787) rather than turn this map into a score.
