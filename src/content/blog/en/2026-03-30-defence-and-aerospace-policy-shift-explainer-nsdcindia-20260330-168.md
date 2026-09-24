@@ -2,69 +2,60 @@
 id: "gic-20260330-168"
 lang: "en"
 translationOf: null
-title: "Defence And Aerospace In India: Policy Shift Explainer (168)"
-description: "A high-level India brief using inputs from nsdcindia and jpmorgan."
+title: "How a positive indigenisation list changes the buyer"
+description: "A positive indigenisation list is an item, a timeline, and a procurement consequence after indigenous development succeeds. It is not a grant and not an FDI approval."
 slug: "defence-and-aerospace-policy-shift-explainer-nsdcindia-20260330-168"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "defence-and-aerospace"
   - "policy-shift-explainer"
   - "india-briefs"
-  - "diverse-sources"
+  - "positive-indigenisation"
 sourceLinks:
-  - "https://www.nsdcindia.org/"
-  - "https://www.jpmorgan.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2300723"
+  - "https://srijandefence.gov.in/"
+  - "https://www.pib.gov.in/FactsheetDetails.aspx?id=150909"
+  - "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156103"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Defence And Aerospace In India: Policy Shift Explainer (168)
+# How a positive indigenisation list changes the buyer
 
-## Executive Brief
+## The sentence that is the policy
 
-This brief synthesizes public information from **nsdcindia** and **jpmorgan** to map India-specific developments on **Defence And Aerospace**.
+The Department of Defence Production's notice of 18 August 2026 states the rule in plain language. Each item on the positive indigenisation list has an indicative timeline. Upon successful indigenous development, the item will be procured from Indian industry.
 
-## What Changed
+That is the shift. The buyer is pointing a named part away from import, on a date, after development has succeeded. Before those two conditions are met, the list is a published offer to Indian firms. It is not cash, and it is not a purchase order.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Policy Shift Explainer**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Two departments notify lists
 
-## Strategic Signals For India
+The August 2026 list is a Department of Defence Production list. It covers 405 items that defence public sector undertakings and the Indian Coast Guard had been importing or buying as spares, sub-assemblies, and materials. A PIB factsheet through May 2026 describes an earlier stock of lists from two departments: five from the Department of Military Affairs and five from the Department of Defence Production.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The military-affairs lists and the production-department lists answer different buyers. One set is tied to the services. The other is tied to what defence public sector undertakings and, in the sixth list, the Coast Guard will stop importing once Indian development succeeds. A firm that quotes "the positive list" without saying which department issued the item will chase the wrong tender office.
 
-## Implications
+## Where the work is supposed to happen
 
-### For policy teams
+The August notice names the routes. Defence public sector undertakings and the Coast Guard indigenise through their Make procedure and through in-house development. Industry participates, and the notice singles out MSMEs. The catalogue of items lives on SRIJAN, which the Department opened in August 2020 so that public producers and service headquarters could offer parts to Indian firms, including startups.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+SRIJAN is a matching board. The positive list is the subset on which the Department has also published a procurement consequence. An item can be offered on the portal without yet sitting on a notified list. The August release keeps those counts apart: more than 33,000 items offered up to June 2026, of which 5,012 were in the first five lists.
 
-### For operators and founders
+## What this instrument does not do
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+A positive list does not raise the foreign-investment cap. That rule is Press Note 4 of 2020, and it still requires security clearance, an industrial-licence path, and a national-security review. A positive list also does not authorise an export. Export of controlled items sits with the SCOMET list and with defence export authorisations counted by the Department of Defence Production.
 
-### For investors and strategy teams
+A PIB note of 20 November 2025 places the lists beside a second procurement text. The Defence Acquisition Procedure 2020 gives first priority to Buy (Indian-IDDM): indigenously designed, developed, and manufactured. The Defence Procurement Manual 2025, effective 1 November 2025, covers revenue purchases. The positive list tells a buyer which import to stop. DAP and the manual tell the buyer how a purchase is run. They are stacked rules, not synonyms.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## How to read one item
 
-## Next 90 Days Checklist
+Take a single line, not the slogan. Identify the department that notified it, the platform it belongs to, the timeline on SRIJAN, and whether development has been accepted. Only then does the procurement consequence in the August notice apply. Great Indian Company keeps this explainer separate from the quarterly count so a founder does not treat a new list as a new law.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+## Official notices
 
-## Source Links
+- Sixth list and the procurement sentence: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2300723
+- Item timelines: https://srijandefence.gov.in/
+- Two notifying departments, through May 2026: https://www.pib.gov.in/FactsheetDetails.aspx?id=150909
+- DAP 2020 priority and DPM 2025: https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156103
 
-- https://www.nsdcindia.org/
-- https://www.jpmorgan.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Read next: [Why a listed item is not yet an order](https://greatindiancompany.com/blog/defence-and-aerospace-execution-bottleneck-review-nsdcindia-20260330-608).
