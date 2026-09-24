@@ -2,69 +2,48 @@
 id: "gic-20260330-189"
 lang: "en"
 translationOf: null
-title: "Digital Public Infrastructure In India: Market Signal Brief (189)"
-description: "A high-level India brief using inputs from dpiit-gov and unctad."
+title: "India DPI Market Signals: UPI, ONDC, and GeM"
+description: "UPI volumes, ONDC sellers, and GeM orders as stated in the 6 March 2026 public note on India's digital public infrastructure."
 slug: "digital-public-infrastructure-market-signal-brief-dpiit-gov-20260330-189"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "digital-public-infrastructure"
   - "market-signal-brief"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.dpiit.gov.in/"
-  - "https://unctad.org/topic/trade-analysis"
+  - "https://www.digitalindia.gov.in/initiative/india-stack-global/"
+  - "https://www.meity.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Digital Public Infrastructure In India: Market Signal Brief (189)
+# India DPI Market Signals: UPI, ONDC, and GeM
 
-## Executive Brief
+## Payments are the measured market
 
-This brief synthesizes public information from **dpiit-gov** and **unctad** to map India-specific developments on **Digital Public Infrastructure**.
+The Press Information Bureau research note of 6 March 2026 treats UPI as the retail payments rail inside India's digital public infrastructure. For January 2026 it states 21.70 billion transactions worth over ₹28.33 lakh crore, and 691 banks live on the platform. The note footnotes those statistics to NPCI.
 
-## What Changed
+Three share statements in that note are market-structure signals. They are not price signals.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Market Signal Brief**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- Inside India, 81 percent by volume of retail payment transactions were on UPI rails.
+- The note cites the 2024 ACI Worldwide report, Prime Time for Real Time, for a figure of around 49 percent of global real-time payment transaction volume.
+- The note cites a June 2025 IMF report for the description of UPI as the world's largest retail fast payment system by transaction volume.
 
-## Strategic Signals For India
+This brief does not turn those shares into a forecast of fee income. The note does not state what a bank or an app earns per UPI transaction.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Commerce is an open network, not one store
 
-## Implications
+ONDC, which the note says launched in 2022, is described as a network that connects buyers and sellers across interoperable platforms rather than a single marketplace. As of December 2025 the note records 1.16 lakh-plus retail sellers live, from 630-plus cities and towns.
 
-### For policy teams
+That is a participation count. The note does not give ONDC's share of India's e-commerce sales.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Public procurement is a second demand rail
 
-### For operators and founders
+Government eMarketplace figures in the note are as of November 2025. Nearly 3.27 crore orders had been processed. Cumulative gross merchandise value exceeded ₹16.41 lakh crore, of which ₹8.47 lakh crore was products and ₹7.94 lakh crore was services. More than 1.67 lakh buyer organisations were onboard. Over 24 lakh sellers and service providers had completed profiles, including more than 11 lakh micro and small enterprises. The note says those enterprises account for 44.8 percent of cumulative order value and have received orders worth over ₹7.35 lakh crore.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The market signal is access to public demand through one marketplace, with a published share for micro and small enterprises. It is not a signal about private retail margins.
 
-### For investors and strategy teams
+## What is absent
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.dpiit.gov.in/
-- https://unctad.org/topic/trade-analysis
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+The note does not publish take rates, merchant discount rates, or a ranked list of private apps by UPI volume. India Stack Global lists UPI, ONDC's sibling systems, and Government eMarketplace among showcase platforms. A listing on that page is not a market-share table. Adding shares the note does not print would invent them.

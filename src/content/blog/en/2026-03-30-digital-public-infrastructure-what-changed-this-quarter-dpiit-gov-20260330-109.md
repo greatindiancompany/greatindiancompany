@@ -2,69 +2,49 @@
 id: "gic-20260330-109"
 lang: "en"
 translationOf: null
-title: "Digital Public Infrastructure In India: What Changed This Quarter (109)"
-description: "A high-level India brief using inputs from dpiit-gov and barclays."
+title: "India's Digital Public Infrastructure: What the March 2026 Note Records"
+description: "What the 6 March 2026 public note records about India's digital public infrastructure, and what this September update does not add."
 slug: "digital-public-infrastructure-what-changed-this-quarter-dpiit-gov-20260330-109"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "digital-public-infrastructure"
   - "what-changed-this-quarter"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.dpiit.gov.in/"
-  - "https://www.barclays.com/insights/"
+  - "https://www.digitalindia.gov.in/about-us/"
+  - "https://www.digitalindia.gov.in/initiative/india-stack-global/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Digital Public Infrastructure In India: What Changed This Quarter (109)
+# India's Digital Public Infrastructure: What the March 2026 Note Records
 
-## Executive Brief
+## The dated record
 
-This brief synthesizes public information from **dpiit-gov** and **barclays** to map India-specific developments on **Digital Public Infrastructure**.
+This brief answers a narrow question: what a public compilation already states about India's digital public infrastructure, and what this page does not update.
 
-## What Changed
+The compilation is the Press Information Bureau research note "India's Digital Public Infrastructure," dated 6 March 2026. This page was updated on 23 September 2026. That later date is an edit date. It is not a new measurement. No later official table is folded in.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **What Changed This Quarter**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## What the note treats as the standing picture
 
-## Strategic Signals For India
+The note describes digital public infrastructure as foundational systems for identity, payments, and data exchange, built as public rails rather than one closed platform. It places the JAM base — Jan Dhan accounts, Aadhaar, and mobile connectivity — under that architecture, then traces later layers: payments, documents, welfare transfers, health, education, commerce, and government workflow.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Digital India, the MeitY programme page, is the wider frame around that architecture. The programme was launched on 1 July 2015. India Stack Global, on the same Digital India site, is the outward showcase of named platforms.
 
-## Implications
+Two scale markers in the March note, both tied to early 2026, show the picture it treats as current:
 
-### For policy teams
+- More than 144 crore Aadhaar numbers had been generated as of March 2026.
+- In January 2026, UPI processed 21.70 billion transactions worth over ₹28.33 lakh crore, with 691 banks live on the platform.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Those are stock and flow readings inside one note. They are not a quarter-on-quarter comparison.
 
-### For operators and founders
+## What this page will not call a change
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The note does not publish a December 2025 versus March 2026 comparison for Aadhaar, UPI, DigiLocker, or UMANG. It also does not name a rule issued in the first quarter of 2026 that replaced an earlier rule. Treating either gap as a shift this quarter would add a claim the note does not make.
 
-### For investors and strategy teams
+International items in the same note are dated to February 2026 or described as already in force: cooperation agreements with 24 countries, and UPI live in eight countries. They are recorded facts in that note. They are not restated here as a fresh quarterly event.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## How a later change would show up
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.dpiit.gov.in/
-- https://www.barclays.com/insights/
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+A real quarterly change would be a later release that restates the same series — UPI monthly volume, Aadhaar authentications, DigiLocker users, direct-benefit transfers, API Setu counts — with a new as-of date. Until that release is the source, the March figures stay the figures.
