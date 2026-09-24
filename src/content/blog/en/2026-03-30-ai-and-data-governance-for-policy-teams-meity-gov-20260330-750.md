@@ -2,11 +2,11 @@
 id: "gic-20260330-750"
 lang: "en"
 translationOf: null
-title: "Ai And Data Governance In India: For Policy Teams (750)"
-description: "A high-level India brief using inputs from meity-gov and alvarezandmarsal."
+title: "Which desk owns India's AI and data rules"
+description: "MeitY holds the DPDP Act and IndiaAI. CERT-In holds incident directions. The Reserve Bank holds payment-data storage. SEBI holds market reporting. States do not override the Act."
 slug: "ai-and-data-governance-for-policy-teams-meity-gov-20260330-750"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "ai-and-data-governance"
   - "for-policy-teams"
@@ -14,57 +14,53 @@ tags:
   - "diverse-sources"
 sourceLinks:
   - "https://www.meity.gov.in/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2186639"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289946"
+  - "https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf"
+  - "https://www.sebi.gov.in/legal/circulars/aug-2024/cybersecurity-and-cyber-resilience-framework-cscrf-for-sebi-regulated-entities-res-_85964.html"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Ai And Data Governance In India: For Policy Teams (750)
+Policy teams lose time when every AI paper is assigned to "the ministry." The instruments already name the desk. The work is to keep the desks apart, and to keep a guideline from being filed as a statute.
 
-## Executive Brief
+## MeitY: the Act, the Rules, the Mission, the advisory
 
-This brief synthesizes public information from **meity-gov** and **alvarezandmarsal** to map India-specific developments on **Ai And Data Governance**.
+The Ministry of Electronics and Information Technology is the rule-maker under the DPDP Act. The Rules were notified as G.S.R. 846(E) on 13 November 2025, after a draft of 3 January 2025, G.S.R. 02(E). The commencement notification is a separate gazette, G.S.R. 843(E), the same day. MeitY's own site lists a corrigendum of 16 December 2025. A policy note that cites "the Rules" without the corrigendum is incomplete on wording, even when the commencement dates are clear.
 
-## What Changed
+MeitY also holds the IndiaAI Mission, approved 7 March 2024. The July 2026 Rajya Sabha reply lists seven pillars: Compute, Foundation Models, AIKosh, Application Development, FutureSkills, Startup Financing, and Safe and Trusted AI. The IndiaAI Safety Institute is described in that reply as announced in January 2025, to do safety research and to oversee projects selected under that pillar. It is not the Data Protection Board.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Policy Teams**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+MeitY issued the due-diligence advisory that replaced the 1 March 2024 note, aimed at intermediaries and platforms. That advisory sits under the IT Rules. It should be filed with intermediary due diligence, not with the DPDP Schedule.
 
-## Strategic Signals For India
+The India AI Governance Guidelines, unveiled on 5 November 2025, are a MeitY framework: seven principles, six pillars of recommendations, and a short, medium, and long-term plan. PIB says they are a reference for policymakers, researchers, and industry. A reference is not a commenced section. The guidelines propose coordination arrangements. The Rajya Sabha reply treats the Safety Institute as announced. It does not, in the text used here, say a new statutory regulator has replaced MeitY.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+One MeitY-related change is already outside the ministry's own implementation queue. Section 44(3), in force since 13 November 2025, substitutes the personal-information clause in the Right to Information Act. That is a live drafting fact for any department that answers RTI requests. Section 44(2), which omits section 43A of the IT Act, is not in force until 13 May 2027. Departments that still operate systems under the older IT Act compensation section should not brief ministers that the omission has happened.
 
-## Implications
+## CERT-In: incidents, not privacy principles
 
-### For policy teams
+CERT-In, under MeitY but with its own directions under section 70B, owns the six-hour report, the 180-day log inside India, and the point of contact. Annexure I already names AI and machine-learning incidents. A policy team that writes a new "AI incident cell" without reading Annexure I will duplicate a direction that has been in force since 2022. The 27 June 2022 extension note is part of the same file, for MSMEs and for subscriber validation.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Reserve Bank and SEBI: sector first
 
-### For operators and founders
+The Reserve Bank owns storage of payment-system data, by the circular of 6 April 2018, and it has published a committee report, FREE-AI, on 13 August 2025. The report has seven sutras and 26 recommendations. The governance guidelines say their principles were adapted from that report. Adaptation is not a direction to banks. Until the Reserve Bank issues a direction, FREE-AI remains a report on the website.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+SEBI owns reporting of AI and machine-learning tools by brokers, market infrastructure institutions, and mutual funds under the 2019 circulars, and it owns the cybersecurity framework of 20 August 2024 for regulated entities, including accountability for third-party data and logs. A proposal of November 2024 to assign sole responsibility for AI outputs was, in the December 2024 board memorandum, still to be notified. Sectoral counsel should check for that notification. This desk note does not supply it.
 
-### For investors and strategy teams
+## States, and the appellate body
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+States can set procurement tests for their own AI buys. Tamil Nadu's 2020 policy is one such test. They do not notify Significant Data Fiduciaries, and they do not phase the DPDP Act. The Centre has published counts of AI centres and named some compute cities. It has not published a State score. That gap is the [state note](/blog/ai-and-data-governance-state-wise-patterns-meity-gov-20260330-310).
 
-## Next 90 Days Checklist
+Appeals from the Data Protection Board go to TDSAT. That is section 2 of the Act and section 44(1), the latter already in force. TDSAT is not a MeitY regulator. It is the appellate tribunal. It will matter when there are Board orders to appeal. Rule 22, the appeal form, starts on 13 May 2027.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+The [bottleneck note](/blog/ai-and-data-governance-execution-bottleneck-review-meity-gov-20260330-590) is the brief to hand a minister who has been told the Act is fully operational. The [ledger](/blog/ai-and-data-governance-evidence-snapshot-meity-gov-20260330-670) is the brief to hand a minister who has been given a single GPU number.
 
-## Source Links
+Great Indian Company writes these so a policy reader can assign the file to the desk that owns it. The library is at [greatindiancompany.com/blog](https://greatindiancompany.com/blog).
 
-- https://www.meity.gov.in/
-- https://www.alvarezandmarsal.com/insights
+## Documents
 
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- Rules and corrigendum listing: [MeitY](https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa)
+- Guidelines launch: [PIB, 5 November 2025](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2186639)
+- Safety Institute and pillars: [PIB, 27 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289946)
+- CERT-In directions: [PDF](https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf)
+- SEBI cybersecurity framework: [Circular of 20 August 2024](https://www.sebi.gov.in/legal/circulars/aug-2024/cybersecurity-and-cyber-resilience-framework-cscrf-for-sebi-regulated-entities-res-_85964.html)
+- FREE-AI release: [RBI, 13 August 2025](https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61018)
