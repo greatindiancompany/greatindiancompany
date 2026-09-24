@@ -2,69 +2,47 @@
 id: "gic-20260330-581"
 lang: "en"
 translationOf: null
-title: "Manufacturing Industrial Policy In India: Execution Bottleneck Review (581)"
-description: "A high-level India brief using inputs from mof-gov and mckinsey."
+title: "Who has to execute India's industrial policy"
+description: "DPIIT coordinates PLI. Line ministries implement it. States hold corridor land through joint ventures. A delay usually sits in one of those three places, not in a single national switch."
 slug: "manufacturing-industrial-policy-execution-bottleneck-review-mof-gov-20260330-581"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "manufacturing-industrial-policy"
   - "execution-bottleneck-review"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://www.mof.gov.in/"
-  - "https://www.mckinsey.com/in/our-insights"
+  - "https://www.dpiit.gov.in/"
+  - "https://www.dpiit.gov.in/static/uploads/2025/06/3d9c9c2daeefb97bb9ce964370938b71.pdf"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Manufacturing Industrial Policy In India: Execution Bottleneck Review (581)
+# Who has to execute India's industrial policy
 
-## Executive Brief
+Execution problems in Indian manufacturing policy are easier to name once the work is split. Three public actors show up in the official record, and they do not do the same job.
 
-This brief synthesizes public information from **mof-gov** and **mckinsey** to map India-specific developments on **Manufacturing Industrial Policy**.
+## DPIIT coordinates. It does not run most schemes.
 
-## What Changed
+The 28 July 2026 reply to [Lok Sabha Unstarred Question 1423](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AU1423_Rd4xWf.pdf) says administrative ministries implement the PLI schemes, while DPIIT is the nodal department for coordination and monitoring. The 21 July annexure, [PIB PRID 2287008](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287008), makes the split concrete. Of the 14 lines, the one marked DPIIT is white goods. The others are marked to MeitY, the Department of Pharmaceuticals, Telecom, Food Processing, Civil Aviation, Heavy Industries, Textiles, Steel, and MNRE.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+A file that is "stuck with DPIIT" may actually be stuck with the ministry that approves claims. The same July note says reviews happen in the Empowered Group of Secretaries, chaired by the Cabinet Secretary, and inside each administrative ministry. It lists what the government says it has done when implementation drags: periodic review, rationalisation of guidelines, relaxation of some eligibility conditions, stronger project monitoring, and stakeholder consultations. Those are process statements. They are not a dashboard of pending claims by company.
 
-## Strategic Signals For India
+DPIIT's Annual Report 2024-25 describes an older, wider version of the same bottleneck. The Empowered Group of Secretaries and Project Development Cells were set up so clearances across departments would meet a project pipeline. The objectives in the report are synergies, timely clearances, and a stable investment environment. The existence of that machinery is the evidence that cross-department clearance was the problem it was built to reduce. The report is the [DPIIT Annual Report 2024-25](https://www.dpiit.gov.in/static/uploads/2025/06/3d9c9c2daeefb97bb9ce964370938b71.pdf).
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## States execute land and parks
 
-## Implications
+Corridor projects are joint. The 30 August 2024 note, [PIB PRID 2050136](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2050136), describes SPVs with state agencies: Gujarat holds 51 percent of the Dholera company, Maharashtra's industrial development corporation is the state partner at AURIC, and Greater Noida's authority is the 50 percent partner at the integrated township. NICDC, under DPIIT, prepares master plans and coordinates. The state side is land, the SPV, and local clearances.
 
-### For policy teams
+That is why a central PLI approval can be "on track" while a factory is not. The applicant still needs a site. The India Industrial Land Bank is DPIIT's published way to see industrial areas. It does not allot them. The August 2024 note's list of new nodes also disagrees with its own count of twelve. An execution team that cannot name the project it is waiting on is not waiting on a project yet.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The Industrial Park Rating System is a related DPIIT tool, run with Invest India and the Asian Development Bank. The 2.0 report was released on 5 October 2021. Gap reports were sent to states. A national workshop was held on 1 July 2023. The report says IPRS 3.0 has been initiated. A rating that finds a gap in external connectivity or environmental management is an execution list for the state that hosts the park. It is not, by itself, a funded fix.
 
-### For operators and founders
+## Applicants execute production
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The schemes pay on production and sales. As on 31 March 2026, 892 applications had been approved and ₹35,354 crore had been disbursed, against reported investment over ₹2.40 lakh crore. Approval is not production, and production is not a paid claim. The 27 March 2026 reply gives a narrower window on who was producing: 59 companies reported incremental electronics production of about ₹2,45,375 crore in that financial year till December 2025, and 72 companies reported incremental automobile and auto-component production of about ₹13,126 crore ([PIB PRID 2246089](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246089)). Those company counts are for those sectors and that window. They are not 892 factories in operation.
 
-### For investors and strategy teams
+The bottleneck to ask about, in order, is: which ministry holds the claim, which state holds the land, and which production milestone the scheme text requires before money moves.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mof.gov.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company writes this split so an operator chases the office that actually has the file. The library is at [greatindiancompany.com/blog](https://greatindiancompany.com/blog).
