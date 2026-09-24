@@ -2,69 +2,51 @@
 id: "gic-20260330-627"
 lang: "en"
 translationOf: null
-title: "Aviation And Tourism In India: Opportunity Landscape (627)"
-description: "A high-level India brief using inputs from niti-gov and www2-deloitte."
+title: "The funded openings: strips, heliports, and circuits already built"
+description: "Modified UDAN sets aside ₹12,159 crore for 100 airports and ₹3,661 crore for 200 heliports. On the tourism side, 75 of 76 Swadesh Darshan projects are physically complete, and Swadesh Darshan 2.0 has sanctioned ₹2,207.08 crore."
 slug: "aviation-and-tourism-opportunity-landscape-niti-gov-20260330-627"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "aviation-and-tourism"
   - "opportunity-landscape"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "policy"
 sourceLinks:
-  - "https://www.niti.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://www.civilaviation.gov.in/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2285420"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2292601"
+  - "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS271_7uyrUS.pdf"
+  - "https://tourism.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Aviation And Tourism In India: Opportunity Landscape (627)
+# The funded openings: strips, heliports, and circuits already built
 
-## Executive Brief
+The opportunity in Indian aviation and tourism that can be pointed at is sanctioned money with a location rule, not a growth adjective. Two ministries have published those stocks. They meet where a completed tourist circuit still depends on a long road to the nearest flight.
 
-This brief synthesizes public information from **niti-gov** and **www2-deloitte** to map India-specific developments on **Aviation And Tourism**.
+## The aviation stock that is not yet a route
 
-## What Changed
+Modified UDAN’s ten-year envelope is ₹28,840 crore, from 2026-27 to 2035-36. The pieces that are actual development allowances, in the 6 August 2026 Lok Sabha statement and the 16 July scheme note, are:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Opportunity Landscape**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+- about ₹12,159 crore to develop 100 airports from unserved airstrips, described as roughly ₹100 crore per airport after inflation;
+- ₹3,661 crore for 200 heliports or modern helipads in hilly, north-eastern, and aspirational districts, described as roughly ₹15 crore each;
+- up to ₹3.06 crore a year for three years toward manpower costs at an RCS airport, and up to ₹0.90 crore at a heliport or water aerodrome;
+- two HAL Dhruv helicopters for Pawan Hans and two HAL Dornier aircraft for Alliance Air.
 
-## Strategic Signals For India
+States nominate aerodromes and helipads. The ministry scores land that is free of encumbrance, infrastructure readiness, technical feasibility, traffic potential, statutory clearances, and state support. Routes a state recommends are supposed to be prioritised at award. An operator’s opportunity is therefore a strip that can pass that list, not a city that looks underserved on a map. The old scheme’s lesson is that 679 operationalised routes left 348 still flying. A new destination that cannot hold a flight is not an opening.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The minister’s 16 July examples of what a held route can do are local and specific. Darbhanga’s litchi moving to markets such as Dubai. Kishangarh, where he said the airport arrived in 2017 into a marble trade that had lacked direct connectivity, alongside visitors to Pushkar and Ajmer. Keshod, Deogarh, Jharsuguda, and Nanded appear as further cases in the same speech. They are illustrations from the minister, not an audited export series. They do show the kind of city the scheme is for: a product or a pilgrimage that was a road journey away from a flight.
 
-## Implications
+## The tourism stock that is already built
 
-### For policy teams
+The Press Information Bureau’s 31 July 2026 backgrounder gives the destination projects a flight would connect to.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Swadesh Darshan has sanctioned 76 projects and over ₹5,295.24 crore across 14 thematic circuits, and 75 of those projects are physically complete. Swadesh Darshan 2.0 has sanctioned 53 projects worth ₹2,207.08 crore, on a destination rather than a circuit model. PRASHAD has sanctioned 54 pilgrimage and heritage projects worth over ₹1,726.24 crore. Special Assistance to States for Capital Investment has approved 40 projects in 23 states, outlay ₹3,295.76 crore, aimed at iconic tourist centres. The Challenge-Based Destination Development initiative has sanctioned 37 projects worth ₹687.99 crore, in spiritual and eco-tourism categories.
 
-### For operators and founders
+A founder pairing these with UDAN is pairing a completed circuit with a strip that still has to win a challenge. The tourism project does not award the route. The route does not staff the monument. Delhi and Mumbai still handled 57.2 percent of foreign air arrivals in 2024, so a new regional airport is, on the published arrival data, a domestic and diaspora access project long before it is an international gateway.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+Entry rules are the other funded convenience, and they are already in force rather than proposed: e-Tourist Visa for nationals of 175 countries, through 33 airports, 19 seaports, and 4 land ports, as the same PIB backgrounder states it.
 
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.niti.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+The bidding constraints on the airline side of these openings are in [what an airline can actually bid for](/blog/aviation-and-tourism-for-founders-and-operators-niti-gov-20260330-707). The attrition those openings have to beat is in [why 679 routes are not 679 routes still flying](/blog/aviation-and-tourism-execution-bottleneck-review-niti-gov-20260330-587). Great Indian Company is at [greatindiancompany.com](https://greatindiancompany.com/).
