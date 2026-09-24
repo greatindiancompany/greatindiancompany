@@ -2,69 +2,49 @@
 id: "gic-20260330-659"
 lang: "en"
 translationOf: null
-title: "Public Service Delivery In India: Opportunity Landscape (659)"
-description: "A high-level India brief using inputs from mha-gov and kearney."
+title: "Openings around state portals, document fetch, and assisted access"
+description: "Where official design still leaves work: issuer onboarding, partial UMANG integration, consent-based verification, and Common Service Centre delivery."
 slug: "public-service-delivery-opportunity-landscape-mha-gov-20260330-659"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "public-service-delivery"
   - "opportunity-landscape"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.mha.gov.in/"
-  - "https://www.kearney.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635"
+  - "https://blog.digilocker.gov.in/digilocker-an-initiative-towards-paperless-governance/"
+  - "https://web.umang.gov.in/landing/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2266244"
+  - "https://pgportal.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Public Service Delivery In India: Opportunity Landscape (659)
+# Openings around state portals, document fetch, and assisted access
 
-## Executive Brief
+The openings in India's citizen-service stack are unfinished joins between systems the government already runs. They are not a catalogue of venture categories, and they are not a tender. A company that can name the join, the office that owns it, and the rule that governs the document or the rupee has a real conversation. A company that starts from a user-count multiple does not.
 
-This brief synthesizes public information from **mha-gov** and **kearney** to map India-specific developments on **Public Service Delivery**.
+## Issuer onboarding and consent-based fetch
 
-## What Changed
+DigiLocker's [note](https://blog.digilocker.gov.in/digilocker-an-initiative-towards-paperless-governance/) describes the platform as a fetch from the issuing agency into the citizen's wallet, and as an exchange with a requester after consent. The [6 August 2026 Lok Sabha reply](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635) records 2,822 onboarded issuers and more than 936.03 crore documents. The opening is the next issuer that still hands over paper: a board, a municipal body, a hospital, a skilling body. The National Academic Depository note on DigiLocker already shows one completed version of this work for academic records, with NSDC and NCVT among the skill-certificate issuers. The work left is institutional onboarding and a verifier that asks the issuer, not a private store of scans.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Opportunity Landscape**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Rule 9A, as DigiLocker states it, is what makes the issued file worth integrating. An uploaded file does not carry that standing. Products that blur the two will be rejected at counters that have already been instructed, as Indian Railways was in circular CC/33/2018.
 
-## Strategic Signals For India
+## State services that are not yet on the mobile window
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+UMANG's [landing page](https://web.umang.gov.in/landing/) offers central, state, and local services, plus documents from DigiLocker, on app, web, chatbot, and voice. The August 2026 reply says the national catalogue for individuals is 2,575 services, of which Tamil Nadu has integrated 17, while Tamil Nadu's own e-Sevai portal is described as end-to-end. The opening is the gap between a working state workflow and a national window that does not yet deep-link status, payment, and the signed output. That is integration work for a state IT agency and the department that signs the certificate. It is also a product constraint: shipping "available on UMANG" when the state portal is the system of record will strand the user.
 
-## Implications
+NeSDA 2025, in the [28 May 2026 release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2266244), proposes to score 59 mandatory services in every state and Union Territory, including end service delivery and status tracking. A department that knows it will be scored on those parameters has a reason to fund the join. The release does not say DARPG will pay a vendor to build it.
 
-### For policy teams
+## Assisted access, language, and the complaint path
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Common Service Centres remain the assisted opening. The August reply records 5.01 lakh functional centres as of May 2026 and over 800 services delivered through village-level entrepreneurs. Residents who will not complete a form alone are a design requirement, not a legacy exception. The same reply introduces BHASHINI, the National Language Translation Mission, as a public platform for Indian-language technologies because communication barriers are still part of service delivery. UMANG's own channels, including a voice bot and an Indian Sign Language chatbot on its landing page, are the government's version of that requirement.
 
-### For operators and founders
+[CPGRAMS](https://pgportal.gov.in/) is the opening for anyone whose integration creates a failed application. The portal is on UMANG, issues a registration number, and allows an appeal after a poor rating. A service partner that cannot tell a citizen that number is unfinished.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+Selling into government still runs through the department's procurement rules. PIB notes describe the Government e-Marketplace as the public procurement portal. This brief does not convert GeM's merchandise totals into a service-delivery opportunity. The buyer is the ministry or the state agency that owns the workflow.
 
-### For investors and strategy teams
+## On the Great Indian Company desk
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mha.gov.in/
-- https://www.kearney.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+[Great Indian Company](https://greatindiancompany.com/) publishes this for founders who need a join they can scope. The operating rules are in the [brief for founders and operators](/blog/public-service-delivery-for-founders-and-operators-mha-gov-20260330-739). The desk index is the [research blog](https://greatindiancompany.com/blog).

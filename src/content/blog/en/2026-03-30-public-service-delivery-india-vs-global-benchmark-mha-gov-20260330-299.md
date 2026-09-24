@@ -2,69 +2,49 @@
 id: "gic-20260330-299"
 lang: "en"
 translationOf: null
-title: "Public Service Delivery In India: India Vs Global Benchmark (299)"
-description: "A high-level India brief using inputs from mha-gov and kearney."
+title: "How NeSDA borrows the UN online service index"
+description: "DARPG's biennial assessment uses the UN e-Government Survey's Online Service Index, rewritten for states, Union Territories, and central ministries."
 slug: "public-service-delivery-india-vs-global-benchmark-mha-gov-20260330-299"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "public-service-delivery"
   - "india-vs-global-benchmark"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.mha.gov.in/"
-  - "https://www.kearney.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2266244"
+  - "https://darpg.gov.in/relatedlinks/nesda-way-forward-status-implementation"
+  - "https://www.darpg.gov.in/relatedlinks/sevottam"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Public Service Delivery In India: India Vs Global Benchmark (299)
+# How NeSDA borrows the UN online service index
 
-## Executive Brief
+India's official benchmark for online citizen services is not a claim about a UN league-table rank. It is a domestic assessment that says, in plain language, which international index it starts from and how it changes that index for a federal country.
 
-This brief synthesizes public information from **mha-gov** and **kearney** to map India-specific developments on **Public Service Delivery**.
+## What DARPG says NeSDA is
 
-## What Changed
+The Press Information Bureau's [28 May 2026 release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2266244) describes the National e-Governance Service Delivery Assessment as a biennial framework of the Department of Administrative Reforms and Public Grievances. It measures the depth and effectiveness of e-governance service delivery from the citizen's perspective. The same release says NeSDA is based on the Online Service Index of the UN e-Government Survey and customized for the Indian federal structure. It assesses availability, accessibility, and maturity of online service delivery across states, Union Territories, and focus central ministries and departments.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **India Vs Global Benchmark**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+That customization is the part a global comparison usually skips. A UN country score looks at a national government portal. NeSDA splits the object of assessment in two. The 2026 release says every portal under review falls into either state, UT, city, and central ministry portals, or the service portals of those same governments. A homepage that explains a scheme and a portal that actually issues the certificate are scored as different things.
 
-## Strategic Signals For India
+DARPG had already set the study up in 2019. Its NeSDA page says the biennial study assesses states, Union Territories, and focus central ministries, and that the point is to improve citizen-centric delivery and to share practices others can copy. The [way-forward page](https://darpg.gov.in/relatedlinks/nesda-way-forward-status-implementation) after the 2021 round says DARPG then worked with states and Union Territories to roll out mandatory e-services and to strengthen both the state portal and the service portal. The page's stated aim includes saturation of e-services and identification of bottlenecks.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What the 2025 cycle adds
 
-## Implications
+The 28 May 2026 release says the NeSDA 2025 portal was launched in a meeting with nodal officers on 25 May 2026. It proposes an expansion of focus sectors by adding services of the Ministry of Corporate Affairs. The sectors it lists are finance, labour and employment, education, local governance and utility services, social welfare including health, agriculture, and home security, environment including fire, tourism, public grievance, and transport and travel. It proposes 59 mandatory services for every state and Union Territory, and 43 services covering central ministries and departments.
 
-### For policy teams
+The assessment parameters in that release are the closest thing India publishes to an operating definition of a mature online service: accessibility, content availability, ease of use, information security and privacy, end service delivery, integrated service delivery, status and request tracking, open government data, e-participation, and use of emerging technologies. "End service delivery" and "status and request tracking" are the parameters that separate an information site from a service.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## What this benchmark is not
 
-### For operators and founders
+NeSDA does not replace Sevottam. [Sevottam](https://www.darpg.gov.in/relatedlinks/sevottam) remains DARPG's three-module quality framework: citizen charter, grievance redress, and capability for delivery. NeSDA scores the online channel. A department can rank well on a portal parameter and still miss a charter time limit that Sevottam treats as part of the service promise.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The 28 May release does not publish a country rank against other UN members, and this brief will not invent one. A March 2026 PIB research note on digital public infrastructure discusses India's DPI cooperation agreements with other countries. That is a diplomacy note about identity, payments, and data exchange. It is a different document from NeSDA's service-portal score.
 
-### For investors and strategy teams
+For a state-by-state reading of the same assessment design, use the [state-pattern brief](/blog/public-service-delivery-state-wise-patterns-mha-gov-20260330-339).
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## On the Great Indian Company desk
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mha.gov.in/
-- https://www.kearney.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+[Great Indian Company](https://greatindiancompany.com/) publishes this so a policy or investment reader can see which benchmark is official before quoting a global index. The desk index is the [research blog](https://greatindiancompany.com/blog).
