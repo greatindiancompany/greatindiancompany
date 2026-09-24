@@ -2,69 +2,58 @@
 id: "gic-20260330-483"
 lang: "en"
 translationOf: null
-title: "Fiscal Policy And Public Finance In India: Next 90 Days Checklist (483)"
-description: "A high-level India brief using inputs from sebi-gov and jpmorgan."
+title: "A ninety-day reading list for India’s public finances"
+description: "From late September 2026, the documents that update the Union’s fiscal story are the next monthly accounts, the next GST print, and the Budget papers already on the table."
 slug: "fiscal-policy-and-public-finance-next-90-days-checklist-sebi-gov-20260330-483"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "fiscal-policy-and-public-finance"
-  - "next-90-days-checklist"
-  - "india-briefs"
-  - "diverse-sources"
+  - "cga"
+  - "gst"
+  - "union-budget"
 sourceLinks:
-  - "https://www.sebi.gov.in/"
-  - "https://www.jpmorgan.com/insights"
+  - "https://cga.nic.in/"
+  - "https://cga.nic.in/writereaddata/MonthAccount/62026/DATA2627.htm"
+  - "https://tutorial.gst.gov.in/downloads/news/aug_2026_gst_revenue_report_final_for_publishing_monthly.pdf"
+  - "https://www.indiabudget.gov.in/doc/frbm1.pdf"
+  - "https://www.gst.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Fiscal Policy And Public Finance In India: Next 90 Days Checklist (483)
+Ninety days from 24 September 2026 runs to late December. In that window the Union will not present a new annual Budget. It will publish, on the usual official pipes, the next monthly accounts and the next tax-collection prints. The checklist below is a reading list. It is not a forecast of a supplementary demand or a rate change that has not been notified.
 
-## Executive Brief
+## Already on the table, so later months have a base
 
-This brief synthesizes public information from **sebi-gov** and **jpmorgan** to map India-specific developments on **Fiscal Policy And Public Finance**.
+Read these once, and keep the page open when the next print arrives.
 
-## What Changed
+The Controller General of Accounts “at a glance” statement through June 2026 is the first-quarter base for 2026-27. Fiscal deficit was ₹3,07,833 crore, 18.2 percent of the Budget estimate. Capital expenditure was 27.8 percent of its estimate. The page says the in-year deficit is not the annual deficit, because receipts and spending are mistimed. Any later month should be compared with June, and with the same month a year earlier, not with a private guess.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Next 90 Days Checklist**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The GST system’s provisional collection report through 31 August 2026 is the latest monthly tax print used here. Gross GST was ₹1,99,853 crore, 14.8 percent above August 2025. Net GST, after refunds, was ₹1,68,057 crore, 8.3 percent higher. The report says the figures may move slightly when they are finalised. Refunds rose faster than gross collections. A gross number without the refund line will mislead.
 
-## Strategic Signals For India
+The fiscal statement with Budget 2026-27 is the full-year ruler: fiscal deficit 4.3 percent of GDP, revenue deficit 1.5 percent, Central debt 55.6 percent, capital expenditure ₹12.22 lakh crore, gross tax revenue ₹44.04 lakh crore. Monthly prints are fractions of these estimates. They do not replace them.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## What to open when it appears
 
-## Implications
+**The next CGA month.** The site lists each month of 2026-27 as it is published. Check four cells only, at first: net tax as a percent of the estimate, capital expenditure as a percent of the estimate, the fiscal deficit as a percent of ₹16,95,768 crore, and the revenue deficit. Then read the subsidy annex. In June, urea had already used 45 percent of its estimate. If that share keeps rising faster than the calendar, the full-year subsidy assumption is the line under stress.
 
-### For policy teams
+**The next GST monthly PDF.** Compare gross, refunds, and net, and separate domestic from import IGST. August’s gross growth was helped by import IGST, up 29.0 percent, while domestic gross revenue was up 9.3 percent. If the next month’s growth is only imports, consumption and domestic compliance are a different story from the headline.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+**State settlement tables in that same PDF.** Post-settlement SGST is what states actually receive after IGST is apportioned. Pre-settlement SGST can fall while post-settlement receipts rise, or the reverse. August’s tables show both patterns. A state cash-flow conversation that uses only the pre-settlement column is unfinished.
 
-### For operators and founders
+**Half-year context, without inventing a date.** For 2025-26 the fiscal statement says the mid-year benchmarks under Rule 7 of the FRBM Rules were met, with no deviation in the three prescribed tests. When the Finance Ministry lays the equivalent assessment for the first half of 2026-27, read it against that claim. Do not assume the calendar day.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+**State borrowing calendars, separately.** The Reserve Bank’s January 2026 study said states had budgeted ₹12.45 lakh crore of gross market borrowing for 2025-26 and had raised ₹4.67 lakh crore by end-September 2025. The Union’s ₹17.20 lakh crore dated programme for 2026-27 is a different issuer. Keep the two auction stocks apart.
 
-### For investors and strategy teams
+## What not to treat as a signal
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+A single day’s government-securities auction. The fiscal statement judges the programme over the year: in 2025-26, through 27 January, gross dated borrowing of ₹12.75 lakh crore had been completed at a weighted average yield of about 6.65 percent. One cut-off does not rewrite 4.3 percent.
 
-## Next 90 Days Checklist
+A news line that adds the Centre’s deficit to the states’ deficit. The transfers are in both. The papers do not publish that sum as general government.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+A jobs or market claim sourced to a securities regulator. These fiscal prints are the Finance Ministry, the accounts controller, the GST system, and the Reserve Bank’s state study.
 
-## Source Links
+Tick the month when the new CGA file is up, write down the four cells, and file the GST gross-refund-net trio beside them. That is the ninety-day practice.
 
-- https://www.sebi.gov.in/
-- https://www.jpmorgan.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company keeps the reading list short so the documents stay larger than the commentary. The shelf those documents belong to is linked from [greatindiancompany.com](https://greatindiancompany.com/).
