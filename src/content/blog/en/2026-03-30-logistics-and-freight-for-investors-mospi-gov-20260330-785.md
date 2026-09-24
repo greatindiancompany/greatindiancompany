@@ -2,69 +2,46 @@
 id: "gic-20260330-785"
 lang: "en"
 translationOf: null
-title: "Logistics And Freight In India: For Investors (785)"
-description: "A high-level India brief using inputs from mospi-gov and deutsche-bank."
+title: "How to read India’s freight build without buying the slogan"
+description: "For investors: Gati Shakti has no budget, 198 of 256 sanctioned projects are under way, and 7.9 percent of GDP is an assessment."
 slug: "logistics-and-freight-for-investors-mospi-gov-20260330-785"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "logistics-and-freight"
   - "for-investors"
-  - "india-briefs"
-  - "diverse-sources"
+  - "capex"
+  - "gati-shakti"
 sourceLinks:
-  - "https://www.mospi.gov.in/"
-  - "https://www.deutsche-bank.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818"
+  - "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS327_tYLfn2.pdf"
+  - "https://www.pmindia.gov.in/en/news_updates/pm-launches-national-logistics-policy/"
+  - "https://morth.nic.in/en/bharatmala"
+  - "https://shipmin.gov.in/en/division/sagarmala"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Logistics And Freight In India: For Investors (785)
+An investor can take India freight seriously and still refuse the slide. The public record of 11 August 2026 is enough to separate a planning brand, a sanction book, and an operating claim. Most pitches collapse two of those into one word.
 
-## Executive Brief
+## Do not buy a budget that the government says is not there
 
-This brief synthesizes public information from **mospi-gov** and **deutsche-bank** to map India-specific developments on **Logistics And Freight**.
+The [written Lok Sabha reply](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818) of 11 August 2026 says PM Gati Shakti is an integrated planning framework. Ministries and states approve and fund projects under their own schemes. No quantified targets or expenditure requirements have been set under the initiative. “Gati Shakti capex” is not a security. The investable assets are still a highway concession, a rail capacity project, a port or terminal, a park, a fleet, a warehouse, or a software contract sitting on top of one of those.
 
-## What Changed
+The planning group’s book, same reply, is the closest thing to a pipeline: 396 projects evaluated, estimated cost about ₹18.66 lakh crore, 256 sanctioned, 198 under implementation. Estimated cost is not capital deployed. The roads ministry row is the one to stress-test a highway thesis against: 171 evaluated, 108 sanctioned, 53 under implementation, ₹9,01,668 crore estimated. Railways: 162 evaluated, 102 sanctioned, 102 under implementation, ₹5,43,315 crore. If a pitch says “the build is happening” and the asset is a road project in the sanctioned-not-started gap, the pitch is early. If the asset is rail capacity inside the 102, the implementation claim at least matches the annex. Check the project, not the sector adjective.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Investors**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The [starred reply](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS327_tYLfn2.pdf) the same day is a different cut of the same years. In the three-year window it describes, the Centre approved 1,115 national highway projects of about 18,493 km costing about ₹4.75 lakh crore and constructed 32,370 km. It sanctioned 237 railway projects of 9,703 km at about ₹1,90,333 crore. Use those as network claims. They are not a freight-volume CAGR, and they are not your holding’s order book. The reply also cites an IIM Bangalore study associating one rupee of national-highway spending with a ₹3.2 rise in GDP. That is a macro study the minister tabled. It is not an equity return.
 
-## Strategic Signals For India
+Programme homes, when you need the issuer rather than the Parliament line: roads at [Bharatmala](https://morth.nic.in/en/bharatmala), ports at [Sagarmala](https://shipmin.gov.in/en/division/sagarmala). Multi-modal parks have model concession documents on the roads site. Read the concession. Parliament will not mark it to market for you.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Do not buy the cost ratio as a margin story
 
-## Implications
+The starred reply says a 2025 DPIIT–NCAER assessment puts logistics cost at about 7.9 percent of GDP, comparable to advanced economies. The [launch speech on 17 September 2022](https://www.pmindia.gov.in/en/news_updates/pm-launches-national-logistics-policy/) asked the country to move from 13–14 percent to single digits. A pitch that says “reform has already dropped logistics cost from 14 to 7.9, so our margins expand” is welding a speech to an assessment the reply never presents as a matched pair. Either number can be argued. The spread between them is not a realised saving in a portfolio company.
 
-### For policy teams
+The rank is cleaner and less flattering. The reply cites 38th on the Logistics Performance Index, six places higher. The 2022 policy aim was the top 25 by 2030. An India-trade thesis can survive 38th. It should not advertise the top 25 as done.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## What is worth underwriting
 
-### For operators and founders
+Underwrite a specific mechanism you can check. A park or terminal whose connecting project is among the 198 under implementation. A software firm with a named ULIP use, not a promise of exclusive government data. A warehouse or cold chain lined up to a standard the reply says exists — the warehousing handbook, or a sectoral plan for pharmaceuticals or food — in a state where you have read the industry-status notification. The reply says 32 jurisdictions have granted that status and 29 have formulated policies. The notification is the diligence, not the count.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mospi.gov.in/
-- https://www.deutsche-bank.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Pass on anything whose only evidence is a statistics-ministry homepage, a consultant’s “logistics market size,” or the phrase “Gati Shakti beneficiary.” The August record is narrower than that, and narrower is investable. The research desk at [Great Indian Company](https://greatindiancompany.com/) is there for the next primary note, not for a louder version of the slide.

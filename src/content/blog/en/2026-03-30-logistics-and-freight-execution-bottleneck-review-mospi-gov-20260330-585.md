@@ -2,69 +2,51 @@
 id: "gic-20260330-585"
 lang: "en"
 translationOf: null
-title: "Logistics And Freight In India: Execution Bottleneck Review (585)"
-description: "A high-level India brief using inputs from mospi-gov and alvarezandmarsal."
+title: "Ports, sidings, and the freight handoff planners were told to catch"
+description: "India’s freight bottleneck is the handoff between ports, rail, and road. The Network Planning Group exists to find it before sanction."
 slug: "logistics-and-freight-execution-bottleneck-review-mospi-gov-20260330-585"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "logistics-and-freight"
   - "execution-bottleneck-review"
-  - "india-briefs"
-  - "diverse-sources"
+  - "multimodal"
+  - "ports"
 sourceLinks:
-  - "https://www.mospi.gov.in/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818"
+  - "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS327_tYLfn2.pdf"
+  - "https://morth.nic.in/en/standard-document/bharatmala"
+  - "https://shipmin.gov.in/en/division/sagarmala"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Logistics And Freight In India: Execution Bottleneck Review (585)
+India’s freight bottleneck is rarely a missing announcement. It is the place where a highway, a rail siding, a port gate, and a warehouse were planned by different offices and meet badly. PM Gati Shakti’s Network Planning Group is the institution built to catch that before sanction. The August 2026 papers show both the intention and the unfinished count.
 
-## Executive Brief
+## What the planning group is for
 
-This brief synthesizes public information from **mospi-gov** and **alvarezandmarsal** to map India-specific developments on **Logistics And Freight**.
+The [written reply of 11 August 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818) says the group evaluates central infrastructure projects for integrated planning, multimodality, inter-modality, synchronised effort, last-mile connectivity, and the area around the project. As on that date it had evaluated 396 projects, about ₹18.66 lakh crore. Sanctioned: 256. Under implementation: 198.
 
-## What Changed
+The bottleneck this table admits is not theoretical. Fifty-eight projects were sanctioned and not yet under implementation. On the roads row the gap is wider relative to sanctions: 108 sanctioned, 53 under implementation, out of 171 evaluated. A corridor that is evaluated has been looked at for the interchange. A corridor that is not under implementation is not carrying freight, however clean the multimodal note in the file.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The [starred reply](https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS327_tYLfn2.pdf) says Indian Railways now surveys new lines, gauge conversion, and doubling under the same framework, with first- and last-mile links to economic zones as the point. That is an attempt to stop a rail project from being “done” while the siding is somebody else’s problem. In the three-year window the reply describes, 180 of the 237 sanctioned railway projects were doublings. Doubling removes a capacity bottleneck on an existing alignment. It does not, by itself, create the port or plant connection at the end.
 
-## Strategic Signals For India
+## Where the interchange is supposed to be built
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Two ministry shelves hold the physical answer.
 
-## Implications
+The roads ministry publishes model concession material for multi-modal logistics parks under Bharatmala on its [standards page](https://morth.nic.in/en/standard-document/bharatmala). A park is an interchange by design: road, and often another mode, plus storage. The bottleneck moves inside the park if the concession is awarded and the rail or highway link that justified it is still in the “sanctioned, not under implementation” column. Read the concession and the link as one system.
 
-### For policy teams
+The ports ministry’s [Sagarmala](https://shipmin.gov.in/en/division/sagarmala) page is the maritime programme the August replies list beside highways and dedicated freight corridors. Port hinterland is the classic Indian bottleneck: the ship’s turnaround can improve while the box sits because the road or rail out of the gate does not match the berth. The Logistics Data Bank, which the starred reply says tracks export-import containers through ports, container freight stations, and inland container depots, is how that wait becomes visible for trade cargo. It does not clear the gate. A domestic truck that never becomes an export box is outside that trail entirely.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Commodity plans are the other way the Centre has admitted that bottlenecks differ. Sectoral plans for efficient logistics are named for coal, steel, fertilizers, cement, pharmaceuticals, and food. A coal railway and a pharmaceutical cold chain fail in different places. A single “logistics bottleneck” slide that treats them as one queue is the bottleneck in the analysis.
 
-### For operators and founders
+## Service bottlenecks the concrete will not fix
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The 2022 policy created a Services Improvement Group because process, regulation, and digital gaps are not the planning group’s job. The August reply says that group has been institutionalized to take grievances and suggest reforms. E-way bills and FASTag remain the daily frictions on the road leg. A perfect interchange drawing does not help a vehicle held for a document or a toll tag.
 
-### For investors and strategy teams
+Standardisation work the reply says has been undertaken — port and airport processes, a warehousing handbook, city logistics guidelines — is aimed at this service layer. City logistics is where the long-haul network meets a street that was never in the National Highways count. The 32,370 km of national highways the reply says were constructed in its three-year window can be real, and the last urban kilometre can still dominate the shipper’s clock.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+The execution test is local. Name the interchange. See which column it is in. See whether the other mode is in a column of its own. If the answer is only “it is on the master plan,” the bottleneck has not been reviewed. It has been drawn.
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mospi.gov.in/
-- https://www.alvarezandmarsal.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+[Great Indian Company](https://greatindiancompany.com/) keeps the interchange, not the announcement, as the unit of freight execution.
