@@ -2,69 +2,59 @@
 id: "gic-20260330-432"
 lang: "en"
 translationOf: null
-title: "Telecom Broadband In India: Regulatory Outlook (432)"
-description: "A high-level India brief using inputs from mohfw-gov and www2-deloitte."
+title: "What Is Open at DoT and TRAI on Spectrum and Access"
+description: "TRAI's February 2026 auction advice, the 6 GHz hold, and unfinished state right-of-way adoption are the open regulatory items."
 slug: "telecom-broadband-regulatory-outlook-mohfw-gov-20260330-432"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "telecom-broadband"
   - "regulatory-outlook"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.mohfw.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227152"
+  - "https://www.dot.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Telecom Broadband In India: Regulatory Outlook (432)
+# What Is Open at DoT and TRAI on Spectrum and Access
 
-## Executive Brief
+Regulatory outlook here means items a Department of Telecommunications file or a state notification can still change. It does not mean a guess at the next reserve price. The last major spectrum advice is TRAI's 24 February 2026 press note. The last clear picture of state right-of-way adoption is the Press Information Bureau reply of 12 February 2026.
 
-This brief synthesizes public information from **mohfw-gov** and **www2-deloitte** to map India-specific developments on **Telecom Broadband**.
+## Auction design that DoT has been given
 
-## What Changed
+DoT's reference of 15 May 2025, followed by a further letter on 14 August 2025, asked TRAI for reserve prices, band plans, block sizes, and the quantum to auction. TRAI consulted from 30 September 2025, extended the comment window, held an open house on 12 December 2025, and finalised recommendations on 24 February 2026. Nineteen stakeholders commented and twelve filed counter-comments.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Regulatory Outlook**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The advice that shapes the next auction, if DoT accepts it:
 
-## Strategic Signals For India
+- Put the available spectrum in 600, 800, 900, 1800, 2100, 2300, 2500, 3300 MHz, and 26 GHz to auction. Keep existing band plans for the bands already used.
+- Auction on a telecom circle or metro basis, for 20 years, by simultaneous multiple round.
+- Keep access-service authorisation as the eligibility condition used in the 2024 notice inviting applications.
+- Cut the net-worth test for new entrants from Rs 100 crore per licensed service area to Rs 50 crore, and from Rs 50 crore to Rs 25 crore for Jammu and Kashmir and the North-East.
+- Assign spectrum contiguously where possible, and finish harmonisation within six months of the auction.
+- Apply a 35 percent cap inside the stated band groups. A holder already above the cap is not asked to surrender spectrum it already has.
+- For 600 MHz, use a 2×5 MHz block, extend validity by four years beyond the usual 20, and delay rollout obligations by four years. Offer a payment option with 5 percent upfront and a four-year moratorium, with the balance over the remaining years on a net-present-value-protected schedule.
+- Keep the upper 6 GHz ranges, 6425–6725 MHz and 7025–7125 MHz, out of this auction and revisit them after the next World Radiocommunication Conference. Run trials near the 34 satellite uplink sites before fixing a keep-out distance.
+- Reconsider a separate access-network-provider authorisation, and introduce the Digital Connectivity Infrastructure Provider and cloud-hosted telecom network authorisations that DoT had put in draft rules dated 9 October 2025.
+- Set aside some time-division spectrum for internet service providers, machine-to-machine providers, and captive non-public networks, then refer the price back to TRAI.
+- Allow winning bidders to trade up to 10 percent of the auction price for new 4G or 5G sites in coverage holes outside existing Digital Bharat Nidhi schemes, with mandatory site sharing.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Rollout obligations for the existing bands are recommended to stay as in the 2024 notice. TRAI also asks DoT to take back spectrum held by operators in insolvency and put it in the auction.
 
-## Implications
+## Permissions that states still control
 
-### For policy teams
+The Telecommunications (Right of Way) Rules, 2024 have been in force since 1 January 2025. By 12 February 2026, 33 of 36 states and union territories had implemented them. Tamil Nadu and West Bengal are named as pending. The national average disposal time, 30.4 days, meets the mission's 2030 ease-of-doing-business marker. A state at about 85 days does not. Spectrum can be auctioned on a circle basis and still wait on a municipal permission.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+What to reopen in the following official releases is listed in the [next-release checklist](https://greatindiancompany.com/blog/telecom-broadband-next-90-days-checklist-mohfw-gov-20260330-472).
 
-### For operators and founders
+## Documents
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+- [TRAI Press Release No. 25/2026, 24 February 2026](https://www.trai.gov.in/sites/default/files/2026-02/PR_No.25of2026.pdf).
+- [PIB, state right-of-way status, 12 February 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227152).
+- Department of Telecommunications: [dot.gov.in](https://www.dot.gov.in/).
 
-### For investors and strategy teams
+## Where this sits
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.mohfw.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company tracks the open file, not a rumour of the next gazette. The home page is [greatindiancompany.com](https://greatindiancompany.com/).
