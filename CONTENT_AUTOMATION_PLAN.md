@@ -8,6 +8,8 @@ Published briefs are English. `content-automation/generated-translations/` is a 
 
 Do not generate 22 language versions. Do not add `hreflang` for these templates. The older sections below that still describe a 2,200-file translation contract are not the current rule; where they conflict with this section, this section wins.
 
+Reviewed Hindi is a separate, hand-written set. Eighteen healthcare-access briefs in `src/content/blog/hi/` are real translations and are served. See [docs/SEO.md](docs/SEO.md). Do not copy `generated-translations/` into that folder.
+
 ## 1) Objective
 
 Build a deterministic content engine that:

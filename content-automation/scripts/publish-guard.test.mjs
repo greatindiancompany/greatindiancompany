@@ -95,6 +95,30 @@ test('sitemap URL lists cannot contain a generated-translation slug', () => {
   );
 });
 
+test('a named reviewed Hindi slug can be indexed and other language suffixes cannot', () => {
+  const reviewed = new Set(['healthcare-access-for-policy-teams-education-gov-20260330-753-hi']);
+  assert.doesNotThrow(() =>
+    assertSitemapOmitsGeneratedTranslations(
+      [
+        'https://greatindiancompany.com/blog/healthcare-access-for-policy-teams-education-gov-20260330-753-hi',
+      ],
+      reviewed,
+      LANGUAGE_CODES,
+      reviewed,
+    ),
+  );
+  assert.throws(
+    () =>
+      assertSitemapOmitsGeneratedTranslations(
+        ['https://greatindiancompany.com/blog/some-new-template-ur'],
+        new Set(),
+        LANGUAGE_CODES,
+        reviewed,
+      ),
+    /language-code suffix/,
+  );
+});
+
 test('content scripts and the sitemap call the guard', () => {
   const pipeline = readFileSync(path.join(ROOT, 'content-automation/scripts/run-content-pipeline.mjs'), 'utf8');
   const expansion = readFileSync(path.join(ROOT, 'content-automation/scripts/expand-to-800-diverse.mjs'), 'utf8');

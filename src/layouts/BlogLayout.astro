@@ -1,19 +1,30 @@
 ---
+interface AlternateLink {
+  hreflang: string;
+  href: string;
+}
+
 interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  lang?: string;
+  alternates?: AlternateLink[];
+  footerNote?: string;
 }
 
 const {
   title,
   description = 'Bringing India to the World',
   canonical = 'https://greatindiancompany.com/blog',
+  lang = 'en',
+  alternates = [],
+  footerNote = 'English templates by Great Indian Company. Citations appear only when a link matches the brief topic.',
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,6 +39,19 @@ const {
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="canonical" href={canonical} />
+    {
+      alternates.map((alternate) => (
+        <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />
+      ))
+    }
+    {
+      lang === 'hi' && (
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap"
+        />
+      )
+    }
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -180,6 +204,16 @@ const {
         font-size: clamp(1.75rem, 3vw, 3rem);
       }
 
+      html[lang='hi'] body {
+        font-family: 'Noto Sans Devanagari', 'Montserrat', sans-serif;
+      }
+
+      html[lang='hi'] h1,
+      html[lang='hi'] h2,
+      html[lang='hi'] h3 {
+        font-family: 'Noto Serif Devanagari', 'Newsreader', serif;
+      }
+
       .meta {
         color: var(--ink-soft);
         margin-top: 0;
@@ -318,7 +352,7 @@ const {
       </header>
       <slot />
       <footer class="footer-note">
-        English templates by Great Indian Company. Citations appear only when a link matches the brief topic.
+        {footerNote}
       </footer>
     </main>
   </body>

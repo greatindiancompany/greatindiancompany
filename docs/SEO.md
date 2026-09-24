@@ -31,6 +31,12 @@ Copying a template into `src/content/blog/` does not make it indexable. Astro 4 
 
 Do not add `hreflang`, alternate language links, or a language switcher for these templates. Add them only after a brief is written in that language and reviewed as such.
 
+## Reviewed Hindi pilot
+
+Eighteen healthcare-access briefs are written in Hindi and live in `src/content/blog/hi/`. Each file sets `lang: "hi"`, `translationOf` to the English id, and a slug that ends in `-hi`. Astro renders them at `/blog/<slug>`. The page sets `<html lang="hi">`, a self-canonical URL, and `hreflang` alternates for `en`, `hi`, and `x-default` when the English pair exists. The sitemap lists those reviewed slugs. It still rejects every other language-code suffix and every stub under `content-automation/generated-translations/`.
+
+`writeEnglishBrief` still refuses to create these files. The content pipeline cannot mint a translation. A new reviewed translation is a hand-written file in `src/content/blog/<code>/` plus the same schema, route, and sitemap allowlist used here for `hi`.
+
 ## robots.txt
 
 `public/robots.txt` allows crawlers and points at `https://greatindiancompany.com/sitemap-index.xml`. That sitemap is the English URL list above.
