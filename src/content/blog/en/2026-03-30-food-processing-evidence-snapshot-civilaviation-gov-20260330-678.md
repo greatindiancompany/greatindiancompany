@@ -2,69 +2,64 @@
 id: "gic-20260330-678"
 lang: "en"
 translationOf: null
-title: "Food Processing In India: Evidence Snapshot (678)"
-description: "A high-level India brief using inputs from civilaviation-gov and jpmorgan."
+title: "Food Processing In India: Which Official Page Is Evidence"
+description: "Which MoFPI, FSSAI, and APEDA pages count as evidence for a food-processing brief, and which numbers this page leaves out."
 slug: "food-processing-evidence-snapshot-civilaviation-gov-20260330-678"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "food-processing"
   - "evidence-snapshot"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://civilaviation.gov.in/"
-  - "https://www.jpmorgan.com/insights"
+  - "https://www.mofpi.gov.in/Schemes/about-pmksy-scheme"
+  - "https://www.fssai.gov.in/"
+  - "https://apeda.gov.in/about-us"
+  - "https://www.mofpi.gov.in/pmfme/common-infrastructure"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Food Processing In India: Evidence Snapshot (678)
+# Food Processing In India: Which Official Page Is Evidence
 
-## Executive Brief
+## Evidence is a page that owns the function
 
-This brief synthesizes public information from **civilaviation-gov** and **jpmorgan** to map India-specific developments on **Food Processing**.
+A food-processing claim is evidence when the institution that runs the function says it. MoFPI says what its schemes fund. FSSAI says who may make or sell food, and how a supervisor is defined. APEDA says which products it promotes for export and which pack houses it has recognized. A page from a ministry that does not run those functions is not evidence for this topic. This snapshot does not borrow one.
 
-## What Changed
+## What MoFPI's own pages support
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Evidence Snapshot**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The PMKSY page supports these statements, and not a rupee model:
 
-## Strategic Signals For India
+- The scheme was the renamed form of SAMPADA, a central sector umbrella for agro-processing infrastructure.
+- The components listed for implementation are cold chain, processing and preservation capacity, agro-processing clusters, food safety and quality assurance infrastructure, human resources and institutions for research and development, and Operation Greens.
+- Mega Food Parks, Creation of Backward and Forward Linkages, specified skill and HACCP promotional work, and a component of food safety and quality assurance infrastructure are described as discontinued in the 15th Finance Commission cycle, with committed liability.
+- Continuation is stated through 31 March 2026.
+- Operation Greens is described as widened from tomato, onion, and potato to 22 perishables, with examples named on the page.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The common-infrastructure page supports a narrower set: FPOs, self-help groups, cooperatives, government agencies, and private enterprises; farm-gate assaying, sorting, grading, warehousing, and cold storage; a common line for ODOP produce; hire by others for a substantial part of capacity; and a path through the State Nodal Agency and the State Level Approval Committee.
 
-## Implications
+The PLISFPI page supports four manufacturing segments, a branding-abroad component, a period from 2021-22 to 2026-27, and an investment window loaded into the early years. It also prints an outlay and employment targets. Those figures are not restated here. Leaving them out is deliberate. A target is not a measured result.
 
-### For policy teams
+## What FSSAI's pages support
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The Act supports the existence of FSSAI and the section 31 licensing rule, with a registration route for petty businesses where regulations allow it. FoSCoS is the filing portal for licence and registration. The FoSTaC page supports the definition of a food safety supervisor, the link to Schedule 4 of the 2011 licensing regulations, and the duty to train handlers on site at least quarterly and keep a record. It does not support a national jobs estimate.
 
-### For operators and founders
+## What APEDA's pages support
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+The about page supports the 1985 Act, the 13 February 1986 start, exporter registration, export standards, meat inspection, the scheduled-product list, basmati rice in the Second Schedule, sugar-import monitoring, and the secretariat role for the National Programme for Organic Production. The recognized-packhouse page is the evidence for which horticulture plants are recognized, for which products, until which date. A sentence in a brief is not a substitute for that list.
 
-### For investors and strategy teams
+## What this snapshot will not use
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+It will not use a civil-aviation page, a bank outlook, or a consultancy hub as proof of a food-processing fact. It will not convert scheme outlays into plant revenue. If a number is required, it has to be read from the page that prints it, on the day it is used.
 
-## Next 90 Days Checklist
+## Official pages
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://civilaviation.gov.in/
-- https://www.jpmorgan.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- https://www.mofpi.gov.in/Schemes/about-pmksy-scheme
+- https://www.mofpi.gov.in/pmfme/common-infrastructure
+- https://www.mofpi.gov.in/PLISFPI/central-sector-scheme-production-linked-incentive-scheme-food-processing-industry-plisfpi
+- https://www.fssai.gov.in/
+- https://foscos.fssai.gov.in/
+- https://fostac.fssai.gov.in/fss-readmore.jsp
+- https://apeda.gov.in/about-us
+- https://apeda.gov.in/recognized-packhouses
