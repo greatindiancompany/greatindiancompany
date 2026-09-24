@@ -2,69 +2,51 @@
 id: "gic-20260330-372"
 lang: "en"
 translationOf: null
-title: "Trade Corridors In India: Capex Cycle Watch (372)"
-description: "A high-level India brief using inputs from digitalindia-gov and www2-deloitte."
+title: "Trade Corridors: Rail Freight and Ports Capex, from Commissioned Track to the Next Proposal"
+description: "India's freight-corridor capex is in three stages at once: two rail corridors commissioned, highway and port programmes still spending, and a new rail line still in its project report."
 slug: "trade-corridors-capex-cycle-watch-digitalindia-gov-20260330-372"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "trade-corridors"
   - "capex-cycle-watch"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "rail-freight"
 sourceLinks:
-  - "https://www.digitalindia.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://www.commerce.gov.in/"
+  - "https://railministry.gov.in/"
+  - "https://morth.nic.in/"
+  - "https://shipmin.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Trade Corridors In India: Capex Cycle Watch (372)
+## The cycle is staggered
 
-## Executive Brief
+A single national capex cycle for trade corridors does not exist. Rail, highways, and ports are in different stages in the same year. The useful watch is which stage each programme is in, using the latest official stocktake for that programme.
 
-This brief synthesizes public information from **digitalindia-gov** and **www2-deloitte** to map India-specific developments on **Trade Corridors**.
+## Rail: from construction to operations, then a new report
 
-## What Changed
+In the Lok Sabha reply of 19 March 2025, 2,741 km of the 2,843 km Eastern and Western Dedicated Freight Corridors were operational. The balance section was still being built. DFCCIL later recorded trial runs on 31 March 2026 on the JNPT–Vaitarna stretch as completion of the Western corridor. The Rajya Sabha reply of 7 August 2026 states that both corridors, 1,337 km and 1,506 km, have been commissioned, with about 443 trains a day.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Capex Cycle Watch**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+That is a handoff from construction capex to operating expenditure and terminal capex. The terminal wave is visible: 142 Gati Shakti Cargo Terminals commissioned, about ₹10,000 crore of private investment, and 146 million tonnes handled in 2025-26. Wagon investment schemes had about 275 special-purpose rakes and 397 general-purpose rakes operational, plus about 54 industry-owned automobile rakes.
 
-## Strategic Signals For India
+The next public rail-corridor decision is earlier in the cycle. Dankuni–Surat was announced in the Union Budget 2026. The 1 February 2026 briefing described 2,052 km and nearly ₹1.20 lakh crore. The August reply says the detailed project report is being prepared and updated. Report work is pre-sanction. The March 2025 reply had already said dedicated freight corridors are highly capital intensive, and that sanction turns on feasibility, viability, traffic, and funds. Three other reports — East Coast, East-West via Palghar to Dankuni, and North-South via Nagpur — were under examination then and had not been sanctioned.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## Highways: awarded, partly built, still spending
 
-## Implications
+Bharatmala was approved in 2017 for 34,800 km. As on 31 October 2024, 26,425 km had been awarded and 18,714 km constructed. NHAI had spent ₹4.72 lakh crore under the programme up to 30 November 2024. Port and coastal connectivity roads were a thin slice of that: 18 projects, 424 km awarded, 189 km constructed. The highway cycle is mid-build on a sanctioned programme, which is a different risk from a freight corridor whose report is still being updated.
 
-### For policy teams
+The February 2022 account of 35 multimodal logistics parks, with one park then under construction at Jogighopa and bids out for Nagpur, Chennai, and Bengaluru, is an early-cycle snapshot. DPIIT's September 2025 note still speaks of parks being developed under a framework that agencies are trying to unify. Park capex should be watched site by site, not as if all 35 were at Jogighopa's 2022 stage.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Ports: a large identified book, a smaller completed book
 
-### For operators and founders
+Sagarmala's 27 March 2025 note identifies about 839 projects estimated at ₹5.79 lakh crore, with 272 completed as of 19 March 2025 at an investment of about ₹1.41 lakh crore. The completed share of the identified book is the cycle position: a large remaining pipeline, implemented by central ministries, the Inland Waterways Authority, Railways, NHAI, states, and major ports. Sagarmala 2.0 adds a stated budgetary support of ₹40,000 crore aimed at leveraging ₹12 lakh crore over a decade, with the emphasis moving toward shipbuilding, repair, recycling, and port modernisation.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+## What to watch next
 
-### For investors and strategy teams
+Watch three documents, not a blended "infra capex" headline. Railways' next reply on whether Dankuni–Surat moves from report to sanction. MoRTH's next awarded-versus-constructed update for Bharatmala, especially the port-road category. MoPSW's next completed-versus-identified count for Sagarmala. Private terminal and wagon figures move on a faster clock and already have an August 2026 mark.
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+Official record: [19 March 2025](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2112843), [7 August 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944), [DFCCIL milestones](https://dfccil.com/Home/DynemicPages?MenuId=74), [Bharatmala](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2085551), and [Sagarmala](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2115878).
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.digitalindia.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company follows the capex stage of each corridor programme separately. The company site is [greatindiancompany.com](https://greatindiancompany.com).
