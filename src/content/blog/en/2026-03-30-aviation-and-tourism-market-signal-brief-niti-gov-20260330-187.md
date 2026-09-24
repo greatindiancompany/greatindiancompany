@@ -2,69 +2,34 @@
 id: "gic-20260330-187"
 lang: "en"
 translationOf: null
-title: "Aviation And Tourism In India: Market Signal Brief (187)"
-description: "A high-level India brief using inputs from niti-gov and societegenerale."
+title: "Market signals worth logging in India's aviation and tourism"
+description: "Flown seats, fares actually sold, airport charges, and rooms sold against arrivals are the signals. This page prints no current reading."
 slug: "aviation-and-tourism-market-signal-brief-niti-gov-20260330-187"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "aviation-and-tourism"
   - "market-signal-brief"
   - "india-briefs"
   - "diverse-sources"
-sourceLinks:
-  - "https://www.niti.gov.in/"
-  - "https://www.societegenerale.com/en/news"
+sourceLinks: []
 summaryType: "india-brief"
 draft: false
 ---
 
-# Aviation And Tourism In India: Market Signal Brief (187)
+A market signal is a figure produced by a flight or a stay, not a paragraph about Indian tourism. Log one route or one property. This brief prints no load factor, fare, or occupancy.
 
-## Executive Brief
+## Signals that match the business
 
-This brief synthesizes public information from **niti-gov** and **societegenerale** to map India-specific developments on **Aviation And Tourism**.
+- **Seats that flew.** Departures operated, not departures filed. The Directorate General of Civil Aviation publishes traffic statistics by carrier and sector. Use that table, or the operator's own flown log. A national passenger sentence mixes a Delhi bank with a UDAN leg and is the wrong row.
+- **The fare the passenger paid.** A rack fare, a capped UDAN fare on the supported seats, and an online-travel fare are different prices. The signal is what was sold this week on this route, after the taxes that sit on that ticket. This page states no fare and no tax.
+- **Airport and handling charges.** For a major airport, the charge in the latest Airports Economic Regulatory Authority order, plus the ground-handling invoice. Retail spend inside the terminal is a non-aero signal. It is not a count of tourists in the city.
+- **Rights still open.** Unused entitlements under an air services arrangement, and slots refused at a constrained airport, tell you whether the constraint is demand or permission. A full hotel beside an airport with no evening slot is a permission story.
+- **Rooms against people.** Occupancy, rate realized, and length of stay at a named property, with domestic guests and foreign guests in separate columns. Ministry of Tourism foreign-arrival statistics are a national series. They do not settle last Tuesday at one hotel in Jaipur or Munnar.
+- **The season window.** A hill station, a beach, a pilgrimage circuit, Ladakh, and an island do not share a calendar. Charter traffic into Goa, when it runs, is a winter product. A monsoon week is not that series.
 
-## What Changed
+## Signals that point at the wrong market
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Market Signal Brief**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+A search spike is not a booking. A monument ticket is not a hotel night. An advertised aircraft order is not a seat on your route this Friday. Fuel and the rupee move an airline's costs, and they are still not demand for a houseboat.
 
-## Strategic Signals For India
-
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
-
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.niti.gov.in/
-- https://www.societegenerale.com/en/news
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Keep one weekly row: date, route or property, seats or rooms available, seats or rooms sold, price realized, and the cancellation reason you can name. The [quarterly test](/blog/aviation-and-tourism-what-changed-this-quarter-niti-gov-20260330-107) compares that row with last season. The [evidence page](/blog/aviation-and-tourism-evidence-snapshot-niti-gov-20260330-667) says which public table is allowed to fill a cell.
