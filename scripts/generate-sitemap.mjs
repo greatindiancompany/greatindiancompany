@@ -18,6 +18,7 @@ import { lastmodForBrief, maxLastmod, normalizeLastmod } from './sitemap-honesty
 const SITE_URL = 'https://greatindiancompany.com';
 const ROOT = process.cwd();
 const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
+const HINDI_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'hi');
 const TRANSLATION_ROOT = path.join(ROOT, 'content-automation', 'generated-translations');
 const DIST_ROOT = path.join(ROOT, 'dist');
 const LANGUAGE_CODES = loadLanguageCodes(defaultLanguageConfigPath(ROOT));
@@ -204,6 +205,7 @@ async function countFiles(dir) {
 
 async function main() {
   const masterFiles = await listMasterFiles(MASTER_ROOT);
+  const hindiFiles = await listMasterFiles(HINDI_ROOT);
   const translationFiles = await listTranslationFiles(TRANSLATION_ROOT);
   const translationSlugs = new Set(
     translationFiles.map((filePath) => slugFromTranslationFilename(path.basename(filePath))),
@@ -214,6 +216,7 @@ async function main() {
     pages.push({ loc: `${SITE_URL}/` });
   }
   const posts = [];
+  const englishIds = new Set();
 
   for (const filePath of masterFiles) {
     const raw = await fs.readFile(filePath, 'utf8');
@@ -236,6 +239,11 @@ async function main() {
       );
     }
 
+    const id = field(frontmatter, 'id');
+    if (id) {
+      englishIds.add(id);
+    }
+
     const publishDate = field(frontmatter, 'publishDate');
     const publishedOn = normalizeLastmod(publishDate);
     if (publishedOn && publishedOn > today) {
@@ -246,6 +254,53 @@ async function main() {
       continue;
     }
 
+    const entry = { loc: `${SITE_URL}/blog/${slug}` };
+    const lastmod = lastmodForBrief(
+      { publishDate, updatedDate: field(frontmatter, 'updatedDate') },
+      today,
+    );
+    if (lastmod) {
+      entry.lastmod = lastmod;
+    }
+    posts.push(entry);
+  }
+
+  const reviewedSlugs = new Set();
+  for (const filePath of hindiFiles) {
+    const raw = await fs.readFile(filePath, 'utf8');
+    const frontmatter = parseFrontmatter(raw);
+    const slug = field(frontmatter, 'slug');
+    const relative = path.relative(ROOT, filePath);
+    if (field(frontmatter, 'lang') !== 'hi') {
+      throw new Error(`Refusing ${relative}. Files in src/content/blog/hi/ must set lang: "hi".`);
+    }
+
+    const translationOf = field(frontmatter, 'translationOf');
+    if (!translationOf || translationOf === 'null' || !englishIds.has(translationOf)) {
+      throw new Error(
+        `Refusing ${relative}. A reviewed Hindi brief must set translationOf to a published English id.`,
+      );
+    }
+
+    if (languageSuffixOfSlug(slug, LANGUAGE_CODES) !== 'hi') {
+      throw new Error(`Refusing ${relative}. A reviewed Hindi brief needs a slug that ends in -hi.`);
+    }
+
+    if (field(frontmatter, 'draft') === 'true') {
+      continue;
+    }
+
+    const publishDate = field(frontmatter, 'publishDate');
+    const publishedOn = normalizeLastmod(publishDate);
+    if (publishedOn && publishedOn > today) {
+      continue;
+    }
+
+    if (!(await pageExists(`/blog/${slug}`))) {
+      continue;
+    }
+
+    reviewedSlugs.add(slug);
     const entry = { loc: `${SITE_URL}/blog/${slug}` };
     const lastmod = lastmodForBrief(
       { publishDate, updatedDate: field(frontmatter, 'updatedDate') },
@@ -270,13 +325,14 @@ async function main() {
 
   const indexablePages = pages.filter((entry) => {
     const slug = blogSlugFromLoc(entry.loc);
-    return !slug || !translationSlugs.has(slug);
+    return !slug || reviewedSlugs.has(slug) || !translationSlugs.has(slug);
   });
 
   assertSitemapOmitsGeneratedTranslations(
     indexablePages.map((entry) => entry.loc),
     translationSlugs,
     LANGUAGE_CODES,
+    reviewedSlugs,
   );
 
   await fs.mkdir(DIST_ROOT, { recursive: true });
@@ -290,12 +346,13 @@ async function main() {
     'utf8',
   );
 
-  const noindexed = await noindexLeftoverTranslationPages(translationSlugs);
+  const stubOnlySlugs = new Set([...translationSlugs].filter((slug) => !reviewedSlugs.has(slug)));
+  const noindexed = await noindexLeftoverTranslationPages(stubOnlySlugs);
   const distFileCount = await countFiles(DIST_ROOT);
   assertWithinWorkersFreeAssetBudget(distFileCount);
 
   console.log(
-    `Sitemap generated: ${indexablePages.length} URLs | translation HTML written: 0 | language-tagged templates excluded: ${translationSlugs.size} | leftover translation pages noindexed: ${noindexed} | dist files: ${distFileCount} (budget ${STATIC_ASSET_FILE_BUDGET}, Workers Free limit ${WORKERS_FREE_STATIC_ASSET_LIMIT})`,
+    `Sitemap generated: ${indexablePages.length} URLs | reviewed Hindi pages: ${reviewedSlugs.size} | translation HTML written: 0 | language-tagged templates excluded: ${stubOnlySlugs.size} | leftover translation pages noindexed: ${noindexed} | dist files: ${distFileCount} (budget ${STATIC_ASSET_FILE_BUDGET}, Workers Free limit ${WORKERS_FREE_STATIC_ASSET_LIMIT})`,
   );
 }
 
