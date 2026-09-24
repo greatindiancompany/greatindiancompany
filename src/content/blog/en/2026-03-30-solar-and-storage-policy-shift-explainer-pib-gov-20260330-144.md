@@ -2,69 +2,64 @@
 id: "gic-20260330-144"
 lang: "en"
 translationOf: null
-title: "Solar And Storage In India: Policy Shift Explainer (144)"
-description: "A high-level India brief using inputs from pib-gov and unctad."
+title: "How Solar Cell Listing Changed Module Eligibility in India"
+description: "MNRE's ALMM order splits solar modules and solar cells into two lists. PIB's 10 December 2024 note set 1 June 2026 as the date projects must use listed cells, with a bid-date exemption."
 slug: "solar-and-storage-policy-shift-explainer-pib-gov-20260330-144"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "solar-and-storage"
   - "policy-shift-explainer"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://www.pib.gov.in/"
-  - "https://unctad.org/topic/trade-analysis"
+  - "https://mnre.gov.in/en/approved-list-of-models-and-manufacturers-almm/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2082901"
+  - "https://mnre.gov.in/en/notice/updated-03-08-2026-list-i-under-almm-order-for-solar-pv-modules/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Solar And Storage In India: Policy Shift Explainer (144)
+# How Solar Cell Listing Changed Module Eligibility in India
 
-## Executive Brief
+India's solar policy shift that operators can actually audit is not a slogan about energy transition. It is a change in which hardware is allowed on a government-linked project: first the module, then the cell inside the module.
 
-This brief synthesizes public information from **pib-gov** and **unctad** to map India-specific developments on **Solar And Storage**.
+## What the ALMM order already required
 
-## What Changed
+MNRE's page on the Approved List of Models and Manufacturers, updated 16 September 2026, restates the order issued on 2 January 2019. The ministry's reason is practical. Solar plants are generally set up for about 25 years, cells and modules carry long warranties, and a unit might claim production that was made elsewhere. The list is meant to tie the name on the bill to the factory that made the product.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Policy Shift Explainer**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The order has two lists. List-I names models and manufacturers of solar PV modules. List-II names models and manufacturers of solar PV cells. The first module list was issued on 10 March 2021. The first cell list was issued on 31 July 2025 and is updated regularly.
 
-## Strategic Signals For India
+List-I eligibility is wide. Only listed module models and manufacturers may be used in government projects, government-assisted projects, projects under government schemes and programmes, open access, and net-metering, including projects that sell electricity to government under the bidding guidelines issued under section 63 of the Electricity Act, 2003. "Government" on that page includes the Centre, state governments, central and state public sector enterprises, and central and state organisations and autonomous bodies.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+A household net-metering job and a SECI auction sit in that sentence together. The list is not a quality medal for private rooftops outside those categories. It is an eligibility gate for the categories named.
 
-## Implications
+## The cell rule, dated
 
-### For policy teams
+PIB release 2082901, issued 10 December 2024, announced an amendment to the 2019 order. From 1 June 2026, solar PV modules used in government-backed schemes, net-metering projects, and open-access renewable projects must source their cells from ALMM List-II.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The same note draws an exemption with a bid date, not a commissioning date. Projects already bid out, whose last date of bid submission is before the issuance of that order, may proceed without List-II cells even if they are commissioned after 1 June 2026. Future bids must take both modules and cells from the respective lists.
 
-### For operators and founders
+Thin-film modules made in integrated manufacturing units are treated as meeting the List-II cell requirement. That sentence matters for manufacturers whose process does not pass through a crystalline cell sold as a separate listed product.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+By the date of this brief, 1 June 2026 has passed, and MNRE's own page says the first cell list was issued on 31 July 2025. The December 2024 note described List-II as not yet the operating list. The September 2026 ministry page describes it as issued and being updated. Use the later page for whether a list exists. Use the December 2024 note for the effective date and the bid-date exemption.
 
-### For investors and strategy teams
+## Why this is the shift, not a second PLI
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+The Production Linked Incentive scheme pays selected manufacturers for high-efficiency modules after commissioning. ALMM decides what a project is allowed to install. A factory can be awarded PLI capacity and still be unusable on a government scheme if the model is not on List-I, or, after the cell rule, if the cell is outside List-II and the project does not have the bid-date exemption.
 
-## Next 90 Days Checklist
+MNRE also posts the list itself. An updated List-I under the ALMM order, dated 3 August 2026, is on the ministry site. Procurement should follow that file, not a recycled capacity total from an older press note. PIB's December 2024 note is the decision. The August 2026 list is the register.
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
+## What a buyer should check
 
-## Source Links
+Three dates decide a module purchase for a covered project.
 
-- https://www.pib.gov.in/
-- https://unctad.org/topic/trade-analysis
+- Bid submission date, against 10 December 2024, for the cell-list exemption.
+- Commissioning date, against 1 June 2026, if the bid is not exempt.
+- The model number on the current List-I, and the cell on the current List-II when the cell rule applies.
 
-## Editorial Method
+MNRE's page says List-II is updated regularly. A list downloaded in July 2025 is not the list to attach to a September 2026 purchase order.
 
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+## Where to go next
+
+Open the MNRE ALMM page, then PIB release 2082901, then the 3 August 2026 List-I notice. Great Indian Company publishes this explainer so a policy or procurement reader can keep those three documents distinct. The rest of the desk is at [https://greatindiancompany.com/blog](https://greatindiancompany.com/blog).
