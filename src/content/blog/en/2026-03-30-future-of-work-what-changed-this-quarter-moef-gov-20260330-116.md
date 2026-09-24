@@ -2,69 +2,48 @@
 id: "gic-20260330-116"
 lang: "en"
 translationOf: null
-title: "Future Of Work In India: What Changed This Quarter (116)"
-description: "A high-level India brief using inputs from moef-gov and mckinsey."
+title: "Future of Work in India: Labour Record for This Quarter"
+description: "Dated anchors for India's future of work: four labour codes in force, Central Rules notified on 8 May 2026, and the PLFS annual report left in the original release."
 slug: "future-of-work-what-changed-this-quarter-moef-gov-20260330-116"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "future-of-work"
   - "what-changed-this-quarter"
   - "india-briefs"
   - "diverse-sources"
 sourceLinks:
-  - "https://www.moef.gov.in/"
-  - "https://www.mckinsey.com/in/our-insights"
+  - "https://www.labour.gov.in/"
+  - "https://www.mospi.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Future Of Work In India: What Changed This Quarter (116)
+# Future of Work in India: Labour Record for This Quarter
 
-## Executive Brief
+## What a September reading can rest on
 
-This brief synthesizes public information from **moef-gov** and **mckinsey** to map India-specific developments on **Future Of Work**.
+This brief is updated on 23 September 2026. Employment levels, hiring totals, and jobs created or lost stay in the official survey and in parliamentary answers. They are not restated here.
 
-## What Changed
+The dates that still organise a future-of-work reading sit with the Ministry of Labour and Employment and with the Periodic Labour Force Survey (PLFS) from the Ministry of Statistics and Programme Implementation.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **What Changed This Quarter**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Three dates
 
-## Strategic Signals For India
+On 21 November 2025 the ministry brought four statutes into force: the Code on Wages, 2019; the Industrial Relations Code, 2020; the Code on Social Security, 2020; and the Occupational Safety, Health and Working Conditions Code, 2020. The ministry described that step as a rationalisation of 29 central labour laws.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+A Lok Sabha reply on 20 July 2026 (Unstarred Question No. 9) states that the Central Rules under those codes were notified on 8 May 2026. The same reply says labour is a concurrent subject, so states and Union Territories frame their own rules. As of that reply, most had finalised or published rules, including pre-published drafts, and a few were still at that stage. That is a point-in-time statement. It is a September scoreboard only if a later gazette says so.
 
-## Implications
+On 27 March 2026 the National Statistics Office issued the press note for the PLFS Annual Report 2025, covering January to December 2025. PLFS estimates labour force participation, the worker population ratio, and the unemployment rate. The rates remain in that press note.
 
-### For policy teams
+## The question that did not receive a count
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Question No. 9 also asked for formal jobs created versus jobs lost in manufacturing and in MSMEs over five years. The tabled answer describes enabling provisions of the codes, including mandatory appointment letters and social security for organised, unorganised, gig, and platform workers. Anyone who needs a created-versus-lost series has to find it in a later official table. This page follows the tabled answer and stops there.
 
-### For operators and founders
+## How to refresh the quarter
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+Use 21 November 2025, 8 May 2026, and 27 March 2026 as the anchors already on the record. A newer gazette, state rule, or PLFS bulletin on the labour ministry site or on mospi.gov.in supersedes this brief. A company note about IT or business-process hiring is a commercial statement, and it sits outside this record.
 
-### For investors and strategy teams
+## Official pages
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.moef.gov.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- Ministry of Labour and Employment: https://www.labour.gov.in/
+- Ministry of Statistics and Programme Implementation, publisher of PLFS: https://www.mospi.gov.in/
