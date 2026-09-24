@@ -2,69 +2,55 @@
 id: "gic-20260330-733"
 lang: "en"
 translationOf: null
-title: "Supply Chain Diversification In India: For Founders And Operators (733)"
-description: "A high-level India brief using inputs from startupindia-gov and pwc."
+title: "A founder and operator guide to manufacturing trade diversification"
+description: "Practical choices for founders: contract manufacturing, two input lanes, origin documents, and where to put the plant."
 slug: "supply-chain-diversification-for-founders-and-operators-startupindia-gov-20260330-733"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "supply-chain-diversification"
   - "for-founders-and-operators"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://www.startupindia.gov.in/"
-  - "https://www.pwc.in/research-and-insights-hub.html"
+  - "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf"
+  - "https://www.dpiit.gov.in/"
+  - "https://www.commerce.gov.in/"
+  - "https://www.dgft.gov.in/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1945155"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Supply Chain Diversification In India: For Founders And Operators (733)
+# A founder and operator guide to manufacturing trade diversification
 
-## Executive Brief
+Founders hear "move the supply chain to India" as one decision. It is four decisions that fail separately: how the Indian entity is allowed to manufacture, which inputs may enter, whether a customer can claim a preference, and whether the shed sits on a corridor that actually moves freight.
 
-This brief synthesizes public information from **startupindia-gov** and **pwc** to map India-specific developments on **Supply Chain Diversification**.
+## You can manufacture without becoming a trader
 
-## What Changed
+DPIIT's Consolidated FDI Policy Circular of 2020, paragraph 5.2.5.1, puts foreign investment in manufacturing on the automatic route. The work can be your own plant or contract manufacturing in India under a legally tenable contract, principal to principal or principal to agent. Goods made in India can be sold wholesale or retail, including online, without a further government approval. That is the clause a brand uses when it appoints an Indian contract manufacturer and still wants the Indian company treated as a manufacturer.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Founders And Operators**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+Read the edges. Food retail of India-made products is 100 percent FDI on the government route, not the automatic route. And paragraph 3.1.1(a) pulls any investor, or beneficial owner, from a land-border country onto the government route. If your cap table has that owner, the contract-manufacturing comfort does not waive the approval. This is a reading of the circular for operators, not a legal opinion.
 
-## Strategic Signals For India
+## Split the input before you split the supplier
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+A second supplier in a new country is useless if the input cannot clear. FTP 2023 has been in force since 1 April 2023. You need an Importer-Exporter Code. If a Quality Control Order covers the input, paragraph 2.03(A) allows a waiver for Advance Authorisation, EOU, and SEZ imports that stay on the export path. Domestic sale does not get that waiver. Founders who sell in India and export from the same batch should assume two lanes: one that meets the order, and one that is fenced for physical export. Check Appendix 2Y for whether your ministry's order is even in the waiver list this month.
 
-## Implications
+If the product is one of the 14 PLI sectors in the 2 August 2023 PIB note, read that ministry's guideline and decide whether you are the anchor or the MSME vendor. The note's own picture of success is a vendor base, not a single shed. Of 733 selected applications then, 176 were MSMEs. Being outside the 14 is a valid business. It is not a PLI business. Do not put the Rs 1.97 lakh crore outlay in your model.
 
-### For policy teams
+## The customer’s duty rate is your document problem
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+Ask which agreement the customer is pricing. The India-UAE CEPA has been in force since 1 May 2022, with wide duty elimination on the UAE side. Other agreements may be signed and still waiting. On 13 May 2026 the Commerce minister said five of nine recent agreements were expected to come into force over the next 12 months. Promise the preferential price only after you know the origin rule and who issues the certificate under DGFT Appendix 2B. A founder who owns the factory and not the origin file will lose the order in the customer's customs entry, not on the shop floor.
 
-### For operators and founders
+## Put the plant where the last mile is boring
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+National logistics cost for 2023-24, in the DPIIT-NCAER study reported on 27 November 2025, is 7.97 percent of GDP. Smaller firms pay more. On a haul of about 600 kilometres, the first and last 50 kilometres matter. Visit the approach road. Prefer a DPIIT corridor node and a state that has a logistics policy and a LEADS 2025 position you have actually read. A cheaper plot off the spine can erase the wage saving.
 
-### For investors and strategy teams
+Great Indian Company writes for founders who need the document, not the slogan. The rest of this series splits capital, risk, and state choice into their own pages. The company home is [greatindiancompany.com](https://greatindiancompany.com).
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+## Documents worth opening
 
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.startupindia.gov.in/
-- https://www.pwc.in/research-and-insights-hub.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+- [DPIIT FDI circular](https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf)
+- [DGFT](https://www.dgft.gov.in/)
+- [PIB, 2 August 2023, PLI sectors](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1945155)
+- [Commerce note on the India-UAE CEPA](https://www.commerce.gov.in/press-releases/cepa-is-the-growth-engine-for-india-uae-bilateral-trade/)
+- [DPIIT](https://www.dpiit.gov.in/)
