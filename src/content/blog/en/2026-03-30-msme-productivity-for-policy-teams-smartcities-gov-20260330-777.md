@@ -2,69 +2,52 @@
 id: "gic-20260330-777"
 lang: "en"
 translationOf: null
-title: "Msme Productivity In India: For Policy Teams (777)"
-description: "A high-level India brief using inputs from smartcities-gov and www2-deloitte."
+title: "How policy teams should brief MSME productivity"
+description: "A briefing order for officials: keep Udyam, ASUSE, credit guarantees, and RAMP in separate lines, each dated."
 slug: "msme-productivity-for-policy-teams-smartcities-gov-20260330-777"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "msme-productivity"
-  - "for-policy-teams"
-  - "india-briefs"
-  - "diverse-sources"
+  - "policy"
+  - "asuse"
+  - "india"
 sourceLinks:
-  - "https://www.smartcities.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://www.sidbi.in/"
+  - "https://www.msme.gov.in/"
+  - "https://www.mospi.gov.in/"
+  - "https://ramp.msme.gov.in/"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244457"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2260904"
+  - "https://www.cgtmse.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Msme Productivity In India: For Policy Teams (777)
+# How policy teams should brief MSME productivity
 
-## Executive Brief
+A usable MSME brief for a ministry, a state industry department, or a legislature answers one question with one series. The habit that destroys trust is a paragraph that adds Udyam registrations to ASUSE workers and calls the sum productivity. The fix is a fixed order of lines.
 
-This brief synthesizes public information from **smartcities-gov** and **www2-deloitte** to map India-specific developments on **Msme Productivity**.
+## Line 1: who is identified
 
-## What Changed
+Say the date and the portal. As of March 2026, the Press Information Bureau's 14 May 2026 note reported more than 7.9 crore enterprises on Udyam and the Udyam Assist Platform, split 4.72 crore and 3.21 crore. The Ministry's 26 June 2026 note said combined registrations had crossed 8.7 crore by June 2026. Udyam Assist, from January 2023, is the informal-micro path into a certificate banks may use for priority sector. This line measures formalisation. It does not measure output.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Policy Teams**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Line 2: what the unincorporated sector produced
 
-## Strategic Signals For India
+ASUSE 2025, released 24 March 2026, is the activity line. About 7.92 crore establishments, about 12.81 crore workers, gross value added up 10.87 percent at current prices, gross value added per worker up 4.54 percent to ₹1,56,539. Name the universe: unincorporated, non-agricultural, manufacturing plus trade plus other services, construction excluded. Name the calendars: October 2023–September 2024 against January–December 2025. If the question is a district, send the reader to the state and district tables MoSPI's design now supports for participating states. Do not spray the national 4.54 percent across districts.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Contribution shares — about 31.1 percent of GDP, 35.4 percent of manufacturing, 48.58 percent of exports, described as January 2026 data in the June note — go in a footnote to this line, labelled as shares. Employment claims of about 32.8 crore and more than 38.9 crore, from the May and June notes, go in the same footnote with their dates. They are not interchangeable with 12.81 crore.
 
-## Implications
+## Line 3: whether credit and cash can support the activity
 
-### For policy teams
+CGTMSE, a Ministry and SIDBI trust, guarantees micro and small enterprise credit up to ₹10 crore on approvals from 1 April 2025. Report approvals and disbursements separately. The published approval figure for 1 January–30 November 2025 is 29.03 lakh guarantees and ₹3.77 lakh crore. Priority-sector treatment follows the Reserve Bank's directions and the certificate on file. Receivables policy is section 15 of the MSMED Act, Samadhaan, and the Trade Receivables Discounting System, including the budget mandate for central public sector enterprises. A productivity programme that omits the payment clock will show output in a survey and arrears in the council queue: 2,56,892 applications and 58,148 disposals as on June 2026.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## Line 4: what the state is implementing
 
-### For operators and founders
+RAMP is the centre-state line for 2022–27. Report the state's approved proposals against the national picture the 26 June 2026 note gives: plans evaluated from all 36 states and Union Territories, 398 proposals worth ₹3,211.75 crore approved, more than 55 lakh MSMEs reached, reimbursement at 50 percent of the programme target. Cluster completion (364 of 612 MSE-CDP projects completed as on June 2026) and certification funnels (ZED and Lean) belong here, as delivery, not as national mood.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+A one-page brief is these four lines, each with a date and a source URL. Anything that multiplies line 1 by a ratio from line 2 comes out.
 
-### For investors and strategy teams
+State tables and why a national average is the wrong map are discussed in [how to read state patterns](https://greatindiancompany.com/blog/msme-productivity-state-wise-patterns-smartcities-gov-20260330-337).
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.smartcities.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company publishes this order so a policy reader can brief from documents a counterpart can open. The India briefs are at [greatindiancompany.com/blog](https://greatindiancompany.com/blog), and the desk is [greatindiancompany.com](https://greatindiancompany.com).

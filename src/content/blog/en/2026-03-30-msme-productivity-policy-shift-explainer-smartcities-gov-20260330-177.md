@@ -2,69 +2,58 @@
 id: "gic-20260330-177"
 lang: "en"
 translationOf: null
-title: "Msme Productivity In India: Policy Shift Explainer (177)"
-description: "A high-level India brief using inputs from smartcities-gov and www2-deloitte."
+title: "How the MSME classification reset changes room to scale"
+description: "What the 1 April 2025 investment and turnover ceilings do to MSME scale, technology upgrades, and continued access to support."
 slug: "msme-productivity-policy-shift-explainer-smartcities-gov-20260330-177"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "msme-productivity"
-  - "policy-shift-explainer"
-  - "india-briefs"
-  - "diverse-sources"
+  - "classification"
+  - "udyam"
+  - "india"
 sourceLinks:
-  - "https://www.smartcities.gov.in/"
-  - "https://www2.deloitte.com/in/en/insights.html"
+  - "https://www.sidbi.in/"
+  - "https://www.msme.gov.in/"
+  - "https://www.dcmsme.gov.in/Notification-S.O-no-1364-E-dated-21.03.2025-Revised-Definition.pdf"
+  - "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2098389"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2260904"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Msme Productivity In India: Policy Shift Explainer (177)
+# How the MSME classification reset changes room to scale
 
-## Executive Brief
+The productivity question inside India's MSME definition is simple. How much plant, equipment, and turnover can a firm add and still remain inside the policy net? From 1 April 2025 the net is wider, and the test is still composite.
 
-This brief synthesizes public information from **smartcities-gov** and **www2-deloitte** to map India-specific developments on **Msme Productivity**.
+## What the notification changed
 
-## What Changed
+S.O. 1364(E) of 21 March 2025, issued by the Ministry of Micro, Small and Medium Enterprises under the MSMED Act, 2006, replaced the ceilings in S.O. 2119(E) of 26 June 2020. The Ministry's own "What's MSME" page now states the composite criteria for manufacturing and services alike:
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Policy Shift Explainer**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+| Category | Investment in plant and machinery or equipment | Annual turnover |
+| --- | --- | --- |
+| Micro | Not more than ₹2.5 crore | Not more than ₹10 crore |
+| Small | Not more than ₹25 crore | Not more than ₹100 crore |
+| Medium | Not more than ₹125 crore | Not more than ₹500 crore |
 
-## Strategic Signals For India
+The Press Information Bureau's Budget 2025-26 note put the same table as a 2.5-times rise in investment limits and a doubling of turnover limits. The stated purpose was higher scale, technological upgradation, and better access to capital.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+## The rule that decides who graduates
 
-## Implications
+The parent definition, which the 2025 notification amends, is asymmetric. If an enterprise crosses the ceiling on investment or on turnover, it leaves its present category for the next higher one. It is placed in a lower category only when it goes below the ceiling on both investment and turnover. A single good sales year can reclassify a firm upward. A single weak year does not automatically pull it back.
 
-### For policy teams
+That asymmetry is the operating point for productivity plans. A capacity addition that pushes plant and machinery over ₹2.5 crore, or ₹25 crore, changes the firm's category even if turnover is still inside the old band. The mirror case matters too: turnover can reclassify a firm whose factory has not grown.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## What continues after a firm grows
 
-### For operators and founders
+A PIB note of 14 May 2026 records the companion rule. When an enterprise moves to a higher category, non-tax benefits of the earlier category continue for three years. The point of that continuity, as the note describes it, is to avoid punishing growth. Tax treatment is a separate statute. This brief does not turn the three-year continuity into a tax opinion.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
+Udyam is the register on which the classification is recorded. Banks, for priority-sector classification, are guided by the category on the Udyam Registration Certificate or the Udyam Assist Certificate, under the Reserve Bank's published MSME lending directions and priority-sector FAQ. A classification change is therefore a credit-file event as well as a scheme-eligibility event.
 
-### For investors and strategy teams
+## What the shift does not do
 
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
+Wider ceilings do not raise output per worker by themselves. They change the point at which a growing firm exits micro, small, or medium status. Credit guarantees from CGTMSE, which SIDBI operates with the Ministry, cover micro and small enterprises. A firm that crosses into medium leaves that guarantee perimeter even while it remains an MSME for other purposes. Technology schemes such as ZED still key off a valid Udyam registration for manufacturing units, with subsidy shares that differ for micro, small, and medium.
 
-## Next 90 Days Checklist
+Read the shift as legal headroom for scale and for equipment. Pair it with the investment reading in [what the ceilings and credit guarantees change for investors](https://greatindiancompany.com/blog/msme-productivity-investment-implications-smartcities-gov-20260330-257).
 
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.smartcities.gov.in/
-- https://www2.deloitte.com/in/en/insights.html
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Great Indian Company keeps these briefs tied to the notification and the Ministry's own table, so a founder can plan capital expenditure against a ceiling that is written down. More India briefs are at [greatindiancompany.com/blog](https://greatindiancompany.com/blog).
