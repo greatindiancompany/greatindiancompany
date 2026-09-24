@@ -2,54 +2,39 @@
 id: "gic-20260330-277"
 lang: "en"
 translationOf: null
-title: "Agri Value Chains In India: India Vs Global Benchmark (277)"
-description: "Evidence-based analysis of agri-value-chains, india-vs-global-benchmark, india-briefs in India with practical implications for policy teams, operators, and"
+title: "How India’s agri exports meet the buyer’s standard"
+description: "Agricultural exports were USD 52.55 billion in FY 2025-26 on the Commerce briefing, led by rice at USD 11.5 billion. The binding constraint the Department named is sanitary and phytosanitary compliance, not a single world rank."
 slug: "agri-value-chains-india-vs-global-benchmark-morth-nic-20260330-277"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "agri-value-chains"
-  - "india-vs-global-benchmark"
-  - "india-briefs"
-  - "diverse-sources"
+  - "exports"
+  - "apeda"
+  - "india"
 sourceLinks:
-  - "https://www.morth.nic.in/"
-  - "https://www.societegenerale.com/en/news"
+  - "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2271100"
+  - "https://apeda.gov.in/sites/default/files/annual_report/APEDA_Annual_Report_English_2024_25.pdf"
+  - "https://apeda.gov.in/AnimalProducts"
+  - "https://apeda.gov.in/FreshFruitsAndVegetables"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Agri Value Chains In India: India Vs Global Benchmark (277)
+# How India’s agri exports meet the buyer’s standard
 
-## Executive Summary
+India does not publish, in these official notes, a single rank against “world agriculture.” The comparison that the Department of Commerce actually puts in front of exporters is a basket, a growth rate, and a compliance standard.
 
-This article delivers a neutral, source-driven analysis of recent developments connected to **agri-value-chains, india-vs-global-benchmark, india-briefs** in India. It is written for readers who need evidence, context, and clear implications.
+On 10 June 2026 a Joint Secretary in the Department of Commerce told a Kochi session that agricultural exports were USD 52.55 billion in FY 2025-26, up 2.8 percent from USD 51.12 billion in FY 2024-25. He put the decade’s start at USD 32.08 billion in FY 2014-15. Rice was the largest agricultural export commodity in FY 2025-26, at USD 11.5 billion. Marine products rose from USD 7.4 billion to USD 8.4 billion, a 13.4 percent increase. Spices were USD 4.3 billion. He attributed the year’s growth to higher-value agricultural products, marine exports, and processed food.
 
-## What Changed
+APEDA’s annual report for 2024-25, citing DGCIS, prints a different 2024-25 total: agri exports of USD 51.91 billion, of which APEDA’s scheduled products were USD 28.59 billion, a 55 percent share. The previous year in that report was USD 48.76 billion of agri exports and USD 25.67 billion of APEDA products. The Commerce briefing’s USD 51.12 billion and APEDA’s USD 51.91 billion are both official descriptions of FY 2024-25. They are not the same extract. Do not average them, and do not subtract APEDA’s USD 28.59 billion from the Commerce USD 52.55 billion as if one were a subset of the other year’s speech.
 
-Recent public disclosures indicate movement in policy direction and on-ground execution. The key shift is not just in announcements, but in implementation pathways, regulatory expectations, and delivery timelines.
+A third cut, on APEDA’s own commodity pages and also attributed to DGCIS, is narrower still. In FY 2025-26 animal-product exports were USD 6,236.79 million, of which buffalo meat was USD 5,098.54 million, about 81.75 percent of that animal-product page. Fresh fruits and vegetables were USD 1,921.42 million, split into fruits at USD 1,161.31 million and vegetables at USD 760.08 million. Those pages are useful for a product business. They are not the national agri-export total.
 
-## Why It Matters
+## The standard the buyer applies
 
-- **Policy teams:** Stronger coordination between policy design and implementation can improve measurable outcomes.
-- **Operators and founders:** Faster adaptation to compliance and process changes can reduce execution risk.
-- **Investors and strategy teams:** Business models with milestone-based delivery are better positioned for durable value creation.
+The Commerce briefing is more specific about market access than about rank. It says concluded agreements with the United Kingdom, the European Union, New Zealand, Oman, Australia, the UAE, and the EFTA countries open room for shrimp and other value-added seafood, basmati and premium non-basmati rice, spices, tea, fruit and vegetables, millets, meat, organic products, and processed food. It then names the conditions that decide whether that room is usable: antibiotic residues in marine products, pesticide residues and aflatoxin in rice, food-safety compliance in spices and tea, and phytosanitary measures for fruit and vegetables. Traceability and environmental compliance are listed in the same breath.
 
-## Evidence and Interpretation
+The Export Inspection Council’s own scale, as stated in that briefing, moved with the trade. Recognised laboratories went from 22 in FY 2014-15 to 89 in FY 2025-26. Export establishments approved for export went from 645 to 1,499. Export certificates accepted by importing countries went from 60,978 to more than 1.7 lakh. The Council is moving toward a risk-based inspection system, a laboratory information system, and faster screening. Those are operating facts for a packhouse. A “global benchmark” slide that stops at USD 52.55 billion and skips residue, aflatoxin, and the laboratory count is missing the constraint the Department itself put first.
 
-This brief follows neutral editorial principles: distinguish facts from inference, attribute claims to primary sources, and avoid promotional framing.
-
-## Risks and Open Questions
-
-1. How quickly can announced measures become measurable outcomes?
-2. Which constraints are structural versus cyclical?
-3. What indicators should be monitored over the next 90 days?
-
-## Primary Sources
-
-- https://www.morth.nic.in/
-- https://www.societegenerale.com/en/news
-
-## SEO Keyphrases
-
-agri-value-chains, india-vs-global-benchmark, india-briefs, India policy analysis, sector outlook India, implementation risk, evidence-based brief
+Great Indian Company keeps the export comparison on this page. The ten-year rupee and tonne story inside India is in [the mid-term path](/blog/agri-value-chains-mid-term-trajectory-morth-nic-20260330-517). How an investor should avoid adding these series together is in [what can be underwritten](/blog/agri-value-chains-for-investors-morth-nic-20260330-797).
