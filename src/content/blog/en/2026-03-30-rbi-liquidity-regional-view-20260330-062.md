@@ -14,6 +14,7 @@ tags:
   - "states"
 sourceLinks:
   - "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63581"
+  - "https://www.rbi.org.in/scripts/BS_NSDPDisplay.aspx?param=4"
   - "https://www.rbi.org.in/scripts/FS_Overview.aspx?fn=2758"
   - "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63632"
   - "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24368"
@@ -43,7 +44,7 @@ When a state draws on the Bank, loans and advances to state governments rise. Th
 
 ## What a regional reader still cannot rank
 
-The cash reserve ratio is 3.00 per cent and the statutory liquidity ratio is 18.00 per cent for the week ended 11 September 2026, on the supplement dated 18 September. Those ratios apply as national requirements. The weekly statistical pages used here do not split the standing deposit facility, the marginal standing facility or the variable rate reverse repo by state or by regional office of the Bank. Currency with the public, ₹41,94,110 crore as on 31 August 2026 in the same extract, is also a national stock. Festival and harvest demand for notes is geographically uneven, and the extract does not publish that geography.
+For the week ended 11 September 2026 the supplement dated 18 September shows a national corridor of 5.00 / 5.25 / 5.50 per cent, a cash reserve ratio of 3.00 per cent and a statutory liquidity ratio of 18.00 per cent. Those settings apply to the whole system. The weekly statistical pages used here do not split the standing deposit facility, the marginal standing facility or the variable rate reverse repo by state or by regional office of the Bank. Currency with the public, ₹41,94,110 crore as on 31 August 2026 in the same extract, is also a national stock. Festival and harvest demand for notes is geographically uneven, and the extract does not publish that geography.
 
 The operational reading is therefore narrow and concrete. Watch the state-government loan line for the weekly injection or repayment. Watch the Centre’s surplus cash balance on the money-market release. Treat both as frictional government cash around a corridor that is set once, in Mumbai, for the whole system. For the week covered by the 11 September extract, the state loan book rose by ₹24,824 crore while central government loans stayed at zero. That is the regional fact the national liquidity statistics actually contain.
 
