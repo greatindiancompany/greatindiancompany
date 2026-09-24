@@ -2,11 +2,11 @@
 id: "gic-20260330-751"
 lang: "en"
 translationOf: null
-title: "Cybersecurity Resilience In India: For Policy Teams (751)"
-description: "A high-level India brief using inputs from dot-gov and lek."
+title: "What policy teams can read in India's cybersecurity resilience"
+description: "Policy teams sort instruments by duty, date, and who must act. A homepage is not the whole cyber policy."
 slug: "cybersecurity-resilience-for-policy-teams-dot-gov-20260330-751"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "cybersecurity-resilience"
   - "for-policy-teams"
@@ -14,57 +14,29 @@ tags:
   - "diverse-sources"
 sourceLinks:
   - "https://www.dot.gov.in/"
-  - "https://www.lek.com/insights"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Cybersecurity Resilience In India: For Policy Teams (751)
+Policy teams working on cybersecurity resilience in India need a shelf, a duty, a date, and the office that must act. A homepage is not the policy. This page is a way to sort public instruments. It does not propose a new one, and it does not say which draft strategy is in force.
 
-## Executive Brief
+## Shelves that do not substitute for each other
 
-This brief synthesizes public information from **dot-gov** and **lek** to map India-specific developments on **Cybersecurity Resilience**.
+| Shelf | What belongs there | What does not |
+| --- | --- | --- |
+| Department of Telecommunications, [dot.gov.in](https://www.dot.gov.in/) | Licence security conditions, Telecommunications (Telecom Cyber Security) Rules, 2024, trusted-source rules, security testing and certification | A CERT-In advisory, a bank circular, a crime statistic |
+| CERT-In | Incident directions for the entities they address, under the Information Technology Act | A telecom equipment certificate |
+| Critical information infrastructure | Designation and protection duties for a protected system | A state press note |
+| Sector regulator | The cyber direction for that licence: banks, market infrastructure, insurers | A Department of Telecommunications homepage |
+| State government | A named owner for a state network, or a state cyber-crime process you opened | A national rank assigned to the state |
+| Data protection | Duties under the Digital Personal Data Protection Act, 2023 | A telecom security rule treated as the same file |
 
-## What Changed
+L.E.K. insights were paired with an earlier draft. Commentary is not a shelf. The link is omitted.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **For Policy Teams**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## A note you can hand to a minister
 
-## Strategic Signals For India
+For any item you are about to call a reform, fill four lines: the title, the date printed on it, the duty that changes, and who must act. If the earlier instrument is still in force, say so. Overlapping clocks — a CERT-In report and a telecom incident report for the same event — should be described as two duties until a text says one of them yields.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+Do not convert a portal launch into a claim that incidents have fallen. Do not convert a lab into a claim that products are certified. The lab and the portal are capacity. Certification and reporting are records.
 
-## Implications
-
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.dot.gov.in/
-- https://www.lek.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+How an item earns the word "shift" is the [policy-shift explainer](/blog/cybersecurity-resilience-policy-shift-explainer-dot-gov-20260330-151). The list of shelves to re-open on a calendar is the [regulatory outlook](/blog/cybersecurity-resilience-regulatory-outlook-dot-gov-20260330-431). State files that are not a league table are on the [state-pattern page](/blog/cybersecurity-resilience-state-wise-patterns-dot-gov-20260330-311).

@@ -2,11 +2,11 @@
 id: "gic-20260330-311"
 lang: "en"
 translationOf: null
-title: "Cybersecurity Resilience In India: State Wise Patterns (311)"
-description: "A high-level India brief using inputs from dot-gov and mckinsey."
+title: "How to read state patterns in India's cybersecurity resilience"
+description: "State differences need a state record. National telecom rules are not a state ranking."
 slug: "cybersecurity-resilience-state-wise-patterns-dot-gov-20260330-311"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "cybersecurity-resilience"
   - "state-wise-patterns"
@@ -14,57 +14,27 @@ tags:
   - "diverse-sources"
 sourceLinks:
   - "https://www.dot.gov.in/"
-  - "https://www.mckinsey.com/in/our-insights"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Cybersecurity Resilience In India: State Wise Patterns (311)
+A state pattern in India's cybersecurity resilience is a difference you can attach to a state record. National telecom rules apply across states. They are not a ranking of states. This page does not score any state and does not draw a map.
 
-## Executive Brief
+## What is national even when the network is local
 
-This brief synthesizes public information from **dot-gov** and **mckinsey** to map India-specific developments on **Cybersecurity Resilience**.
+The Department of Telecommunications, [dot.gov.in](https://www.dot.gov.in/), licenses telecom networks and publishes the telecom security instruments: licence security conditions, telecom cyber security rules under the Telecommunications Act, 2023, trusted-source rules, and security testing. A tower in one state and a tower in another sit under the same licence conditions unless the licence itself says otherwise. CERT-In directions are national too. Do not convert either shelf into a state league table.
 
-## What Changed
+McKinsey's India insights index was on an earlier draft. It does not contain a state cyber series. It is omitted.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **State Wise Patterns**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## Differences that can be real
 
-## Strategic Signals For India
+Keep a state row only when the document names the state.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+- **The state network.** A state data centre or a state wide-area network has an owner. The pattern is whether that owner, the last security test, and the incident contact are written down. A building with a logo is not the row.
+- **The state response path.** Some states run a cyber-crime process and a coordination cell. The record is the process you opened, including how it relates to the national cyber-crime reporting portal. A news line about a raid is not the process.
+- **Procurement the state signed.** A security-operations contract, a log platform, or an audit paid for by a named department. The pattern is commissioning and use, not the tender headline.
+- **Sector entities located in the state.** A bank branch follows the Reserve Bank's cyber direction. The state is the address. The regulator is not the state government.
 
-## Implications
+## How to file a pattern
 
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.dot.gov.in/
-- https://www.mckinsey.com/in/our-insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+One state, one control, one date, one unit. If the cell is empty, write the gap. Do not fill Karnataka with a national average, and do not fill a small state with a metro's vendor market. People who draft central instruments and still need the state file are on the [policy-team page](/blog/cybersecurity-resilience-for-policy-teams-dot-gov-20260330-751). A country comparison that is not a state cut is on the [benchmark page](/blog/cybersecurity-resilience-india-vs-global-benchmark-dot-gov-20260330-271). Stalls that show up after the state has bought the tool are on the [bottleneck page](/blog/cybersecurity-resilience-execution-bottleneck-review-dot-gov-20260330-591).
