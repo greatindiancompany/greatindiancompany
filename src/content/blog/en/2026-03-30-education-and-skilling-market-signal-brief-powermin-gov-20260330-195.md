@@ -2,69 +2,40 @@
 id: "gic-20260330-195"
 lang: "en"
 translationOf: null
-title: "Education And Skilling In India: Market Signal Brief (195)"
-description: "A high-level India brief using inputs from powermin-gov and alvarezandmarsal."
+title: "What PMKVY 4.0’s Course Mix Says About Skilling Demand"
+description: "Official course lists and trainee counts show where PMKVY 4.0 is putting short-term training. They do not publish a placement rate."
 slug: "education-and-skilling-market-signal-brief-powermin-gov-20260330-195"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "education-and-skilling"
   - "market-signal-brief"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://powermin.gov.in/"
-  - "https://www.alvarezandmarsal.com/insights"
+  - "https://www.skillindiadigital.gov.in/"
+  - "https://www.nsdcindia.org/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Education And Skilling In India: Market Signal Brief (195)
+## Demand is filed, not assigned by state
 
-## Executive Brief
+PMKVY 4.0 does not hand each state a training quota. On 3 August 2026 the skill ministry told the Lok Sabha that the scheme is demand-driven and industry-oriented, so no state-wise targets, including for Madhya Pradesh and Maharashtra, have been set. On 12 August 2026 the Rajya Sabha was told that training targets are approved from proposals by project implementing agencies after a skill-gap review.
 
-This brief synthesizes public information from **powermin-gov** and **alvarezandmarsal** to map India-specific developments on **Education And Skilling**.
+The market signal is therefore the proposal pipeline and the course list, not a state allocation table.
 
-## What Changed
+## Two course counts that should not be added together
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Market Signal Brief**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+The 7 February 2025 Cabinet note on the Skill India Programme said 400-plus new courses had been introduced in artificial intelligence, 5G, cybersecurity, green hydrogen, and drone technology, plus micro-credentials and National Occupational Standards courses of 7.5 to 30 hours.
 
-## Strategic Signals For India
+The 12 August 2026 Rajya Sabha reply said PMKVY 4.0 had introduced over 600 courses in artificial intelligence, drone technology, 5G, solar energy, additive manufacturing, semiconductors, and the Internet of Things. As on 30 June 2026, more than 5.44 lakh candidates had been trained in these sectors. Rs 414.86 crore had been utilized for future and new-age job roles, including drones, artificial intelligence, and green-energy maintenance. For those courses, the reply cites the highest Common Norms training cost then prevalent, Rs 49 per hour.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+A separate 3 August 2026 Lok Sabha reply counts qualifications in the National Council for Vocational Education and Training ecosystem, not a PMKVY batch total: 116 courses related to artificial intelligence and machine learning, 54 to automation and robotic processing, 80 to data analytics, 71 to cybersecurity, 17 to drone technology, and 99 to green skills. It adds 50 artificial-intelligence courses under the SOAR programme, spanning healthcare, manufacturing, logistics, beauty and wellness, furniture, handicrafts, electronics, information technology, and capital goods.
 
-## Implications
+Those three counts describe different catalogues. Adding 400, 600, and the NCVET list would double-count.
 
-### For policy teams
+## Industry input on the record
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+The 12 August reply says NCVET requires industry validation of job roles. It names 36 industry-led Sector Skill Councils. It says more than fifteen industry entities are recognised as awarding bodies, including HCL Technologies, IBM, Bajaj Finserv, and Microsoft. Since May 2024 the ministry had held more than 13 consultations with over 120 industry stakeholders, including Larsen & Toubro, Swiggy, and CREDAI.
 
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://powermin.gov.in/
-- https://www.alvarezandmarsal.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+None of these replies publishes a placement rate or a wage outcome for the 5.44 lakh trainees. A course count is not a hiring number.

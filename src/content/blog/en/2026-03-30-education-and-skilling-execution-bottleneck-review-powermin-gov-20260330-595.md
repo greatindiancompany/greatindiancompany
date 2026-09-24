@@ -2,69 +2,36 @@
 id: "gic-20260330-595"
 lang: "en"
 translationOf: null
-title: "Education And Skilling In India: Execution Bottleneck Review (595)"
-description: "A high-level India brief using inputs from powermin-gov and iea."
+title: "Where School Retention and Training Compliance Still Slow Delivery"
+description: "NEP 2020 flags falling enrolment after Grade 8. PMKVY 4.0 blocks assessment until prescribed on-the-job training is finished."
 slug: "education-and-skilling-execution-bottleneck-review-powermin-gov-20260330-595"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-23"
 tags:
   - "education-and-skilling"
   - "execution-bottleneck-review"
   - "india-briefs"
-  - "diverse-sources"
 sourceLinks:
-  - "https://powermin.gov.in/"
-  - "https://www.iea.org/countries/india"
+  - "https://www.education.gov.in/"
+  - "https://www.skillindiadigital.gov.in/"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Education And Skilling In India: Execution Bottleneck Review (595)
+## The school bottleneck is retention, not first enrolment
 
-## Executive Brief
+NEP 2020 says Sarva Shiksha Abhiyan, now Samagra Shiksha, and the Right to Education Act produced near-universal enrolment in elementary education. The constraint it then names is keeping students. The gross enrolment ratio in the policy text is 90.9% for Grades 6–8, 79.3% for Grades 9–10, and 56.5% for Grades 11–12. The same section cites 3.22 crore children aged 6 to 17 out of school in the NSSO 75th round of 2017-18, and it makes bringing them back a priority on the way to a 100% pre-school-to-secondary ratio by 2030.
 
-This brief synthesizes public information from **powermin-gov** and **iea** to map India-specific developments on **Education And Skilling**.
+Execution of that aim depends on open schooling as well as regular schools. The policy says the National Institute of Open Schooling and state open schools should offer equivalents of Grades 3, 5, 8, 10, and 12, plus vocational courses and adult literacy, with states encouraged to do this in regional languages. That is a delivery path for students who cannot attend a physical school. It is not, in the text, a claim that the path is already full.
 
-## What Changed
+A second school constraint is vocational capacity inside campuses. The 3 August 2026 Lok Sabha reply describes skill labs in 400 Jawahar Navodaya Vidyalayas and 200 Eklavya Model Residential Schools: 1,200 labs and 1,200 skill teachers. It also says school buildings are used as skill hubs beyond school hours and on non-working days. Those are specific projects. They do not cover every school.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Execution Bottleneck Review**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+## The training bottleneck is sequence and proof
 
-## Strategic Signals For India
+On the skilling side, the binding step is often not the announcement of a course. The 12 August 2026 reply says that where NCVET prescribes on-the-job training, the trainee is assessed only after completing it. A centre that finishes classroom hours and skips the workplace component cannot certify that batch under this rule.
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+The same reply makes attendance provable. Inspections by the ministry, regional directorates, state skill missions, and the National Skill Development Corporation are compared with Aadhaar Enabled Biometric Attendance. A mismatch is high-severity. Training can be suspended and payments recovered. That is an execution gate, not a slogan.
 
-## Implications
+Trainer supply is a stated constraint rather than a closed one. The 7 February 2025 Cabinet note says a national pool of one lakh assessors and trainers was being developed. It does not report that the pool was complete. The 12 August reply still treats qualified trainers as a reason for the Rs 49 per hour rate on new-age courses.
 
-### For policy teams
-
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
-
-### For operators and founders
-
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://powermin.gov.in/
-- https://www.iea.org/countries/india
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+Credit transfer has a similar partial character. Adoption by more than 700 universities and over 7,500 colleges, reported from AISHE 2023-24, leaves institutions that have not adopted the framework outside the mobility the policy describes.
