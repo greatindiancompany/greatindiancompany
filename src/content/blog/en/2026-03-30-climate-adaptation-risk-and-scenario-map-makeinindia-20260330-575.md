@@ -2,69 +2,45 @@
 id: "gic-20260330-575"
 lang: "en"
 translationOf: null
-title: "Climate Adaptation In India: Risk And Scenario Map (575)"
-description: "A high-level India brief using inputs from makeinindia and deutsche-bank."
+title: "A Risk and Scenario Map for Climate Adaptation in India"
+description: "Separate Indian climate hazards — heat, flood, drought, cyclone, coast, and glacial lakes — as NDMA and IMD define them."
 slug: "climate-adaptation-risk-and-scenario-map-makeinindia-20260330-575"
 publishDate: "2026-03-30"
-updatedDate: "2026-03-30"
+updatedDate: "2026-09-24"
 tags:
   - "climate-adaptation"
   - "risk-and-scenario-map"
-  - "india-briefs"
-  - "diverse-sources"
+  - "india"
+  - "ndma"
 sourceLinks:
-  - "https://www.makeinindia.com/"
-  - "https://www.deutsche-bank.com/insights"
+  - "https://moef.gov.in/national-action-plan-on-climate-change"
+  - "https://ndma.gov.in/Governance/Guidelines"
+  - "https://ndma.gov.in/Natural-Hazards/Floods"
+  - "https://ndma.gov.in/Natural-Hazards/Heat-Wave"
 summaryType: "india-brief"
 draft: false
 ---
 
-# Climate Adaptation In India: Risk And Scenario Map (575)
+# A Risk and Scenario Map for Climate Adaptation in India
 
-## Executive Brief
+One national "climate risk" score hides a split the National Disaster Management Authority already publishes. The failures are different, so the guidelines are different. Read one column at a time.
 
-This brief synthesizes public information from **makeinindia** and **deutsche-bank** to map India-specific developments on **Climate Adaptation**.
+## Heat
 
-## What Changed
+The India Meteorological Department does not call a hot day a heat wave until maximum temperature reaches at least 40°C in the plains, 37°C at coastal stations, or 30°C in the hills, and a further test is met. A departure of 4.5°C to 6.4°C is a heat wave. Above 6.4°C is severe. In the plains, 45°C is a heat wave and 47°C is severe, regardless of the departure. Two stations in a subdivision must meet the test for two consecutive days. The declaration is on the second day. IMD's FAQ places the season mainly from March to June, with May as the peak, over the plains of northwest, central, east, and north peninsular India.
 
-- Recent updates suggest a measurable shift in policy or operating conditions tied to **Risk And Scenario Map**.
-- Multiple institutions now frame this area as a medium-term execution priority.
-- Program design and implementation speed appear to be as important as headline announcements.
+NDMA's heat page lists the health results as dehydration, heat cramps, heat exhaustion, and heat stroke. The operating scenario is a declared spell set against a state or city action plan prepared under the October 2019 guideline.
 
-## Strategic Signals For India
+## River flood and city flood
 
-1. **Policy signal:** execution quality is becoming a differentiator, not just policy intent.
-2. **Enterprise signal:** firms with faster compliance and deployment cycles can capture outsized gains.
-3. **Capital signal:** investors are likely to reward credible, milestone-backed delivery.
+NDMA's flood page says about 80 percent of precipitation falls from June to September, that rivers carry heavy sediment, and that limited carrying capacity, cyclones, and cloudbursts drive floods and flash floods. The flood guideline is dated January 2008. Urban flooding is a separate guideline from September 2010. The authority says city flooding was long folded into rural river practice, and that the Mumbai floods of July 2005 forced the split. The city scenario is drainage failure even when the river forecast is quiet.
 
-## Implications
+## Drought, cyclone, and the coast
 
-### For policy teams
+Drought has its own guideline, from September 2010. Do not borrow the monsoon calendar and call it drought. Cyclones have a guideline from April 2008. On land use, the Coastal Regulation Zone Notification, 2019, and the mainland hazard line described by the Press Information Bureau on 3 February 2022 add sea-level rise and shoreline change to coastal flooding. The scenario is a site that meets an old setback and still sits in the hazard-line planning problem.
 
-- Prioritize measurable outcomes and publish periodic progress snapshots.
-- Reduce overlap between central and state-level implementation tracks.
+## The Himalaya
 
-### For operators and founders
+The National Mission for Sustaining the Himalayan Ecosystem, described in the environment ministry's December 2021 FAQ, sits with NDMA's October 2020 guideline on glacial-lake outburst floods. That scenario is a lake outburst. It is not a Bay of Bengal cyclone.
 
-- Build roadmap scenarios around adoption speed, regulatory response, and infrastructure readiness.
-- Track procurement, standards, and partner ecosystem readiness.
-
-### For investors and strategy teams
-
-- Focus on execution depth, not only narrative momentum.
-- Benchmark business models against international precedents with India-specific constraints.
-
-## Next 90 Days Checklist
-
-- Watch for follow-up circulars, implementation guidelines, and budget-linked disclosures.
-- Track state-level adoption variance and bottleneck resolution patterns.
-- Revisit scenario assumptions as new disclosures arrive.
-
-## Source Links
-
-- https://www.makeinindia.com/
-- https://www.deutsche-bank.com/insights
-
-## Editorial Method
-
-This is an original synthesis for Great Indian Company, based on public-source reading and structured analysis.
+A national average of these columns is not a scenario. What to do with them between late September and late December is the [90-day checklist](/blog/climate-adaptation-next-90-days-checklist-makeinindia-20260330-495). Great Indian Company maps the hazards the authorities already separate. The library is at [greatindiancompany.com](https://greatindiancompany.com).
