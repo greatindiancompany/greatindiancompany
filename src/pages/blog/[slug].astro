@@ -3,14 +3,14 @@ import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import { filterTopicalSources, honestDescription } from '../../lib/citation-honesty.mjs';
 import { chromeFor } from '../../lib/i18n-chrome.mjs';
-import { assessReviewedTranslation, hreflangAlternates, languageSwitchLinks } from '../../lib/i18n-contract.mjs';
+import { assessReviewedTranslation, contentBasename, hreflangAlternates, languageSwitchLinks } from '../../lib/i18n-contract.mjs';
 import { pageLanguage, scheduledLanguageCodes } from '../../lib/i18n-languages.mjs';
 
 const SITE = 'https://greatindiancompany.com';
-const scheduledCodes = scheduledLanguageCodes();
-const scheduled = new Set(scheduledCodes);
 
 export async function getStaticPaths() {
+  const scheduledCodes = scheduledLanguageCodes();
+  const scheduled = new Set(scheduledCodes);
   const allPosts = await getCollection('blog');
   const englishById = new Map(
     allPosts.filter((post) => post.data.lang === 'en').map((post) => [post.data.id, post]),
@@ -22,13 +22,13 @@ export async function getStaticPaths() {
     }
 
     const folder = post.id.includes('/') ? post.id.split('/')[0] : '';
-    const filename = `${post.id.split('/').pop()}.md`;
+    const filename = `${contentBasename(post.id)}.md`;
     const englishEntry = englishById.get(post.data.translationOf);
     const english = englishEntry
       ? {
           id: englishEntry.data.id,
           slug: englishEntry.slug,
-          basename: englishEntry.id.split('/').pop(),
+          basename: contentBasename(englishEntry.id),
           draft: englishEntry.data.draft === true,
         }
       : null;

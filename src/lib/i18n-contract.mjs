@@ -9,6 +9,11 @@ import { languageSuffixOfSlug } from '../../content-automation/scripts/publish-g
 import { isScheduledLanguage, scheduledLanguageCodes } from './i18n-languages.mjs';
 import { normalizeLastmod } from '../../scripts/sitemap-honesty.mjs';
 
+export function contentBasename(id) {
+  const file = String(id ?? '').split('/').pop() ?? '';
+  return file.replace(/\.mdx?$/i, '');
+}
+
 function orderedCodes(languageCodes) {
   return [...languageCodes].sort((left, right) => right.length - left.length);
 }
