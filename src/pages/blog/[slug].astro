@@ -2,38 +2,174 @@
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import { filterTopicalSources, honestDescription } from '../../lib/citation-honesty.mjs';
+import { chromeFor } from '../../lib/i18n-chrome.mjs';
+import { assessReviewedTranslation, contentBasename, hreflangAlternates, languageSwitchLinks } from '../../lib/i18n-contract.mjs';
+import { pageLanguage, scheduledLanguageCodes } from '../../lib/i18n-languages.mjs';
+
+const SITE = 'https://greatindiancompany.com';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en');
+  const scheduledCodes = scheduledLanguageCodes();
+  const scheduled = new Set(scheduledCodes);
+  const allPosts = await getCollection('blog');
+  const englishById = new Map(
+    allPosts.filter((post) => post.data.lang === 'en').map((post) => [post.data.id, post]),
+  );
 
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
-  }));
+  for (const post of allPosts) {
+    if (post.data.lang === 'en') {
+      continue;
+    }
+
+    const folder = post.id.includes('/') ? post.id.split('/')[0] : '';
+    const filename = `${contentBasename(post.id)}.md`;
+    const englishEntry = englishById.get(post.data.translationOf);
+    const english = englishEntry
+      ? {
+          id: englishEntry.data.id,
+          slug: englishEntry.slug,
+          basename: contentBasename(englishEntry.id),
+          draft: englishEntry.data.draft === true,
+        }
+      : null;
+    const assessment = assessReviewedTranslation({
+      lang: post.data.lang,
+      folder,
+      filename,
+      id: post.data.id,
+      slug: post.slug,
+      translationOf: post.data.translationOf,
+    }, { english });
+
+    if (!assessment.ok) {
+      throw new Error(`Refusing ${post.id}. ${assessment.errors.join(' ')}`);
+    }
+
+    for (const warning of assessment.warnings) {
+      console.warn(`Reviewed translation ${post.id}: ${warning}`);
+    }
+  }
+
+  const posts = allPosts.filter(
+    (post) => !post.data.draft && (post.data.lang === 'en' || scheduled.has(post.data.lang)),
+  );
+  const publishedEnglishById = new Map(
+    posts.filter((post) => post.data.lang === 'en').map((post) => [post.data.id, post]),
+  );
+  const translationsByEnglishId = new Map();
+  for (const post of posts) {
+    if (post.data.lang === 'en') {
+      continue;
+    }
+    const key = post.data.translationOf;
+    const group = translationsByEnglishId.get(key) ?? [];
+    group.push(post);
+    translationsByEnglishId.set(key, group);
+  }
+
+  return posts.map((post) => {
+    const englishId = post.data.lang === 'en' ? post.data.id : post.data.translationOf;
+    const englishPost = publishedEnglishById.get(englishId) ?? null;
+    const translations = (translationsByEnglishId.get(englishId) ?? [])
+      .slice()
+      .sort((left, right) => scheduledCodes.indexOf(left.data.lang) - scheduledCodes.indexOf(right.data.lang))
+      .map((entry) => {
+        const language = pageLanguage(entry.data.lang);
+        return {
+          code: language.code,
+          slug: entry.slug,
+          nativeName: language.nativeName,
+          dir: language.dir,
+        };
+      });
+
+    return {
+      params: { slug: post.slug },
+      props: {
+        post,
+        englishSlug: englishPost?.slug ?? null,
+        translations,
+      },
+    };
+  });
 }
 
-const { post } = Astro.props;
+const { post, englishSlug, translations } = Astro.props;
 const { Content } = await post.render();
 const description = honestDescription(post.data.description);
 const topicalLinks = filterTopicalSources(post.data.sourceLinks, {
   title: post.data.title,
   tags: post.data.tags,
 });
-const canonical = `https://greatindiancompany.com/blog/${post.slug}`;
+const canonical = `${SITE}/blog/${post.slug}`;
 const words = post.body ? post.body.trim().split(/\s+/).filter(Boolean).length : 0;
 const readTime = Math.max(2, Math.round(words / 220));
+const language = pageLanguage(post.data.lang);
+const ui = chromeFor(post.data.lang);
+const alternates = hreflangAlternates({
+  english: englishSlug ? { slug: englishSlug } : null,
+  translations,
+  siteUrl: SITE,
+});
+const switchLinks = languageSwitchLinks({
+  currentCode: post.data.lang,
+  english: englishSlug ? { slug: englishSlug } : null,
+  translations,
+});
+const fontSans = language.fontFamilies[0] ?? null;
+const fontSerif = language.fontFamilies[1] ?? language.fontFamilies[0] ?? null;
 ---
 
-<BlogLayout title={post.data.title} description={description} canonical={canonical}>
+<BlogLayout
+  title={post.data.title}
+  description={description}
+  canonical={canonical}
+  lang={language.hreflang}
+  dir={language.dir}
+  alternates={alternates}
+  fontStylesheet={language.fontStylesheet}
+  fontSans={fontSans}
+  fontSerif={fontSerif}
+  footerNote={ui.footer}
+  nav={{
+    home: ui.home,
+    allBriefs: ui.allBriefs,
+    sitemap: ui.sitemap,
+    researchDesk: ui.researchDesk,
+  }}
+>
   <article class="card article-shell">
-    <p class="eyebrow">English template</p>
+    <p class="eyebrow">{ui.eyebrow}</p>
+    {
+      post.data.lang !== 'en' && (
+        <p class="translation-note">
+          {ui.machineNote}{' '}
+          {englishSlug && (
+            <a href={`/blog/${englishSlug}`} hreflang="en" lang="en">
+              {ui.englishOriginal}
+            </a>
+          )}
+        </p>
+      )
+    }
     <h1>{post.data.title}</h1>
     <p class="meta lead">{description}</p>
 
     <div class="meta-pills">
-      <span class="pill">Published: {post.data.publishDate}</span>
-      <span class="pill">Read Time: {readTime} min</span>
-      <span class="pill">Language: English</span>
+      <span class="pill">{ui.published}: {post.data.publishDate}</span>
+      <span class="pill">{ui.readTime}: {readTime} {ui.minute}</span>
+      <span class="pill">{ui.language}: {language.nativeName}</span>
+      {
+        switchLinks.length > 0 && (
+          <nav class="lang-switch" aria-label={ui.languagesLabel}>
+            {switchLinks.map((link) => (
+              <a class="pill lang-switch-link" href={`/blog/${link.slug}`} hreflang={link.hreflang} lang={link.code} dir={link.dir}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        )
+      }
     </div>
 
     <div class="tags">
@@ -50,10 +186,8 @@ const readTime = Math.max(2, Math.round(words / 220));
       {
         topicalLinks.length > 0 ? (
           <>
-            <h2>Topic-matched links</h2>
-            <p class="meta">
-              Shown because the site matches this brief's topic. The pipeline does not verify that the page supports the text.
-            </p>
+            <h2>{ui.linksHeading}</h2>
+            <p class="meta">{ui.linksNote}</p>
             <ul class="source-list">
               {topicalLinks.map((url) => (
                 <li>
@@ -66,10 +200,8 @@ const readTime = Math.max(2, Math.round(words / 220));
           </>
         ) : (
           <>
-            <h2>Citations</h2>
-            <p class="meta">
-              Registry links for this brief are not shown. They were not matched to this topic, and this page does not add replacement sources.
-            </p>
+            <h2>{ui.citationsHeading}</h2>
+            <p class="meta">{ui.citationsNote}</p>
           </>
         )
       }
@@ -77,7 +209,7 @@ const readTime = Math.max(2, Math.round(words / 220));
 
     <div class="article-foot">
       <a class="back-link" href="/blog">
-        Browse all briefs
+        {ui.browse}
       </a>
     </div>
   </article>
@@ -107,6 +239,12 @@ const readTime = Math.max(2, Math.round(words / 220));
       font-size: 0.72rem;
       color: #8f6f4f;
       font-weight: 700;
+    }
+
+    .translation-note {
+      margin: 0 0 0.85rem;
+      color: #6d542f;
+      font-size: 0.95rem;
     }
 
     .lead {
@@ -148,6 +286,17 @@ const readTime = Math.max(2, Math.round(words / 220));
 
     .back-link:hover {
       background: #fff3e3;
+    }
+
+    .lang-switch {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .lang-switch-link {
+      color: #7e4310;
+      font-weight: 700;
     }
   </style>
 </BlogLayout>

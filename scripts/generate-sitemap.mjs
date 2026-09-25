@@ -14,10 +14,13 @@ import {
   WORKERS_FREE_STATIC_ASSET_LIMIT,
 } from './localization-policy.mjs';
 import { lastmodForBrief, maxLastmod, normalizeLastmod } from './sitemap-honesty.mjs';
+import { reviewedSitemapDecision } from '../src/lib/i18n-contract.mjs';
+import { isScheduledLanguage } from '../src/lib/i18n-languages.mjs';
 
 const SITE_URL = 'https://greatindiancompany.com';
 const ROOT = process.cwd();
-const MASTER_ROOT = path.join(ROOT, 'src', 'content', 'blog', 'en');
+const BLOG_ROOT = path.join(ROOT, 'src', 'content', 'blog');
+const MASTER_ROOT = path.join(BLOG_ROOT, 'en');
 const TRANSLATION_ROOT = path.join(ROOT, 'content-automation', 'generated-translations');
 const DIST_ROOT = path.join(ROOT, 'dist');
 const LANGUAGE_CODES = loadLanguageCodes(defaultLanguageConfigPath(ROOT));
@@ -214,16 +217,13 @@ async function main() {
     pages.push({ loc: `${SITE_URL}/` });
   }
   const posts = [];
+  const englishById = new Map();
 
   for (const filePath of masterFiles) {
     const raw = await fs.readFile(filePath, 'utf8');
     const frontmatter = parseFrontmatter(raw);
     const slug = field(frontmatter, 'slug');
     if (!slug) {
-      continue;
-    }
-
-    if (field(frontmatter, 'draft') === 'true') {
       continue;
     }
 
@@ -234,6 +234,20 @@ async function main() {
       throw new Error(
         `Refusing to add /blog/${slug} to the sitemap. Generated language templates and non-English briefs are not indexable (${path.relative(ROOT, filePath)}).`,
       );
+    }
+
+    const id = field(frontmatter, 'id');
+    if (id) {
+      englishById.set(id, {
+        id,
+        slug,
+        basename: path.basename(filePath, '.md'),
+        draft: field(frontmatter, 'draft') === 'true',
+      });
+    }
+
+    if (field(frontmatter, 'draft') === 'true') {
+      continue;
     }
 
     const publishDate = field(frontmatter, 'publishDate');
@@ -257,6 +271,76 @@ async function main() {
     posts.push(entry);
   }
 
+  const reviewedSlugs = new Set();
+  let blogDirs = [];
+  try {
+    blogDirs = await fs.readdir(BLOG_ROOT, { withFileTypes: true });
+  } catch {
+    blogDirs = [];
+  }
+
+  for (const dir of blogDirs) {
+    if (!dir.isDirectory() || dir.name === 'en') {
+      continue;
+    }
+
+    if (!isScheduledLanguage(dir.name)) {
+      throw new Error(
+        `Refusing src/content/blog/${dir.name}/. Unknown language code "${dir.name}".`,
+      );
+    }
+
+    const reviewedFiles = await listMasterFiles(path.join(BLOG_ROOT, dir.name));
+    for (const filePath of reviewedFiles) {
+      const raw = await fs.readFile(filePath, 'utf8');
+      const frontmatter = parseFrontmatter(raw);
+      const relative = path.relative(ROOT, filePath);
+      const slug = field(frontmatter, 'slug');
+      const translationOf = field(frontmatter, 'translationOf');
+      const english = translationOf && translationOf !== 'null' ? englishById.get(translationOf) ?? null : null;
+      const decision = await reviewedSitemapDecision(
+        {
+          lang: field(frontmatter, 'lang'),
+          folder: dir.name,
+          filename: path.basename(filePath),
+          id: field(frontmatter, 'id'),
+          slug,
+          translationOf,
+          draft: field(frontmatter, 'draft'),
+          publishDate: field(frontmatter, 'publishDate'),
+        },
+        {
+          english,
+          today,
+          pageExists,
+        },
+      );
+
+      if (!decision.assessment.ok) {
+        throw new Error(`Refusing ${relative}. ${decision.assessment.errors.join(' ')}`);
+      }
+
+      for (const warning of decision.assessment.warnings) {
+        console.warn(`Reviewed translation ${relative}: ${warning}`);
+      }
+
+      if (!decision.include || !slug) {
+        continue;
+      }
+
+      reviewedSlugs.add(slug);
+      const entry = { loc: `${SITE_URL}/blog/${slug}` };
+      const lastmod = lastmodForBrief(
+        { publishDate: field(frontmatter, 'publishDate'), updatedDate: field(frontmatter, 'updatedDate') },
+        today,
+      );
+      if (lastmod) {
+        entry.lastmod = lastmod;
+      }
+      posts.push(entry);
+    }
+  }
+
   if (await pageExists('/blog')) {
     const blog = { loc: `${SITE_URL}/blog` };
     const blogLastmod = maxLastmod(posts.map((entry) => entry.lastmod));
@@ -270,13 +354,14 @@ async function main() {
 
   const indexablePages = pages.filter((entry) => {
     const slug = blogSlugFromLoc(entry.loc);
-    return !slug || !translationSlugs.has(slug);
+    return !slug || reviewedSlugs.has(slug) || !translationSlugs.has(slug);
   });
 
   assertSitemapOmitsGeneratedTranslations(
     indexablePages.map((entry) => entry.loc),
     translationSlugs,
     LANGUAGE_CODES,
+    reviewedSlugs,
   );
 
   await fs.mkdir(DIST_ROOT, { recursive: true });
@@ -290,12 +375,13 @@ async function main() {
     'utf8',
   );
 
-  const noindexed = await noindexLeftoverTranslationPages(translationSlugs);
+  const stubOnlySlugs = new Set([...translationSlugs].filter((slug) => !reviewedSlugs.has(slug)));
+  const noindexed = await noindexLeftoverTranslationPages(stubOnlySlugs);
   const distFileCount = await countFiles(DIST_ROOT);
   assertWithinWorkersFreeAssetBudget(distFileCount);
 
   console.log(
-    `Sitemap generated: ${indexablePages.length} URLs | translation HTML written: 0 | language-tagged templates excluded: ${translationSlugs.size} | leftover translation pages noindexed: ${noindexed} | dist files: ${distFileCount} (budget ${STATIC_ASSET_FILE_BUDGET}, Workers Free limit ${WORKERS_FREE_STATIC_ASSET_LIMIT})`,
+    `Sitemap generated: ${indexablePages.length} URLs | reviewed translation pages: ${reviewedSlugs.size} | translation HTML written: 0 | language-tagged templates excluded: ${stubOnlySlugs.size} | leftover translation pages noindexed: ${noindexed} | dist files: ${distFileCount} (budget ${STATIC_ASSET_FILE_BUDGET}, Workers Free limit ${WORKERS_FREE_STATIC_ASSET_LIMIT})`,
   );
 }
 

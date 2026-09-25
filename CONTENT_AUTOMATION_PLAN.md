@@ -8,6 +8,8 @@ Published briefs are English. `content-automation/generated-translations/` is a 
 
 Do not generate 22 language versions. Do not add `hreflang` for these templates. The older sections below that still describe a 2,200-file translation contract are not the current rule; where they conflict with this section, this section wins.
 
+Reviewed translations are a separate, hand-written set under `src/content/blog/<lang>/` for a code in `content-automation/config/languages.json`. They are served when they follow the naming contract in [docs/SEO.md](docs/SEO.md). Do not copy `generated-translations/` into those folders. `writeEnglishBrief` still refuses to create them.
+
 ## 1) Objective
 
 Build a deterministic content engine that:
