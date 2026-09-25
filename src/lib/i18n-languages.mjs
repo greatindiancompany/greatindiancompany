@@ -8,7 +8,6 @@
  */
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 const RTL_CODES = new Set(['ur', 'ks', 'sd']);
 
@@ -169,11 +168,7 @@ let cachedLanguages = null;
 
 export function scheduledLanguages() {
   if (!cachedLanguages) {
-    const configPath = path.join(
-      path.dirname(fileURLToPath(import.meta.url)),
-      '../../content-automation/config/languages.json',
-    );
-    cachedLanguages = loadScheduledLanguages(configPath);
+    cachedLanguages = loadScheduledLanguages(defaultLanguageConfigPath());
   }
   return cachedLanguages;
 }

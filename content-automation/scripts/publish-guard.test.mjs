@@ -95,6 +95,44 @@ test('sitemap URL lists cannot contain a generated-translation slug', () => {
   );
 });
 
+test('reviewed translation slugs can be indexed and other language suffixes cannot', () => {
+  const reviewed = new Set([
+    'healthcare-access-for-policy-teams-education-gov-20260330-753-hi',
+    'healthcare-access-for-policy-teams-education-gov-20260330-753-ur',
+  ]);
+  assert.doesNotThrow(() =>
+    assertSitemapOmitsGeneratedTranslations(
+      [
+        'https://greatindiancompany.com/blog/healthcare-access-for-policy-teams-education-gov-20260330-753-hi',
+        'https://greatindiancompany.com/blog/healthcare-access-for-policy-teams-education-gov-20260330-753-ur',
+      ],
+      reviewed,
+      LANGUAGE_CODES,
+      reviewed,
+    ),
+  );
+  assert.throws(
+    () =>
+      assertSitemapOmitsGeneratedTranslations(
+        ['https://greatindiancompany.com/blog/some-new-template-bn'],
+        new Set(),
+        LANGUAGE_CODES,
+        reviewed,
+      ),
+    /language-code suffix/,
+  );
+  assert.throws(
+    () =>
+      assertSitemapOmitsGeneratedTranslations(
+        ['https://greatindiancompany.com/blog/rbi-monetary-policy-risk-watch-20260330-071-hi'],
+        new Set(['rbi-monetary-policy-risk-watch-20260330-071-hi']),
+        LANGUAGE_CODES,
+        reviewed,
+      ),
+    /Refusing to write the sitemap/,
+  );
+});
+
 test('content scripts and the sitemap call the guard', () => {
   const pipeline = readFileSync(path.join(ROOT, 'content-automation/scripts/run-content-pipeline.mjs'), 'utf8');
   const expansion = readFileSync(path.join(ROOT, 'content-automation/scripts/expand-to-800-diverse.mjs'), 'utf8');

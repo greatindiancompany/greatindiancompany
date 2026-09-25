@@ -122,13 +122,14 @@ export async function writeEnglishBrief(fs, filePath, markdown, languageCodes) {
   await fs.writeFile(filePath, markdown, 'utf8');
 }
 
-export function assertSitemapOmitsGeneratedTranslations(locs, blockedSlugs, languageCodes) {
+export function assertSitemapOmitsGeneratedTranslations(locs, blockedSlugs, languageCodes, reviewedSlugs = new Set()) {
   const blocked = blockedSlugs instanceof Set ? blockedSlugs : new Set(blockedSlugs);
+  const reviewed = reviewedSlugs instanceof Set ? reviewedSlugs : new Set(reviewedSlugs);
   const leaks = [];
 
   for (const loc of locs) {
     const slug = blogSlugFromLoc(loc);
-    if (!slug) {
+    if (!slug || reviewed.has(slug)) {
       continue;
     }
 
