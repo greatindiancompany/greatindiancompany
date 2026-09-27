@@ -49,7 +49,7 @@ draft: false
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
 - [S.O. 4424(E), টার্মিনেল তারিখ অমসুং ক্লেম তারিখ](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
-- [PIB, 8 August 2025, ফান্ড-লিমিটেদ এক্সটেনসন](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2154408)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 8 August 2025, ফান্ড-লিমিটেদ এক্সটেনসন](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2154408)
 - [PLI Auto স্কীম ৱিন্দো](https://www.heavyindustries.gov.in/en/pli-scheme-automobile-and-auto-component-industry)
 
 Great Indian Company না মিড-টার্ম অসি রিদার অমনা গেজেট অমদা ফংবা য়াবা তারিখশিং ওইনা শম্মি। ব্রিফশিংগী ইনডেক্স [greatindiancompany.com](https://greatindiancompany.com) দা লৈ।

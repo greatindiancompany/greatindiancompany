@@ -54,7 +54,7 @@ July পাউখুমনা OEM শিংনা মন্ত্রালয়
 
 - [PM E-DRIVE পোর্টেল অমসুং এলোকেসন টেবল](https://pmedrive.heavyindustries.gov.in/)
 - [S.O. 4424(E)](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
-- [PIB, 13 January 2026, PLI সার্টিফিকেট অমসুং দিসবার্সমেন্ট](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 13 January 2026, PLI সার্টিফিকেট অমসুং দিসবার্সমেন্ট](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
 - [FAME II পোর্টেল, AIS 156 নোট](https://fame2.heavyindustries.gov.in/)
 
 Great Indian Company না ক্লেম ফাইল তৌগদবা মীওই অদুগীদমক ইই। ল্যাবকী ব্রিফ অতৈশিং [greatindiancompany.com](https://greatindiancompany.com) দা লৈ।

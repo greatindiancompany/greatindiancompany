@@ -55,7 +55,7 @@ SIAM গী [14 April 2026 গী রিলিজ](https://www.siam.in/pressrele
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
 - [SIAM FY 2025-26 রিলিজ](https://www.siam.in/pressrelease-details.aspx?pid=605)
-- [PIB, 13 January 2026, PLI Auto অমসুং সেল](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 13 January 2026, PLI Auto অমসুং সেল](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
 - [চার্জার লমগী পাৱার মন্ত্রালয় নোট](https://www.powermin.gov.in/static/uploads/2025/07/fab513bc9acc0ad7a794454fe1e329f4.pdf)
 
 Great Indian Company না লীগ টেবল অমা লৌবগী মহুৎতা মন্ত্রালয় অমনা অশোয়না প্রিন্ট তৌরিবা বেঞ্চমার্ক উৎনবা পাম্মি। ব্রিফশিং [greatindiancompany.com](https://greatindiancompany.com) দা লৈ।

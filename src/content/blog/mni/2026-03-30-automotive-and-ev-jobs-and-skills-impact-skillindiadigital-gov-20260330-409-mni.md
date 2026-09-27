@@ -51,7 +51,7 @@ January য়েংফমদা মমিং থম্বা কেপিটে
 
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
-- [PIB, 13 January 2026, 1.48 lakh এস্তিমেট অমসুং 48,974 জেনরেট তৌরবা](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 13 January 2026, 1.48 lakh এস্তিমেট অমসুং 48,974 জেনরেট তৌরবা](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
 - [23 September 2021 PLI Auto নোটিফিকেসন](https://pliauto.in/docs/press_release/2021-09-24%20PIB%20PR%20Govt%20notifies%20PLI%20for%20Auto_PressRelease.pdf)
 - [PIB, 28 July 2026, ফেজড-ম্যানুফেকচারিং সার্টিফিকেটশিং](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 

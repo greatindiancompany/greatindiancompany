@@ -47,7 +47,7 @@ January 2026 য়েংফমনা July পাউখুমনা ফুলদ
 
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
-- [PIB, 28 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 28 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 - [S.O. 4424(E), 10 August 2026](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
 - [PIB, 13 January 2026, ম্যানুফেকচারিং রেকর্দ](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
 - [PIB, 11 March 2025, Vahan সিরিজ](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2110244)

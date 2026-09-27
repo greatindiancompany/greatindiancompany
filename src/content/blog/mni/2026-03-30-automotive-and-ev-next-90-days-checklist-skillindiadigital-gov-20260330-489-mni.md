@@ -64,7 +64,7 @@ draft: false
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
 - [S.O. 4424(E), 10 August 2026](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
-- [PIB পাউখুম, 28 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
-- [PM E-DRIVE নোটিফিকেসনশিং, 3 September 2026 সু য়াউনা](https://pmedrive.heavyindustries.gov.in/policy_document)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB) পাউখুম, 28 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [ইনোভেটিভ ভেহিকল এনহান্সমেন্টকী পিএম ইলেক্ট্রিক ড্রাইভ রেভোলুশন (PM Electric Drive Revolution in Innovative Vehicle Enhancement, PM E-DRIVE) নোটিফিকেসনশিং, 3 September 2026 সু য়াউনা](https://pmedrive.heavyindustries.gov.in/policy_document)
 
 Great Indian Company না চেকলিস্ট অসি হাংদোক্কদবা দোকুমেন্টশিং ওইনা ইই, খুদিংমক্কী মথক্তা ডেডলাইন প্রিন্ট তৌই। ল্যাব অসি [greatindiancompany.com](https://greatindiancompany.com) দা লৈ।

@@ -52,7 +52,7 @@ FAME II গী [পোর্টেল](https://fame2.heavyindustries.gov.in/) �
 
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
-- [PIB, 11 March 2025, চার্জিং অমসুং স্ব্যাপিং গাইডলাইন](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2110244)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 11 March 2025, চার্জিং অমসুং স্ব্যাপিং গাইডলাইন](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2110244)
 - [পাৱার মন্ত্রালয় এমেন্ডমেন্ট পেজ, 11 January 2025](https://powermin.gov.in/en/content/amendment-guidelines-installation-and-operation-electric-vehicle-charging-infrastructure)
 - [S.O. 3318(E), চার্জার ফেজড-ম্যানুফেকচারিং প্রোগ্রাম](https://pmedrive.heavyindustries.gov.in/docs/policy_document/264796.pdf)
 - [AIS 156 গী FAME II পোর্টেল নোটশিং](https://fame2.heavyindustries.gov.in/)

@@ -52,7 +52,7 @@ July পাউখুম অসি রিইম্বার্সমেন্ট 
 
 - [PM E-DRIVE এলোকেসন টেবল](https://pmedrive.heavyindustries.gov.in/)
 - [টু-হুইলার ৱিন্দোগী S.O. 4424(E)](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
-- [PIB, 28 July 2026, ট্রাক, বস অমসুং এম্বুলেন্স ক্যাপ](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 28 July 2026, ট্রাক, বস অমসুং এম্বুলেন্স ক্যাপ](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 - [কম্পোনেন্ট কেটেগরি 103 গী PIB](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2115609)
 
 Great Indian Company না অপোরচুনিটি অমা গেজেটনা হৌজিকসু পীরিবা সেগমেন্ট অম ওইনা ম্যাপ তৌই, ক্যাপ অদু ইথরে। ল্যাব অসি [greatindiancompany.com](https://greatindiancompany.com) দা লৈ।

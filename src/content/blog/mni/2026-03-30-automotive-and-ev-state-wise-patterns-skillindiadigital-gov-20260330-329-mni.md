@@ -48,7 +48,7 @@ January 2026 য়েংফম অসি পিএম ই-বাস সেৱ�
 
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
-- [PIB, 28 July 2026, স্টেট-ৱাইজ দিমান্দ টেবল লৈত্রবগী মরমদা](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 28 July 2026, স্টেট-ৱাইজ দিমান্দ টেবল লৈত্রবগী মরমদা](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 - [PIB, 13 January 2026, বস টেন্ডার শহরশিং অমসুং ম্যান্ডেট 15](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214039)
 - [PM E-DRIVE পোর্টেল](https://pmedrive.heavyindustries.gov.in/)
 

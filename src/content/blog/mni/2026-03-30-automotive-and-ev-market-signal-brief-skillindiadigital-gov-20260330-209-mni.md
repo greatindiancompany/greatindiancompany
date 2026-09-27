@@ -3,7 +3,7 @@ id: "gic-20260330-209-mni"
 lang: "mni"
 translationOf: "gic-20260330-209"
 title: "FY 2025-26 দা SIAM না ভারতকী অটো সেল্সগীদমক করি রিপোর্ট তৌখি"
-description: "SIAM গী FY 2025-26 গী দোমেস্তিক সেল্স, এক্সপোর্ট অমসুং প্রোডাক্সন, মন্ত্রালয়গী ইলেক্ট্রিক-ভেহিকল পেনিট্রেসন ফিগরগী মখাদা থম্লি, লৈত্রবা OEM ফুটনোটশিং সু থমজিনলগা।"
+description: "SIAM গী FY 2025-26 গী দোমেস্তিক সেল্স, এক্সপোর্ট অমসুং প্রোডাক্সন, মন্ত্রালয়গী ইলেক্ট্রিক-ভেহিকল পেনিট্রেসন ফিগরগী মখাদা থম্লি, লৈত্রবা অরিজিনেল ইকুইপমেন্ট ম্যানুফেকচারার (original equipment manufacturer, OEM) ফুটনোটশিং সু থমজিনলগা।"
 slug: "automotive-and-ev-market-signal-brief-skillindiadigital-gov-20260330-209-mni"
 publishDate: "2026-03-30"
 updatedDate: "2026-09-25"
@@ -50,6 +50,6 @@ FY 2026-27 গীদমক SIAM না কেটেগরি খুদিংম�
 
 - [SIAM, FY 2025-26 অমসুং Q4 পারফরমেন্স, 14 April 2026](https://www.siam.in/pressrelease-details.aspx?pid=605)
 - [SIAM, FY 2024-25 EV রেজিস্ত্রেসন লাইন](https://www.siam.in/pressrelease-details.aspx?mpgid=48&pgidtrail=50&pid=579)
-- [PIB, 28 July 2026, FY 2025-26 দা পেনিট্রেসন 8.2 percent](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 28 July 2026, FY 2025-26 দা পেনিট্রেসন 8.2 percent](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 
 Great Indian Company না হোলসেল সেল্স প্রিন্ট অমা স্কীম রিইম্বার্সমেন্ট অমদগী তোঙানবা থম্মি, ইনভেস্টরশিংনা মসি অনি মার্কেট অমত্তা ওইনা লৌদ্রিঙৈ। ল্যাবকী হোম [greatindiancompany.com](https://greatindiancompany.com) নি।

@@ -47,7 +47,7 @@ draft: false
 
 ## মতুংদা হাংদোক্কদবা দোকুমেন্টশিং
 
-- [PIB, 28 July 2026, PM E-DRIVE স্টেটস](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
+- [প্রেস ইনফরমেসন ব্যুরো (Press Information Bureau, PIB), 28 July 2026, PM E-DRIVE স্টেটস](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290696)
 - [গেজেট S.O. 4424(E), 10 August 2026](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf)
 - [PM E-DRIVE নোটিফিকেসন লিস্ট](https://pmedrive.heavyindustries.gov.in/policy_document)
 
